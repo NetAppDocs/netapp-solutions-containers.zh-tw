@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-trident-ontap-nfs.html 
+keywords: Trident, Trident, ONTAP, AFF, FAS, NFS 
+summary: 要實現Trident與NetApp ONTAP儲存系統的集成，您必須建立一個能夠與儲存系統通訊的後端。 
+---
+= NetApp ONTAP NFS 配置
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+要實現Trident與NetApp ONTAP儲存系統的集成，您必須建立一個能夠與儲存系統通訊的後端。
+
+. 下載的安裝檔案中提供了範例後端文件 `sample-input`資料夾層次結構。對於服務 NFS 的NetApp ONTAP系統，複製 `backend-ontap-nas.json`文件到您的工作目錄並編輯該文件。
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ cp sample-input/backends-samples/ontap-nas/backend-ontap-nas.json ./
+[netapp-user@rhel7 trident-installer]$ vi backend-ontap-nas.json
+----
+. 編輯此檔案中的 backendName、managementLIF、dataLIF、svm、username 和 password 值。
++
+[listing]
+----
+{
+    "version": 1,
+    "storageDriverName": "ontap-nas",
+    "backendName": "ontap-nas+10.61.181.221",
+    "managementLIF": "172.21.224.201",
+    "dataLIF": "10.61.181.221",
+    "svm": "trident_svm",
+    "username": "cluster-admin",
+    "password": "password"
+}
+----
++
+
+NOTE: 最佳做法是將自訂 backendName 值定義為 storageDriverName 和為 NFS 提供服務的 dataLIF 的組合，以便於識別。
+
+. 有了這個後端文件，運行以下命令來創建您的第一個後端。
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ ./tridentctl -n trident create backend -f backend-ontap-nas.json
++-------------------------+----------------+--------------------------------------+--------+---------+
+|          NAME           | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
++-------------------------+----------------+--------------------------------------+--------+---------+
+| ontap-nas+10.61.181.221 | ontap-nas      | be7a619d-c81d-445c-b80c-5c87a73c5b1e | online |       0 |
++-------------------------+----------------+--------------------------------------+--------+---------+
+----
+. 建立後端後，接下來必須建立儲存類別。與後端一樣，有一個範例儲存類別文件，可以根據 sample-inputs 資料夾中提供的環境進行編輯。將其複製到工作目錄並進行必要的編輯以反映已建立的後端。
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ cp sample-input/storage-class-samples/storage-class-csi.yaml.templ ./storage-class-basic.yaml
+[netapp-user@rhel7 trident-installer]$ vi storage-class-basic.yaml
+----
+. 對此文件唯一需要做的編輯是定義 `backendType`將值設定為新建立的後端的儲存驅動程式的名稱。還要注意名稱欄位值，該值必須在後續步驟中引用。
++
+[listing]
+----
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: basic-csi
+provisioner: csi.trident.netapp.io
+parameters:
+  backendType: "ontap-nas"
+----
++
+
+NOTE: 有一個可選字段稱為 `fsType`這是在這個文件中定義的。可以在 NFS 後端刪除此行。
+
+. 運行 `oc`命令來建立儲存類別。
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ oc create -f storage-class-basic.yaml
+storageclass.storage.k8s.io/basic-csi created
+----
+. 建立儲存類別後，您必須建立第一個持久化磁碟區宣告 (PVC)。有一個範例 `pvc-basic.yaml`也可用於執行位於 sample-inputs 中的此操作的檔案。
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ cp sample-input/pvc-samples/pvc-basic.yaml ./
+[netapp-user@rhel7 trident-installer]$ vi pvc-basic.yaml
+----
+. 對此文件唯一需要做的編輯是確保 `storageClassName`字段與剛剛建立的字段相符。  PVC 定義可以根據要設定的工作負載的需要進一步客製化。
++
+[listing]
+----
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: basic
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: basic-csi
+----
+. 透過發出 `oc`命令。創建可能需要一些時間，具體取決於所創建的備份卷的大小，因此您可以在創建完成時觀察該過程。
++
+[listing]
+----
+[netapp-user@rhel7 trident-installer]$ oc create -f pvc-basic.yaml
+persistentvolumeclaim/basic created
+
+[netapp-user@rhel7 trident-installer]$ oc get pvc
+NAME    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+basic   Bound    pvc-b4370d37-0fa4-4c17-bd86-94f96c94b42d   1Gi        RWO            basic-csi      7s
+----
+

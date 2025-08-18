@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-velero.html 
+keywords: data protection, DP, Velero, 3rd party tools 
+summary:  
+---
+= 使用第三方工具對容器應用程式和虛擬機器進行資料保護
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+此解決方案展示如何使用與 Red Hat OpenShift Container 平台中的 OADP 操作員整合的 Velero 對容器和虛擬機器執行資料保護操作。
+
+. 有關在 OpenShift Container 平台中建立和恢復容器應用程式備份的詳細信息，請參閱link:https://docs.netapp.com/us-en/netapp-solutions-cloud/openshift/os-dp-velero-solution.html["這裡"^]。
+. 有關在 OpenShift Container 平台上部署的 OpenShift Virtualization 中建立和恢復虛擬機備份的詳細信息，請參閱link:https://docs.netapp.com/us-en/netapp-solutions-virtualization/openshift/osv-vm-dp-using-velero-overview.html["這裡"^]。
+

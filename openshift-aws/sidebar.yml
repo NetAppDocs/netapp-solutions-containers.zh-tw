@@ -1,0 +1,9 @@
+---
+section: openshift-aws
+title: 使用 FSxN 在 AWS 上提供 Red Hat OpenShift 服務
+pdf-filename: 使用 FSxN 在 AWS 上提供 Red Hat OpenShift 服務
+entries:
+- title: 解決方案概述
+  url: "/openshift/os-rosa-solution-overview.html"
+- title: AWS 上的 OpenShift 服務工作流程
+  url: "/openshift/os-rosa-app-workflows.html"

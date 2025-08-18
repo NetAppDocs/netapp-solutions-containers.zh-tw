@@ -1,0 +1,103 @@
+---
+section: openshift
+title: Red Hat OpenShift 與NetApp
+pdf-filename: Red Hat OpenShift 與NetApp
+entries:
+- title: 解決方案概述
+  url: "/openshift/os-solution-overview.html"
+- title: 紅帽 OpenShift
+  entries:
+  - title: Openshift 概述
+    url: "/openshift/os-overview.html"
+  - title: 裸機上的 OpenShift
+    url: "/openshift/os-on-bm.html"
+  - title: Red Hat OpenStack 上的 OpenShift
+    url: "/openshift/os-on-openstack.html"
+  - title: Red Hat 虛擬化上的 OpenShift
+    url: "/openshift/os-on-rhv.html"
+  - title: VMware vSphere 上的 OpenShift
+    url: "/openshift/os-on-vmw.html"
+  - title: AWS 上的 OpenShift
+    url: "/openshift/os-on-aws-rosa.html"
+- title: NetApp儲存系統
+  entries:
+  - title: NetApp ONTAP
+    url: "/openshift/os-netapp-ontap.html"
+  - title: NetApp Element
+    url: "/openshift/os-netapp-element.html"
+- title: NetApp儲存集成
+  entries:
+  - title: NetApp儲存整合概述
+    url: "/openshift/os-storint-overview.html"
+  - title: NetApp Trident
+    entries:
+    - title: NetApp Trident概述
+      url: "/openshift/os-trident-overview.html"
+    - title: NetApp ONTAP NFS
+      url: "/openshift/os-trident-ontap-nfs.html"
+    - title: NetApp ONTAP iSCSI
+      url: "/openshift/os-trident-ontap-iscsi.html"
+    - title: NetApp Element iSCSI
+      url: "/openshift/os-trident-element-iscsi.html"
+- title: 進階配置選項
+  entries:
+  - title: 探索負載平衡器選項
+    entries:
+    - title: 關於負載平衡器選項
+      url: "/openshift/os-load-balancers.html"
+    - title: 安裝 MetalLB 負載平衡器
+      url: "/openshift/os-lb-metallb.html"
+    - title: 安裝 F5 BIG-IP 負載平衡器
+      url: "/openshift/os-lb-f5bigip.html"
+  - title: 建立私有鏡像倉庫
+    url: "/openshift/os-private-registry.html"
+- title: 解決方案驗證和用例
+  entries:
+  - title: 驗證和用例概述
+    url: "/openshift/os-use-cases.html"
+  - title: 使用持久性儲存部署 Jenkins CI/CD 管道
+    url: "/openshift/os-use-case-pipeline.html"
+  - title: 配置多租戶
+    entries:
+    - title: 關於配置多租戶
+      url: "/openshift/os-multitenancy-overview.html"
+    - title: 架構
+      url: "/openshift/os-multi-tenant-architecture.html"
+    - title: 配置概述
+      url: "/openshift/os-multitenancy-configuration.html"
+    - title: 配置前提條件
+      url: "/openshift/os-multitenancy-config-prereq.html"
+    - title: 集群管理員任務
+      url: "/openshift/os-multitenancy-clstr-admin-task.html"
+    - title: 儲存管理員任務
+      url: "/openshift/os-multitenancy-stor-admin-tasks.html"
+    - title: 驗證
+      url: "/openshift/os-multitenancy-validation.html"
+    - title: 縮放
+      url: "/openshift/os-multitenancy-scaling.html"
+- title: Kubernetes 的高階叢集管理
+  entries:
+  - title: 關於 ACM for Kubernetes
+    url: "/openshift/os-adv-mgmt-overview.html"
+  - title: 為 Kubernetes 部署 ACM
+    entries:
+    - title: 先決條件
+      url: "/openshift/os-adv-mgmt-deployment-prereq.html"
+    - title: 透過操作員部署
+      url: "/openshift/os-adv-mgmt-deployment.html"
+    - title: 集群生命週期管理
+      url: "/openshift/os-adv-mgmt-cluster-lcm.html"
+    - title: 應用程式生命週期管理
+      url: "/openshift/os-adv-mgmt-app-lcm.html"
+    - title: 治理與風險
+      url: "/openshift/os-adv-mgmt-governance-risk.html"
+    - title: 可觀察性
+      url: "/openshift/os-adv-mgmt-observability.html"
+    - title: 創建資源
+      url: "/openshift/os-adv-mgmt-create-resources.html"
+- title: 使用Trident Protect 進行資料保護
+  url: "/openshift/os-trident-protect.html"
+- title: 使用第三方工具進行資料保護
+  url: "/openshift/os-velero.html"
+- title: 附加資訊
+  url: "/openshift/os-additional-information.html"

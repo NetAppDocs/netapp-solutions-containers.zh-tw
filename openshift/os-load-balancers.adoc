@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-load-balancers.html 
+keywords: Advanced Configuration, Load Balancers, MetalLB 
+summary: 本節專門為想要使用NetApp部署客製化 Red Hat OpenShift 的使用者探索負載平衡器選項。 
+---
+= 探索負載平衡器選項：Red Hat OpenShift 與NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+大多數情況下，Red Hat OpenShift 透過路由讓應用程式可供外界使用。透過為服務提供外部可存取的主機名稱來公開服務。  OpenShift 路由器可以使用定義的路由及其服務標識的端點來向外部用戶端提供這種命名連線。
+
+然而在某些情況下，應用程式需要部署和配置客製化的負載平衡器來公開適當的服務。 NetApp Trident Protect 就是一個例子。為了滿足這項需求，我們評估了許多自訂負載平衡器選項。本節介紹它們的安裝和配置。
+
+以下頁麵包含有關 Red Hat OpenShift 與NetApp解決方案中驗證的負載平衡器選項的更多資訊：
+
+* link:os-lb-metallb.html["MetalLB"]
+* link:os-lb-f5bigip.html["F5 BIG-IP"]
+

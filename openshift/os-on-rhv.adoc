@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-on-rhv.html 
+keywords: Red Hat Virtualization, OpenShift, RHV 
+summary: 'RHV 是企業虛擬資料中心平台，運行在 Red Hat Enterprise Linux (RHEL) 上並使用 KVM 虛擬機器管理程式。' 
+---
+= Red Hat 虛擬化上的 OpenShift
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Red Hat Virtualization (RHV) 是一個企業虛擬資料中心平台，運行在 Red Hat Enterprise Linux (RHEL) 上並使用 KVM 虛擬機器管理程式。
+
+有關 RHV 的更多信息，請參閱link:https://www.redhat.com/en/technologies/virtualization/enterprise-virtualization["Red Hat 虛擬化網站"^]。
+
+RHV 提供以下功能：
+
+* *虛擬機器和主機的集中管理* RHV 管理器在部署中作為實體機或虛擬機器 (VM) 運行，並提供基於 Web 的 GUI，以便從中央介面管理解決方案。
+* *自託管引擎* 為了最大限度地減少硬體需求，RHV 允許將 RHV 管理器 (RHV-M) 作為 VM 部署在運行來賓 VM 的同一主機上。
+* *高可用性* 為避免主機故障時造成中斷，RHV 允許對虛擬機器進行高可用性配置。高可用性虛擬機器在叢集層級使用彈性策略進行控制。
+* *高可擴展性* 單一 RHV 叢集最多可擁有 200 個虛擬機器管理程式主機，使其能夠支援大量虛擬機器託管資源密集型企業級工作負載的需求。
+* *增強的安全性* 從 RHV 繼承而來，RHV 採用安全虛擬化 (sVirt) 和安全增強 Linux (SELinux) 技術來提高主機和虛擬機器的安全性和強化程度。這些功能的主要優勢是虛擬機器及其相關資源的邏輯隔離。
+
+
+image:redhat-openshift-003.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+
+
+== 網路設計
+
+NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個額外的管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理。 OCP使用RHV上的虛擬機器邏輯網路進行叢集管理。本節介紹解決方案中使用的每個虛擬網段的安排和用途，並概述部署解決方案的先決條件。
+
+
+
+=== VLAN 需求
+
+RHV 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同目的的網路流量。此配置可以擴展以滿足客戶需求或為特定網路服務提供進一步的隔離。下表列出了在NetApp驗證解決方案時實施該解決方案所需的 VLAN。
+
+[cols="40%, 40%, 20%"]
+|===
+| VLAN | 目的 | VLAN ID 
+
+
+| 帶外管理網絡 | 實體節點和IPMI的管理 | 16 
+
+
+| 虛擬機器網絡 | 虛擬訪客網路訪問 | 1172 
+
+
+| 帶內管理網絡 | RHV-H 節點、RHV-Manager 和 ovirtmgmt 網路的管理 | 3343 
+
+
+| 儲存網路 | NetApp Element iSCSI 的儲存網絡 | 3344 
+
+
+| 移民網絡 | 虛擬客戶遷移網絡 | 3345 
+|===
+
+
+=== 網路基礎設施支援資源
+
+在部署 OpenShift 容器平台之前，應具備以下基礎架構：
+
+* 至少有一個 DNS 伺服器提供完整的主機名稱解析，可從帶內管理網路和 VM 網路存取。
+* 至少一個可從帶內管理網路和 VM 網路存取的 NTP 伺服器。
+* （選購）內管理網路和 VM 網路的出站網際網路連線。
+
+
+
+
+== 生產部署的最佳實踐
+
+本節列出了組織在將此解決方案部署到生產中之前應考慮的幾種最佳實踐。
+
+
+
+=== 將 OpenShift 部署到至少三個節點的 RHV 集群
+
+本文檔中所述的經過驗證的架構透過部署兩個 RHV-H 虛擬機器管理程式節點並確保容錯配置（其中兩個主機都可以管理託管引擎並且部署的虛擬機器可以在兩個虛擬機器管理程式之間遷移）提供了適合 HA 操作的最小硬體部署。
+
+由於 Red Hat OpenShift 最初部署有三個主節點，因此在雙節點配置中可以確保至少兩個主節點佔用同一個節點，如果該特定節點不可用，則可能導致 OpenShift 中斷。因此，Red Hat 的最佳實踐是將至少三個 RHV-H 虛擬機器管理程式節點作為解決方案的一部分進行部署，以便 OpenShift 主機可以均勻分佈，並且解決方案可以獲得額外的容錯程度。
+
+
+
+=== 配置虛擬機器/主機親和性
+
+您可以透過啟用 VM/主機親和性將 OpenShift 主機分散在多個虛擬機器管理程式節點上。
+
+親和性是一種為虛擬機器和/或主機集合定義規則的方法，用於確定虛擬機器是否在同一主機或群組中的主機上一起執行，還是在不同的主機上運行。它透過建立由具有一組相同參數和條件的虛擬機器和/或主機組成的親和性群組應用於虛擬機器。根據親和性群組中的虛擬機器是運行在群組內的同一主機上還是運行在群組內的多個主機上，還是分別運行在不同的主機上，親和性群組的參數可以定義正親和性或負親和性。
+
+參數定義的條件可以是硬執行，也可以是軟執行。硬執行確保親和性群組中的虛擬機器始終嚴格遵循正親和性或負親和性，而不考慮任何外部條件。軟執行確保為親和性群組中的虛擬機器設定更高的優先級，以便在可行的情況下遵循正或負親和性。在本文檔所描述的兩個或三個虛擬機器管理程式配置中，軟親和性是建議的設定。在較大的叢集中，硬親和性可以正確分配 OpenShift 節點。
+
+若要設定關聯群組，請參閱link:https://access.redhat.com/documentation/en-us/red_hat_virtualization/4.4/html/virtual_machine_management_guide/sect-affinity_groups["紅帽 6.11。親和性群組文檔"^]。
+
+
+
+=== 使用自訂安裝檔進行 OpenShift 部署
+
+IPI 透過本文檔前面討論的互動式精靈使 OpenShift 叢集的部署變得簡單。但是，作為叢集部署的一部分，可能需要更改一些預設值。
+
+在這些情況下，您可以執行並執行精靈，而無需立即部署叢集。而是創建一個配置文件，以便以後可以部署叢集。如果您想要變更任何 IPI 預設值，或想要在您的環境中部署多個相同的叢集用於其他用途（例如多租用戶），這將非常有用。有關為 OpenShift 建立自訂安裝配置的更多信息，請參閱link:https://docs.openshift.com/container-platform/4.4/installing/installing_rhv/installing-rhv-customizations.html["Red Hat OpenShift 在 RHV 上安裝具有自訂的集群"^]。

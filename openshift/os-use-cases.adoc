@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-use-cases.html 
+keywords: validation, use-cases, application, multitenancy, virtualization, pipeline 
+summary:  
+---
+= 解決方案驗證與用例：Red Hat OpenShift 與NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+本頁提供的範例是 Red Hat OpenShift 與NetApp的解決方案驗證和用例。
+
+* link:os-use-case-pipeline.html["使用持久性儲存部署 Jenkins CI/CD 管道"]
+* link:os-multitenancy-overview.html["使用NetApp在 Red Hat OpenShift 上設定多租戶"]
+* link:https://docs.netapp.com/us-en/netapp-solutions-virtualization/openshift/osv-overview.html["搭載NetApp ONTAP 的Red Hat OpenShift 虛擬化"^]
+* link:os-adv-mgmt-overview.html["NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理"]
+

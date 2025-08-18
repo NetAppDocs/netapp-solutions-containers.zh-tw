@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: videos/tanzu-videos.html 
+keywords: video, demonstration, deployment, VMware Tanzu with NetApp, NetApp, Tanzu 
+summary: 此頁麵包含視頻鏈接，演示了本文檔中描述的一些功能。 
+---
+= 觀看有關 VMware Tanzu 與NetApp合作的視頻
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過一系列影片探索 VMware Tanzu 與NetApp的集成，這些影片示範了持久性儲存配置、應用程式克隆和使用Trident 的資料保護等關鍵功能。
+
+
+NOTE: 這些示範是使用 TKG 1.3.1 版本和Trident Protect 21.12 版本錄製的技術預覽版。請參閱支援矩陣以了解官方支援的版本。
+
+
+
+== 持久性儲存配置
+
+.使用Trident在 VMware Tanzu 中配置持久性儲存 - VMware Tanzu 與NetApp
+video::8db3092b-3468-4754-b2d7-b01200fbb38d[panopto,width=360]
+
+
+== 應用程式克隆和資料保護
+
+.使用Trident Protect 在 VMWare Tanzu 中克隆應用程式 - VMware Tanzu 與NetApp
+video::01aff358-a0a2-4c4f-9062-b01200fb9abd[panopto,width=360]

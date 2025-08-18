@@ -1,0 +1,261 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-private-registry.html 
+keywords: Advanced Configuration, Private Registry, Trident, OpenShift Registry, NetApp Trident Protect Registry 
+summary: 本節致力於建立和配置由Trident提供的持久性儲存支援的私有鏡像註冊表。 
+---
+= 建立私有鏡像倉庫
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於大多數 Red Hat OpenShift 部署，使用公開註冊表 https://quay.io["Quay.io"]或者 https://hub.docker.com["DockerHub"]滿足大多數客戶的需求。然而，有時客戶可能希望託管他們自己的私人或定製圖像。
+
+此程序記錄如何建立由Trident和NetApp ONTAP提供的持久磁碟區支援的私人映像註冊表。
+
+
+NOTE: Trident Protect 需要一個登錄機碼來託管Astra容器所需的映像。以下部分介紹在 Red Hat OpenShift 叢集上設定私人註冊表以及推送支援安裝Trident Protect 所需的映像的步驟。
+
+
+
+== 建立私有鏡像倉庫
+
+. 從目前預設儲存類別中刪除預設註釋，並將 Trident 支援的儲存類別註釋為 OpenShift 叢集的預設儲存類別。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc patch storageclass thin -p '{"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "false"}}}'
+storageclass.storage.k8s.io/thin patched
+
+[netapp-user@rhel7 ~]$ oc patch storageclass ocp-trident -p '{"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}}'
+storageclass.storage.k8s.io/ocp-trident patched
+----
+. 透過在以下位置輸入以下儲存參數來編輯 imageregistry 操作符 `spec`部分。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc edit configs.imageregistry.operator.openshift.io
+
+storage:
+  pvc:
+    claim:
+----
+. 在 `spec`用於建立具有自訂主機名稱的 OpenShift 路由的部分。儲存並退出。
++
+[listing]
+----
+routes:
+  - hostname: astra-registry.apps.ocp-vmw.cie.netapp.com
+    name: netapp-astra-route
+----
++
+
+NOTE: 當您想要為路由指定自訂主機名稱時，可以使用上述路由配置。如果您希望 OpenShift 建立具有預設主機名稱的路由，則可以將下列參數新增至 `spec`部分： `defaultRoute: true` 。
+
++
+.自訂 TLS 證書
+****
+當您使用自訂主機名稱進行路由時，預設情況下，它會使用 OpenShift Ingress 操作員的預設 TLS 配置。但是，您可以向路由新增自訂 TLS 配置。為此，請完成以下步驟。
+
+.. 使用路由的 TLS 憑證和金鑰建立一個秘密。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc create secret tls astra-route-tls -n openshift-image-registry –cert/home/admin/netapp-astra/tls.crt --key=/home/admin/netapp-astra/tls.key
+----
+.. 編輯 imageregistry 操作符，新增下列參數 `spec`部分。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc edit configs.imageregistry.operator.openshift.io
+
+routes:
+  - hostname: astra-registry.apps.ocp-vmw.cie.netapp.com
+    name: netapp-astra-route
+    secretName: astra-route-tls
+----
+
+
+****
+. 再次編輯imageregistry Operator，將Operator的管理狀態改為 `Managed`狀態。儲存並退出。
++
+[listing]
+----
+oc edit configs.imageregistry/cluster
+
+managementState: Managed
+----
+. 如果滿足所有先決條件，則會為私有鏡像註冊表建立 PVC、pod 和服務。幾分鐘後，註冊表就會啟動。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$oc get all -n openshift-image-registry
+
+NAME                                                   READY   STATUS      RESTARTS   AGE
+pod/cluster-image-registry-operator-74f6d954b6-rb7zr   1/1     Running     3          90d
+pod/image-pruner-1627257600-f5cpj                      0/1     Completed   0          2d9h
+pod/image-pruner-1627344000-swqx9                      0/1     Completed   0          33h
+pod/image-pruner-1627430400-rv5nt                      0/1     Completed   0          9h
+pod/image-registry-6758b547f-6pnj8                     1/1     Running     0          76m
+pod/node-ca-bwb5r                                      1/1     Running     0          90d
+pod/node-ca-f8w54                                      1/1     Running     0          90d
+pod/node-ca-gjx7h                                      1/1     Running     0          90d
+pod/node-ca-lcx4k                                      1/1     Running     0          33d
+pod/node-ca-v7zmx                                      1/1     Running     0          7d21h
+pod/node-ca-xpppp                                      1/1     Running     0          89d
+
+NAME                              TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)     AGE
+service/image-registry            ClusterIP   172.30.196.167   <none>        5000/TCP    15h
+service/image-registry-operator   ClusterIP   None             <none>        60000/TCP   90d
+
+NAME                     DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
+daemonset.apps/node-ca   6         6         6       6            6           kubernetes.io/os=linux   90d
+
+NAME                                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/cluster-image-registry-operator   1/1     1            1           90d
+deployment.apps/image-registry                    1/1     1            1           15h
+
+NAME                                                         DESIRED   CURRENT   READY   AGE
+replicaset.apps/cluster-image-registry-operator-74f6d954b6   1         1         1       90d
+replicaset.apps/image-registry-6758b547f                     1         1         1       76m
+replicaset.apps/image-registry-78bfbd7f59                    0         0         0       15h
+replicaset.apps/image-registry-7fcc8d6cc8                    0         0         0       80m
+replicaset.apps/image-registry-864f88f5b                     0         0         0       15h
+replicaset.apps/image-registry-cb47fffb                      0         0         0       10h
+
+NAME                                COMPLETIONS   DURATION   AGE
+job.batch/image-pruner-1627257600   1/1           10s        2d9h
+job.batch/image-pruner-1627344000   1/1           6s         33h
+job.batch/image-pruner-1627430400   1/1           5s         9h
+
+NAME                         SCHEDULE    SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+cronjob.batch/image-pruner   0 0 * * *   False     0        9h              90d
+
+NAME                                     HOST/PORT                                           PATH   SERVICES         PORT    TERMINATION   WILDCARD
+route.route.openshift.io/public-routes   astra-registry.apps.ocp-vmw.cie.netapp.com          image-registry   <all>   reencrypt     None
+----
+. 如果您正在為入口操作員 OpenShift 登錄路由使用預設 TLS 證書，則可以使用下列命令取得 TLS 證書。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc extract secret/router-ca --keys=tls.crt -n openshift-ingress-operator
+----
+. 為了允許 OpenShift 節點存取並從登錄中提取映像，請將憑證新增至 OpenShift 節點上的 docker 用戶端。在 `openshift-config`命名空間使用 TLS 憑證並將其修補到叢集映像配置以使憑證受信任。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc create configmap astra-ca -n openshift-config --from-file=astra-registry.apps.ocp-vmw.cie.netapp.com=tls.crt
+
+[netapp-user@rhel7 ~]$ oc patch image.config.openshift.io/cluster --patch '{"spec":{"additionalTrustedCA":{"name":"astra-ca"}}}' --type=merge
+----
+. OpenShift 內部註冊表由身份驗證控制。所有OpenShift使用者都可以存取OpenShift登錄表，但登入使用者可以執行的操作取決於使用者權限。
++
+.. 若要允許使用者或一組使用者從登錄中提取圖像，必須為使用者指派 registry-viewer 角色。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc policy add-role-to-user registry-viewer ocp-user
+
+[netapp-user@rhel7 ~]$ oc policy add-role-to-group registry-viewer ocp-user-group
+----
+.. 若要允許使用者或使用者群組寫入或推送映像，必須為使用者指派註冊表編輯器角色。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc policy add-role-to-user registry-editor ocp-user
+
+[netapp-user@rhel7 ~]$ oc policy add-role-to-group registry-editor ocp-user-group
+----
+
+
+. 為了讓 OpenShift 節點存取登錄機碼並推送或拉取映像，您需要設定拉取金鑰。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc create secret docker-registry astra-registry-credentials --docker-server=astra-registry.apps.ocp-vmw.cie.netapp.com --docker-username=ocp-user --docker-password=password
+----
+. 然後可以將這個拉取機密修補到服務帳戶或在對應的 pod 定義中引用。
++
+.. 若要將其修補到服務帳戶，請執行下列命令。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc secrets link <service_account_name> astra-registry-credentials --for=pull
+----
+.. 若要在 pod 定義中引用 pull secret，請將下列參數新增至 `spec`部分。
++
+[listing]
+----
+imagePullSecrets:
+  - name: astra-registry-credentials
+----
+
+
+. 若要從 OpenShift 節點以外的工作站推送或拉取映像，請完成下列步驟。
++
+.. 將 TLS 憑證新增至 docker 用戶端。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ sudo mkdir /etc/docker/certs.d/astra-registry.apps.ocp-vmw.cie.netapp.com
+
+[netapp-user@rhel7 ~]$ sudo cp /path/to/tls.crt /etc/docker/certs.d/astra-registry.apps.ocp-vmw.cie.netapp.com
+----
+.. 使用 oc login 指令登入 OpenShift。
++
+[listing]
+----
+[netapp-user@rhel7 ~]$ oc login --token=sha256~D49SpB_lesSrJYwrM0LIO-VRcjWHu0a27vKa0 --server=https://api.ocp-vmw.cie.netapp.com:6443
+----
+.. 使用 OpenShift 使用者憑證透過 podman/docker 指令登入註冊表。
++
+[role="tabbed-block"]
+====
+.podman
+--
+[listing]
+----
+[netapp-user@rhel7 ~]$ podman login astra-registry.apps.ocp-vmw.cie.netapp.com -u kubeadmin -p $(oc whoami -t) --tls-verify=false
+----
++ 注意：如果您使用 `kubeadmin`使用者登入私有註冊中心，然後使用令牌而不是密碼。
+
+--
+.碼頭工人
+--
+[listing]
+----
+[netapp-user@rhel7 ~]$ docker login astra-registry.apps.ocp-vmw.cie.netapp.com -u kubeadmin -p $(oc whoami -t)
+----
++ 注意：如果您使用 `kubeadmin`使用者登入私有註冊中心，然後使用令牌而不是密碼。
+
+--
+====
+.. 推送或拉取映像。
++
+[role="tabbed-block"]
+====
+.podman
+--
+[listing]
+----
+[netapp-user@rhel7 ~]$ podman push astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra/vault-controller:latest
+[netapp-user@rhel7 ~]$ podman pull astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra/vault-controller:latest
+----
+--
+.碼頭工人
+--
+[listing]
+----
+[netapp-user@rhel7 ~]$ docker push astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra/vault-controller:latest
+[netapp-user@rhel7 ~]$ docker pull astra-registry.apps.ocp-vmw.cie.netapp.com/netapp-astra/vault-controller:latest
+----
+--
+====
+
+
+

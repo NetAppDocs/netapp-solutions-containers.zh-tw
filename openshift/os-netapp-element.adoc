@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-netapp-element.html 
+keywords: NetApp, Element, Solidfire, iSCSI 
+summary: NetApp Element軟體提供模組化、可擴展的效能，每個儲存節點為環境提供保證的容量和吞吐量。  NetApp Element系統可在單一叢集中從 4 個節點擴展到 100 個節點，並提供許多進階儲存管理功能。 
+---
+= NetApp Element：Red Hat OpenShift 與NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Element軟體提供模組化、可擴展的效能，每個儲存節點為環境提供保證的容量和吞吐量。  NetApp Element系統可在單一叢集中從 4 個節點擴展到 100 個節點，並提供許多進階儲存管理功能。
+
+image:redhat-openshift-064.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+有關NetApp Element存儲系統的更多信息，請訪問 https://www.netapp.com/data-storage/solidfire/["NetApp Solidfire 網站"^]。
+
+
+
+== iSCSI 登入重新導向和自我修復功能
+
+NetApp Element軟體利用 iSCSI 儲存協議，這是在傳統 TCP/IP 網路上封裝 SCSI 命令的標準方法。當 SCSI 標準變更或乙太網路效能提升時，iSCSI 儲存協定將受益，而無需進行任何變更。
+
+儘管所有儲存節點都有一個管理 IP 和一個儲存 IP，但NetApp Element軟體會為叢集中的所有儲存流量公佈一個儲存虛擬 IP 位址（SVIP 位址）。作為 iSCSI 登入程序的一部分，儲存可以回應目標磁碟區已移至不同的位址，因此無法繼續協商流程。然後，主機會向新位址重新發出登入請求，整個過程不需要主機端重新配置。此過程稱為 iSCSI 登入重定向。
+
+iSCSI 登入重新導向是NetApp Element軟體叢集的關鍵部分。當收到主機登入要求時，節點根據 IOPS 和磁碟區的容量需求決定叢集中的哪個成員應該處理流量。卷分佈在NetApp Element軟體叢集中，如果單一節點處理的捲流量過多或新增了新節點，則會重新分配。在整個陣列中分配給定卷的多個副本。
+
+透過這種方式，如果節點故障後進行磁碟區重新分配，則除了登出並登入並重新導向到新位置之外，對主機連線沒有影響。透過 iSCSI 登入重新導向， NetApp Element軟體叢集是一種可自我修復、橫向擴展的架構，能夠實現無中斷升級和運作。
+
+
+
+== NetApp Element軟體叢集 QoS
+
+NetApp Element軟體叢集允許根據每個磁碟區動態配置 QoS。您可以使用每個磁碟區的 QoS 設定根據您定義的 SLA 來控制儲存效能。以下三個可設定參數定義 QoS：
+
+* *最低 IOPS。 * NetApp Element軟體叢集為磁碟區提供的最小持續 IOPS 數。為磁碟區配置的最小 IOPS 是磁碟區的保證效能等級。每卷的性能不會低於這個水平。
+* *最大 IOPS。 *  NetApp Element軟體叢集為特定磁碟區提供的最大持續 IOPS 數。
+* *突發 IOPS。 *短時間突發場景下允許的最大 IOPS 數。突發持續時間設定是可設定的，預設為 1 分鐘。如果卷的運行速度低於最大 IOPS 水平，則會累積突發積分。當效能等級變得非常高並被推動時，磁碟區上允許出現超出最大 IOPS 的短時間突發 IOPS。
+
+
+
+
+== 多租戶
+
+安全多租戶透過以下功能實現：
+
+* *安全認證。 *質詢握手身份驗證協定 (CHAP) 用於安全磁碟區存取。輕量級目錄存取協定 (LDAP) 用於安全存取叢集以進行管理和報告。
+* 卷訪問組 (VAG)。或者，可以使用 VAG 代替身份驗證，將任意數量的 iSCSI 啟動器特定的 iSCSI 限定名稱 (IQN) 對應到一個或多個磁碟區。若要存取 VAG 中的捲，啟動器的 IQN 必須位於該卷組允許的 IQN 清單中。
+* 租戶虛擬區域網路 (VLAN)。在網路級別，透過使用 VLAN 實現 iSCSI 啟動器和NetApp Element軟體叢集之間的端對端網路安全性。對於為隔離工作負載或租用戶而建立的任何 VLAN， NetApp Element Software 都會建立一個單獨的 iSCSI 目標 SVIP 位址，該位址只能透過特定的 VLAN 存取。
+* *啟用 VRF 的 VLAN。 *為了進一步支援資料中心的安全性和可擴充性， NetApp Element軟體可讓您啟用任何租戶 VLAN 以實現類似 VRF 的功能。此功能增加了以下兩個關鍵功能：
++
+** *L3 路由到租戶 SVIP 位址。 *此功能可讓您將 iSCSI 啟動器放置在與NetApp Element軟體叢集不同的網路或 VLAN 上。
+** *重疊或重複的 IP 子網路。 *此功能可讓您為租用戶環境新增模板，從而允許每個對應的租用戶 VLAN 指派來自相同 IP 子網路的 IP 位址。此功能對於服務提供者環境中非常有用，因為 IP 空間的規模和保存非常重要。
+
+
+
+
+
+
+== 企業儲存效率
+
+NetApp Element軟體叢集提高了整體儲存效率和效能。以下功能以內聯方式執行，始終處於開啟狀態，且不需要使用者手動設定：
+
+* *重複資料刪除*系統僅儲存唯一的 4K 區塊。任何重複的 4K 區塊都會自動與已儲存的資料版本相關聯。資料位於區塊驅動器上，並使用NetApp Element軟體 Helix 資料保護進行鏡像。該系統大大減少了容量消耗和系統內的寫入操作。
+* *壓縮。 *在資料寫入NVRAM之前，壓縮是內聯執行的。資料被壓縮，儲存在 4K 區塊中，並在系統中保持壓縮狀態。這種壓縮顯著減少了整個叢集的容量消耗、寫入操作和頻寬消耗。
+* *精簡配置。 *此功能可在您需要時提供適量的存儲，從而消除因磁碟區過度配置或捲利用不足而導致的容量消耗。
+* *螺旋。 *單一磁碟區的元資料儲存在元資料磁碟機上，並複製到輔助元資料磁碟機以實現冗餘。
+
+
+
+NOTE: Element 是為自動化而設計的。所有儲存功能均可透過 API 取得。這些 API 是 UI 用來控制系統的唯一方法。

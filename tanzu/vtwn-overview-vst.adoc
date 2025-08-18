@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: tanzu/vtwn-overview-vst.html 
+keywords: VMware Tanzu, Tanzu, Tanzu Kubernetes Grid Service, vSphere with Kubernetes, vSphere Pods, DevOps 
+summary:  
+---
+= VMware vSphere with Tanzu 概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere with Tanzu（也稱為 vSphere Pod）可讓您將 VMware vSphere 環境中的 ESXi 虛擬機器管理程式節點用作裸機 Kubernetes 環境中的工作節點。
+
+image:vtwn-030.png["VMware vSphere 與 Kubernetes"]
+
+帶有 Tanzu 的 VMware vSphere 環境與本機 TKGS 叢集一樣在工作負載管理下啟用。
+
+建立虛擬化的 Supervisor Cluster 為 Kubernetes 提供高可用的控制平面，並為每個應用程式建立單獨的命名空間，確保使用者的資源隔離。
+
+image:vtwn-029.png["主管集群"]
+
+啟用 VMware vSphere with Tanzu 後，每個 ESXi 主機都安裝並設定了 Spherelet 應用程式。這使得每個節點能夠充當 Kubernetes 部署中的工作程序並管理部署在每個節點上的 pod。
+
+image:vtwn-028.png["命名空間"]
+
+目前，VMware vSphere with Tanzu 和 vSphere Pods 僅支援本機 vSphere CSI 驅動程式。其工作原理是讓管理員在 vSphere 用戶端中建立儲存策略，從目前可用作 vSphere 資料儲存的儲存目標中進行選擇。這些策略用於為容器化應用程式建立持久性磁碟區。
+
+
+NOTE: 雖然目前不支援直接連接到外部ONTAP和 Element 儲存陣列的NetApp Trident CSI 驅動程序，但這些NetApp儲存系統通常用於支援 vSphere 環境的主存儲，並且可以以這種方式使用NetApp高階資料管理和儲存效率工具。
+
+如果您想了解有關 VMware vSphere with Tanzu 的更多信息，請參閱文檔link:https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-tanzu/GUID-152BE7D2-E227-4DAA-B527-557B564D9718.html["這裡"^]。

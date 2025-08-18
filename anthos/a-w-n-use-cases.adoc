@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: anthos/a-w-n-use-cases.html 
+keywords: validation, use-cases, application, multitenancy, virtualization, 
+summary: 本頁提供的範例是 Anthos with NetApp的解決方案驗證和用例。 
+---
+= 解決方案驗證和用例
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+本頁提供的範例是 Anthos with NetApp的解決方案驗證和用例。
+
+link:anthos-deploy-app-cloud-console.html["使用 Google Cloud Console 安裝應用程式"]

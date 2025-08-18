@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: videos/openshift-videos.html 
+keywords: video, demonstration, deployment 
+summary:  
+---
+= 觀看有關 Red Hat OpenShift 與NetApp 的視頻
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過一系列影片探索 Red Hat OpenShift 與NetApp的集成，這些影片展示了災難復原、虛擬機器保護、儲存管理以及使用Trident和 Ansible 的自動化等關鍵功能。
+
+
+
+== 災難復原和資料保護
+
+.使用Trident Protect 進行虛擬機器災難復原
+video::ae4bdcf7-b344-4f19-89ed-b2d500f94efd[panopto,width=360]
+.使用Trident Protect 保護虛擬機
+video::4670e188-3d67-4207-84c5-b2d500f934a0[panopto,width=360]
+.使用Trident的進階資料管理功能對 OpenShift VM 進行故障轉移/故障復原（僅提供早期存取程式）
+video::f2a8fa24-2971-4cdc-9bbb-b1f1007032ea[panopto,width=360]
+
+
+== OpenShift 虛擬化與 VM 管理
+
+.使用 iSCSI 儲存在 OpenShift Virtualization 中建立 VM
+video::497b868d-2917-4824-bbaa-b2d500f92dda[panopto,width=360]
+.使用ONTAP SAN（iSCSI）儲存類別在 OpenShift 虛擬化中部署新虛擬機
+video::2e2c6fdb-4651-46dd-b028-b1ed00d37da3[panopto,width=360]
+.使用 OpenShift 虛擬化部署虛擬機器 - Red Hat OpenShift 與NetApp
+video::8a29fa18-8643-499e-94c7-b01200f9ce11[panopto,width=360]
+.使用Amazon FSx for NetApp ONTAP在 ROSA 上的 OpenShift 虛擬化中即時遷移虛擬機
+video::4b3ef03d-7d65-4637-9dab-b21301371d7d[panopto,width=360]
+.使用 Red Hat MTV 將虛擬機器遷移到具有NetApp ONTAP儲存的 OpenShift 虛擬化
+video::bac58645-dd75-4e92-b5fe-b12b015dc199[panopto,width=360]
+.工作負載遷移 - Red Hat OpenShift 與NetApp
+video::27773297-a80c-473c-ab41-b01200fa009a[panopto,width=360]
+.安裝 OpenShift 虛擬化 - Red Hat OpenShift 與NetApp
+video::e589a8a3-ce82-4a0a-adb6-b01200f9b907[panopto,width=360]
+.適用於 Red Hat 虛擬化上的 Red Hat OpenShift 的NetApp HCI
+video::13b32159-9ea3-4056-b285-b01200f0873a[panopto,width=360]
+
+
+== 應用程式部署和儲存
+
+.使用ONTAP NAS 儲存類別部署 postgresql 容器應用程式
+video::d3eacf8c-888f-4028-a695-b1ed00d28dee[panopto,width=360]
+
+
+== 自動化與集成
+
+.Ansible 自動化部署Trident並在 OpenShift 叢集上建立儲存類
+video::fae6605f-b61a-4a34-a97f-b1ed00d2de93[panopto,width=360]
+.Cloud Insights與 Openshift Virtualization 集成
+video::29ed6938-eeaf-4e70-ae7b-b15d011d75ff[panopto,width=360]
+**GitHub 中的 Ansible 範例程式碼**link:https://github.com/NetApp/trident-install["使用 Ansible 安裝NetApp Trident、StorageClasses 和 Backend 的劇本可以在 github 中找到。"]
+
+
+
+== 雲端和混合集成
+
+.使用託管控制平面在 AWS 上將Amazon FSx for NetApp ONTAP與 Red Hat OpenShift 服務結合使用
+video::213061d2-53e6-4762-a68f-b21401519023[panopto,width=360]
+.使用Amazon FSx for NetApp ONTAP在 ROSA 上的 OpenShift 虛擬化中即時遷移虛擬機
+video::4b3ef03d-7d65-4637-9dab-b21301371d7d[panopto,width=360]
+.使用 Red Hat MTV 將虛擬機器遷移到具有NetApp ONTAP儲存的 OpenShift 虛擬化
+video::bac58645-dd75-4e92-b5fe-b12b015dc199[panopto,width=360]
+.工作負載遷移 - Red Hat OpenShift 與NetApp
+video::27773297-a80c-473c-ab41-b01200fa009a[panopto,width=360]
+.安裝 OpenShift 虛擬化 - Red Hat OpenShift 與NetApp
+video::e589a8a3-ce82-4a0a-adb6-b01200f9b907[panopto,width=360]
+.使用 OpenShift 虛擬化部署虛擬機器 - Red Hat OpenShift 與NetApp
+video::8a29fa18-8643-499e-94c7-b01200f9ce11[panopto,width=360]
+.適用於 Red Hat 虛擬化上的 Red Hat OpenShift 的NetApp HCI
+video::13b32159-9ea3-4056-b285-b01200f0873a[panopto,width=360]

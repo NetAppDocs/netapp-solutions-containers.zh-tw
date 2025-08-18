@@ -1,0 +1,142 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-deploy-app-cloud-console.html 
+keywords: Anthos, Trident, NetApp ONTAP, ONTAP, Trident 
+summary: 如何使用 Google Cloud Console 將應用程式部署到本地 Anthos GKE 叢集。 
+---
+= 從 Google Cloud Console Marketplace 部署應用程式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+本節詳細介紹如何使用 Google Cloud Console 將應用程式部署到本機 Anthos GKE 叢集。
+
+
+
+== 先決條件
+
+* 已在本地部署並在 Google Cloud Console 中註冊的 Anthos 集群
+* 在您的 Anthos 叢集中配置的 MetalLB 負載平衡器
+* 具有將應用程式部署到叢集的權限的帳戶
+* 如果您選擇具有相關費用的應用程序，則需要 Google Cloud 的結算帳戶（可選）
+
+
+
+
+== 部署應用程式
+
+對於此用例，我們使用 Google Cloud Console 將一個簡單的 WordPress 應用程式部署到我們的一個 Anthos 叢集。此部署使用NetApp ONTAP在預先定義儲存類別中提供的持久性儲存。然後，我們演示了兩種不同的方法來修改應用程式的預設服務，以便 MetalLB 負載平衡器為其提供 IP 位址並將其公開給全世界。
+
+若要以這種方式部署應用程序，請完成以下步驟：
+
+. 驗證您要部署到的叢集是否可以在 Google Cloud Console 中存取。
++
+image:a-w-n-use-case-deploy-app-010.png["註冊集群"]
+
+. 從左側選單中選擇應用程序，選擇頂部的三個點選項選單，然後選擇從市場部署，這將打開一個新窗口，您可以從中從 Google Cloud 市場中選擇一個應用程式。
++
+image:a-w-n-use-case-deploy-app-009.png["應用市場"]
+
+. 搜尋您想要安裝的應用程序，在本例中為 WordPress。
++
+image:a-w-n-use-case-deploy-app-008.png["搜尋 WordPress"]
+
+. 選擇 WordPress 應用程式後，將顯示概覽畫面。點選配置按鈕。
++
+image:a-w-n-use-case-deploy-app-007.png["WordPress 概覽畫面"]
+
+. 在下一頁中，您必須選擇要部署到的集群，在我們的例子中是 Demo-Cluster。選擇或建立新的命名空間和應用程式實例名稱，並選擇 WordPress 應用程式及其支援 MariaDB 資料庫所需的儲存類別和持久性磁碟區大小。在這兩種情況下，我們都選擇了ONTAP-NAS-CSI 儲存類別。
++
+image:a-w-n-use-case-deploy-app-006.png["WordPress 設定"]
+
++
+
+NOTE: 不要選擇“啟用公共 IP 存取”。這樣做會建立一個 NodePort 類型的服務，該服務無法從本機 Anthos 部署存取。
+
+. 點擊“部署”按鈕後，您將看到一個提供應用程式詳細資訊的頁面。您可以刷新此頁面或使用 CLI 登入您的叢集來檢查部署狀態。
++
+image:a-w-n-use-case-deploy-app-005.png["申請詳情"]
+
+. 透過執行命令來獲取應用程式命名空間中的 pod 信息，可以使用 CLI 檢查應用程式部署時的狀態： `kubectl get pods -n anthos-wp` 。
++
+image:a-w-n-use-case-deploy-app-004.png["Kubectl 取得 Pod"]
+
++
+
+NOTE: 請注意，此螢幕截圖中有一個部署程式容器處於錯誤狀態。這是正常的。此 pod 是 Google Cloud Console 用來部署應用程式的輔助 pod，它會在其他 pod 開始初始化過程後自行終止。
+
+. 片刻之後，驗證您的應用程式是否正在運行。
++
+image:a-w-n-use-case-deploy-app-003.png["應用程式運行"]
+
+
+
+
+
+== 公開應用程式
+
+應用程式部署後，您有兩種方法可以為其分配一個全球可達的 IP。
+
+
+
+=== 使用 Google Cloud Console
+
+您可以使用 Google Cloud Console 公開應用程序，並在瀏覽器中編輯服務的 YAML 輸出以設定可公開存取的 IP。為此，請執行以下步驟：
+
+. 在 Google Cloud Console 中，點選左側選單中的服務和入口。
++
+image:a-w-n-use-case-deploy-app-011.png["服務和入口"]
+
+. 點選 `wordpress-wordpress-svc`服務。這將打開服務詳情畫面。點擊頂部的“編輯”按鈕。
++
+image:a-w-n-use-case-deploy-app-012.png["編輯服務詳情"]
+
+. 開啟「編輯服務詳細資料」頁面，其中包含該服務的 YAML 資訊。向下滾動直到看到 `spec:`部分和 `type:`值，設定為 `ClusterIP`。將此值變更為 `LoadBalancer`並點選儲存按鈕。
++
+image:a-w-n-use-case-deploy-app-013.png["類型 ClusterIP 值"]
+
++
+image:a-w-n-use-case-deploy-app-014.png["類型負載平衡器值"]
+
+. 當您返回服務詳情頁面時， `Type:`現在列出 `LoadBalancer`和 `External endpoints:`欄位列出了從 MetalLB 池分配的 IP 位址以及應用程式可存取的連接埠。
++
+image:a-w-n-use-case-deploy-app-015.png["服務詳情最終版"]
+
+
+
+
+
+=== 使用 Kubectl 修補服務
+
+您可以使用 CLI 和 `kubectl patch`命令來修改您的部署並設定可公開存取的 IP。為此，請完成以下步驟：
+
+. 使用以下命令列出與命名空間中的 Pod 關聯的服務 `kubectl get services -n anthos-wp`命令。
++
+image:a-w-n-use-case-deploy-app-002.png["清單服務"]
+
+. 修改服務類型 `ClusterIP`鍵入 `Loadbalancer`使用以下命令：
++
+[listing]
+----
+kubectl patch svc wordpress-wordpress-svc -p '{"spec": {"type": "LoadBalancer"}}' -n anthos-wp'.
+----
++
+此新服務類型會自動從 MetalLB 池中指派一個可用的 IP 位址。
+
++
+image:a-w-n-use-case-deploy-app-001.png["將服務修補為 LoadBalancer 類型"]
+
+
+
+
+
+== 在暴露的外部IP上存取應用程式
+
+現在您已經透過可公開存取的 IP 位址公開了應用程序，您可以使用瀏覽器存取您的 WordPress 實例。
+
+image:a-w-n-use-case-deploy-app-016.png["瀏覽器中的 WordPress"]

@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-bm.html 
+keywords: Anthos, bare metal, linux 
+summary: Anthos on Bare Metal 的硬體無關功能讓您可以選擇針對您的個人化用例優化的運算平台，同時還提供許多額外的好處。 
+---
+= 裸機上的 Anthos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Anthos on Bare Metal 的硬體無關功能讓您可以選擇針對您的個人化用例優化的運算平台，同時還提供許多額外的好處。
+
+
+
+== 好處
+
+Anthos on Bare Metal 的硬體無關功能讓您可以選擇針對您的個人化用例優化的運算平台，同時還提供許多額外的好處。
+
+範例包括：
+
+* *自備伺服器。 *您可以使用與現有基礎架構相符的伺服器來降低資本支出和管理成本。
+* *自備 Linux 作業系統。 *選擇要部署 Anthos-on-bare-metal 環境的 Linux 作業系統，您可以確保 Anthos 環境能夠完美地融入您現有的基礎架構和管理方案。
+* *提高性能並降低成本。 *無需虛擬機器管理程序，Anthos-on-bare-metal 叢集就可以直接存取伺服器硬體資源，包括 GPU 等效能最佳化的硬體設備。
+* *提高網路效能並降低延遲。 *由於 Anthos-on-bare-metal 伺服器節點直接連接到您的網絡，而無需虛擬化抽象層，因此可以對它們進行最佳化以實現低延遲和效能。
+
+
+
+
+== 硬體需求
+
+
+
+=== 運算
+
+Google Cloud 會定期透過其 Anthos Ready 平台合作夥伴計畫請求合作夥伴伺服器平台使用新版本的 Anthos 進行更新驗證。可以找到目前已驗證的伺服器平台和支援的 Anthos 版本的列表 https://cloud.google.com/anthos/docs/resources/partner-platforms["這裡"^]。
+
+下表包含已由NetApp和NetApp合作夥伴工程師測試的用於驗證 Anthos on 裸機部署的伺服器平台。
+
+|===
+
+
+| 製造商 | 製作 | 模型 
+
+
+| Cisco | UCS | B200 M5 
+
+
+| 慧與 | Proliant | DL360 
+|===
+
+
+=== 作業系統
+
+Anthos-on-bare-metal 節點可以根據客戶的選擇配置幾種不同的 Linux 發行版，以協助搭配他們目前的資料中心基礎架構。
+
+下表列出了NetApp及其合作夥伴用於驗證解決方案的 Linux 作業系統。
+
+|===
+| 作業系統 | 發布 | Anthos 版本 
+
+
+| CentOS | 8.4.2105 | 1.14 
+
+
+| 紅帽企業 Linux | 8.4 | 1.14 
+
+
+| Ubuntu | 18.04.5 LTS（內核 5.4.0-81-generic） | 1.14 
+
+
+| Ubuntu | 20.04.2 LTS | 1.14 
+|===
+
+
+=== 附加硬體
+
+為了完成 Anthos on Bare Metal 的部署，使其成為經過全面驗證的解決方案， NetApp和我們的合作夥伴工程師已經對用於網路和儲存的其他資料中心元件進行了測試。
+
+下表包含有關這些附加基礎設施組件的資訊。
+
+|===
+| 製造商 | 硬體名稱 | 模型 
+
+
+| Cisco | 關係 | C9336C-FX2 
+
+
+| NetApp | AFF | A250、A220 
+|===
+
+
+=== 附加軟體
+
+下表包括在驗證環境中部署的其他軟體版本的清單。
+
+|===
+| 製造商 | 軟體名稱 | 版本 
+
+
+| Cisco | NXOS | 9.3(5) 
+
+
+| NetApp | ONTAP | 9.11.1P4 
+
+
+| NetApp | Trident | 23.01.0 
+|===
+在NetApp和我們在 World Wide Technology (WWT) 的合作夥伴團隊執行 Anthos Ready 平台驗證期間，實驗室環境是根據下圖構建的，這使我們能夠測試解決方案中部署的每種伺服器類型、作業系統、網路設備和儲存系統的功能。
+
+image:a-w-n-anthos-baremetal-validation.png["Anthos BareMetal 實體硬體圖"]
+
+image:a-w-n-anthos-baremetal-logical-topology.png["Anthos BareMetal 邏輯網絡圖"]
+
+
+NOTE: 此多作業系統環境展示了與 Anthos-on-bare-metal 解決方案支援的作業系統版本的互通性。我們預計客戶將在其部署中對一個或一個子集的作業系統進行標準化。
+
+
+
+=== 基礎設施支援資源
+
+在裸機上部署 Anthos 之前，應準備好以下基礎架構：
+
+* 至少有一個提供可從管理網路存取的完整主機名稱解析的 DNS 伺服器。
+* 至少一個可從管理網路存取的 NTP 伺服器。
+* （可選）內管理網路的出站網路連線。
+
+
+
+NOTE: 本文檔的影片和演示部分有一個 Anthos on bare metal 部署的演示影片。

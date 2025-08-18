@@ -1,0 +1,155 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-on-openstack.html 
+keywords: OpenShift, OpenStack, private cloud 
+summary: Red Hat OpenStack 平台提供了一個整合的基礎來創建、部署和擴展安全可靠的私有 OpenStack 雲端。 
+---
+= Red Hat OpenStack 平台上的 OpenShift
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Red Hat OpenStack 平台提供了一個整合的基礎來創建、部署和擴展安全可靠的私有 OpenStack 雲端。
+
+OSP 是一種基礎設施即服務 (IaaS) 雲，由管理運算、儲存和網路資源的一系列控制服務實現。此環境使用基於 Web 的介面進行管理，允許管理員和使用者控制、配置和自動化 OpenStack 資源。此外，OpenStack 基礎架構透過廣泛的命令列介面和 API 實現，為管理員和最終用戶提供完全自動化功能。
+
+OpenStack專案是一個快速發展的社群項目，每六個月提供一次更新版本。最初，Red Hat OpenStack Platform 透過隨每個上游版本發布新版本並為每三個版本提供長期支援來跟上此發布週期。最近，隨著 OSP 16.0 版本（基於 OpenStack Train）的發布，Red Hat 選擇不跟上版本號，而是將新功能反向移植到子版本中。最新版本是 Red Hat OpenStack Platform 16.1，其中包括從 Ussuri 和 Victoria 上游版本移植的高級功能。
+
+有關 OSP 的更多信息，請參閱link:https://www.redhat.com/en/technologies/linux-platforms/openstack-platform["紅帽 OpenStack 平台網站"^]。
+
+
+
+== OpenStack服務
+
+OpenStack 平台服務以容器形式部署，從而將服務彼此隔離並實現輕鬆升級。 OpenStack 平台使用一組透過 Kolla 建置和管理的容器。服務的部署是透過從 Red Hat Custom Portal 提取容器映像來執行的。這些服務容器使用 Podman 指令進行管理，並使用 Red Hat OpenStack Director 進行部署、設定和維護。
+
+image:redhat-openshift-034.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+[cols="15%, 15%, 70%"]
+|===
+| 服務 | 項目名稱 | 描述 
+
+
+| 儀表板 | 地平線 | 用於管理 OpenStack 服務的基於 Web 瀏覽器的儀表板。 
+
+
+| 身分 | Keystone | 用於對 OpenStack 服務進行身份驗證和授權以及管理使用者、專案和角色的集中服務。 
+
+
+| OpenStack網路 | 中子 | 提供 OpenStack 服務介面之間的連線。 
+
+
+| 區塊儲存 | 煤渣 | 管理虛擬機器 (VM) 的持久性區塊儲存磁碟區。 
+
+
+| 運算 | 新星 | 管理和配置在計算節點上運行的虛擬機器。 
+
+
+| 影像 | 一瞥 | 用於儲存虛擬機器鏡像、磁碟區快照等資源的註冊服務。 
+
+
+| 物件儲存 | 迅速 | 允許使用者儲存和檢索文件和任意資料。 
+
+
+| 遙測 | 雲高儀 | 提供雲端資源使用情況的測量。 
+
+
+| 編排 | 熱 | 基於模板的編排引擎，支援自動建立資源堆疊。 
+|===
+
+
+== 網路設計
+
+Red Hat OpenShift 與NetApp解決方案使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個額外的管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理連接。
+
+Red Hat OpenStack Director 需要 IPMI 功能來使用 Ironic 裸機設定服務部署 Red Hat OpenStack Platform。
+
+
+
+=== VLAN 需求
+
+Red Hat OpenShift 與NetApp旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同用途的網路流量。此配置可以擴展以滿足客戶需求或為特定網路服務提供進一步的隔離。下表列出了在NetApp驗證解決方案時實施該解決方案所需的 VLAN。
+
+[cols="15%, 70%, 15%"]
+|===
+| VLAN | 目的 | VLAN ID 
+
+
+| 帶外管理網絡 | 用於管理 Ironic 的實體節點和 IPMI 服務的網路。 | 16 
+
+
+| 儲存基礎設施 | 用於控制器節點直接對應磁碟區以支援 Swift 等基礎架構服務的網路。 | 201 
+
+
+| 儲存煤渣 | 用於將區塊磁碟區直接對應並附加到環境中部署的虛擬執行個體的網路。 | 202 
+
+
+| 內部 API | 用於使用 API 通訊、RPC 訊息和資料庫通訊的 OpenStack 服務之間的通訊的網路。 | 301 
+
+
+| 租戶 | Neutron 透過 VXLAN 隧道為每個租戶提供自己的網路。網路流量在每個租戶網路內是隔離的。每個租用戶網路都有一個與之關聯的 IP 子網，網路命名空間意味著多個租用戶網路可以使用相同的位址範圍而不會造成衝突。 | 302 
+
+
+| 儲存管理 | OpenStack 物件儲存（Swift）使用此網路在參與的副本節點之間同步資料物件。代理服務充當使用者請求和底層儲存層之間的中介介面。代理接收傳入的請求並找到必要的副本以檢索請求的資料。 | 303 
+
+
+| PXE | OpenStack Director 提供 PXE 啟動作為 Ironic 裸機設定服務的一部分，以協調 OSP Overcloud 的安裝。 | 3484 
+
+
+| 外部的 | 公共可用網絡，託管用於圖形管理的 OpenStack 儀表板（Horizon），並允許公共 API 呼叫來管理 OpenStack 服務。 | 3485 
+
+
+| 帶內管理網絡 | 提供對系統管理功能（例如 SSH 存取、DNS 流量和網路時間協定 (NTP) 流量）的存取。該網路還充當非控制器節點的網關。 | 3486 
+|===
+
+
+=== 網路基礎設施支援資源
+
+在部署 OpenShift 容器平台之前，應具備以下基礎架構：
+
+* 至少一個提供完整主機名稱解析的 DNS 伺服器。
+* 至少有三個NTP伺服器可以為解決方案中的伺服器保持時間同步。
+* （可選）OpenShift 環境的出站網路連線。
+
+
+
+
+== 生產部署的最佳實踐
+
+本節列出了組織在將此解決方案部署到生產中之前應考慮的幾種最佳實踐。
+
+
+
+=== 將 OpenShift 部署到至少三個運算節點的 OSP 私有雲
+
+本文檔中所述的經過驗證的架構透過部署三個 OSP 控制節點和兩個 OSP 運算節點，提供了適合 HA 操作的最小硬體部署。此架構確保了容錯配置，其中兩個運算節點都可以啟動虛擬實例，並且部署的虛擬機器可以在兩個虛擬機器管理程式之間遷移。
+
+由於 Red Hat OpenShift 最初部署了三個主節點，因此雙節點配置可能會導致至少兩個主節點佔用同一個節點，如果該特定節點不可用，則可能導致 OpenShift 中斷。因此，Red Hat 的最佳實踐是部署至少三個 OSP 運算節點，以便 OpenShift 主機可以均勻分佈，並且解決方案可以獲得額外的容錯程度。
+
+
+
+=== 配置虛擬機器/主機親和性
+
+透過啟用 VM/主機親和性，可以將 OpenShift 主機分散在多個虛擬機器管理程式節點上。
+
+親和性是一種為虛擬機器和/或主機集合定義規則的方法，用於確定虛擬機器是否在同一主機或群組中的主機上一起執行，還是在不同的主機上運行。它透過建立由具有一組相同參數和條件的虛擬機器和/或主機組成的親和性群組應用於虛擬機器。根據親和性群組中的虛擬機器是運行在群組內的同一主機上還是運行在群組內的多個主機上，還是分別運行在不同的主機上，親和性群組的參數可以定義正親和性或負親和性。在 Red Hat OpenStack Platform 中，可以透過建立伺服器群組和設定篩選器來建立和強制執行主機親和性和反親和性規則，以便 Nova 在伺服器群組中部署的執行個體部署在不同的運算節點上。
+
+一個伺服器群組最多可以管理 10 個虛擬實例。可以透過更新 Nova 的預設配額來修改這一點。
+
+
+NOTE: OSP 伺服器群組存在特定的硬親和性/反親和性限制；如果沒有足夠的資源部署在單獨的節點上或沒有足夠的資源允許共享節點，則虛擬機器將無法啟動。
+
+若要設定關聯群組，請參閱link:https://access.redhat.com/solutions/1977943["如何為 OpenStack 實例配置親和性和反親和性？"^]。
+
+
+
+=== 使用自訂安裝檔進行 OpenShift 部署
+
+IPI 透過本文檔前面討論的互動式精靈使 OpenShift 叢集的部署變得簡單。但是，您可能需要在叢集部署過程中變更一些預設值。
+
+在這些情況下，您可以執行精靈並執行任務，而無需立即部署叢集；相反，它會建立一個設定文件，稍後可以從中部署叢集。如果您需要更改任何 IPI 預設值，或者想要在您的環境中部署多個相同的叢集用於其他用途（例如多租戶），這將非常有用。有關為 OpenShift 建立自訂安裝配置的更多信息，請參閱link:https://docs.openshift.com/container-platform/4.7/installing/installing_openstack/installing-openstack-installer-custom.html["Red Hat OpenShift 在 OpenStack 上安裝自訂集群"^]。

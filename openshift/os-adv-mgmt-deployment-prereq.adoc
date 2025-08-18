@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-deployment-prereq.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理 
+---
+= 為 Kubernetes 部署高階叢集管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+本節介紹使用NetApp在 Red Hat OpenShift 上對 Kubernetes 進行進階叢集管理。
+
+
+
+== 先決條件
+
+. 用於中心叢集的 Red Hat OpenShift 叢集（高於 4.5 版本）
+. 用於託管叢集的 Red Hat OpenShift 叢集（高於 4.4.3 版本）
+. 叢集管理員存取 Red Hat OpenShift 叢集
+. Red Hat 訂閱 Kubernetes 高階叢集管理
+
+
+高階叢集管理是 OpenShift 叢集的一個附加元件，因此根據中心和管理叢集中使用的功能，對硬體資源有一定的要求和限制。在確定集群大小時需要考慮這些問題。查看文件 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/html-single/install/index#network-configuration["這裡"]了解更多詳情。
+
+或者，如果中心叢集具有用於託管基礎架構元件的專用節點，並且您只想在這些節點上安裝高階叢集管理資源，則需要相應地向這些節點新增容忍度和選擇器。更多詳細資訊請參閱文檔 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/html/install/installing#installing-on-infra-node["這裡"]。

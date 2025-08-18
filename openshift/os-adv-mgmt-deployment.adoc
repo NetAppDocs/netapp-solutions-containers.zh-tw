@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-deployment.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: 使用NetApp在 Red Hat OpenShift 上對 Kubernetes 進行高階叢集管理。 
+---
+= 為 Kubernetes 部署高階叢集管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要在 OpenShift 叢集上安裝 Kubernetes 進階叢集管理，請完成下列步驟：
+
+. 選擇一個 OpenShift 集群作為中心集群，並使用集群管理員權限登入。
+. 導覽至 Operators > Operators Hub 並蒐索 Kubernetes 的高階叢集管理。
++
+image:redhat-openshift-066.png["ACM磁磚"]
+
+. 選擇 Kubernetes 的高階叢集管理，然後按一下安裝。
++
+image:redhat-openshift-067.png["ACM 磁磚細節"]
+
+. 在「安裝操作員」畫面上，提供必要的詳細資訊（NetApp建議保留預設參數）並按一下「安裝」。
++
+image:redhat-openshift-068.png["安裝 ACM Operator 磁貼"]
+
+. 等待操作員安裝完成。
++
+image:redhat-openshift-069.png["ACM 操作員安裝正在進行中"]
+
+. 安裝操作員後，按一下建立 MultiClusterHub。
++
+image:redhat-openshift-070.png["ACM 操作員多集群中心"]
+
+. 在建立 MultiClusterHub 畫面上，提供詳細資訊後按一下建立。這將啟動多集群集線器的安裝。
++
+image:redhat-openshift-071.png["建立多集群中心螢幕"]
+
+. 當 open-cluster-management 命名空間中的所有 pod 都轉為 Running 狀態，並且操作員轉為 Succeeded 狀態後，Kubernetes 高階叢集管理就安裝完成了。
++
+image:redhat-openshift-072.png["ACM 操作員已安裝"]
+
+. 完成集線器安裝需要一些時間，完成後，多集群集線器將進入運作狀態。
++
+image:redhat-openshift-073.png["多集群集線器已準備就緒"]
+
+. 它在 open-cluster-management 命名空間中建立一條路由。連接到路由中的URL，存取高階叢集管理控制台。
++
+image:redhat-openshift-074.png["ACM 控制台路由"]
+
+

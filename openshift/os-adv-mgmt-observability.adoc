@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-observability.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理 
+---
+= 可觀察性
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes 的高階叢集管理提供了一種監控所有叢集中的節點、pod、應用程式和工作負載的方法。
+
+. 導覽至觀察環境 > 概覽。
++
+image:redhat-openshift-082.png["可觀察性首頁"]
+
+. 所有叢集中的所有 pod 和工作負載都根據各種過濾器進行監控和排序。點擊Pods即可查看對應數據。
++
+image:redhat-openshift-083.png["觀察 Pod"]
+
+. 基於各種資料點對叢集中的所有節點進行監控和分析。點擊節點可以深入了解相應的詳細資訊。
++
+image:redhat-openshift-084.png["觀察節點"]
+
+. 所有叢集都根據不同的叢集資源和參數進行監控和組織。按一下「集群」可查看集群詳細資訊。
++
+image:redhat-openshift-085.png["觀察集群"]
+
+

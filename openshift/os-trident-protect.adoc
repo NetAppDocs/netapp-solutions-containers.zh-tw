@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-trident-protect.html 
+keywords: data protection, DP, Trident Protect 
+summary:  
+---
+= 使用Trident Protect 為容器應用程式和虛擬機器提供資料保護
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+此解決方案展示如何使用Trident Protect 對容器和虛擬機器執行資料保護作業。
+
+. 有關在 OpenShift Container 平台中為容器應用程式建立快照和備份以及從中復原的詳細信息，請參閱link:https://docs.netapp.com/us-en/netapp-solutions-cloud/openshift/os-dp-tp-solution.html["這裡"^]。
+. 有關在 OpenShift Container 平台上部署的 OpenShift Virtualization 中建立和恢復虛擬機備份的詳細信息，請參閱link:https://docs.netapp.com/us-en/netapp-solutions-virtualization/openshift/osv-vm-dp-using-tp.html["這裡"^]。
+

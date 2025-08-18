@@ -1,0 +1,162 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-vmw.html 
+keywords: Anthos, VMware vSphere, ESXi, on_prem 
+summary: VMware vSphere 是一個虛擬化平台，用於集中管理在 ESXi 虛擬機器管理程式上運行的大量虛擬化伺服器和網路。 
+---
+= VMware 上的 Anthos 集群
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware 上的 Anthos 叢集是 Google Kubernetes Engine 的擴展，部署在最終使用者的私人資料中心。組織可以在本地 Kubernetes 叢集中部署旨在在 Google Cloud 容器中運行的相同應用程式。  Anthos on VMware 叢集可以部署到您資料中心現有的 VMware vSphere 環境中，從而節省資本支出並實現更快速的部署和擴展操作。
+
+Anthos clusters on VMware 的部署包括以下元件：
+
+* *Anthos 管理員工作站。 *部署主機 `gkectl`和 `kubectl`可以運行命令來部署並與 Anthos 部署進行互動。
+* *管理員集群。 *在 VMware 上設定 Anthos 叢集時部署的初始叢集。此叢集管理所有下屬使用者叢集操作，包括部署、擴充和升級。
+* *用戶集群。 *每個用戶集群都部署有自己的負載平衡器實例或分區，使其可以作為單一用戶或群組的獨立 Kubernetes 集群，從而幫助實現完全多租戶。
+
+
+下圖是 Anthos-clusters-on-VMware 部署的描述。
+
+image:a-w-n-anthos-controlplanev2-vm-architecture.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+
+
+== 好處
+
+Anthos clusters on VMware 有以下優點：
+
+* *高級多租戶。 *可以為每個最終使用者分配自己的使用者集群，並部署其自己的開發環境所需的虛擬資源。
+* *節省成本*最終用戶可以透過將多個使用者叢集部署到同一實體環境並利用自己的實體資源進行應用程式部署（而不是在其 Google Cloud 環境或大型裸機叢集上配置資源）來實現顯著的成本節省。
+* *開發然後發布。 *在應用程式開發過程中可以使用內部部署，這樣可以在雲端公開發布應用程式之前，在本地資料中心的隱私環境中測試應用程式。
+* *安全要求*對安全性有較高要求或敏感資料集無法儲存在公有雲中的客戶可以從其自己的資料中心的安全環境中運行其應用程序，從而滿足組織要求。
+
+
+
+
+== VMware vSphere
+
+VMware vSphere 是一個虛擬化平台，用於集中管理在 ESXi 虛擬機器管理程式上運行的大量虛擬化伺服器和網路。
+
+有關 VMware vSphere 的更多信息，請參見 https://www.vmware.com/products/vsphere.html["VMware vSphere 網站"^]。
+
+VMware vSphere 提供以下功能：
+
+* VMware vCenter 伺服器。  VMware vCenter Server 透過單一控制台統一管理所有主機和虛擬機，並彙總叢集、主機和虛擬機的效能監控。
+* VMware vSphere vMotion。  VMware vCenter 可讓您根據請求以無中斷的方式在叢集中的節點之間熱遷移虛擬機器。
+* vSphere 高可用性。為了避免主機發生故障時造成中斷，VMware vSphere 允許對主機進行叢集化和配置以實現高可用性。因主機故障而中斷的虛擬機器將在叢集中的其他主機上短暫重新啟動，從而恢復服務。
+* 分散式資源調度程序 (DRS)。可以設定 VMware vSphere 叢集來平衡其託管的虛擬機器的資源需求。存在資源爭用的虛擬機器可以熱遷移到叢集中的其他節點，以確保有足夠的資源可用。
+
+
+
+
+== 硬體需求
+
+
+
+=== 運算
+
+Google Cloud 會定期透過其 Anthos Ready 平台合作夥伴計畫請求合作夥伴伺服器平台使用新版本的 Anthos 進行更新驗證。可以找到目前已驗證的伺服器平台和支援的 Anthos 版本的列表 https://cloud.google.com/anthos/docs/resources/partner-platforms["這裡"^]。
+
+
+
+=== 作業系統
+
+VMware 上的 Anthos 叢集可以根據客戶的選擇部署到 vSphere 7 和 8 環境中，以協助匹配其目前的資料中心基礎架構。
+
+下表列出了NetApp及其合作夥伴用於驗證解決方案的 vSphere 版本。
+
+|===
+
+
+| 作業系統 | 發布 | Anthos 版本 
+
+
+| 資料中心 | 8.0.1 | 1.28 
+|===
+
+
+=== 附加硬體
+
+為了完成 Anthos 與NetApp的部署，使其成為經過全面驗證的解決方案， NetApp和我們的合作夥伴工程師已經對用於網路和儲存的其他資料中心元件進行了測試。
+
+下表包含有關這些附加基礎設施組件的資訊。
+
+|===
+| 製造商 | 硬體組件 
+
+
+| Mellanox | 交換器（資料網路） 
+
+
+| Cisco | 交換器（管理網路） 
+
+
+| NetApp | AFF儲存系統 
+|===
+
+
+=== 附加軟體
+
+下表包括在驗證環境中部署的軟體版本清單。
+
+|===
+
+
+| 製造商 | 軟體名稱 | 版本 
+
+
+| NetApp | ONTAP | 9.12.1 
+
+
+| NetApp | Trident | 24.02.0 
+|===
+在NetApp執行的 Anthos Ready 平台驗證期間，實驗室環境是根據下圖建構的，這使我們能夠使用各種NetApp ONTAP儲存後端測試多種場景。
+
+image:a-w-n-anthos-128-vsphere8-validation.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+
+
+=== 網路基礎設施支援資源
+
+在部署 Anthos 之前，應具備以下基礎架構：
+
+* 至少有一個 DNS 伺服器提供完整的主機名稱解析，可從帶內管理網路和 VM 網路存取。
+* 至少一個可從帶內管理網路和 VM 網路存取的 NTP 伺服器。
+* 如果叢集需要動態擴展，則 DHCP 伺服器可按需提供網路位址租約。
+* （選購）內管理網路和 VM 網路的出站網際網路連線。
+
+
+
+
+== 生產部署的最佳實踐
+
+本節列出了組織在將此解決方案部署到生產中之前應考慮的幾種最佳實踐。
+
+
+
+=== 將 Anthos 部署到至少包含三個節點的 ESXi 集群
+
+雖然可以在少於三個節點的 vSphere 叢集中安裝 Anthos 以用於演示或評估目的，但不建議將其用於生產工作負載。雖然兩個節點允許基本的 HA 和容錯功能，但必須修改 Anthos 叢集配置以停用預設主機親和性，且 Google Cloud 不支援這種部署方法。
+
+
+
+=== 配置虛擬機器和主機關聯性
+
+透過啟用虛擬機器和主機親和性，可以將 Anthos 叢集節點分散在多個虛擬機器管理程式節點上。
+
+親和性或反親和性是一種為虛擬機器和/或主機集定義規則的方法，用於確定虛擬機器是否在同一主機或群組中的主機上一起執行，還是在不同的主機上運行。它透過建立由具有一組相同參數和條件的虛擬機器和/或主機組成的親和性群組應用於虛擬機器。根據親和性群組中的虛擬機器是運行在群組內的同一主機上還是運行在群組內的多個主機上，還是分別運行在不同的主機上，親和性群組的參數可以定義正親和性或負親和性。
+
+若要設定親和性群組，請參閱下方適合您的 VMWare vSphere 版本的連結。
+
+https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 6.7 文件：使用 DRS 關聯性規則"^] 。https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 7.0 文件：使用 DRS 關聯性規則"^] 。
+
+
+NOTE: Anthos 在每個單獨的 `cluster.yaml`檔案會自動建立節點親和性規則，可以根據環境中的 ESXi 主機數量啟用或停用這些規則。

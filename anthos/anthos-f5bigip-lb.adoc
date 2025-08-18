@@ -1,0 +1,197 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-f5bigip-lb.html 
+summary: 'F5 BIG-IP 是一種應用交付控制器 (ADC)，它提供廣泛的先進生產級流量管理和安全服務，如 L4-L7 負載平衡、SSL/TLS 卸載、DNS、防火牆等。這些服務大大提高了應用程式的可用性、安全性和效能。' 
+keywords: Anthos, GKE, Kubernetes, F5, BigIP, LoadBalancer 
+---
+= 安裝 F5 BIG-IP 負載平衡器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+F5 BIG-IP 是一種應用交付控制器 (ADC)，它提供廣泛的先進生產級流量管理和安全服務，如 L4-L7 負載平衡、SSL/TLS 卸載、DNS、防火牆等。這些服務大大提高了應用程式的可用性、安全性和效能。
+
+F5 BIG-IP 可以透過多種方式部署和使用，包括在專用硬體上、在雲端或作為本地虛擬設備。請參閱此處的文件來探索和部署 F5 BIG-IP。
+
+F5 BIG-IP 是第一個與 Anthos On-Prem 一起提供的捆綁負載平衡器解決方案，並被用於 Anthos with NetApp解決方案的許多早期 Anthos Ready 合作夥伴驗證中。
+
+
+NOTE: F5 BIG-IP 可以採用獨立模式部署，也可以採用叢集模式部署。為了進行此驗證，F5 BIG-IP 以獨立模式部署。但是，出於生產目的， NetApp建議建立一個 BIG-IP 實例集群，以避免單點故障。
+
+
+NOTE: F5 BIG-IP 系統可以部署在專用硬體上、雲端或作為本地虛擬設備部署，版本高於 12.x，以便與 F5 CIS 整合。為了本文檔的目的，F5 BIG-IP 系統被驗證為虛擬設備，例如使用 BIG-IP VE 版本。
+
+
+
+== 已驗證版本
+
+此解決方案利用在 VMware vSphere 中部署的虛擬設備。根據您的網路環境，F5 Big-IP 虛擬設備的網路可以配置為雙臂或三臂配置。本文檔中的部署基於雙臂配置。關於如何配置虛擬設備以與 Anthos 配合使用的詳細信息，請參閱 https://cloud.google.com/solutions/partners/installing-f5-big-ip-adc-for-gke-on-prem["這裡"]。
+
+NetApp的解決方案工程團隊已在我們的實驗室中驗證了下表中的版本，以便與 Anthos On-Prem 的部署搭配使用：
+
+|===
+
+
+| 製作 | 類型 | 版本 
+
+
+| F5 | BIG-IP虛擬網絡 | 15.0.1-0.0.11 
+
+
+| F5 | BIG-IP虛擬網絡 | 16.1.0-0.0.19 
+|===
+
+
+== 安裝
+
+若要安裝 F5 BIG-IP，請完成以下步驟：
+
+. 從 F5 下載虛擬應用程式開放虛擬設備 (OVA) 文件 https://downloads.f5.com/esd/serveDownload.jsp?path=/big-ip/big-ip_v15.x/15.0.1/english/virtual-edition/&sw=BIG-IP&pro=big-ip_v15.x&ver=15.0.1&container=Virtual-Edition&file=BIGIP-15.0.1-0.0.11.ALL-vmware.ova["這裡"]。
++
+
+NOTE: 要下載設備，用戶必須在 F5 註冊。他們為 Big-IP Virtual Edition Load Balancer 提供了 30 天的演示許可。  NetApp建議對設備的生產部署使用永久的 10Gbps 許可證。
+
+. 右鍵點選基礎架構資源池並選擇部署 OVF 範本。將啟動精靈，讓您選擇在步驟 1 中剛下載的 OVA 檔案。按一下“下一步”。
++
+image:deploy-big-ip-001.png["部署 Big-IP 設備"]
+
+. 按一下「下一步」繼續執行每個步驟並接受每個螢幕顯示的預設值，直到到達儲存選擇畫面。選擇您想要部署虛擬機器的 VM_Datastore，然後按一下下一步。
+. 精靈顯示的下一個畫面可讓您自訂在環境中使用的虛擬網路。在外部欄位中選擇 VM_Network，在管理欄位中選擇 Management_Network。 Internal 和 HA 用於 F5 Big-IP 設備的高級配置，未配置。這些參數可以保持不變，也可以配置為連接到非基礎設施、分散式連接埠群組。按一下“下一步”。
++
+image:deploy-big-ip-002.png["部署 Big_IP 設備，第 2 部分"]
+
+. 查看裝置的摘要畫面，如果所有資訊正確，請按一下「完成」以開始部署。
+. 虛擬設備部署完成後，右鍵單擊並啟動它。它應該在管理網路上接收 DHCP 位址。該裝置基於 Linux，並且部署了 VMware Tools，因此您可以在 vSphere 用戶端中查看它接收的 DHCP 位址。
++
+image:deploy-big-ip-003.png["部署 Big-IP Appliance，第 3 部分"]
+
+. 開啟 Web 瀏覽器並使用上一個步驟中的 IP 位址連線到裝置。預設登入名稱為 admin/admin，首次登入後，裝置會立即提示您變更管理員密碼。然後它會返回到一個螢幕，您必須使用新的憑證登入。
++
+image:big-ip-config-001.png["Big-IP 配置"]
+
+. 第一個畫面提示使用者完成設定實用程式。按一下“下一步”啟動該實用程式。
++
+image:big-ip-config-002.png["Big-IP 配置，第 2 部分"]
+
+. 下一個畫面提示啟動設備的許可證。點擊“激活”開始。當下一頁出現提示時，貼上您在註冊下載時收到的 30 天評估許可證金鑰或您購買裝置時獲得的永久許可證。按一下“下一步”。
++
+image:big-ip-config-003.png["Big-IP 配置，第 3 部分"]
+
++
+
+NOTE: 為了使設備執行激活，管理介面上定義的網路必須能夠存取互聯網。
+
+. 在下一個畫面上，將顯示最終使用者授權協議 (EULA)。如果許可證中的條款可以接受，請按一下「接受」。
+. 下一個畫面將計算經過的時間，以驗證迄今為止所做的配置變更。按一下“繼續”以恢復初始配置。
++
+image:big-ip-config-004.png["Big-IP 配置，第 4 部分"]
+
+. 配置變更視窗關閉，設定公用程式顯示資源配置選單。此視窗列出了目前許可的功能以及虛擬設備和每個正在運行的服務的當前資源分配。
++
+image:big-ip-config-005.png["Big-IP 配置，第 5 部分"]
+
+. 點擊左側的平台選單選項可以對平台進行進一步修改。修改包括設定使用 DHCP 設定的管理 IP 位址、設定設備安裝的主機名稱和時區，以及保護設備免受 SSH 存取。
++
+image:big-ip-config-006.png["Big-IP 配置，第 6 部分"]
+
+. 接下來點擊網頁選單，它使您能夠配置標準網路功能。按一下「下一步」開始標準網路設定精靈。
++
+image:big-ip-config-007.png["Big-IP 配置，第 7 部分"]
+
+. 精靈的第一頁配置冗餘；保留預設設定並按下一步。下一頁可讓您在負載平衡器上設定內部介面。介面 1.1 對應到 OVF 部署精靈中標記為內部的 VMNIC。
++
+image:big-ip-config-008.png["Big-IP 配置，第 8 部分"]
+
++
+
+NOTE: 此頁面中用於自 IP 位址、網路遮罩和浮動 IP 位址的空間可以用不可路由的 IP 填充，以用作佔位符。如果您正在部署三臂配置，它們還可以填入已配置為虛擬用戶端分散式連接埠群組的內部網路。必須完成這些操作才能繼續嚮導。
+
+. 下一頁可讓您設定外部網絡，用於將服務對應到 Kubernetes 中部署的 pod。從 VM_Network 範圍中選擇一個靜態 IP、適當的子網路遮罩以及來自相同範圍的浮動 IP。介面 1.2 對應到 OVF 部署精靈中標記為外部的 VMNIC。
++
+image:big-ip-config-009.png["Big-IP 配置，第 9 部分"]
+
+. 在下一頁中，如果您在環境中部署多個虛擬設備，則可以設定內部 HA 網路。若要繼續，您必須填寫 Self-IP 位址和網路遮罩字段，並且必須選擇接口 1.3 作為 VLAN 接口，該接口會對應到 OVF 範本精靈定義的 HA 網路。
++
+image:big-ip-config-010.png["Big-IP 配置，第 10 部分"]
+
+. 下一頁可讓您設定 NTP 伺服器。然後按一下「下一步」繼續 DNS 設定。 DNS 伺服器和網域搜尋清單應該已經由 DHCP 伺服器填入。點擊“下一步”接受預設設定並繼續。
+. 對於精靈的剩餘部分，按一下「下一步」繼續完成進階對等設置，其配置超出了本文檔的範圍。然後按一下「完成」退出精靈。
+. 為 Anthos 管理員叢集和環境中部署的每個使用者叢集建立單獨的分區。點擊左側選單中的“系統”，導航到“使用者”，然後點擊“分區清單”。
++
+image:big-ip-config-011.png["Big-IP 配置，第 11 部分"]
+
+. 顯示的畫面僅顯示目前的公共分區。點擊右側的創建，創建第一個附加分割區，並命名為 `GKE-Admin`。然後按一下重複，並將分割區命名為 `User-Cluster-1`。再次按一下重複按鈕以命名下一個分割區 `User-Cluster-2`。最後按一下「完成」以完成精靈。分區清單畫面返回，其中列出了所有分區。
++
+image:big-ip-config-012.png["Big-IP 配置，第 12 部分"]
+
+
+
+
+
+== 與 Anthos 集成
+
+每個設定檔中都有一個部分，分別針對管理員群集和您選擇部署的每個使用者集群，以配置負載平衡器，以便由 Anthos On Prem 管理。
+
+以下腳本是 GKE-Admin 叢集分區配置的範例。需要取消註解和修改的值以粗體顯示如下：
+
+[listing, subs="+quotes,+verbatim"]
+----
+# (Required) Load balancer configuration
+*loadBalancer:*
+  # (Required) The VIPs to use for load balancing
+  *vips:*
+    # Used to connect to the Kubernetes API
+    *controlPlaneVIP: "10.61.181.230"*
+    # # (Optional) Used for admin cluster addons (needed for multi cluster features). Must
+    # # be the same across clusters
+    # # addonsVIP: ""
+  # (Required) Which load balancer to use "F5BigIP" "Seesaw" or "ManualLB". Uncomment
+  # the corresponding field below to provide the detailed spec
+  *kind: F5BigIP*
+  # # (Required when using "ManualLB" kind) Specify pre-defined nodeports
+  # manualLB:
+  #   # NodePort for ingress service's http (only needed for user cluster)
+  #   ingressHTTPNodePort: 0
+  #   # NodePort for ingress service's https (only needed for user cluster)
+  #   ingressHTTPSNodePort: 0
+  #   # NodePort for control plane service
+  #   controlPlaneNodePort: 30968
+  #   # NodePort for addon service (only needed for admin cluster)
+  #   addonsNodePort: 31405
+  # # (Required when using "F5BigIP" kind) Specify the already-existing partition and
+  # # credentials
+  *f5BigIP:*
+    *address: "172.21.224.21"*
+    *credentials:*
+      *username: "admin"*
+      *password: "admin-password"*
+    *partition: "GKE-Admin"*
+  #   # # (Optional) Specify a pool name if using SNAT
+  #   # snatPoolName: ""
+  # (Required when using "Seesaw" kind) Specify the Seesaw configs
+  # seesaw:
+    # (Required) The absolute or relative path to the yaml file to use for IP allocation
+    # for LB VMs. Must contain one or two IPs.
+    #  ipBlockFilePath: ""
+    # (Required) The Virtual Router IDentifier of VRRP for the Seesaw group. Must
+    # be between 1-255 and unique in a VLAN.
+    #  vrid: 0
+    # (Required) The IP announced by the master of Seesaw group
+    #  masterIP: ""
+    # (Required) The number CPUs per machine
+    #  cpus: 4
+    # (Required) Memory size in MB per machine
+    #   memoryMB: 8192
+    # (Optional) Network that the LB interface of Seesaw runs in (default: cluster
+    # network)
+    #   vCenter:
+      # vSphere network name
+      #     networkName: VM_Network
+    # (Optional) Run two LB VMs to achieve high availability (default: false)
+    #   enableHA: false
+----

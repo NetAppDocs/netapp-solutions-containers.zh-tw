@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-on-aws-rosa.html 
+keywords: OpenShift, AWS, ROSA 
+summary: AWS 上的 Red Hat OpenShift Service 是一個完全託管的 Kubernetes 平台，可讓開發人員在 AWS 雲端中建置和部署應用程式。 
+---
+= AWS 上的 Red Hat OpenShift 服務
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AWS 上的 Red Hat OpenShift 服務 (ROSA) 是一項託管服務，您可以使用它在 AWS 上透過 Red Hat OpenShift 企業 Kubernetes 平台建置、擴充和部署容器化應用程式。  ROSA 簡化了將本機 Red Hat OpenShift 工作負載遷移到 AWS 的過程，並提供了與其他 AWS 服務的緊密整合。
+
+有關 ROSA 的更多信息，請參閱此處的文檔：link:https://docs.aws.amazon.com/rosa/latest/userguide/what-is-rosa.html["AWS 上的 Red Hat OpenShift 服務（AWS 文件）"] 。link:https://docs.openshift.com/rosa/rosa_architecture/rosa-understanding.html["AWS 上的 Red Hat OpenShift 服務（Red Hat 文件）"] 。

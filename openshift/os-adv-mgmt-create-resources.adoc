@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-create-resources.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理 
+---
+= 在多個集群上建立資源
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Kubernetes 的高階叢集管理可讓使用者從控制台同時在一個或多個託管叢集上建立資源。例如，如果您在不同的站點擁有 OpenShift 集群，且這些集群由不同的NetApp ONTAP集群支持，並且想要在兩個站點配置 PVC，則可以單擊頂部欄上的 (+) 號。然後選擇要建立 PVC 的集群，貼上資源 YAML，然後按一下建立。
+
+image:redhat-openshift-086.png["創建資源"]

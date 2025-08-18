@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-adv-mgmt-app-lcm.html 
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, ONTAP, Trident, Red Hat OpenShift, Advanced Cluster Management, Advanced Cluster Management for Kubernetes 
+summary: NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理 
+---
+= 應用程式生命週期管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+要建立一個應用程式並跨一組叢集管理它，
+
+. 從側邊欄導航到“管理應用程式”，然後按一下“建立應用程式”。提供您想要建立的應用程式的詳細信息，然後按一下「儲存」。
++
+image:redhat-openshift-078.png["創建應用程式"]
+
+. 應用程式元件安裝完成後，該應用程式就會出現在清單中。
++
+image:redhat-openshift-079.png["應用程式列表"]
+
+. 現在可以從控制台監控和管理該應用程式。
+

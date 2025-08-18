@@ -1,0 +1,158 @@
+---
+sidebar: sidebar 
+permalink: tanzu/vtwn-solution-overview.html 
+keywords: VMware Tanzu, Tanzu, DevOps, Netapp, Trident, Trident Protect 
+summary: '本參考文件提供了不同版本的 VMware Tanzu Kubernetes 解決方案的部署驗證，這些解決方案經過 NetApp 驗證，可作為 Tanzu Kubernetes Grid (TKG)、Tanzu Kubernetes Grid Service (TKGS) 或 Tanzu Kubernetes Grid Integrated (TKGI) 部署在NetApp不同的資料中心。' 
+---
+= NVA-1166：VMware Tanzu 與NetApp合作
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+NetApp 的Alan Cowles 和 Nikhil M Kulkarni
+
+[role="lead"]
+本參考文件提供了不同版本的 VMware Tanzu Kubernetes 解決方案的部署驗證，這些解決方案經過 NetApp 驗證，可作為 Tanzu Kubernetes Grid (TKG)、Tanzu Kubernetes Grid Service (TKGS) 或 Tanzu Kubernetes Grid Integrated (TKGI) 部署在NetApp不同的資料中心。它還描述了與NetApp存儲系統和Trident存儲編排器的存儲集成，用於管理持久存儲，以及Trident Protect 用於使用該持久存儲備份和克隆有狀態應用程序。最後，該文件提供了解決方案整合和驗證的視訊演示。
+
+
+
+== 用例
+
+VMware Tanzu 與NetApp解決方案的架構旨在透過以下用例為客戶提供卓越的價值：
+
+* 易於部署和管理部署在 VMware vSphere 上並與NetApp儲存系統整合的 VMware Tanzu Kubernetes Grid 產品。
+* 企業容器和虛擬化工作負載與 VMware Tanzu Kubernetes Grid 產品的綜合實力。
+* 真實的配置和用例突出顯示了 VMware Tanzu 與NetApp儲存和NetApp Trident產品套件一起使用時的功能。
+* 使用Trident Protect 對部署在 VMware Tanzu Kubernetes Grid 叢集上且資料駐留在NetApp儲存系統上的容器化工作負載進行應用程式一致性保護或遷移。
+
+
+
+
+== 商業價值
+
+企業越來越多地採用 DevOps 實踐來創建新產品、縮短發布週期並快速添加新功能。由於其固有的敏捷特性，容器和微服務在支援 DevOps 實踐方面發揮著至關重要的作用。然而，在企業環境中以生產規模實踐 DevOps 也面臨著自身的挑戰，並對底層基礎設施提出了一定的要求，例如：
+
+* 堆疊中所有層的高可用性
+* 簡化部署程序
+* 無中斷運作和升級
+* API 驅動且可編程的基礎設施，以跟上微服務的敏捷性
+* 具有效能保證的多租戶
+* 能夠同時運行虛擬化和容器化工作負載
+* 能夠根據工作負載需求獨立擴展基礎設施
+* 能夠在混合雲模型中部署，容器可以在本地資料中心和雲端中運行。
+
+
+VMware Tanzu 與NetApp共同承認這些挑戰，並提出了一種解決方案，透過在客戶選擇的混合雲環境中部署 VMware Tanzu Kubernetes 產品來協助解決每個問題。
+
+
+
+== 技術概述
+
+VMware Tanzu 與NetApp解決方案由以下主要元件組成：
+
+
+
+=== VMware Tanzu Kubernetes 平台
+
+VMware Tanzu 具有多種版本， NetApp的解決方案工程團隊已在我們的實驗室中進行了驗證。每個 Tanzu 版本都與NetApp儲存產品組合成功集成，並且每個版本都可以幫助滿足特定的基礎設施需求。以下重點介紹了本文檔中描述的 Tanzu 每個版本的功能和產品。
+
+*VMware Tanzu Kubernetes 網格 (TKG)*
+
+* 在 VMware vSphere 環境中部署的標準上游 Kubernetes 環境。
+* 以前稱為 Essential PKS（來自 Heptio 收購，2019 年 2 月）。
+* TKG 部署了單獨的管理叢集實例，以支援 vSphere 6.7U3 及更高版本。
+* TKG 部署也可以透過 AWS 或 Azure 部署在雲端。
+* 允許使用 Windows 或 Linux 工作節點（Ubuntu/Photon）。
+* NSX-T、HA Proxy、AVI 網路或負載平衡器可用於控制平面。
+* TKG 支援應用程式/資料平面的 MetalLB。
+* 可以使用 vSphere CSI 以及第三方 CSI，如NetApp Trident。
+
+
+*VMware Tanzu Kubernetes 網格服務 (TKGS)*
+
+* 在 VMware vSphere 環境中部署的標準上游 Kubernetes 環境。
+* 以前稱為 Essential PKS（來自 Heptio 收購，2019 年 2 月）。
+* TKGS 僅在 vSphere 7.0U1 及更高版本上與主管叢集和工作負載叢集一起部署。
+* 允許使用 Windows 或 Linux 工作節點（Ubuntu/Photon）。
+* NSX-T、HA Proxy、AVI 網路或負載平衡器可用於控制平面。
+* TKGS 支援應用程式/資料平面的 MetalLB。
+* 可以使用 vSphere CSI 以及第三方 CSI，如NetApp Trident。
+* 透過 Tanzu 為 vSphere Pods 提供支持，讓 Pod 直接在環境中啟用的 ESXi 主機上運作。
+
+
+VMWare Tanzu Kubernetes Grid 整合 (TKGI)
+
+* 以前稱為 Enterprise PKS（來自 Heptio 收購，2019 年 2 月）。
+* 可使用 NSX-T、HA Proxy 或 Avi。您也可以提供自己的負載平衡器。
+* 從 vSphere 6.7U3 開始受支持，以及 AWS、Azure 和 GCP。
+* 透過嚮導進行設置，以便於部署。
+* 在由 BOSH 管理的受控不可變虛擬機器中執行 Tanzu。
+* 可以使用 vSphere CSI 以及第三方 CSI，例如NetApp Trident （適用某些條件）。
+
+
+有 Tanzu 的 vSphere（vSphere Pod）
+
+* vSphere 原生 pod 在基於光子的薄層中運行，並具有規定的虛擬硬件，以實現完全隔離。
+* 需要 NSX-T，但允許額外的功能支持，例如 Harbor 映像註冊表。
+* 在 vSphere 7.0U1 及更高版本中使用 TKGS 等虛擬 Supervisor 叢集進行部署和管理。直接在 ESXi 節點上執行 pod。
+* 完全整合 vSphere，透過 vSphere 管理實現最高的可見性和控制。
+* 基於 CRX 的隔離艙可實現最高等級的安全性。
+* 僅支援 vSphere CSI 進行持久儲存。不支援第三方儲存協調器。
+
+
+
+
+=== NetApp儲存系統
+
+NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存系統。  NetApp產品組合包括NetApp ONTAP、 NetApp Element和NetApp e-Series 儲存系統，所有這些系統都可以為容器化應用程式提供持久性儲存。
+
+如需了解更多信息，請訪問NetApp網站 https://www.netapp.com["這裡"]。
+
+
+
+=== NetApp儲存集成
+
+Trident是一個開源的、完全支援的儲存編排器，適用於容器和 Kubernetes 發行版，包括 VMware Tanzu。
+
+欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+
+
+
+== 已驗證版本的目前支援矩陣
+
+|===
+
+
+| 科技 | 目的 | 軟體版本 
+
+
+| NetApp ONTAP | 儲存 | 9.9.1 
+
+
+| NetApp Trident | 儲存編排 | 22.04.0 
+
+
+| VMware Tanzu Kubernetes 網格 | 容器編排 | 1.4+ 
+
+
+.2+| VMware Tanzu Kubernetes 網格服務 .2+| 容器編排 | 0.0.15 [vSphere 命名空間] 
+
+
+| 1.22.6 [主管集群 Kubernetes] 
+
+
+| VMware Tanzu Kubernetes Grid集成 | 容器編排 | 1.13.3 
+
+
+| VMware vSphere | 資料中心虛擬化 | 7.0U3 
+
+
+| VMware NSX-T 資料中心 | 網路和安全 | 3.1.3 
+
+
+| VMware NSX 進階負載平衡器 | 負載平衡器 | 20.1.3 
+|===

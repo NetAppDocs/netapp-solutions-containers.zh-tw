@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-load-balancers.html 
+keywords: Advanced Configuration, Load Balancers, F5, BigIP, SeeSaw 
+summary: 本節專門為想要使用NetApp部署客製化 Anthos 的使用者探索負載平衡器選項。 
+---
+= 探索負載平衡器選項
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署在 Anthos 中的應用程式透過部署在 Anthos 本地環境中的負載平衡器提供的服務向全世界公開。
+
+以下頁麵包含有關 Anthos with NetApp解決方案中驗證的負載平衡器選項的更多資訊：
+
+* link:anthos-f5bigip-lb.html["安裝 F5 BIG-IP 負載平衡器"]
+* link:anthos-metallb.html["安裝 MetalLB 負載平衡器"]
+* link:anthos-seesaw-lb.html["安裝 SeeSaw 負載平衡器"]
+

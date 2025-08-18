@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: tanzu/vtwn-overview-storint.html 
+keywords: Trident, Trident Protect, persistent storage, Tanzu, VMware Tanzu with NetApp Storage 
+summary: NetApp提供了多種產品來幫助我們的客戶在基於容器的環境中協調和管理持久性資料。 
+---
+= NetApp儲存整合概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:k8s_distribution_name: Red Hat OpenShift, Rancher, VMware Tanzu etc
+:solution_name: VMware Tanzu with NetApp
+:trident_overview_page_link: vtwn-overview-trident.html
+
+
+ NetApp provides a number of products which assist our customers with orchestrating and managing persistent data in container based environments.
+[role="normal"]
+NetApp提供多種產品來協助您協調、管理、保護和遷移有狀態的容器化應用程式及其資料。
+
+image:devops-with-netapp-001.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+NetApp Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+
+以下頁麵包含有關已在 {solution_name} 解決方案中針對應用程式和持久性儲存管理進行驗證的NetApp產品的詳細資訊：
+
+* link:vtwn-overview-trident.html["NetApp Trident"]
+

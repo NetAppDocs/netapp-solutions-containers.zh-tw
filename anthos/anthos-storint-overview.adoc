@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-storint-overview.html 
+keywords: Trident, Trident, persistent storage 
+summary: NetApp提供了多種產品來幫助我們的客戶在基於容器的環境（如 Anthos）中編排和管理持久性資料。 
+---
+= NetApp儲存整合概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp提供了多種產品來幫助我們的客戶在基於容器的環境（如 Anthos）中編排和管理持久性資料。
+
+
+
+== Anthos Ready 儲存合作夥伴計畫。
+
+Google Cloud 會透過其 Anthos Ready 儲存合作夥伴計畫定期要求更新合作夥伴儲存與 Anthos 新版本的整合驗證。可以找到目前已驗證的儲存解決方案、CSI 驅動程式、可用功能以及支援的 Anthos 版本的列表 https://cloud.google.com/anthos/docs/resources/partner-storage["這裡"^]。
+
+NetApp每季都會定期遵守要求，以驗證我們符合Trident CSI 的儲存編排器和帶有 Anthos 版本的ONTAP儲存系統。
+
+下表包含NetApp和NetApp合作夥伴工程師在 Anthos Ready 儲存合作夥伴計畫中為驗證NetApp Trident CSI 驅動程式和功能集而測試的 Anthos 版本：
+
+|===
+
+
+| 部署類型 | 版本 | 儲存系統 | Trident版本 | 協定 | 特徵 
+
+
+| VMware | 1.28 | ONTAP 9.12.1 | 24.02 | 網路儲存 | 多重寫入器、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.28 | ONTAP 9.12.1 | 24.02 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.15 | ONTAP 9.12.1 | 23.04 | 網路儲存 | 多重寫入器、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.15 | ONTAP 9.12.1 | 23.04 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.14 | ONTAP 9.12.1 | 23.01 | 網路儲存 | 多重寫入器、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.14 | ONTAP 9.12.1 | 23.01 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.13 | ONTAP 9.12.1 | 22.10 | 網路儲存 | 多重寫入器、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.13 | ONTAP 9.12.1 | 22.10 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照、PVCDataSource 
+
+
+| VMware | 1.11 | ONTAP 9.9.1 | 22.04 | 網路儲存 | 多重寫入器、磁碟區擴充、快照 
+
+
+| VMware | 1.11 | ONTAP 9.9.1 | 22.04 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照 
+
+
+| VMware | 1.11 | 元素 12.3 | 22.04 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照 
+
+
+| 裸機 | 1.10 | ONTAP 9.8 | 22.01 | 網路儲存 | 多重寫入器、磁碟區擴充、快照 
+
+
+| 裸機 | 1.10 | ONTAP 9.8 | 22.01 | 儲存區域網絡 | 原始區塊、磁碟區擴展、快照 
+|===
+
+
+== NetApp儲存集成
+
+NetApp提供了多種產品來幫助您在基於容器的環境（如 Anthos）中編排和管理持久性資料。
+
+NetApp Trident是一個開源的、完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+
+以下頁麵包含有關NetApp產品的更多信息，這些產品已在 Anthos with NetApp解決方案中經過應用程式和持久性儲存管理驗證。

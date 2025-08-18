@@ -1,0 +1,138 @@
+= NetApp平台
+:allow-uri-read: 
+
+
+企業越來越多地採用 DevOps 實踐來創建新產品、縮短發布週期並快速添加新功能。由於其固有的敏捷特性，容器和微服務在支援 DevOps 實踐方面發揮著至關重要的作用。然而，在企業環境中以生產規模實踐 DevOps 也面臨著自身的挑戰，並對底層基礎設施提出了一定的要求，例如：
+
+* 堆疊中所有層的高可用性
+* 簡化部署程序
+* 無中斷運作和升級
+* API 驅動且可編程的基礎設施，以跟上微服務的敏捷性
+* 具有效能保證的多租戶
+* 能夠同時運行虛擬化和容器化工作負載
+* 根據工作負載需求獨立擴展基礎設施的能力
+
+
+Red Hat OpenShift Container Platform 是一個完全支援的企業級 Kubernetes 平台。  Red Hat 對開源 Kubernetes 進行了多項改進，以提供一個完全整合所有元件的應用程式平台，用於建置、部署和管理容器化應用程式。
+
+欲了解更多信息，請訪問 OpenShift 網站 https://www.openshift.com["這裡"]。
+
+NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存系統。  NetApp產品組合包括NetApp ONTAP、 NetApp Element和NetApp e-Series 儲存系統，所有這些系統都可以為容器化應用程式提供持久性儲存。
+
+如需了解更多信息，請訪問NetApp網站 https://www.netapp.com["這裡"]。
+
+Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。
+
+欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+
+[role="normal"]
+NetApp擁有多個符合Trident的儲存平台，可為容器化應用程式設定、保護和管理資料。
+
+image:redhat-openshift-043.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+* AFF和FAS系統運行NetApp ONTAP並為基於檔案 (NFS) 和基於區塊 (iSCSI) 的用例提供儲存。
+* Cloud Volumes ONTAP和ONTAP Select分別在雲端和虛擬空間中提供相同的優勢。
+* Google Cloud NetApp Volumes （AWS/GCP）和Azure NetApp Files在雲端提供基於檔案的儲存。
+
+
+* NetApp Element儲存系統涵蓋高度可擴充環境中的基於區塊的（iSCSI）用例。
+
+
+
+NOTE: NetApp產品組合中的每個儲存系統都可以簡化資料管理和內部站點與雲端之間的移動，以便您的資料位於您的應用程式所在的位置。
+
+以下頁麵包含有關在 {solution_name} 解決方案中驗證的NetApp儲存系統的詳細資訊：
+
+* link:{ontap_page_link}["NetApp ONTAP"]
+
+
+* link:{element_page_link}["NetApp Element"]
+
+
+[role="normal"]
+NetApp ONTAP是一款功能強大的儲存軟體工具，具有直覺的 GUI、具有自動化整合的 REST API、基於 AI 的預測分析和糾正措施、無中斷硬體升級以及跨儲存導入等功能。
+
+有關NetApp ONTAP儲存系統的更多信息，請訪問 https://www.netapp.com/data-management/ontap-data-management-software/["NetApp ONTAP網站"^]。
+
+ONTAP提供以下功能：
+
+* 一個統一的儲存系統，可同時存取和管理 NFS、CIFS、iSCSI、FC、FCoE 和 FC-NVMe 協定的資料。
+* 不同的部署模型包括全快閃、混合和全 HDD 硬體配置上的本地部署；受支援的虛擬機器管理程式（如ONTAP Select）上的基於 VM 的儲存平台；以及在雲端中的Cloud Volumes ONTAP。
+* 透過支援自動資料分層、內聯資料壓縮、重複資料刪除和壓縮，提高了ONTAP系統上的資料儲存效率。
+* 基於工作負載、QoS 控制的儲存。
+* 與公有雲無縫集成，實現資料分層與保護。  ONTAP還提供強大的資料保護功能，使其在任何環境中都脫穎而出：
++
+** * NetApp Snapshot 副本。 *使用最少的磁碟空間快速進行時間點資料備份，且不產生額外的效能開銷。
+** * NetApp SnapMirror。 *將資料的 Snapshot 副本從一個儲存系統鏡像到另一個儲存系統。  ONTAP也支援將資料鏡像到其他實體平台和雲端原生服務。
+** * NetApp SnapLock。 *透過將不可重寫資料寫入在指定時間內無法覆寫或擦除的特殊捲，可以有效地管理這些資料。
+** * NetApp SnapVault。 *將來自多個儲存系統的資料備份到中央 Snapshot 副本，作為所有指定係統的備份。
+** * NetAppSyncMirror。 *為實體連接到同一控制器的兩個不同磁碟叢提供即時 RAID 等級資料鏡像。
+** * NetApp SnapRestore。 *提供從 Snapshot 副本按需快速恢復備份資料的功能。
+** * NetApp FlexClone。 *根據 Snapshot 副本提供NetApp磁碟區的完全可讀、可寫入副本的即時配置。
+
+
+
+
+有關ONTAP的更多信息，請參閱 https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 文檔中心"^]。
+
+
+NOTE: NetApp ONTAP可在本機、虛擬化或雲端使用。
+
+image:redhat-openshift-035.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+
+
+== NetApp平台
+
+
+
+=== NetApp AFF/ FAS
+
+NetApp提供強大的全快閃 (AFF) 和橫向擴展混合 (FAS) 儲存平台，這些平台具有低延遲效能、整合資料保護和多協定支援等特點。
+
+這兩個系統均由NetApp ONTAP資料管理軟體提供支持，這是業界最先進的資料管理軟體，可實現簡化、高可用、雲端整合的儲存管理，為您的資料結構需求提供企業級的速度、效率和安全性。
+
+有關 NETAPP AFF/ FAS平台的更多信息，請按一下 https://docs.netapp.com/platstor/index.jsp["這裡"]。
+
+
+
+=== ONTAP Select
+
+ONTAP Select是NetApp ONTAP的軟體定義部署，可部署到您環境中的虛擬機器管理程式。它可以安裝在 VMware vSphere 或 KVM 上，並提供基於硬體的ONTAP系統的全部功能和體驗。
+
+有關ONTAP Select的更多信息，請單擊 https://docs.netapp.com/us-en/ontap-select/["這裡"]。
+
+
+
+=== Cloud Volumes ONTAP
+
+NetApp Cloud Volumes ONTAP是NetApp ONTAP的雲端部署版本，可部署在許多公有雲中，包括 Amazon AWS、Microsoft Azure 和 Google Cloud。
+
+有關Cloud Volumes ONTAP 的更多信息，請單擊 https://docs.netapp.com/us-en/occm/#discover-whats-new["這裡"]。
+
+[role="normal"]
+NetApp提供多種產品來協助您協調、管理、保護和遷移有狀態的容器化應用程式及其資料。
+
+image:devops-with-netapp-001.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+NetApp Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+
+以下頁麵包含有關已在 {solution_name} 解決方案中針對應用程式和持久性儲存管理進行驗證的NetApp產品的詳細資訊：
+
+* link:{trident_overview_page_link}["NetApp Trident"]
+
+
+[role="normal"]
+Trident是一個開源的、完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。  Trident可與整個NetApp儲存產品組合搭配使用，包括NetApp ONTAP和 Element 儲存系統，並且還支援 NFS 和 iSCSI 連線。  Trident允許最終用戶從其NetApp儲存系統配置和管理存儲，而無需儲存管理員的干預，從而加速 DevOps 工作流程。
+
+管理員可以根據專案需求和儲存系統模型配置多個儲存後端，以實現進階儲存功能，包括壓縮、特定磁碟類型或保證一定效能等級的 QoS 等級。定義完成後，開發人員可以在他們的專案中使用這些後端來建立持久性卷聲明 (PVC) 並根據需要將持久性儲存附加到他們的容器。
+
+image:redhat-openshift-002.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
+
+Trident的最新版本是 2022 年 4 月發布的 22.04。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣 https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["這裡"]。
+
+從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。
+
+隨著 21.01 版本的發布，Helm 圖表可用於簡化Trident Operator 的安裝。

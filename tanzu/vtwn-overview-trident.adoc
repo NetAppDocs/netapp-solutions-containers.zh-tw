@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: tanzu/vtwn-overview-trident.html 
+keywords: Trident, Trident, Helm, Operator, iSCSI, NFS, Tanzu, VMware Tanzu with NetApp Trident 
+summary: Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 VMware Tanzu）儲存編排器。 
+---
+= Trident概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+:k8s_distribution_name: Red Hat OpenShift, VMware Tanzu, Anthos by Google Cloud, Rancher etc
+
+
+[role="lead"]
+Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 VMware Tanzu）儲存編排器。
+
+[role="normal"]
+Trident是一個開源的、完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。  Trident可與整個NetApp儲存產品組合搭配使用，包括NetApp ONTAP和 Element 儲存系統，並且還支援 NFS 和 iSCSI 連線。  Trident允許最終用戶從其NetApp儲存系統配置和管理存儲，而無需儲存管理員的干預，從而加速 DevOps 工作流程。
+
+管理員可以根據專案需求和儲存系統模型配置多個儲存後端，以實現進階儲存功能，包括壓縮、特定磁碟類型或保證一定效能等級的 QoS 等級。定義完成後，開發人員可以在他們的專案中使用這些後端來建立持久性卷聲明 (PVC) 並根據需要將持久性儲存附加到他們的容器。
+
+image:redhat-openshift-002.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
+
+Trident的最新版本是 2022 年 4 月發布的 22.04。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣 https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["這裡"]。
+
+從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。
+
+隨著 21.01 版本的發布，Helm 圖表可用於簡化Trident Operator 的安裝。
+
+
+
+== 使用 Helm 部署Trident Operator
+
+. 首先設定用戶集群的 `kubeconfig`文件作為環境變量，這樣您就不必引用它，因為Trident沒有選項來傳遞此文件。
++
+[listing]
+----
+[netapp-user@rhel7]$ export KUBECONFIG=~/tanzu-install/auth/kubeconfig
+----
+. 新增NetApp Trident helm 儲存庫。
++
+[listing]
+----
+[netapp-user@rhel7]$ helm repo add netapp-trident https://netapp.github.io/trident-helm-chart
+"netapp-trident" has been added to your repositories
+----
+. 更新 helm 儲存庫。
++
+[listing]
+----
+[netapp-user@rhel7]$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "netapp-trident" chart repository
+...Successfully got an update from the "bitnami" chart repository
+Update Complete. ⎈Happy Helming!⎈
+----
+. 為Trident的安裝建立一個新的命名空間。
++
+[listing]
+----
+[netapp-user@rhel7]$ kubetcl create ns trident
+----
+. 使用 DockerHub 憑證建立一個金鑰來下載Trident映像。
++
+[listing]
+----
+[netapp-user@rhel7]$ kubectl create secret docker-registry docker-registry-cred --docker-server=docker.io --docker-username=netapp-solutions-tme --docker-password=xxxxxx -n trident
+----
+. 對於由 TKGS（帶有 Tanzu 的 vSphere）或具有管理叢集部署的 TKG 管理的使用者或工作負載集群，請完成以下步驟來安裝Trident：
++
+.. 確保登入的使用者有在 trident 命名空間中建立服務帳戶的權限，並且 trident 命名空間中的服務帳戶有建立 pod 的權限。
+.. 執行以下 helm 指令在建立的命名空間中安裝Trident運算子。
++
+[listing]
+----
+[netapp-user@rhel7]$ helm install trident netapp-trident/trident-operator -n trident --set imagePullSecrets[0]=docker-registry-cred
+----
+
+
+. 對於由 TKGI 部署管理的使用者或工作負載集群，執行以下 helm 命令在建立的命名空間中安裝Trident操作員。
++
+[listing]
+----
+[netapp-user@rhel7]$ helm install trident netapp-trident/trident-operator -n trident --set imagePullSecrets[0]=docker-registry-cred,kubeletDir="/var/vcap/data/kubelet"
+----
+. 驗證Trident pod 是否已啟動並正在運作。
++
+[listing]
+----
+NAME                                READY   STATUS    RESTARTS        AGE
+trident-csi-6vv62                   2/2     Running   0               14m
+trident-csi-cfd844bcc-sqhcg         6/6     Running   0               12m
+trident-csi-dfcmz                   2/2     Running   0               14m
+trident-csi-pb2n7                   2/2     Running   0               14m
+trident-csi-qsw6z                   2/2     Running   0               14m
+trident-operator-67c94c4768-xw978   1/1     Running   0               14m
+
+[netapp-user@rhel7]$ ./tridentctl -n trident version
++----------------+----------------+
+| SERVER VERSION | CLIENT VERSION |
++----------------+----------------+
+| 22.04.0          | 22.04.0          |
++----------------+----------------+
+----
+
+
+
+
+== 建立儲存系統後端
+
+完成Trident Operator 安裝後，您必須為正在使用的特定NetApp儲存平台設定後端。按照下面的連結繼續設定並設定Trident。
+
+* link:vtwn-trident-ontap-nfs.html["NetApp ONTAP NFS"]
+* link:vtwn-trident-ontap-iscsi.html["NetApp ONTAP iSCSI"]
+

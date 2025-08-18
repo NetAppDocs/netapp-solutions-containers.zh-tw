@@ -1,0 +1,39 @@
+---
+section: tanzu
+title: VMware Tanzu 與NetApp
+pdf-filename: VMware Tanzu 與NetApp
+entries:
+- title: 解決方案概述
+  url: "/tanzu/vtwn-solution-overview.html"
+- title: VMware Tanzu 產品組合
+  entries:
+  - title: 關於 VMware Tanzu
+    url: "/tanzu/vtwn-overview-vmware-tanzu.html"
+  - title: VMware Tanzu Kubernetes 網格
+    url: "/tanzu/vtwn-overview-tkg.html"
+  - title: Tanzu Kubernetes 網格服務
+    url: "/tanzu/vtwn-overview-tkgs.html"
+  - title: Tanzu Kubernetes Grid整合版
+    url: "/tanzu/vtwn-overview-tkgi.html"
+  - title: VMware vSphere 與 Tanzu
+    url: "/tanzu/vtwn-overview-vst.html"
+- title: NetApp儲存系統
+  entries:
+  - title: NetApp儲存系統概述
+    url: "/tanzu/vtwn-overview-netapp.html"
+  - title: NetApp ONTAP
+    url: "/tanzu/vtwn-netapp-ontap.html"
+- title: NetApp儲存集成
+  entries:
+  - title: NetApp儲存整合概述
+    url: "/tanzu/vtwn-overview-storint.html"
+- title: NetApp Trident
+  entries:
+  - title: Trident概述
+    url: "/tanzu/vtwn-overview-trident.html"
+  - title: NetApp ONTAP NFS
+    url: "/tanzu/vtwn-trident-ontap-nfs.html"
+  - title: NetApp ONTAP iSCSI
+    url: "/tanzu/vtwn-trident-ontap-iscsi.html"
+- title: 附加資訊
+  url: "/tanzu/vtwn-additional-information.html"

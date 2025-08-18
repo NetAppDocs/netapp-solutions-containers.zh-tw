@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: anthos/anthos-trident-overview.html 
+keywords: Trident, Trident, Helm, Operator, iSCSI, NFS 
+summary: Trident是一個完全支援的開源儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。 
+---
+= Trident概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Trident是一個完全支援的開源儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。  Trident可與整個NetApp儲存產品組合搭配使用，包括NetApp ONTAP，並且還支援 NFS 和 iSCSI 連線。  Trident允許最終用戶從其NetApp儲存系統配置和管理存儲，而無需儲存管理員的干預，從而加速 DevOps 工作流程。
+
+管理員可以根據專案需求和儲存系統模型配置多個儲存後端，以實現進階儲存功能，包括壓縮、特定磁碟類型和保證一定效能等級的 QoS 等級。定義完成後，開發人員可以在他們的專案中使用這些後端來建立持久性卷聲明 (PVC) 並根據需要將持久性儲存附加到他們的容器。
+
+image:a-w-n-astra-trident.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
+
+最新版本的Trident的文件可以在 https://docs.netapp.com/us-en/trident/index.html["這裡"]。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣 https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["這裡"]。
+
+從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。
+
+隨著 22.04 版本的發布，Helm 圖表已可用，以簡化Trident Operator 的安裝。
+
+有關Trident安裝的詳細信息，請參閱 https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy.html["這裡"]。
+
+
+
+== 建立儲存系統後端
+
+完成Trident Operator 安裝後，您必須為正在使用的特定NetApp儲存平台設定後端。按照下面的連結繼續設定並設定Trident。link:https://docs.netapp.com/us-en/trident/trident-use/backends.html["創建後端。"]
+
+
+
+== 建立儲存類別
+
+建立後端後，您必須建立一個儲存類，Kubernetes 使用者在需要磁碟區時將指定該儲存類別。 Kubernetes 使用者透過使用持久性卷宣告 (PVC) 來配置卷，透過名稱指定儲存類別。按照下面的連結建立儲存類別。link:https://docs.netapp.com/us-en/trident/trident-use/create-stor-class.html["建立儲存類別"]
+
+
+
+== 動態配置磁碟區
+
+您必須使用儲存類別建立 Kubernetes 持久性磁碟區宣告 (PVC) 物件來動態設定磁碟區。按照下面的連結建立一個 PVC 物件。link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html["創建 PVC"]
+
+
+
+== 使用音量
+
+應用程式可以透過將上述步驟中配置的磁碟區掛載到 pod 中來使用該磁碟區。下面的連結顯示了一個範例。link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html#sample-manifests["將卷掛載到 Pod 中"]
+
+
+
+== 範例配置
+
+link:anthos-trident-ontap-iscsi.html["iSCSI 協定的範例清單，window=_blank"]
+
+link:anthos-trident-ontap-nfs.html["nfs 協定的範例清單，window=_blank"]

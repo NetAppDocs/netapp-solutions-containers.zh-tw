@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-on-vmw.html 
+keywords: OpenShift, VMware vSphere, ESXi 
+summary: VMware vSphere 是一個虛擬化平台，用於集中管理在 ESXi 虛擬機器管理程式上運行的大量虛擬化伺服器和網路。 
+---
+= VMware vSphere 上的 OpenShift
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere 是一個虛擬化平台，用於集中管理在 ESXi 虛擬機器管理程式上運行的大量虛擬化伺服器和網路。
+
+有關 VMware vSphere 的更多信息，請參見link:https://www.vmware.com/products/vsphere.html["VMware vSphere 網站"^]。
+
+VMware vSphere 提供以下功能：
+
+* *VMware vCenter Server* VMware vCenter Server 從單一控制台統一管理所有主機和虛擬機，並彙總叢集、主機和虛擬機的效能監控。
+* *VMware vSphere vMotion* VMware vCenter 可讓您以無中斷的方式根據請求在叢集中的節點之間熱遷移虛擬機器。
+* *vSphere 高可用性* 為避免主機發生故障時造成中斷，VMware vSphere 允許將主機叢集化並配置為高可用性。因主機故障而中斷的虛擬機器將在叢集中的其他主機上短暫重新啟動，從而恢復服務。
+* *分散式資源調度程式 (DRS)* 可以設定 VMware vSphere 叢集以平衡其託管的虛擬機器的資源需求。存在資源爭用的虛擬機器可以熱遷移到叢集中的其他節點，以確保有足夠的資源可用。
+
+
+image:redhat-openshift-033.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+
+
+== 網路設計
+
+NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個額外的管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理連接。 OCP 使用 VMware vSphere 上的 VM 邏輯網路進行叢集管理。本節描述了解決方案中使用的每個虛擬網路段的安排和用途，並概述了部署解決方案的先決條件。
+
+
+
+=== VLAN 需求
+
+VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同目的的網路流量。此配置可以擴展以滿足客戶需求或為特定網路服務提供進一步的隔離。下表列出了在NetApp驗證解決方案時實施該解決方案所需的 VLAN。
+
+[cols="40%, 40%, 20%"]
+|===
+| VLAN | 目的 | VLAN ID 
+
+
+| 帶外管理網絡 | 實體節點和IPMI的管理 | 16 
+
+
+| 虛擬機器網絡 | 虛擬訪客網路訪問 | 181 
+
+
+| 儲存網路 | ONTAP NFS 的儲存網絡 | 184 
+
+
+| 儲存網路 | ONTAP iSCSI 的儲存網絡 | 185 
+
+
+| 帶內管理網絡 | ESXi 節點、VCenter Server、 ONTAP Select的管理 | 3480 
+
+
+| 儲存網路 | NetApp Element iSCSI 的儲存網絡 | 3481 
+
+
+| 移民網絡 | 虛擬客戶遷移網絡 | 3482 
+|===
+
+
+=== 網路基礎設施支援資源
+
+在部署 OpenShift 容器平台之前，應具備以下基礎架構：
+
+* 至少有一個 DNS 伺服器提供完整的主機名稱解析，可從帶內管理網路和 VM 網路存取。
+* 至少一個可從帶內管理網路和 VM 網路存取的 NTP 伺服器。
+* （選購）內管理網路和 VM 網路的出站網際網路連線。
+
+
+
+
+== 生產部署的最佳實踐
+
+本節列出了組織在將此解決方案部署到生產中之前應考慮的幾種最佳實踐。
+
+
+
+=== 將 OpenShift 部署到至少三個節點的 ESXi 集群
+
+本文檔中所述的經過驗證的架構透過部署兩個 ESXi 虛擬機器管理程式節點並透過啟用 VMware vSphere HA 和 VMware vMotion 確保容錯配置，提供了適合 HA 操作的最低硬體部署。此配置允許已部署的虛擬機器在兩個虛擬機器管理程式之間遷移，並在一個主機不可用時重新啟動。
+
+由於 Red Hat OpenShift 最初部署有三個主節點，因此在某些情況下，雙節點配置中至少有兩個主節點可以佔用同一個節點，如果該特定節點不可用，則可能導致 OpenShift 中斷。因此，Red Hat 的最佳實踐是必須部署至少三個 ESXi 虛擬機器管理程式節點，以便 OpenShift 主機可以均勻分佈，從而提供額外的容錯程度。
+
+
+
+=== 配置虛擬機器和主機關聯性
+
+透過啟用 VM 和主機親和性，可以確保 OpenShift 主機分佈在多個虛擬機器管理程式節點上。
+
+親和性或反親和性是一種為虛擬機器和/或主機集定義規則的方法，用於確定虛擬機器是否在同一主機或群組中的主機上一起執行，還是在不同的主機上運行。它透過建立由具有一組相同參數和條件的虛擬機器和/或主機組成的親和性群組應用於虛擬機器。根據親和性群組中的虛擬機器是運行在群組內的同一主機上還是運行在群組內的多個主機上，還是分別運行在不同的主機上，親和性群組的參數可以定義正親和性或負親和性。
+
+若要設定關聯群組，請參閱link:https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 6.7 文件：使用 DRS 關聯性規則"^]。
+
+
+
+=== 使用自訂安裝檔進行 OpenShift 部署
+
+IPI 透過本文檔前面討論的互動式精靈使 OpenShift 叢集的部署變得簡單。但是，您可能需要在叢集部署過程中變更一些預設值。
+
+在這些情況下，您可以執行精靈並執行任務而不立即部署集群，而是精靈會建立一個設定文件，稍後可以從中部署集群。如果您需要更改任何 IPI 預設值，或者想要在您的環境中部署多個相同的叢集用於其他用途（例如多租戶），這將非常有用。有關為 OpenShift 建立自訂安裝配置的更多信息，請參閱link:https://docs.openshift.com/container-platform/4.7/installing/installing_vsphere/installing-vsphere-installer-provisioned-customizations.html["Red Hat OpenShift 在 vSphere 上安裝具有自訂設定的集群"^]。

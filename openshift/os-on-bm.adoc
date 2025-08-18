@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: openshift/os-on-bm.html 
+keywords: OpenShift, bare metal, IPI 
+summary:  
+---
+= 裸機上的 OpenShift
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+OpenShift on Bare Metal 可在商用伺服器上自動部署 OpenShift 容器平台。
+
+OpenShift on Bare Metal 類似於 OpenShift 的虛擬部署，它可以輕鬆部署、快速配置和擴展 OpenShift 集群，同時支援尚未準備好容器化的應用程式的虛擬化工作負載。透過在裸機上部署，您不需要除了 OpenShift 環境之外管理主機虛擬機器管理程式環境所需的額外開銷。透過直接在裸機伺服器上部署，您還可以減少主機和 OpenShift 環境之間共用資源的實體開銷限制。
+
+
+
+== OpenShift on Bare Metal 提供以下功能：
+
+* *IPI 或輔助安裝程式部署* 透過在裸機伺服器上由安裝程式配置基礎架構 (IPI) 部署的 OpenShift 集群，客戶可以直接在商用伺服器上部署高度通用、易於擴展的 OpenShift 環境，而無需管理虛擬機器管理程式層。
+* *緊湊的叢集設計* 為了最大限度地減少硬體需求，裸機上的 OpenShift 允許使用者部署僅 3 個節點的集群，透過使 OpenShift 控制平面節點也可以充當工作節點和主機容器。
+* *OpenShift 虛擬化* OpenShift 可以使用 OpenShift 虛擬化在容器內執行虛擬機器。此容器原生虛擬化在容器內執行 KVM 虛擬機器管理程序，並為 VM 儲存附加持久性磁碟區。
+* *AI/ML 最佳化基礎架構* 透過將基於 GPU 的工作節點合併到您的 OpenShift 環境並利用 OpenShift Advanced Scheduling，為機器學習應用程式部署 Kubeflow 等應用程式。
+
+
+
+
+== 網路設計
+
+NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理連接。
+
+對於 OpenShift 裸機 IPI 部署，您必須建立一個設定節點，也就是一台必須具有連接到單獨網路的網路介面的 Red Hat Enterprise Linux 8 機器。
+
+* *設定網路* 此網路用於啟動裸機節點並安裝部署 OpenShift 叢集所需的映像和套件。
+* *裸機網路* 此網路用於集群部署後面向公眾的通訊。
+
+
+為了設定配置節點，客戶建立橋接接口，允許流量在節點本身和為部署目的而配置的 Bootstrap VM 上正確路由。叢集部署完成後，API 和 ingress VIP 位址從 bootstrap 節點遷移到新部署的叢集。
+
+下圖描述了 IPI 部署期間和部署完成後的環境。
+
+image:redhat-openshift-036.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+image:redhat-openshift-037.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+
+
+
+=== VLAN 需求
+
+Red Hat OpenShift 與NetApp解決方案旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同用途的網路流量。
+
+[cols="40%, 40%, 20%"]
+|===
+| VLAN | 目的 | VLAN ID 
+
+
+| 帶外管理網絡 | 裸機節點與 IPMI 管理 | 16 
+
+
+| 裸機網絡 | 叢集可用時，OpenShift 服務的網絡 | 181 
+
+
+| 設定網路 | 透過 IPI 進行 PXE 啟動和安裝裸機節點的網絡 | 3485 
+|===
+
+NOTE: 儘管這些網路實際上是由 VLAN 分隔的，但每個實體連接埠都必須設定為存取模式並指派主 VLAN，因為在 PXE 啟動序列期間無法傳遞 VLAN 標籤。
+
+
+
+=== 網路基礎設施支援資源
+
+在部署 OpenShift 容器平台之前，應具備以下基礎架構：
+
+* 至少有一個 DNS 伺服器提供可從帶內管理網路和 VM 網路存取的完整主機名稱解析。
+* 至少一個可從帶內管理網路和 VM 網路存取的 NTP 伺服器。
+* （選購）內管理網路和 VM 網路的出站網際網路連線。
+

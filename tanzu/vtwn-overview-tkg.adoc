@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: tanzu/vtwn-overview-tkg.html 
+keywords: VMware Tanzu, Tanzu, Tanzu Kubernetes Grid, DevOps, Netapp, Trident, Trident Protect 
+summary:  
+---
+= VMware Tanzu Kubernetes Grid (TKG) 概述
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware Tanzu Kubernetes Grid（也稱為 TKG）可讓您在混合雲或公有雲環境中部署 Tanzu Kubernetes 叢集。 TKG 作為管理叢集安裝，它本身就是一個 Kubernetes 叢集，用於部署和操作 Tanzu Kubernetes 叢集。這些 Tanzu Kubernetes 叢集是部署實際工作負載的工作負載 Kubernetes 叢集。
+
+Tanzu Kubernetes Grid 建立在一些有前景的上游社群專案之上，並提供由 VMware 開發、行銷和支援的 Kubernetes 平台。除了 Kubernetes 發行版之外，Tanzu Kubernetes Grid 還提供了額外的附加元件，這些元件是必要的生產級服務，例如登錄、負載平衡、驗證等。具有管理叢集的 VMware TKG 廣泛用於 vSphere 6.7 環境，儘管它受支持，但不建議在 vSphere 7 環境中部署，因為 TKGS 具有與 vSphere 7 的原生整合功能。
+
+image:vtwn-002.png["具有管理叢集的 VMware Tanzu Kubernetes Grid"]
+
+有關 Tanzu Kubernetes Grid 的更多信息，請參閱文檔link:https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-release-notes.html["這裡"^]。
+
+根據 Tanzu Kubernetes Grid 是安裝在 vSphere 叢集本機還是雲端環境中，依照安裝指南準備和部署 Tanzu Kubernetes Gridlink:https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-mgmt-clusters-prepare-deployment.html["這裡"^] 。
+
+安裝 Tanzu Kubernetes Grid 的管理叢集後，請依照文件中的說明根據需要部署使用者叢集或工作負載集群link:https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-tanzu-k8s-clusters-index.html["這裡"^]。 VMware TKG 管理叢集需要提供 SSH 金鑰才能安裝和執行 Tanzu Kubernetes 叢集。此密鑰可用於使用以下方式登入叢集節點： `capv`用戶。
