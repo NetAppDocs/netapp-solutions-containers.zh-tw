@@ -154,9 +154,9 @@ image:a-w-n-anthos-128-vsphere8-validation.png["此圖顯示輸入/輸出對話�
 
 親和性或反親和性是一種為虛擬機器和/或主機集定義規則的方法，用於確定虛擬機器是否在同一主機或群組中的主機上一起執行，還是在不同的主機上運行。它透過建立由具有一組相同參數和條件的虛擬機器和/或主機組成的親和性群組應用於虛擬機器。根據親和性群組中的虛擬機器是運行在群組內的同一主機上還是運行在群組內的多個主機上，還是分別運行在不同的主機上，親和性群組的參數可以定義正親和性或負親和性。
 
-若要設定親和性群組，請參閱下方適合您的 VMWare vSphere 版本的連結。
+若要設定關聯群組，請參閱下方適用於您的 VMware vSphere 版本的對應連結。
 
-https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 6.7 文件：使用 DRS 關聯性規則"^] 。https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 7.0 文件：使用 DRS 關聯性規則"^] 。
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 文件：使用 DRS 關聯性規則"^]https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html[vSphere 7.0sources/using-vm-host-affinity-rules.html[vSphere 7.0 親性規則）。
 
 
 NOTE: Anthos 在每個單獨的 `cluster.yaml`檔案會自動建立節點親和性規則，可以根據環境中的 ESXi 主機數量啟用或停用這些規則。

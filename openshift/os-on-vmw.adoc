@@ -98,7 +98,7 @@ VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VL
 
 親和性或反親和性是一種為虛擬機器和/或主機集定義規則的方法，用於確定虛擬機器是否在同一主機或群組中的主機上一起執行，還是在不同的主機上運行。它透過建立由具有一組相同參數和條件的虛擬機器和/或主機組成的親和性群組應用於虛擬機器。根據親和性群組中的虛擬機器是運行在群組內的同一主機上還是運行在群組內的多個主機上，還是分別運行在不同的主機上，親和性群組的參數可以定義正親和性或負親和性。
 
-若要設定關聯群組，請參閱link:https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-FF28F29C-8B67-4EFF-A2EF-63B3537E6934.html["vSphere 6.7 文件：使用 DRS 關聯性規則"^]。
+若要配置親緣組，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 文件：使用 DRS 關聯性規則"^]。
 
 
 

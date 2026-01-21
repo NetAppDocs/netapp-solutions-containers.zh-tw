@@ -152,4 +152,4 @@ NOTE: OSP 伺服器群組存在特定的硬親和性/反親和性限制；如果
 
 IPI 透過本文檔前面討論的互動式精靈使 OpenShift 叢集的部署變得簡單。但是，您可能需要在叢集部署過程中變更一些預設值。
 
-在這些情況下，您可以執行精靈並執行任務，而無需立即部署叢集；相反，它會建立一個設定文件，稍後可以從中部署叢集。如果您需要更改任何 IPI 預設值，或者想要在您的環境中部署多個相同的叢集用於其他用途（例如多租戶），這將非常有用。有關為 OpenShift 建立自訂安裝配置的更多信息，請參閱link:https://docs.openshift.com/container-platform/4.7/installing/installing_openstack/installing-openstack-installer-custom.html["Red Hat OpenShift 在 OpenStack 上安裝自訂集群"^]。
+在這種情況下，您可以執行精靈並執行任務，而無需立即部署叢集；它會建立一個設定文件，稍後可以從中部署叢集。如果您需要更改任何 IPI 預設值，或者如果您想在環境中部署多個相同的叢集以用於多租戶等其他用途，這將非常有用。有關建立 OpenShift 自訂安裝配置的更多信息，請參閱 link:https://docs.redhat.com/en/documentation/openshift_container_platform/4.20/html/installing_on_openstack/installing-openstack-installer-custom["Red Hat OpenShift 在 OpenStack 上安裝自訂集群"^]。
