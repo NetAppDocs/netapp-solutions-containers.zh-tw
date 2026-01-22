@@ -74,8 +74,6 @@ VMware 上的 Anthos 叢集可以根據客戶的選擇部署到 vSphere 7 和 8 
 下表列出了NetApp及其合作夥伴用於驗證解決方案的 vSphere 版本。
 
 |===
-
-
 | 作業系統 | 發布 | Anthos 版本 
 
 
@@ -108,8 +106,6 @@ VMware 上的 Anthos 叢集可以根據客戶的選擇部署到 vSphere 7 和 8 
 下表包括在驗證環境中部署的軟體版本清單。
 
 |===
-
-
 | 製造商 | 軟體名稱 | 版本 
 
 
@@ -156,7 +152,7 @@ image:a-w-n-anthos-128-vsphere8-validation.png["此圖顯示輸入/輸出對話�
 
 若要設定關聯群組，請參閱下方適用於您的 VMware vSphere 版本的對應連結。
 
-https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 文件：使用 DRS 關聯性規則"^]https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html[vSphere 7.0sources/using-vm-host-affinity-rules.html[vSphere 7.0 親性規則）。
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 9.0 文件：使用 DRS 關聯性規則"^].https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/7-0/vsphere-resource-management/using-drs-clusters-to-manage-resources/using-vm-host-affinity-rules.html["vSphere 7.0 文件：使用 DRS 親和性規則"^].
 
 
 NOTE: Anthos 在每個單獨的 `cluster.yaml`檔案會自動建立節點親和性規則，可以根據環境中的 ESXi 主機數量啟用或停用這些規則。
