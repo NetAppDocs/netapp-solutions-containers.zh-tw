@@ -1665,5 +1665,6 @@
   <block id="7eec9c349f16a2215195b8598e8dea11" category="paragraph">若要配置親緣組，請參閱 <block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block>。</block>
   <block id="b9aaad555d183234dc95454f14ebcc62" category="sidebar">探索 NetApp 全面的影片庫，了解 Anthos 和 OpenShift 平台上的容器解決方案。每個系列都專注於特定的使用案例和整合場景。</block>
   <block id="bfe724d354657c9ac5cef22bd231f66f" category="inline-link">vSphere 7.0 文件：使用 DRS 親和性規則</block>
-  <block id="d80a6b3e953318b803d17ce91d32d237" category="paragraph"><block ref="013ce530ab8ab67ba2512060eb3ef551" category="inline-link-rx"></block>.<block ref="42f6b9383c33f02a9b6a80dc074607f9" category="inline-link-rx"></block>.</block>
+  <block id="cf8e958cf9893349b91e0cb26eb4a70a" category="list-text"><block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block></block>
+  <block id="a70e200902c4988462676505e131f70c" category="list-text"><block ref="a70e200902c4988462676505e131f70c" category="inline-link-macro-rx"></block></block>
 </blocks>
