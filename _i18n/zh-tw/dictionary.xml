@@ -1424,13 +1424,9 @@
   <block id="38890f5544003fcf40576b9458f3e3ce" category="cell">7.0、8.0.2</block>
   <block id="472d13eb415cd6107aeef3a1ae6cd705" category="summary">NetApp提供了許多產品來幫助我們的客戶在基於容器的環境中協調和管理持久數據，例如 Red Hat OpenShift。</block>
   <block id="dd99886a26d3b0bfc6c607830f9e7019" category="doc">了解NetApp Trident與 Red Hat OpenShift 的集成</block>
-  <block id="54283b72e941e950513b99a2293f70b8" category="paragraph">了解NetApp Trident保護，該保護已通過 OpenShift 虛擬化解決方案的應用程式和持久性儲存管理驗證。</block>
-  <block id="c4c4d8eb1a938d23dbd4e3561819fbf1" category="paragraph">Trident是由NetApp維護的開源儲存配置器和編排器， NetApp Trident保護可協助您在基於容器的環境（例如 Red Hat OpenShift）中編排和管理持久性資料。</block>
   <block id="900bda04002ffdec7966ea3d7d98194b" category="paragraph"><block ref="900bda04002ffdec7966ea3d7d98194b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd351007d4a671a321b6881f730d0dc3" category="paragraph">以下頁麵包含有關NetApp產品的更多信息，這些產品已在 Red Hat OpenShift with NetApp解決方案中經過應用程式和持久性儲存管理驗證：</block>
   <block id="38a66e64d72c4bab859830a3603ac8eb" category="list-text"><block ref="38a66e64d72c4bab859830a3603ac8eb" category="inline-link-macro-rx"></block></block>
-  <block id="593761100422aee4bdc18b693f31d86b" category="inline-link-macro">Trident保護文檔</block>
-  <block id="678a9deea346abba1fb1c0458355563f" category="list-text"><block ref="678a9deea346abba1fb1c0458355563f" category="inline-link-macro-rx"></block></block>
   <block id="e38be1dc20a2b358b917b60fe2677b39" category="doc">NetApp Element iSCSI 配置</block>
   <block id="dc5fa659e0452a77d6006f5b72f8b334" category="paragraph">要實現Trident與NetApp Element儲存系統的集成，您必須建立一個後端，以便使用 iSCSI 協定與儲存系統進行通訊。</block>
   <block id="05ca7295321cb9b417a251e75557c6c5" category="list-text">下載的安裝檔案中提供了範例後端文件<block ref="75e4a0ceb294a9d74374c938e4e8ddc8" prefix=" " category="inline-code"></block>資料夾層次結構。對於服務於 iSCSI 的NetApp Element系統，複製<block ref="7989420add0b5baae954e866987ef264" prefix=" " category="inline-code"></block>文件到您的工作目錄並編輯該文件。</block>
@@ -1487,7 +1483,6 @@
   <block id="4faa271e943611ed64a2234b66837008" category="list-text"><block ref="4faa271e943611ed64a2234b66837008" category="inline-link-macro-rx"></block></block>
   <block id="d0e0904111acb167badbf5f196ad1205" category="inline-link-macro">NetApp Element iSCSI</block>
   <block id="686ca4813230d348cbdb8a206d97d043" category="list-text"><block ref="686ca4813230d348cbdb8a206d97d043" category="inline-link-macro-rx"></block></block>
-  <block id="1191c85631a935ab269322999330546b" category="doc">使用Trident Protect 為容器應用程式和虛擬機器提供資料保護</block>
   <block id="7c99164314b2cf8a73c17279eaccfc7b" category="paragraph">此解決方案展示如何使用Trident Protect 對容器和虛擬機器執行資料保護作業。</block>
   <block id="62a324e3ba7eee76fbaa20cdc8eb741d" category="list-text">有關在 OpenShift Container 平台中為容器應用程式建立快照和備份以及從中復原的詳細信息，請參閱<block ref="e0e2cfcdc6ab531229c62cad93f941d2" category="inline-link-macro-rx"></block>。</block>
   <block id="b4ee1a672c20b5bc7a97af7bdc1a2b4f" category="list-text">有關在 OpenShift Container 平台上部署的 OpenShift Virtualization 中建立和恢復虛擬機備份的詳細信息，請參閱<block ref="33cd3071c79f9f90e5d317d7c3ee6940" category="inline-link-macro-rx"></block>。</block>
@@ -1552,8 +1547,6 @@
   <block id="f97a2ba852f10a885c65ef482f17b6aa" category="doc">觀看有關 Red Hat OpenShift 與NetApp 的視頻</block>
   <block id="e54e8dbc73d626c0aaf7a69ca95da1c7" category="paragraph">透過一系列影片探索 Red Hat OpenShift 與NetApp的集成，這些影片展示了災難復原、虛擬機器保護、儲存管理以及使用Trident和 Ansible 的自動化等關鍵功能。</block>
   <block id="5f3bea6f8bc9cc87c687e620901ed154" category="section-title">災難復原和資料保護</block>
-  <block id="14aef6a2e48da70f33e219a771d4aa3e" category="video-title">使用Trident Protect 進行虛擬機器災難復原</block>
-  <block id="e0da49b5df3487900e358f73e4c78a73" category="video-title">使用Trident Protect 保護虛擬機</block>
   <block id="a85a32282b2e3fdd418e3251483f172d" category="video-title">使用Trident的進階資料管理功能對 OpenShift VM 進行故障轉移/故障復原（僅提供早期存取程式）</block>
   <block id="1370341e126c18547913cbfd911a6ab8" category="section-title">OpenShift 虛擬化與 VM 管理</block>
   <block id="1fd6120f233d6d8be5481ea6bcbdb646" category="video-title">使用 iSCSI 儲存在 OpenShift Virtualization 中建立 VM</block>
@@ -1654,7 +1647,6 @@
   <block id="d6bf2b10101446c7afd28ff94926fc44" category="sidebar">透過操作員部署</block>
   <block id="c0fb0083e5136a2c72891f49a3e6ceb4" category="sidebar">集群生命週期管理</block>
   <block id="e4ae510b1e81812b0dae0bebf4231fe7" category="sidebar">創建資源</block>
-  <block id="384020c4d4a2b25e93d0325c98b23380" category="sidebar">使用Trident Protect 進行資料保護</block>
   <block id="da473976b9cde07503715dadcfbf21d9" category="sidebar">使用第三方工具進行資料保護</block>
   <block id="092bf78f9c97ba171b8232ddff585392" category="sidebar">附加資訊</block>
   <block id="bdede1d84f059aba6c8c7f443f0dcf8a" category="sidebar">使用 FSxN 在 AWS 上提供 Red Hat OpenShift 服務</block>
@@ -1667,4 +1659,12 @@
   <block id="bfe724d354657c9ac5cef22bd231f66f" category="inline-link">vSphere 7.0 文件：使用 DRS 親和性規則</block>
   <block id="cf8e958cf9893349b91e0cb26eb4a70a" category="list-text"><block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block></block>
   <block id="a70e200902c4988462676505e131f70c" category="list-text"><block ref="a70e200902c4988462676505e131f70c" category="inline-link-macro-rx"></block></block>
+  <block id="fce579e2b8eca0cf6765e4d77b07475d" category="paragraph">了解 NetApp Trident Protect，它已通過驗證，可用於 OpenShift Virtualization 解決方案的應用程式和持久性儲存管理。</block>
+  <block id="a261c77868f49e84578faa359f5e9e40" category="paragraph">Trident 是一個開源儲存配置器和編排器，由 NetApp 維護，它及其附加元件 NetApp Trident Protect 為在 Red Hat OpenShift 等基於容器的環境中編排和管理持久性資料提供了強大的解決方案。</block>
+  <block id="5ec3b68db6f1825ef893a3df02e8cb74" category="inline-link-macro">Trident Protect 說明文件</block>
+  <block id="3a984bfb64105d2cab0a81dc1af80642" category="list-text"><block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block></block>
+  <block id="ea885ab6ce71c5c4088d6a223de747a4" category="doc">使用 Trident Protect 為容器應用程式和虛擬機器提供資料保護</block>
+  <block id="5fe555334f56eb4ea308eebe2c87feb9" category="video-title">使用 Trident Protect 進行虛擬機器災難復原</block>
+  <block id="92b72e1a477bb22316b8809fbb5782d9" category="video-title">使用 Trident Protect 保護虛擬機</block>
+  <block id="ddb215f758bdd80460164fabb25da416" category="sidebar">使用 Trident Protect 進行資料保護</block>
 </blocks>
