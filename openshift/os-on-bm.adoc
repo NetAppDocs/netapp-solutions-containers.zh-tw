@@ -20,6 +20,7 @@ OpenShift on Bare Metal 類似於 OpenShift 的虛擬部署，它可以輕鬆部
 
 
 
+[[openshift-on-bare-metal-provides-the-following-features]]
 == OpenShift on Bare Metal 提供以下功能：
 
 * *IPI 或輔助安裝程式部署* 透過在裸機伺服器上由安裝程式配置基礎架構 (IPI) 部署的 OpenShift 集群，客戶可以直接在商用伺服器上部署高度通用、易於擴展的 OpenShift 環境，而無需管理虛擬機器管理程式層。
@@ -30,6 +31,7 @@ OpenShift on Bare Metal 類似於 OpenShift 的虛擬部署，它可以輕鬆部
 
 
 
+[[network-design]]
 == 網路設計
 
 NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理連接。
@@ -50,6 +52,7 @@ image:redhat-openshift-037.png["此圖顯示輸入/輸出對話框或表示書�
 
 
 
+[[vlan-requirements]]
 === VLAN 需求
 
 Red Hat OpenShift 與NetApp解決方案旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同用途的網路流量。
@@ -72,6 +75,7 @@ NOTE: 儘管這些網路實際上是由 VLAN 分隔的，但每個實體連接�
 
 
 
+[[network-infrastructure-support-resources]]
 === 網路基礎設施支援資源
 
 在部署 OpenShift 容器平台之前，應具備以下基礎架構：

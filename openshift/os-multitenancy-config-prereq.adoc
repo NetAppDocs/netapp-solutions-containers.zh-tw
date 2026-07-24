@@ -18,6 +18,7 @@ summary: 使用NetApp在 Red Hat OpenShift 上設定多租戶
 
 
 
+[[prerequisites]]
 == 先決條件
 
 * NetApp ONTAP叢集

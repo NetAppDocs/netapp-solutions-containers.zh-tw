@@ -23,6 +23,7 @@ NOTE: Trident Protect 需要一個登錄機碼來託管Astra容器所需的映�
 
 
 
+[[creating-a-private-image-registry]]
 == 建立私有鏡像倉庫
 
 . 從目前預設儲存類別中刪除預設註釋，並將 Trident 支援的儲存類別註釋為 OpenShift 叢集的預設儲存類別。

@@ -32,6 +32,7 @@ NOTE: F5 BIG-IP 系統可以部署在專用硬體上、雲端或作為本地虛�
 
 
 
+[[validated-releases]]
 == 已驗證版本
 
 |===
@@ -56,6 +57,7 @@ NOTE: F5 BIG-IP 系統可以部署在專用硬體上、雲端或作為本地虛�
 |===
 
 
+[[installation]]
 == 安裝
 
 . 安裝 F5 應用服務 3 擴充功能以允許 BIG-IP 系統接受 JSON 中的設定而不是命令。前往 https://github.com/F5Networks/f5-appsvcs-extension/releases["F5 AS3 GitHub 儲存庫"^]，並下載最新的RPM檔案。
@@ -365,6 +367,7 @@ customresourcedefinition.apiextensions.k8s.io/ipams.fic.f5.com
 
 
 
+[[verification]]
 == 確認
 
 . 建立 LoadBalancer 類型的服務

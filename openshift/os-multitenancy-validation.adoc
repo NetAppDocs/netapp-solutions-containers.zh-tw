@@ -18,6 +18,7 @@ summary: 使用NetApp在 Red Hat OpenShift 上設定多租戶
 
 
 
+[[validate-access-to-create-pvcs-or-pods-in-assigned-project]]
 == 驗證在指定專案中建立 PVC 或 Pod 的權限
 
 . 以 ocp-project-1-user、project-1 中的開發人員身分登入。
@@ -96,6 +97,7 @@ oc describe pods test-pvc-pod -n project-1
 
 
 
+[[validate-access-to-create-pvcs-or-pods-in-another-project-or-use-resources-dedicated-to-another-project]]
 == 驗證在另一個專案中建立 PVC 或 Pod 或使用專用於另一個專案的資源的存取權限
 
 . 以 ocp-project-1-user、project-1 中的開發人員身分登入。
@@ -171,6 +173,7 @@ EOF
 
 
 
+[[validate-access-to-view-and-edit-projects-resourcequotas-and-storageclasses]]
 == 驗證檢視和編輯項目、資源配額和儲存類別的權限
 
 . 以 ocp-project-1-user、project-1 中的開發人員身分登入。

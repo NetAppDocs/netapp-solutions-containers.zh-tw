@@ -18,6 +18,7 @@ summary: 本節提供使用 Jenkins 部署持續整合和持續交付或部署�
 
 
 
+[[create-the-resources-required-for-jenkins-deployment]]
 == 建立Jenkins部署所需的資源
 
 若要建立部署 Jenkins 應用程式所需的資源，請完成以下步驟：
@@ -33,6 +34,7 @@ image:redhat-openshift-016.png["此圖顯示輸入/輸出對話框或表示書�
 
 
 
+[[deploy-jenkins-with-persistent-storage]]
 == 使用持久性儲存部署 Jenkins
 
 若要使用持久性儲存部署 Jenkins，請完成下列步驟：

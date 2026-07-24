@@ -24,6 +24,7 @@ image:redhat-openshift-040.png["Red Hat OpenShift 叢集上的多租用戶功能
 
 
 
+[[technology-requirements]]
 == 技術要求
 
 . NetApp ONTAP儲存叢集
@@ -33,6 +34,7 @@ image:redhat-openshift-040.png["Red Hat OpenShift 叢集上的多租用戶功能
 
 
 
+[[red-hat-openshift-cluster-resources]]
 == Red Hat OpenShift – 叢集資源
 
 從 Red Hat OpenShift 叢集的角度來看，首先要啟動的頂層資源是專案。 OpenShift 專案可以看作是一個叢集資源，它將整個 OpenShift 叢集劃分為多個虛擬叢集。因此，專案層級的隔離為配置多租戶提供了基礎。
@@ -41,18 +43,21 @@ image:redhat-openshift-040.png["Red Hat OpenShift 叢集上的多租用戶功能
 
 
 
+[[netapp-ontap]]
 == NetApp ONTAP
 
 隔離作為 Red Hat OpenShift 叢集的持久性儲存提供者的共用儲存非常重要，以確保在每個專案的儲存上建立的磁碟區對於主機來說就像是在單獨的儲存空間上建立的一樣。為此，請在NetApp ONTAP上建立與專案或工作負載數量相同的 SVM（儲存虛擬機器），並將每個 SVM 專用於一個工作負載。
 
 
 
+[[trident]]
 == Trident
 
 在NetApp ONTAP上為不同的專案建立不同的 SVM 後，必須將每個 SVM 對應到不同的Trident後端。 Trident上的後端配置驅動持久性儲存到 OpenShift 叢集資源的分配，並且需要對應到 SVM 的詳細資訊。這至少應該是後端的協定驅動程式。或者，它允許您定義如何在儲存上配置卷，並為磁碟區的大小或聚合的使用等設定限制。關於Trident後端定義的詳細資訊可以參見 https://docs.netapp.com/us-en/trident/trident-use/backends.html["這裡"^]。
 
 
 
+[[red-hat-openshift-storage-resources]]
 == Red Hat OpenShift – 儲存資源
 
 設定Trident後端後，下一步是設定 StorageClasses。配置與後端數量相同的儲存類，為每個儲存類提供僅在一個後端啟動磁碟區的存取權限。我們可以在定義儲存類別時使用 storagePools 參數將 StorageClass 對應到特定的Trident後端。定義儲存類別的詳細資訊可以在這裡找到 https://docs.netapp.com/us-en/trident/trident-use/manage-stor-class.html["這裡"^]。因此，從 StorageClass 到Trident後端存在一對一映射，該映射指向一個 SVM。這可確保透過指派給該專案的 StorageClass 提出的所有儲存聲明均由專用於該專案的 SVM 提供服務。

@@ -22,6 +22,7 @@ image:redhat-openshift-064.png["此圖顯示輸入/輸出對話框或表示書�
 
 
 
+[[iscsi-login-redirection-and-self-healing-capabilities]]
 == iSCSI 登入重新導向和自我修復功能
 
 NetApp Element軟體利用 iSCSI 儲存協議，這是在傳統 TCP/IP 網路上封裝 SCSI 命令的標準方法。當 SCSI 標準變更或乙太網路效能提升時，iSCSI 儲存協定將受益，而無需進行任何變更。
@@ -34,6 +35,7 @@ iSCSI 登入重新導向是NetApp Element軟體叢集的關鍵部分。當收到
 
 
 
+[[netapp-element-software-cluster-qos]]
 == NetApp Element軟體叢集 QoS
 
 NetApp Element軟體叢集允許根據每個磁碟區動態配置 QoS。您可以使用每個磁碟區的 QoS 設定根據您定義的 SLA 來控制儲存效能。以下三個可設定參數定義 QoS：
@@ -45,6 +47,7 @@ NetApp Element軟體叢集允許根據每個磁碟區動態配置 QoS。您可�
 
 
 
+[[multitenancy]]
 == 多租戶
 
 安全多租戶透過以下功能實現：
@@ -62,6 +65,7 @@ NetApp Element軟體叢集允許根據每個磁碟區動態配置 QoS。您可�
 
 
 
+[[enterprise-storage-efficiencies]]
 == 企業儲存效率
 
 NetApp Element軟體叢集提高了整體儲存效率和效能。以下功能以內聯方式執行，始終處於開啟狀態，且不需要使用者手動設定：

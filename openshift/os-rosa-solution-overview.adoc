@@ -15,12 +15,14 @@ summary: 使用NetApp ONTAP在 AWS 上提供 Red Hat OpenShift 服務
 
 
 
+[[overview]]
 == 概況
 
 在本節中，我們將展示如何利用 FSx for ONTAP作為在 ROSA 上運行的應用程式的持久性儲存層。它將展示在 ROSA 叢集上安裝NetApp Trident CSI 驅動程式、為ONTAP檔案系統配置 FSx 以及部署範例有狀態應用程式。它還將顯示備份和恢復應用程式資料的策略。透過此整合解決方案，您可以建立一個可輕鬆跨可用區擴展的共享儲存框架，從而簡化使用Trident CSI 驅動程式擴充、保護和復原資料的流程。
 
 
 
+[[prerequisites]]
 == 先決條件
 
 * link:https://signin.aws.amazon.com/signin?redirect_uri=https://portal.aws.amazon.com/billing/signup/resume&client_id=signup["AWS 帳號"]
@@ -40,6 +42,7 @@ image:redhat-openshift-container-rosa-001.png["羅莎建築"]
 
 
 
+[[initial-setup]]
 == 初始設定
 
 **1.為NetApp ONTAP配置 FSx**

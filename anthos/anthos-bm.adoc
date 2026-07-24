@@ -18,6 +18,7 @@ Anthos on Bare Metal 的硬體無關功能讓您可以選擇針對您的個人�
 
 
 
+[[benefits]]
 == 好處
 
 Anthos on Bare Metal 的硬體無關功能讓您可以選擇針對您的個人化用例優化的運算平台，同時還提供許多額外的好處。
@@ -32,10 +33,12 @@ Anthos on Bare Metal 的硬體無關功能讓您可以選擇針對您的個人�
 
 
 
+[[hardware-requirements]]
 == 硬體需求
 
 
 
+[[compute]]
 === 運算
 
 Google Cloud 會定期透過其 Anthos Ready 平台合作夥伴計畫請求合作夥伴伺服器平台使用新版本的 Anthos 進行更新驗證。可以找到目前已驗證的伺服器平台和支援的 Anthos 版本的列表 https://cloud.google.com/anthos/docs/resources/partner-platforms["這裡"^]。
@@ -55,6 +58,7 @@ Google Cloud 會定期透過其 Anthos Ready 平台合作夥伴計畫請求合�
 |===
 
 
+[[operating-system]]
 === 作業系統
 
 Anthos-on-bare-metal 節點可以根據客戶的選擇配置幾種不同的 Linux 發行版，以協助搭配他們目前的資料中心基礎架構。
@@ -78,6 +82,7 @@ Anthos-on-bare-metal 節點可以根據客戶的選擇配置幾種不同的 Linu
 |===
 
 
+[[additional-hardware]]
 === 附加硬體
 
 為了完成 Anthos on Bare Metal 的部署，使其成為經過全面驗證的解決方案， NetApp和我們的合作夥伴工程師已經對用於網路和儲存的其他資料中心元件進行了測試。
@@ -95,6 +100,7 @@ Anthos-on-bare-metal 節點可以根據客戶的選擇配置幾種不同的 Linu
 |===
 
 
+[[additional-software]]
 === 附加軟體
 
 下表包括在驗證環境中部署的其他軟體版本的清單。
@@ -122,6 +128,7 @@ NOTE: 此多作業系統環境展示了與 Anthos-on-bare-metal 解決方案支�
 
 
 
+[[infrastructure-support-resources]]
 === 基礎設施支援資源
 
 在裸機上部署 Anthos 之前，應準備好以下基礎架構：

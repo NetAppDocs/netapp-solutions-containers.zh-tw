@@ -30,12 +30,14 @@ image:redhat-openshift-033.png["此圖顯示輸入/輸出對話框或表示書�
 
 
 
+[[network-design]]
 == 網路設計
 
 NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個額外的管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理連接。 OCP 使用 VMware vSphere 上的 VM 邏輯網路進行叢集管理。本節描述了解決方案中使用的每個虛擬網路段的安排和用途，並概述了部署解決方案的先決條件。
 
 
 
+[[vlan-requirements]]
 === VLAN 需求
 
 VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同目的的網路流量。此配置可以擴展以滿足客戶需求或為特定網路服務提供進一步的隔離。下表列出了在NetApp驗證解決方案時實施該解決方案所需的 VLAN。
@@ -67,6 +69,7 @@ VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VL
 |===
 
 
+[[network-infrastructure-support-resources]]
 === 網路基礎設施支援資源
 
 在部署 OpenShift 容器平台之前，應具備以下基礎架構：
@@ -78,12 +81,14 @@ VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VL
 
 
 
+[[best-practices-for-production-deployments]]
 == 生產部署的最佳實踐
 
 本節列出了組織在將此解決方案部署到生產中之前應考慮的幾種最佳實踐。
 
 
 
+[[deploy-openshift-to-an-esxi-cluster-of-at-least-three-nodes]]
 === 將 OpenShift 部署到至少三個節點的 ESXi 集群
 
 本文檔中所述的經過驗證的架構透過部署兩個 ESXi 虛擬機器管理程式節點並透過啟用 VMware vSphere HA 和 VMware vMotion 確保容錯配置，提供了適合 HA 操作的最低硬體部署。此配置允許已部署的虛擬機器在兩個虛擬機器管理程式之間遷移，並在一個主機不可用時重新啟動。
@@ -92,6 +97,7 @@ VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VL
 
 
 
+[[configure-virtual-machine-and-host-affinity]]
 === 配置虛擬機器和主機關聯性
 
 透過啟用 VM 和主機親和性，可以確保 OpenShift 主機分佈在多個虛擬機器管理程式節點上。
@@ -102,6 +108,7 @@ VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VL
 
 
 
+[[use-a-custom-install-file-for-openshift-deployment]]
 === 使用自訂安裝檔進行 OpenShift 部署
 
 IPI 透過本文檔前面討論的互動式精靈使 OpenShift 叢集的部署變得簡單。但是，您可能需要在叢集部署過程中變更一些預設值。

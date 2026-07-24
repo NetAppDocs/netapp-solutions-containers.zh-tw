@@ -18,6 +18,7 @@ summary: NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理
 
 
 
+[[prerequisites]]
 == 先決條件
 
 . 用於中心叢集的 Red Hat OpenShift 叢集（高於 4.5 版本）

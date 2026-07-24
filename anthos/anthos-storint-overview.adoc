@@ -18,6 +18,7 @@ NetApp提供了多種產品來幫助我們的客戶在基於容器的環境（�
 
 
 
+[[anthos-ready-storage-partner-program]]
 == Anthos Ready 儲存合作夥伴計畫。
 
 Google Cloud 會透過其 Anthos Ready 儲存合作夥伴計畫定期要求更新合作夥伴儲存與 Anthos 新版本的整合驗證。可以找到目前已驗證的儲存解決方案、CSI 驅動程式、可用功能以及支援的 Anthos 版本的列表 https://cloud.google.com/anthos/docs/resources/partner-storage["這裡"^]。
@@ -72,6 +73,7 @@ NetApp每季都會定期遵守要求，以驗證我們符合Trident CSI 的儲�
 |===
 
 
+[[netapp-storage-integrations]]
 == NetApp儲存集成
 
 NetApp提供了多種產品來幫助您在基於容器的環境（如 Anthos）中編排和管理持久性資料。

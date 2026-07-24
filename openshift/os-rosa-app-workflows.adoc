@@ -18,6 +18,7 @@ summary: 使用NetApp ONTAP在 AWS 上提供 Red Hat OpenShift 服務
 
 
 
+[[create-volume-snapshot]]
 == 建立磁碟區快照
 
 **1.建立應用程式磁碟區的快照** 在本節中，我們將展示如何建立與應用程式關聯的磁碟區的 trident 快照。這將是應用程式資料的時間點副本。如果應用程式資料遺失，我們可以從該時間點的副本恢復資料。注意：此快照與ONTAP中的原始磁碟區儲存在同一個聚合中（本地或雲端）。因此，如果ONTAP儲存聚合遺失，我們將無法從其快照中復原應用程式資料。
@@ -64,6 +65,7 @@ image:redhat-openshift-container-rosa-023.png["刪除資料庫"]
 
 
 
+[[restore-from-volume-snapshot]]
 == 從磁碟區快照還原
 
 **1.從快照還原** 在本節中，我們將展示如何從應用程式磁碟區的 trident 快照還原應用程式。
@@ -122,6 +124,7 @@ image:redhat-openshift-container-rosa-030.png["資料庫已恢復"]
 
 
 
+[[demo-video]]
 == 示範影片
 
 .使用託管控制平面在 AWS 上將Amazon FSx for NetApp ONTAP與 Red Hat OpenShift 服務結合使用

@@ -28,6 +28,7 @@ Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
 
 
 
+[[download-trident]]
 == 下載Trident
 
 若要在已部署的使用者叢集上安裝Trident並配置持久性卷，請完成下列步驟：
@@ -45,6 +46,7 @@ Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
 
 
 
+[[install-the-trident-operator-with-helm]]
 == 使用 Helm 安裝Trident Operator
 
 . 首先設定用戶集群的 `kubeconfig`文件作為環境變量，這樣您就不必引用它，因為Trident沒有選項來傳遞此文件。
@@ -106,6 +108,7 @@ NOTE: 在某些情況下，客戶環境可能需要客製化Trident部署。在�
 
 
 
+[[manually-install-the-trident-operator]]
 == 手動安裝Trident Operator
 
 . 首先，設定用戶集群的 `kubeconfig`文件作為環境變量，這樣您就不必引用它，因為Trident沒有選項來傳遞此文件。
@@ -260,10 +263,12 @@ trident-operator-66f48895cc-lzczk   1/1     Running   0          2m39s
 
 
 
+[[prepare-worker-nodes-for-storage]]
 == 準備工作節點以進行存儲
 
 
 
+[[nfs]]
 === NFS
 
 大多數 Kubernetes 發行版都附帶預設安裝的用於掛載 NFS 後端的軟體包和實用程序，包括 Red Hat OpenShift。
@@ -309,6 +314,7 @@ worker   rendered-worker-de321b36eeba62df41feb7bc   True      False      False
 
 
 
+[[iscsi]]
 === iSCSI
 
 要準備工作節點以允許透過 iSCSI 協定映射區塊儲存卷，您必須安裝必要的軟體包來支援該功能。
@@ -418,6 +424,7 @@ NOTE: 也可以透過執行以下命令來確認 MachineConfig 已成功應用�
 
 
 
+[[create-storage-system-backends]]
 == 建立儲存系統後端
 
 完成Trident Operator 安裝後，您必須為正在使用的特定NetApp儲存平台設定後端。按照下面的連結繼續設定並設定Trident。
