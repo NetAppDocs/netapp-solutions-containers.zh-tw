@@ -71,7 +71,7 @@ Anthos On Prem 是一個完全支援的企業級 Kubernetes 平台，可以部�
 
 NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存系統。  NetApp產品組合包括NetApp ONTAP、 Cloud Volumes ONTAP、 Google Cloud NetApp Volumes、 Azure NetApp Files和 FSx ONTAP for NetApp ONTAP儲存系統，所有這些產品都可以為容器化應用程式提供持久性儲存。
 
-欲了解更多信息，請訪問NetApp網站 https://www.netapp.com["這裡"]。
+如需更多資訊，請造訪 link:https://www.netapp.com["NetApp 網站"^]。
 
 
 
@@ -80,7 +80,7 @@ NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存�
 
 Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 Anthos）儲存編排器。
 
-欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+如需更多資訊，請造訪 link:https://docs.netapp.com/us-en/trident/index.html["Trident 文件"^]。
 
 
 
@@ -94,4 +94,4 @@ Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 
 [[current-support-matrix-for-validated-releases]]
 == 已驗證版本的目前支援矩陣
 
-看 https://cloud.google.com/anthos/docs/resources/partner-storage#netapp["這裡"]用於已驗證版本的支援矩陣。
+請查看 link:https://cloud.google.com/anthos/docs/resources/partner-storage#netapp["Anthos 儲存設備合作夥伴支援對照表"^] 以取得已驗證的版本。

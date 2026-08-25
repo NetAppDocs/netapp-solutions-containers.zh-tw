@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: anthos/anthos-trident-overview.html 
 keywords: Trident, Trident, Helm, Operator, iSCSI, NFS 
-summary: Trident是一個完全支援的開源儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。 
+summary: Trident 是一個完全支援的開源儲存設備協調器，適用於 Container 和 Kubernetes 發行版，包括 Anthos。 
 ---
 = Trident概述
 :hardbreaks:
@@ -22,47 +22,47 @@ image:a-w-n-astra-trident.png["此圖顯示輸入/輸出對話框或表示書面
 
 Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
 
-最新版本的Trident的文件可以在 https://docs.netapp.com/us-en/trident/index.html["這裡"]。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣 https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["這裡"]。
+請參閱 link:https://docs.netapp.com/us-en/trident/index.html["Trident 文件"^] 以取得最新版本資訊。Trident 版本與 Kubernetes 發行版相容性的支援對照表可在 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["支援的前端（協調器）"^] 中取得。
 
 從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。
 
 隨著 22.04 版本的發布，Helm 圖表已可用，以簡化Trident Operator 的安裝。
 
-有關Trident安裝的詳細信息，請參閱 https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy.html["這裡"]。
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/trident/trident-install/kubernetes-deploy.html["Trident 安裝詳情"^]。
 
 
 
 [[create-a-storage-system-backend]]
 == 建立儲存系統後端
 
-完成Trident Operator 安裝後，您必須為正在使用的特定NetApp儲存平台設定後端。按照下面的連結繼續設定並設定Trident。link:https://docs.netapp.com/us-en/trident/trident-use/backends.html["創建後端。"]
+完成 Trident Operator 安裝後，您必須為所使用的特定 NetApp 儲存平台設定後端。請點選以下連結繼續完成 Trident 的設定和組態。link:https://docs.netapp.com/us-en/trident/trident-use/backends.html["建立後端"^]
 
 
 
 [[create-a-storage-class]]
 == 建立儲存類別
 
-建立後端後，您必須建立一個儲存類，Kubernetes 使用者在需要磁碟區時將指定該儲存類別。 Kubernetes 使用者透過使用持久性卷宣告 (PVC) 來配置卷，透過名稱指定儲存類別。按照下面的連結建立儲存類別。link:https://docs.netapp.com/us-en/trident/trident-use/create-stor-class.html["建立儲存類別"]
+建立後端後，您必須建立儲存設備類別，Kubernetes 使用者在需要 Volume 時會指定該儲存設備類別。Kubernetes 使用者透過持久性 Volume 宣告 （PVC） 來配置 Volume，PVC 透過名稱指定儲存設備類別。請點擊以下連結建立儲存設備類別。link:https://docs.netapp.com/us-en/trident/trident-use/create-stor-class.html["建立儲存類別"^]
 
 
 
 [[dynamically-provision-a-volume]]
 == 動態配置磁碟區
 
-您必須使用儲存類別建立 Kubernetes 持久性磁碟區宣告 (PVC) 物件來動態設定磁碟區。按照下面的連結建立一個 PVC 物件。link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html["創建 PVC"]
+您必須使用儲存設備類別建立 Kubernetes 持久性 Volume 宣告 (PVC) 物件，才能動態資源配置 Volume。請點擊以下連結建立 PVC 物件。link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html["創建 PVC"^]
 
 
 
 [[use-the-volume]]
 == 使用音量
 
-應用程式可以透過將上述步驟中配置的磁碟區掛載到 pod 中來使用該磁碟區。下面的連結顯示了一個範例。link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html#sample-manifests["將卷掛載到 Pod 中"]
+上述步驟中配置的 Volume 可以透過在 pod 中裝載該 Volume 供應用程式使用。以下連結提供了一個範例。link:https://docs.netapp.com/us-en/trident/trident-use/vol-provision.html#sample-manifests["將卷掛載到 Pod 中"^]
 
 
 
 [[sample-provisioning]]
 == 範例配置
 
-link:anthos-trident-ontap-iscsi.html["iSCSI 協定的範例清單，window=_blank"]
+link:anthos-trident-ontap-iscsi.html["iSCSI 協定的範例清單"]
 
-link:anthos-trident-ontap-nfs.html["nfs 協定的範例清單，window=_blank"]
+link:anthos-trident-ontap-nfs.html["NFS 協定的範例清單"]

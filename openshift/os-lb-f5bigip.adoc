@@ -60,23 +60,23 @@ NOTE: F5 BIG-IP 系統可以部署在專用硬體上、雲端或作為本地虛�
 [[installation]]
 == 安裝
 
-. 安裝 F5 應用服務 3 擴充功能以允許 BIG-IP 系統接受 JSON 中的設定而不是命令。前往 https://github.com/F5Networks/f5-appsvcs-extension/releases["F5 AS3 GitHub 儲存庫"^]，並下載最新的RPM檔案。
+. 安裝 F5 Application Services 3 擴充功能，使 BIG-IP 系統能夠接受 JSON 格式的組態，而非命令式命令。前往 link:https://github.com/F5Networks/f5-appsvcs-extension/releases["F5 AS3 GitHub 儲存庫"^]，下載最新的 RPM 檔案。
 . 登入 F5 BIG-IP 系統，導覽至 iApps > Package Management LX 並點選 Import。
 . 點擊“選擇文件”並選擇下載的 AS3 RPM 文件，按一下“確定”，然後按一下“上傳”。
 +
-image:redhat-openshift-109.png["iApps 上傳"]
+image::redhat-openshift-109.png[iApps 上傳]
 
 . 確認 AS3 擴充功能已成功安裝。
 +
-image:redhat-openshift-110.png["AS3 安裝驗證"]
+image::redhat-openshift-110.png[AS3 安裝驗證]
 
 . 接下來配置OpenShift和BIG-IP系統之間通訊所需的資源。首先透過在 BIG-IP 系統上為 OpenShift SDN 建立 VXLAN 隧道介面來在 OpenShift 和 BIG-IP 伺服器之間建立隧道。導航至網路 > 隧道 > 設定文件，按一下創建，然後將父設定檔設定為 vxlan，將泛洪類型設定為多播。輸入設定檔的名稱並按一下“完成”。
 +
-image:redhat-openshift-111.png["建立 VXLAN 設定檔"]
+image::redhat-openshift-111.png[建立 VXLAN 設定檔]
 
 . 導覽至網路 > 隧道 > 隧道列表，按一下創建，然後輸入隧道的名稱和本機 IP 位址。選擇上一個步驟建立的隧道設定文件，然後按一下「完成」。
 +
-image:redhat-openshift-112.png["建立VXLAN隧道"]
+image::redhat-openshift-112.png[建立VXLAN隧道]
 
 . 使用叢集管理員權限登入 Red Hat OpenShift 叢集。
 . 在 OpenShift 上為 F5 BIG-IP 伺服器建立一個 hostsubnet，將子網路從 OpenShift 叢集擴展到 F5 BIG-IP 伺服器。下載主機子網路 YAML 定義。
@@ -134,11 +134,11 @@ ocp-vmw-nszws-worker-wtgfw   ocp-vmw-nszws-worker-wtgfw   10.63.172.17    10.128
 ----
 . 在 OpenShift VXLAN 上建立一個自身 IP，其 IP 位於與 F5 BIG-IP 伺服器對應的 OpenShift 主機子網路範圍內。登入 F5 BIG-IP 系統，導覽至網路 > 自有 IP，然後按一下建立。輸入為 F5 BIG-IP 主機子網路所建立的叢集 IP 子網路中的 IP，選擇 VXLAN 隧道，然後輸入其他詳細資料。然後按一下“完成”。
 +
-image:redhat-openshift-113.png["為 VXLAN 建立 Self IP"]
+image::redhat-openshift-113.png[為 VXLAN 建立 Self IP]
 
 . 在 F5 BIG-IP 系統中建立一個分區，以便與 CIS 一起設定和使用。導覽至系統 > 使用者 > 分區列表，按一下創建，然後輸入詳細資訊。然後按一下“完成”。
 +
-image:redhat-openshift-114.png["建立 BIG-IP 分區"]
+image::redhat-openshift-114.png[建立 BIG-IP 分區]
 
 +
 
@@ -166,24 +166,24 @@ customresourcedefinition.apiextensions.k8s.io/ingresslinks.cis.f5.com created
 ----
 . 導覽至 Operators > OperatorHub，搜尋關鍵字 F5，然後按一下 F5 Container Ingress Service 磁貼。
 +
-image:redhat-openshift-115.png["OperatorHub 中的 F5 CIS"]
+image::redhat-openshift-115.png[OperatorHub 中的 F5 CIS]
 
 . 閱讀操作員資訊並點擊“安裝”。
 +
-image:redhat-openshift-116.png["OperatorHub 中的 F5 CIS 資訊圖塊"]
+image::redhat-openshift-116.png[OperatorHub 中的 F5 CIS 資訊圖塊]
 
 . 在安裝操作員畫面上，保留所有預設參數，然後按一下安裝。
 +
-image:redhat-openshift-117.png["安裝 F5 CIS 操作員"]
+image::redhat-openshift-117.png[安裝 F5 CIS 操作員]
 
 . 安裝操作員需要一段時間。
 +
-image:redhat-openshift-118.png["F5 CIS Operator 安裝進度"]
+image::redhat-openshift-118.png[F5 CIS Operator 安裝進度]
 
 . 操作員安裝完成後，將顯示「安裝成功」訊息。
 . 導覽至 Operators > Installed Operators，按一下 F5 Container Ingress Service，然後按一下 F5BigIpCtlr 圖塊下的 Create Instance。
 +
-image:redhat-openshift-119.png["建立 F5BigIpCtlr"]
+image::redhat-openshift-119.png[建立 F5BigIpCtlr]
 
 . 點選 YAML View，更新必要的參數後貼上以下內容。
 +
@@ -227,7 +227,7 @@ spec:
 ----
 . 貼上此內容後，按一下「建立」。這會在 kube-system 命名空間中安裝 CIS pod。
 +
-image:redhat-openshift-120.png["驗證 F5 CIS pod"]
+image::redhat-openshift-120.png[驗證 F5 CIS pod]
 
 +
 
@@ -464,6 +464,6 @@ f5-demo-test-57c46f6f98-cl2m8   1/1     Running   0          27s
 ----
 . 檢查BIG-IP系統中是否為OpenShift中LoadBalancer類型的服務建立了對應的虛擬伺服器。導覽至本機流量 > 虛擬伺服器 > 虛擬伺服器清單。
 +
-image:redhat-openshift-121.png["驗證對應服務類型 LoadBalancer 的 BIG-IP 虛擬伺服器的創建"]
+image::redhat-openshift-121.png[驗證對應服務類型 LoadBalancer 的 BIG-IP 虛擬伺服器的創建]
 
 

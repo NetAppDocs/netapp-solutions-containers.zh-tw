@@ -1,0 +1,19 @@
+---
+section: vsphere-kubernetes-service
+title: vSphere Kubernetes Service 搭配 NetApp 儲存設備
+pdf-filename: vSphere Kubernetes Service 搭配 NetApp 儲存設備
+entries:
+- title: 概況
+  pdf-filename: vSphere Kubernetes Service 與 NetApp 儲存設備總覽
+  url: "/vsphere-kubernetes-service/vks-overview.html"
+- title: 儲存設備與 vSphere Kubernetes 服務入門
+  pdf-filename: 儲存設備與 vSphere Kubernetes 服務入門
+  entries:
+  - title: 部署 vSphere Kubernetes 服務
+    url: "/vsphere-kubernetes-service/deploy-vks.html"
+  - title: NetApp 儲存設備為 vSphere Kubernetes 服務工作負載帶來的效益
+    url: "/vsphere-kubernetes-service/netapp-storage-vks.html"
+  - title: NetApp VKS 工作負載的儲存設備佈建
+    url: "/vsphere-kubernetes-service/install-trident.html"
+  - title: 使用 NetApp 儲存設備部署 VKS 工作負載
+    url: "/vsphere-kubernetes-service/deploy-vks-workloads.html"

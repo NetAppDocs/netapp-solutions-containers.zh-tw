@@ -34,7 +34,7 @@ Red Hat OpenShift 容器平台將開發和 IT 營運整合在一個平台上，�
 * *安全性和容器目錄* OpenShift 提供多租用戶功能，並使用安全增強 Linux (SELinux)、CGroups 和安全計算模式 (seccomp) 建立的安全性來隔離和保護容器，從而保護使用者免受有害程式碼執行的侵害。它還透過 TLS 憑證為各個子系統提供加密，並提供對 Red Hat 認證容器（access.redhat.com/containers）的訪問，這些容器經過掃描和分級，特別強調安全性，以便為最終用戶提供經過認證、值得信賴和安全的應用程式容器。
 
 
-image:redhat-openshift-004.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+image::redhat-openshift-004.png[此圖顯示輸入/輸出對話框或表示書面內容]
 
 
 
@@ -55,13 +55,13 @@ OpenShift 的安裝程式設定基礎架構 (IPI) 部署涉及以下進階步驟
 . 造訪 Red Hat OpenShiftlink:https://www.openshift.com["網站"^]並使用您的 SSO 憑證登入。
 . 選擇您想要部署 Red Hat OpenShift 的環境。
 +
-image:redhat-openshift-008.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+image::redhat-openshift-008.png[此圖顯示輸入/輸出對話框或表示書面內容]
 
 . 在下一個畫面下載安裝程式、唯一的拉取金鑰和用於管理的 CLI 工具。
 +
-image:redhat-openshift-009.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+image::redhat-openshift-009.png[此圖顯示輸入/輸出對話框或表示書面內容]
 
-. 關注link:https://docs.openshift.com/container-platform/4.7/installing/index.html["安裝說明"]由 Red Hat 提供，可部署到您選擇的環境。
+. 按照 Red Hat 提供的 link:https://docs.openshift.com/container-platform/4.7/installing/index.html["安裝說明"^] 部署到您選擇的環境。
 
 
 

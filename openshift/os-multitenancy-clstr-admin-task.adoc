@@ -18,15 +18,17 @@ Red Hat OpenShift 叢集管理員執行下列任務：
 
 . 以叢集管理員身分登入 Red Hat OpenShift 叢集。
 . 建立兩個項目，分別對應不同的工程。
-+
-[source, console]
+
+
+[listing]
 ----
 oc create namespace project-1
 oc create namespace project-2
 ----
 . 為 project-1 建立開發人員角色。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 apiVersion: rbac.authorization.k8s.io/v1
@@ -82,15 +84,14 @@ rules:
 EOF
 ----
 
-
-
 NOTE: 本節提供的角色定義只是一個範例。必須根據最終使用者的要求來定義開發人員的角色。
 
 . 同樣，為 project-2 建立開發人員角色。
 . 所有 OpenShift 和NetApp儲存資源通常由儲存管理員管理。儲存管理員的存取權限由安裝Trident時建立的 trident 操作員角色控制。除此之外，儲存管理員還需要存取 ResourceQuotas 來控制儲存的消耗方式。
 . 建立一個用於管理叢集中所有專案的 ResourceQuotas 的角色，並將其附加到儲存管理員。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: ClusterRole
@@ -123,8 +124,9 @@ ocp-project-1               ocp-project-1-user
 ocp-project-2               ocp-project-2-user
 ....
 . 為儲存管理員配置 ClusterRoleBindings。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: ClusterRoleBinding
@@ -155,13 +157,12 @@ roleRef:
 EOF
 ----
 
-
-
 NOTE: 對於儲存管理員，必須綁定兩個角色：trident-operator 和 resource-quotas。
 
 . 為開發者建立 RoleBindings，將developer-project-1 角色綁定到 project-1 中對應的群組（ocp-project-1）。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: RoleBinding
@@ -179,7 +180,5 @@ roleRef:
   name: developer-project-1
 EOF
 ----
-
-
 . 同樣的，在project-2中為開發者建立RoleBindings，將開發者角色綁定到對應的使用者群組。
 

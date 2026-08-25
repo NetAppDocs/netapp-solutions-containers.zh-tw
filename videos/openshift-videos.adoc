@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: videos/openshift-videos.html 
 keywords: video, demonstration, deployment 
-summary:  
+summary: 演示本文檔中記錄的一些功能。 
 ---
 = 觀看有關 Red Hat OpenShift 與NetApp 的視頻
 :hardbreaks:

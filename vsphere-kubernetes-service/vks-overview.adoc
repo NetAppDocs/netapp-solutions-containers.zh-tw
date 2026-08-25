@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: vsphere-kubernetes-service/vks-overview.html 
+keywords: vks, vSphere Kubernetes Service, ONTAP, kubernetes, overview 
+summary: 了解 vSphere Kubernetes Service 及其如何與 NetApp ONTAP 整合以支援 Container 化工作負載。 
+---
+= 瞭解搭配 NetApp ONTAP 的 vSphere Kubernetes Service
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+vSphere Kubernetes Service (VKS) 是 VMware 的代管 Kubernetes 產品，讓企業能夠使用 Kubernetes 部署、管理和擴充容器化應用程式。與 NetApp ONTAP 儲存設備結合，VKS 可為雲端原生工作負載提供企業級持久性、效能和資料管理。
+
+vSphere Kubernetes Service 通常整合到 VMware 更廣泛的生態系統中，例如 VMware Tanzu，它提供了一套完整的工具套件，用於 Kubernetes 管理、應用程式現代化和 DevOps 開發維運實踐。
+
+
+
+[[key-features-of-vsphere-kubernetes-service]]
+== vSphere Kubernetes Service 的主要特性
+
+. *代管 Kubernetes 叢集：* vSphere Kubernetes Service 簡化了 Kubernetes 叢集的部署和管理。它可自動執行叢集建立、升級、擴充和監控等任務。
+. *與 VMware 基礎架構整合：* VKS 可與 VMware vSphere、NSX-T 及其他 VMware 解決方案無縫地整合，使組織能夠運用其現有的 VMware 基礎架構來執行 Kubernetes 工作負載。
+. *多雲和混合雲支援：* vSphere Kubernetes 服務支援在私有雲、公有雲（例如 AWS、Azure、Google Cloud）和混合雲環境中部署，讓組織在管理其應用程式時擁有更大的靈活度。
+. *內建安全功能：* VKS 包含角色型存取控制 （RBAC）、原則執行以及與 VMware NSX 整合以實現網路安全性等安全功能。
+. *對開發者友善的工具：* vSphere Kubernetes Service 與 Tanzu Application Platform 等開發者工具整合，以簡化容器化應用程式的開發與部署。
+. *擴充性與高可用度：* VKS 提供自動擴充和容錯能力等功能，確保應用程式保持高可用度的且高效能。
+. *可觀測性和監控：* vSphere Kubernetes Service 與 VMware Tanzu Observability（前身為 Wavefront）及其他監控工具整合，提供叢集和應用程式效能的即時洞察。
+. *支援 Kubernetes 生態系統：* VKS 完全相容於上游 Kubernetes，這意味著它支援 Kubernetes API，並可與 Helm、Istio 和 Prometheus 等 Kubernetes 原生工具搭配使用。
+
+
+
+
+[[use-cases-for-vsphere-kubernetes-service]]
+== vSphere Kubernetes Service 的使用案例
+
+. *應用程式現代化：* 組織可以透過將傳統應用程式容器化，並將其部署到由 VKS 代管的 Kubernetes 叢集上，實現應用程式現代化。
+. *DevOps 開發維運賦能：* VKS 透過提供自動化、CI/CD 整合和對開發者友善的工具來支援 DevOps 開發維運工作流程。
+. *混合雲部署：*企業可以使用 VKS 在本地和雲端環境中部署 Kubernetes 叢集，實現一致的操作。
+. *微服務架構：* VKS 支援基於微服務的應用程式開發，使團隊能夠建置和擴充分散式系統。
+

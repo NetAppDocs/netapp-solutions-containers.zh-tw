@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: videos/vks-videos.html 
+keywords: video, demonstration, deployment 
+summary: 演示本文檔中記錄的一些功能。 
+---
+= 觀看有關 vSphere Kubernetes 服務與 NetApp 的影片
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+透過一系列展示關鍵功能的影片，探索 vSphere Kubernetes Service 與 NetApp 的整合。
+
+
+
+[[deploying-a-vsphere-kubernetes-service-cluster-with-netapp-storage]]
+== 使用 NetApp 儲存設備部署 vSphere Kubernetes Service 叢集
+
+.使用 NetApp 儲存設備部署 vSphere Kubernetes Service 叢集
+video::4ef64b3c-7a68-41d5-bacf-b4a8012b49f8[panopto,width=360]
+
+
+[[deploying-workloads-with-ontap-persistent-storage-using-trident]]
+== 使用 Trident 在 ONTAP 持續儲存上部署工作負載
+
+.使用 Trident 在 ONTAP 持續儲存上部署工作負載
+video::eb8bd0c0-a1fe-4288-a575-b4ac00e004a9[panopto,width=360]

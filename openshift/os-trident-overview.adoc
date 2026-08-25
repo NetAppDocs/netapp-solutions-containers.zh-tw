@@ -18,13 +18,13 @@ Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 
 
 管理員可以根據專案需求和儲存系統模型配置多個儲存後端，以實現進階儲存功能，包括壓縮、特定磁碟類型或保證一定效能等級的 QoS 等級。定義完成後，開發人員可以在他們的專案中使用這些後端來建立持久性卷聲明 (PVC) 並根據需要將持久性儲存附加到他們的容器。
 
-image:redhat-openshift-002.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+image::redhat-openshift-002.png[此圖顯示輸入/輸出對話框或表示書面內容]
 
 Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
 
-已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣 https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["這裡"]。
+有關哪些版本的 Trident 已與哪些 Kubernetes 經銷版本進行過測試的支援對照表，請參閱 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["支援的前端（協調器）"^]。
 
-請參閱link:https://docs.netapp.com/us-en/trident/index.html["Trident產品文檔"]有關安裝和配置的詳細資訊。
+請參考 link:https://docs.netapp.com/us-en/trident/index.html["Trident產品文檔"^] 以了解安裝和組態詳情。
 
 
 
@@ -33,7 +33,7 @@ Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
 
 若要在已部署的使用者叢集上安裝Trident並配置持久性卷，請完成下列步驟：
 
-. 將安裝檔案下載到管理工作站並提取內容。目前版本的Trident可以下載 https://github.com/NetApp/trident/releases?q=25.&expanded=true["這裡"]。
+. 將安裝歸檔下載到管理員工作站並擷取內容。目前版本的 Trident 可從 link:https://github.com/NetApp/trident/releases?q=25.&expanded=true["Trident 發布頁面位於 GitHub"^] 下載。
 . 從下載的軟體包中提取Trident安裝。
 +
 [listing]
@@ -327,8 +327,9 @@ worker   rendered-worker-de321b36eeba62df41feb7bc   True      False      False
 +
 不使用多路徑時：
 
-+
-[source, cli]
+
+
+[listing]
 ----
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
@@ -347,10 +348,8 @@ spec:
           state: started
   osImageURL: ""
 ----
-+
-使用多路徑時：
++ 使用多路徑時：
 
-+
 [source, cli]
 ----
 apiVersion: machineconfiguration.openshift.io/v1

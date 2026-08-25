@@ -15,11 +15,11 @@
 
 Red Hat OpenShift Container Platform 是一個完全支援的企業級 Kubernetes 平台。  Red Hat 對開源 Kubernetes 進行了多項改進，以提供一個完全整合所有元件的應用程式平台，用於建置、部署和管理容器化應用程式。
 
-欲了解更多信息，請訪問 OpenShift 網站 https://www.openshift.com["這裡"]。
+如需更多資訊，請造訪 link:https://www.openshift.com["Red Hat OpenShift 網站"^]。
 
 NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存系統。  NetApp產品組合包括NetApp ONTAP、 NetApp Element和NetApp e-Series 儲存系統，所有這些系統都可以為容器化應用程式提供持久性儲存。
 
-如需了解更多信息，請訪問NetApp網站 https://www.netapp.com["這裡"]。
+如需更多資訊，請造訪 link:https://www.netapp.com["NetApp 網站"^]。
 
 Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。
 
@@ -94,7 +94,7 @@ NetApp提供強大的全快閃 (AFF) 和橫向擴展混合 (FAS) 儲存平台，
 
 這兩個系統均由NetApp ONTAP資料管理軟體提供支持，這是業界最先進的資料管理軟體，可實現簡化、高可用、雲端整合的儲存管理，為您的資料結構需求提供企業級的速度、效率和安全性。
 
-有關 NETAPP AFF/ FAS平台的更多信息，請按一下 https://docs.netapp.com/platstor/index.jsp["這裡"]。
+有關 NetApp AFF/FAS 平台的詳細資訊，請參閱 link:https://docs.netapp.com/platstor/index.jsp["NetApp 硬體平台文件"^]。
 
 
 
@@ -103,7 +103,7 @@ NetApp提供強大的全快閃 (AFF) 和橫向擴展混合 (FAS) 儲存平台，
 
 ONTAP Select是NetApp ONTAP的軟體定義部署，可部署到您環境中的虛擬機器管理程式。它可以安裝在 VMware vSphere 或 KVM 上，並提供基於硬體的ONTAP系統的全部功能和體驗。
 
-有關ONTAP Select的更多信息，請單擊 https://docs.netapp.com/us-en/ontap-select/["這裡"]。
+如需 ONTAP Select 的詳細資訊，請參閱 link:https://docs.netapp.com/us-en/ontap-select/["ONTAP Select 說明文件"^]。
 
 
 
@@ -112,14 +112,14 @@ ONTAP Select是NetApp ONTAP的軟體定義部署，可部署到您環境中的�
 
 NetApp Cloud Volumes ONTAP是NetApp ONTAP的雲端部署版本，可部署在許多公有雲中，包括 Amazon AWS、Microsoft Azure 和 Google Cloud。
 
-有關Cloud Volumes ONTAP 的更多信息，請單擊 https://docs.netapp.com/us-en/occm/#discover-whats-new["這裡"]。
+如需 Cloud Volumes ONTAP 的詳細資訊，請參閱 link:https://docs.netapp.com/us-en/occm/#discover-whats-new["Cloud Volumes ONTAP 文檔"^]。
 
 [role="normal"]
 NetApp提供多種產品來協助您協調、管理、保護和遷移有狀態的容器化應用程式及其資料。
 
 image:devops-with-netapp-001.png["此圖顯示輸入/輸出對話框或表示書面內容"]
 
-NetApp Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+NetApp Trident 是一個開源且完全支援的儲存設備協調器，適用於 Container 和 Kubernetes 發行版（例如 {k8s_distribution_name}）。如需更多資訊，請造訪 link:https://docs.netapp.com/us-en/trident/index.html["Trident 文件"^]。
 
 以下頁麵包含有關已在 {solution_name} 解決方案中針對應用程式和持久性儲存管理進行驗證的NetApp產品的詳細資訊：
 
@@ -135,7 +135,7 @@ image:redhat-openshift-002.png["此圖顯示輸入/輸出對話框或表示書�
 
 Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。
 
-Trident的最新版本是 2022 年 4 月發布的 22.04。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣 https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["這裡"]。
+有關哪些版本的 Trident 已與哪些 Kubernetes 經銷版本進行過測試的支援對照表，請參閱 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["支援的前端（協調器）"^]。
 
 從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。
 

@@ -78,6 +78,6 @@ NetApp每季都會定期遵守要求，以驗證我們符合Trident CSI 的儲�
 
 NetApp提供了多種產品來幫助您在基於容器的環境（如 Anthos）中編排和管理持久性資料。
 
-NetApp Trident是一個開源的、完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。欲了解更多信息，請訪問Trident網站 https://docs.netapp.com/us-en/trident/index.html["這裡"]。
+NetApp Trident 是一個開源、完全支援的儲存設備協調器，適用於 Container 和 Kubernetes 經銷版本，包括 Anthos。如需更多資訊，請造訪 link:https://docs.netapp.com/us-en/trident/index.html["Trident 文件"^]。
 
 以下頁麵包含有關NetApp產品的更多信息，這些產品已在 Anthos with NetApp解決方案中經過應用程式和持久性儲存管理驗證。

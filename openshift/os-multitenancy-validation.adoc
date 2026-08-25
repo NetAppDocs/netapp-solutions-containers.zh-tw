@@ -23,14 +23,16 @@ summary: 使用NetApp在 Red Hat OpenShift 上設定多租戶
 
 . 以 ocp-project-1-user、project-1 中的開發人員身分登入。
 . 檢查建立新項目的權限。
-+
-[source, console]
+
+
+[listing]
 ----
 oc create ns sub-project-1
 ----
 . 使用指派給 project-1 的儲存類別在 project-1 中建立 PVC。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: PersistentVolumeClaim
@@ -50,20 +52,23 @@ spec:
 EOF
 ----
 . 檢查與 PVC 關聯的 PV。
-+
-[source, console]
+
+
+[listing]
 ----
 oc get pv
 ----
 . 驗證 PV 及其磁碟區是否在NetApp ONTAP上專用於 project-1 的 SVM 中建立。
-+
-[source, console]
+
+
+[listing]
 ----
 volume show -vserver project-1-svm
 ----
 . 在 project-1 中建立一個 pod，並掛載上一個步驟所建立的 PVC。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: Pod
@@ -88,13 +93,12 @@ spec:
 EOF
 ----
 . 檢查 pod 是否正在運作以及是否安裝了磁碟區。
-+
-[source, console]
+
+
+[listing]
 ----
 oc describe pods test-pvc-pod -n project-1
 ----
-
-
 
 
 [[validate-access-to-create-pvcs-or-pods-in-another-project-or-use-resources-dedicated-to-another-project]]
@@ -102,8 +106,9 @@ oc describe pods test-pvc-pod -n project-1
 
 . 以 ocp-project-1-user、project-1 中的開發人員身分登入。
 . 使用指派給 project-2 的儲存類別在 project-1 中建立 PVC。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: PersistentVolumeClaim
@@ -123,8 +128,9 @@ spec:
 EOF
 ----
 . 在 project-2 中建立 PVC。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: PersistentVolumeClaim
@@ -144,15 +150,17 @@ spec:
 EOF
 ----
 . 確保 PVC `test-pvc-project-1-sc-2`和 `test-pvc-project-2-sc-1`沒有創造。
-+
-[source, console]
+
+
+[listing]
 ----
 oc get pvc -n project-1
 oc get pvc -n project-2
 ----
 . 在 project-2 中建立一個 pod。
-+
-[source, console]
+
+
+[listing]
 ----
 cat << EOF | oc create -f -
 kind: Pod
@@ -171,42 +179,44 @@ EOF
 ----
 
 
-
-
 [[validate-access-to-view-and-edit-projects-resourcequotas-and-storageclasses]]
 == 驗證檢視和編輯項目、資源配額和儲存類別的權限
 
 . 以 ocp-project-1-user、project-1 中的開發人員身分登入。
 . 檢查建立新項目的權限。
-+
-[source, console]
+
+
+[listing]
 ----
 oc create ns sub-project-1
 ----
 . 驗證查看項目的存取權限。
-+
-[source, console]
+
+
+[listing]
 ----
 oc get ns
 ----
 . 檢查使用者是否可以檢視或編輯 project-1 中的 ResourceQuotas。
-+
-[source, console]
+
+
+[listing]
 ----
 oc get resourcequotas -n project-1
 oc edit resourcequotas project-1-sc-rq -n project-1
 ----
 . 驗證使用者是否有權查看儲存類別。
-+
-[source, console]
+
+
+[listing]
 ----
 oc get sc
 ----
 . 檢查存取權限以描述儲存類別。
 . 驗證使用者編輯儲存類別的權限。
-+
-[source, console]
+
+
+[listing]
 ----
 oc edit sc project-1-sc
 ----
-

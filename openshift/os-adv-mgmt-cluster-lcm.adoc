@@ -20,11 +20,11 @@ summary: NetApp協助 Red Hat OpenShift 上 Kubernetes 的高階叢集管理
 +
 .. 建立提供者連接：導航至提供者連接並按一下新增連接，提供與所選提供者類型相對應的所有詳細信息，然後按一下新增。
 +
-image:redhat-openshift-075.png["新增提供者連接"]
+image::redhat-openshift-075.png[新增提供者連接]
 
 .. 若要建立新集群，請導航至“集群”，然後按一下“新增集群”>“建立集群”。提供集群和相應提供者的詳細信息，然後按一下「建立」。
 +
-image:redhat-openshift-076.png["新增集群"]
+image::redhat-openshift-076.png[新增集群]
 
 .. 叢集建立完成後，出現在叢集清單中，狀態為Ready。
 
@@ -35,7 +35,7 @@ image:redhat-openshift-076.png["新增集群"]
 .. 輸入叢集名稱，點選儲存匯入並產生程式碼。顯示新增現有叢集的命令。
 .. 按一下“複製命令”，在要新增到中心叢集的叢集上執行該命令。這將啟動叢集上必要代理的安裝，並且此過程完成後，叢集將以「就緒」狀態出現在叢集清單中。
 +
-image:redhat-openshift-077.png["導入現有集群"]
+image::redhat-openshift-077.png[導入現有集群]
 
 
 

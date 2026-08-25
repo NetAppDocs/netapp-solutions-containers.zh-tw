@@ -27,7 +27,7 @@ RHV 提供以下功能：
 * *增強的安全性* 從 RHV 繼承而來，RHV 採用安全虛擬化 (sVirt) 和安全增強 Linux (SELinux) 技術來提高主機和虛擬機器的安全性和強化程度。這些功能的主要優勢是虛擬機器及其相關資源的邏輯隔離。
 
 
-image:redhat-openshift-003.png["此圖顯示輸入/輸出對話框或表示書面內容"]
+image::redhat-openshift-003.png[此圖顯示輸入/輸出對話框或表示書面內容]
 
 
 

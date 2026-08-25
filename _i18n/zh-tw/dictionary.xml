@@ -11,9 +11,7 @@
   <block id="71d00a17a6d603b0b4ebb168354950db" category="list-text">根據工作負載需求獨立擴展基礎設施的能力</block>
   <block id="2b8932b35916e8cecb6216546111322e" category="paragraph">Red Hat OpenShift Container Platform 是一個完全支援的企業級 Kubernetes 平台。  Red Hat 對開源 Kubernetes 進行了多項改進，以提供一個完全整合所有元件的應用程式平台，用於建置、部署和管理容器化應用程式。</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">這裡</block>
-  <block id="73677e8d319e77c91f647e668e868ecb" category="paragraph">欲了解更多信息，請訪問 OpenShift 網站<block ref="35d5a627a33ce17e4bd125258d59fbc4" category="inline-link-rx"></block>。</block>
   <block id="660d073f0987fac312dc40bd5dc868bd" category="paragraph">NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存系統。  NetApp產品組合包括NetApp ONTAP、 NetApp Element和NetApp e-Series 儲存系統，所有這些系統都可以為容器化應用程式提供持久性儲存。</block>
-  <block id="f582083d849d313b57029bcb7e14f0b5" category="paragraph">如需了解更多信息，請訪問NetApp網站<block ref="95da63d781dead5af723667a3f69096a" category="inline-link-rx"></block>。</block>
   <block id="52793fa37eb7686ddfd1adbb418ea88b" category="paragraph">Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。</block>
   <block id="674132e161f2169b0ec0b4ccbd09312c" category="paragraph">欲了解更多信息，請訪問Trident網站<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block>。</block>
   <block id="367ed9b12ca74138f4b935c22d3372f4" category="paragraph">NetApp擁有多個符合Trident的儲存平台，可為容器化應用程式設定、保護和管理資料。</block>
@@ -52,16 +50,12 @@
   <block id="5a69e0f8303b40f9f4d56038d3d260c9" category="section-title">NetApp AFF/ FAS</block>
   <block id="f4fc33973424c12639f93790b1c6f370" category="paragraph">NetApp提供強大的全快閃 (AFF) 和橫向擴展混合 (FAS) 儲存平台，這些平台具有低延遲效能、整合資料保護和多協定支援等特點。</block>
   <block id="1c17e6d2341ed81f40ea6b64de41e6d7" category="paragraph">這兩個系統均由NetApp ONTAP資料管理軟體提供支持，這是業界最先進的資料管理軟體，可實現簡化、高可用、雲端整合的儲存管理，為您的資料結構需求提供企業級的速度、效率和安全性。</block>
-  <block id="992c24be8f66e4259b38ce763c115251" category="paragraph">有關 NETAPP AFF/ FAS平台的更多信息，請按一下<block ref="629508ef5a91b5835f70894f34eed424" category="inline-link-rx"></block>。</block>
   <block id="3a3a5cd068731551120f43f37950768b" category="section-title">ONTAP Select</block>
   <block id="158de41b0c768154e1c26d384097971b" category="paragraph">ONTAP Select是NetApp ONTAP的軟體定義部署，可部署到您環境中的虛擬機器管理程式。它可以安裝在 VMware vSphere 或 KVM 上，並提供基於硬體的ONTAP系統的全部功能和體驗。</block>
-  <block id="3f0bbee5abf3eed060d4147cb0d060b9" category="paragraph">有關ONTAP Select的更多信息，請單擊<block ref="7c1424ed7be035c303f12b0763e38ece" category="inline-link-rx"></block>。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="section-title">Cloud Volumes ONTAP</block>
   <block id="9c38b2d834f16a22a033cc493828d911" category="paragraph">NetApp Cloud Volumes ONTAP是NetApp ONTAP的雲端部署版本，可部署在許多公有雲中，包括 Amazon AWS、Microsoft Azure 和 Google Cloud。</block>
-  <block id="c7fa0d52c3955385f084d0e67c59f963" category="paragraph">有關Cloud Volumes ONTAP 的更多信息，請單擊<block ref="75c9b0075008bbe40ac851ad7f6dda6a" category="inline-link-rx"></block>。</block>
   <block id="87517df6852cb879fffc1e5811e773eb" category="paragraph">NetApp提供多種產品來協助您協調、管理、保護和遷移有狀態的容器化應用程式及其資料。</block>
   <block id="d8c97b16fc0393403d454727d6719db4" category="paragraph"><block ref="d8c97b16fc0393403d454727d6719db4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d3fb24019e0cc5250fe07af0c12fa7b" category="paragraph">NetApp Trident是一個開源且完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（如 {k8s_distribution_name}）。欲了解更多信息，請訪問Trident網站<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block>。</block>
   <block id="ccbb3765ebd50818c2e13a7aba362360" category="paragraph">以下頁麵包含有關已在 {solution_name} 解決方案中針對應用程式和持久性儲存管理進行驗證的NetApp產品的詳細資訊：</block>
   <block id="e71e852dc96d4d0e2da95de923a6f8ff" category="inline-link-macro">NetApp Trident</block>
   <block id="25b90e1180939c55a6c004f0caece01e" category="list-text"><block ref="25b90e1180939c55a6c004f0caece01e" category="inline-link-macro-rx"></block></block>
@@ -69,7 +63,6 @@
   <block id="a4957cf974ce20219897bbbf5b131cb8" category="paragraph">管理員可以根據專案需求和儲存系統模型配置多個儲存後端，以實現進階儲存功能，包括壓縮、特定磁碟類型或保證一定效能等級的 QoS 等級。定義完成後，開發人員可以在他們的專案中使用這些後端來建立持久性卷聲明 (PVC) 並根據需要將持久性儲存附加到他們的容器。</block>
   <block id="c1169b92d2702ce17fd2fd00ee52298d" category="paragraph"><block ref="c1169b92d2702ce17fd2fd00ee52298d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1a87a98cf239ab6c40a301d699d36ce" category="paragraph">Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。</block>
-  <block id="2e0b4ead344201a59336e8b95c4c575f" category="paragraph">Trident的最新版本是 2022 年 4 月發布的 22.04。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣<block ref="34562000b9988739736848a0014e5230" category="inline-link-rx"></block>。</block>
   <block id="ed42e52f359216f47260ed1d21ef331c" category="paragraph">從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。</block>
   <block id="4a85fdd5a26454abc330a5ec2a46a326" category="paragraph">隨著 21.01 版本的發布，Helm 圖表可用於簡化Trident Operator 的安裝。</block>
   <block id="c0018d5f0e0d9decd39a8059cc2bc473" category="summary">本頁提供的範例是 Anthos with NetApp的解決方案驗證和用例。</block>
@@ -240,7 +233,6 @@
   <block id="cb9f661ea2c5b0b25cb936398de81286" category="admonition">F5 BIG-IP 可以採用獨立模式部署，也可以採用叢集模式部署。為了進行此驗證，F5 BIG-IP 以獨立模式部署。但是，出於生產目的， NetApp建議建立一個 BIG-IP 實例集群，以避免單點故障。</block>
   <block id="0d3e8be481c0c23fd0a68da9a9340ef7" category="admonition">F5 BIG-IP 系統可以部署在專用硬體上、雲端或作為本地虛擬設備部署，版本高於 12.x，以便與 F5 CIS 整合。為了本文檔的目的，F5 BIG-IP 系統被驗證為虛擬設備，例如使用 BIG-IP VE 版本。</block>
   <block id="39bc153685f2a0c6d56db4227295a3b0" category="section-title">已驗證版本</block>
-  <block id="b662a8c121a377d9111fe64265c8d819" category="paragraph">此解決方案利用在 VMware vSphere 中部署的虛擬設備。根據您的網路環境，F5 Big-IP 虛擬設備的網路可以配置為雙臂或三臂配置。本文檔中的部署基於雙臂配置。關於如何配置虛擬設備以與 Anthos 配合使用的詳細信息，請參閱<block ref="f18a28d0c935319437c4d1b1e33e5728" category="inline-link-rx"></block>。</block>
   <block id="9c62eb7c12e4e6a75fc74fffecb2db09" category="paragraph">NetApp的解決方案工程團隊已在我們的實驗室中驗證了下表中的版本，以便與 Anthos On-Prem 的部署搭配使用：</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="37f438df6a6d5ba4c17ef8ca58562f00" category="cell">F5</block>
@@ -249,7 +241,6 @@
   <block id="c2c889e06ea18c0e72996bc4b43c8115" category="cell">16.1.0-0.0.19</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">安裝</block>
   <block id="674751c31a2db2596bf7788e2953b80f" category="paragraph">若要安裝 F5 BIG-IP，請完成以下步驟：</block>
-  <block id="ee5cd6f83412e93266bf30ff048db6ff" category="list-text">從 F5 下載虛擬應用程式開放虛擬設備 (OVA) 文件<block ref="cafae381bde5e2381c6df42a3aa937c6" category="inline-link-rx"></block>。</block>
   <block id="fff9995f30a825c5d3e5709e7b78117a" category="admonition">要下載設備，用戶必須在 F5 註冊。他們為 Big-IP Virtual Edition Load Balancer 提供了 30 天的演示許可。  NetApp建議對設備的生產部署使用永久的 10Gbps 許可證。</block>
   <block id="1a104d04970b6b80d8cf31f554404f4d" category="list-text">右鍵點選基礎架構資源池並選擇部署 OVF 範本。將啟動精靈，讓您選擇在步驟 1 中剛下載的 OVA 檔案。按一下“下一步”。</block>
   <block id="fdf7304b13d736c791bc745a330e7309" category="inline-image-macro">部署 Big-IP 設備</block>
@@ -332,7 +323,6 @@
   <block id="05c10047ab7b3613fff3f97b9c177de4" category="paragraph"><block ref="05c10047ab7b3613fff3f97b9c177de4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="678cbe37bb872d145128736b4650ef68" category="paragraph">NetApp提供強大的全快閃 (AFF) 和橫向擴展混合 (FAS) 儲存平台，這些平台具有低延遲效能、整合資料保護和多協定支援等特點。</block>
   <block id="b321b5ab2c84403c3a4dd82bce8757ab" category="paragraph">這兩種系統均採用NetApp ONTAP資料管理軟體，這是業界最先進的資料管理軟體，具有高可用性、雲端整合、簡化的儲存管理，可提供資料結構所需的企業級速度、效率和安全性。</block>
-  <block id="a9b90f3200d3b94ea47e85db3a435816" category="paragraph">有關 NETAPP AFF和FAS平台的更多信息，請單擊<block ref="629508ef5a91b5835f70894f34eed424" category="inline-link-rx"></block>。</block>
   <block id="b008e805d13d953ddb5cbb220d8ef9b6" category="paragraph">ONTAP Select是NetApp ONTAP的軟體定義部署，可部署到您環境中的虛擬機器管理程式。它可以安裝在 VMware vSphere 或 KVM 上，並提供基於硬體的ONTAP系統的全部功能和體驗。</block>
   <block id="f0f4b6de2040d7dc57e7f4f6baee7ec3" category="paragraph">NetApp Cloud Volumes ONTAP是NetApp ONTAP的雲端部署版本，可部署在許多公有雲中，包括：Amazon AWS、Microsoft Azure 和 Google Cloud。</block>
   <block id="957478b81604fc0a340d863f3b89a2da" category="summary">NetApp擁有多個符合我們的Trident Storage Orchestrator 要求的儲存平台，可為部署在 Anthos 上的應用程式設定儲存。</block>
@@ -390,12 +380,10 @@
   <block id="385c65f480dfcbc7cb530a2c6c807ae9" category="paragraph">Anthos On Prem 是一個完全支援的企業級 Kubernetes 平台，可以部署在 VMware vSphere 虛擬機器管理程式中，也可以部署在您選擇的裸機基礎架構上。</block>
   <block id="81f74b2a02db97d708bd7cbf08d2463a" category="section-title">NetApp儲存系統</block>
   <block id="5534dc7dafa6f321e51a117c53baff02" category="paragraph">NetApp擁有多種非常適合企業資料中心和混合雲端部署的儲存系統。  NetApp產品組合包括NetApp ONTAP、 Cloud Volumes ONTAP、 Google Cloud NetApp Volumes、 Azure NetApp Files和 FSx ONTAP for NetApp ONTAP儲存系統，所有這些產品都可以為容器化應用程式提供持久性儲存。</block>
-  <block id="aa4193984de53d2a6d8fcc2d77c09bda" category="paragraph">欲了解更多信息，請訪問NetApp網站<block ref="95da63d781dead5af723667a3f69096a" category="inline-link-rx"></block>。</block>
   <block id="069b087e8e1e69cc928f18a85f683523" category="section-title">NetApp儲存集成</block>
   <block id="0d9d3475cd793588b3ac71ca4ce9696f" category="paragraph">Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 Anthos）儲存編排器。</block>
   <block id="aa44798f04a58b33c3699abd02a59c57" category="paragraph">本節專門介紹實際使用者在將此解決方案部署到生產時可能需要執行的自訂，例如建立專用私有映像登錄檔或部署自訂負載平衡器執行個體。</block>
   <block id="382742bb5fff6a719c144a0a01cd17e3" category="section-title">已驗證版本的目前支援矩陣</block>
-  <block id="57f64c5c85667657a2c67b472c545e5a" category="paragraph">看<block ref="0c665fc00d0d39d9ca9d157ca926b271" category="inline-link-rx"></block>用於已驗證版本的支援矩陣。</block>
   <block id="21e8ffc6f822b183559b39b43061c1d2" category="summary">NetApp提供了多種產品來幫助我們的客戶在基於容器的環境（如 Anthos）中編排和管理持久性資料。</block>
   <block id="2515fbef39d57544723402c683215c64" category="doc">NetApp儲存整合概述</block>
   <block id="5b9abd64aa4865a31820ebec932e54f2" category="section-title">Anthos Ready 儲存合作夥伴計畫。</block>
@@ -431,7 +419,6 @@
   <block id="2abfff2974f589f7a217325f304e0ec5" category="cell">ONTAP 9.8</block>
   <block id="955ddf0f7e289ee80cdea4b5324b620d" category="cell">22.01</block>
   <block id="84aafd4e962655f32c5bdea750278fba" category="paragraph">NetApp提供了多種產品來幫助您在基於容器的環境（如 Anthos）中編排和管理持久性資料。</block>
-  <block id="822a22bf8b93f7025f7320ca5a771bd4" category="paragraph">NetApp Trident是一個開源的、完全支援的儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。欲了解更多信息，請訪問Trident網站<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block>。</block>
   <block id="ea3f2894c4df21a157c45dcbcf989bda" category="paragraph">以下頁麵包含有關NetApp產品的更多信息，這些產品已在 Anthos with NetApp解決方案中經過應用程式和持久性儲存管理驗證。</block>
   <block id="8e0bd613649f232fe1f718134898ea21" category="summary">要實現Trident與NetApp ONTAP儲存系統的集成，您必須建立一個能夠與儲存系統通訊的後端。</block>
   <block id="60423d24e49c8db4836be0abd09fb78d" category="doc">NetApp ONTAP iSCSI 設定</block>
@@ -450,31 +437,19 @@
   <block id="87f6ff6bf74013e1dfe6df49a1cf1986" category="list-text">編輯此檔案中的 backendName、managementLIF、dataLIF、svm、username 和 password 值。</block>
   <block id="f897eefba2c59919d6493db4825e2db2" category="admonition">最佳做法是將自訂 backendName 值定義為 storageDriverName 和為 NFS 提供服務的 dataLIF 的組合，以便於識別。</block>
   <block id="00d6947fd6a153943286b857dcd0f339" category="admonition">有一個可選字段稱為<block ref="7cfbb6f07899c8071ff38e69dca190e2" prefix=" " category="inline-code"></block>這是在這個文件中定義的。可以在 NFS 後端刪除此行。</block>
-  <block id="38371fce1a5a5624906f4174135ca977" category="summary">Trident是一個完全支援的開源儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。</block>
   <block id="1fdd8c73a319eed7bf9c10862e3ccde5" category="doc">Trident概述</block>
   <block id="b01daa55b9d9959fd631c89839b1cd32" category="paragraph">Trident是一個完全支援的開源儲存編排器，適用於容器和 Kubernetes 發行版（包括 Anthos）。  Trident可與整個NetApp儲存產品組合搭配使用，包括NetApp ONTAP，並且還支援 NFS 和 iSCSI 連線。  Trident允許最終用戶從其NetApp儲存系統配置和管理存儲，而無需儲存管理員的干預，從而加速 DevOps 工作流程。</block>
   <block id="e16f8b7c3b79f3d80b3d5b5862b4481a" category="paragraph">管理員可以根據專案需求和儲存系統模型配置多個儲存後端，以實現進階儲存功能，包括壓縮、特定磁碟類型和保證一定效能等級的 QoS 等級。定義完成後，開發人員可以在他們的專案中使用這些後端來建立持久性卷聲明 (PVC) 並根據需要將持久性儲存附加到他們的容器。</block>
   <block id="cacc5da01514f9fa700d86e18966b3ef" category="paragraph"><block ref="cacc5da01514f9fa700d86e18966b3ef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="783c5d4bcd70f34a1ac53de76b17e00d" category="paragraph">最新版本的Trident的文件可以在<block ref="845024b96ab150d9f628b33995c60669" category="inline-link-rx"></block>。已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣<block ref="34562000b9988739736848a0014e5230" category="inline-link-rx"></block>。</block>
   <block id="b62bb4786ef52ad76706950add6991dd" category="paragraph">從 20.04 版本開始， Trident設定由Trident操作員執行。該操作員使大規模部署變得更容易，並提供額外的支持，包括作為Trident安裝的一部分部署的 pod 的自我修復。</block>
   <block id="1efa4d2f8950cdd5154a6c130953c9f2" category="paragraph">隨著 22.04 版本的發布，Helm 圖表已可用，以簡化Trident Operator 的安裝。</block>
-  <block id="d5ceedf0fbe688f1315aeef68b4bd00d" category="paragraph">有關Trident安裝的詳細信息，請參閱<block ref="df28848dc0c60e349970187bfd75a0df" category="inline-link-rx"></block>。</block>
   <block id="6cfca408e9e3b476e6440302dbe3a550" category="section-title">建立儲存系統後端</block>
-  <block id="6d82ca16bfbce249e1f9ea541bff13ff" category="inline-link-macro">創建後端。</block>
-  <block id="0ce840bddfd38211a3fa14afcf54b563" category="paragraph">完成Trident Operator 安裝後，您必須為正在使用的特定NetApp儲存平台設定後端。按照下面的連結繼續設定並設定Trident。<block ref="6afa050ddd54f270f14f9071966035ab" category="inline-link-macro-rx"></block></block>
   <block id="14f4c7abe09c4481722f1fa6563f2604" category="section-title">建立儲存類別</block>
-  <block id="f1e3764062d0208c91b1cbb929dbe6c4" category="paragraph">建立後端後，您必須建立一個儲存類，Kubernetes 使用者在需要磁碟區時將指定該儲存類別。 Kubernetes 使用者透過使用持久性卷宣告 (PVC) 來配置卷，透過名稱指定儲存類別。按照下面的連結建立儲存類別。<block ref="d71f4f7b9c3f7c9426171d42e12723d2" category="inline-link-macro-rx"></block></block>
   <block id="50cbd0d28725f746b370915ee052232c" category="section-title">動態配置磁碟區</block>
   <block id="72407fd74e9ce26b706ed85bc90bd124" category="inline-link-macro">創建 PVC</block>
-  <block id="54fc27fa939861851f69424ace384dc2" category="paragraph">您必須使用儲存類別建立 Kubernetes 持久性磁碟區宣告 (PVC) 物件來動態設定磁碟區。按照下面的連結建立一個 PVC 物件。<block ref="c60059241533eaa052b5302a867dee16" category="inline-link-macro-rx"></block></block>
   <block id="279865aaa331ec925a99c3272eb45478" category="section-title">使用音量</block>
   <block id="fed9c63a200801110024280f08877e16" category="inline-link-macro">將卷掛載到 Pod 中</block>
-  <block id="1e2f7a8dd5d4ae913a1fd565f75f47f6" category="paragraph">應用程式可以透過將上述步驟中配置的磁碟區掛載到 pod 中來使用該磁碟區。下面的連結顯示了一個範例。<block ref="089227f27218a48e27ca586faba48d0e" category="inline-link-macro-rx"></block></block>
   <block id="70e2a62f68d21714178b04c1c938d7ea" category="section-title">範例配置</block>
-  <block id="5f81609404aa3c8258fda936db387e50" category="inline-link-macro">iSCSI 協定的範例清單，window=_blank</block>
-  <block id="0e0e30c744337b798d795bb0f72b0366" category="paragraph"><block ref="0e0e30c744337b798d795bb0f72b0366" category="inline-link-macro-rx"></block></block>
-  <block id="d51bcf02e4ee8592abc3f54657dde8dd" category="inline-link-macro">nfs 協定的範例清單，window=_blank</block>
-  <block id="dbeac2a6da996e718ff03ec5e51a5cc4" category="paragraph"><block ref="dbeac2a6da996e718ff03ec5e51a5cc4" category="inline-link-macro-rx"></block></block>
   <block id="122aacda8785e42ca8fd7bd6ebce84f8" category="summary">VMware vSphere 是一個虛擬化平台，用於集中管理在 ESXi 虛擬機器管理程式上運行的大量虛擬化伺服器和網路。</block>
   <block id="87f76f310cf20e85a098d49fa77367e5" category="doc">VMware 上的 Anthos 集群</block>
   <block id="305e6830d9a37648b6048edc110fb7e4" category="paragraph">VMware 上的 Anthos 叢集是 Google Kubernetes Engine 的擴展，部署在最終使用者的私人資料中心。組織可以在本地 Kubernetes 叢集中部署旨在在 Google Cloud 容器中運行的相同應用程式。  Anthos on VMware 叢集可以部署到您資料中心現有的 VMware vSphere 環境中，從而節省資本支出並實現更快速的部署和擴展操作。</block>
@@ -597,10 +572,8 @@
   <block id="fa19c463235a810b3a93333d6ee51d6c" category="paragraph">要建立一個應用程式並跨一組叢集管理它，</block>
   <block id="920db239cf01c8ded4b7f364194ab540" category="list-text">從側邊欄導航到“管理應用程式”，然後按一下“建立應用程式”。提供您想要建立的應用程式的詳細信息，然後按一下「儲存」。</block>
   <block id="6b41f909eb299f214abfb15580583456" category="inline-image-macro">創建應用程式</block>
-  <block id="3f824abd348b35a7218b63150bd10f90" category="paragraph"><block ref="3f824abd348b35a7218b63150bd10f90" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bcb3e5b76f189a87ea350550f86de83f" category="list-text">應用程式元件安裝完成後，該應用程式就會出現在清單中。</block>
   <block id="d70fc022d09a33f4044c81cd670a71b6" category="inline-image-macro">應用程式列表</block>
-  <block id="10f2eb03b2a15c6897518c6b163e441e" category="paragraph"><block ref="10f2eb03b2a15c6897518c6b163e441e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="672d326704c3be4bebf6c816a48495e7" category="list-text">現在可以從控制台監控和管理該應用程式。</block>
   <block id="d10b633b8bd8d022c66a52d93e0ed6ce" category="doc">集群生命週期管理</block>
   <block id="8b9449bdfc859a900fc4da7c79420145" category="paragraph">若要管理不同的 OpenShift 集群，您可以建立它們或將它們匯入進階集群管理。</block>
@@ -608,83 +581,62 @@
   <block id="0becde0fcfda03aec9c722d042326324" category="list-text">若要建立新的 OpenShift 集群，請完成以下步驟：</block>
   <block id="e056bb6efa17796fc810edad8410280d" category="list-text">建立提供者連接：導航至提供者連接並按一下新增連接，提供與所選提供者類型相對應的所有詳細信息，然後按一下新增。</block>
   <block id="50dfc508091b37338da8357e63e6a405" category="inline-image-macro">新增提供者連接</block>
-  <block id="6950e4aa9f589c469d0be8f75780b994" category="paragraph"><block ref="6950e4aa9f589c469d0be8f75780b994" category="inline-image-macro-rx" type="image"></block></block>
   <block id="401b252566122602a82ff66bc7ed3e6c" category="list-text">若要建立新集群，請導航至“集群”，然後按一下“新增集群”&gt;“建立集群”。提供集群和相應提供者的詳細信息，然後按一下「建立」。</block>
   <block id="2984cab36bd51d5446963e671e808f5d" category="inline-image-macro">新增集群</block>
-  <block id="23b8ad964837a66064ae1029abbbe9f0" category="paragraph"><block ref="23b8ad964837a66064ae1029abbbe9f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2da6eeb34cf16de43ab8fa2f939d81c7" category="list-text">叢集建立完成後，出現在叢集清單中，狀態為Ready。</block>
   <block id="e6d9a6b38dd36fd9870260249ba5fc1f" category="list-text">若要匯入現有集群，請完成以下步驟：</block>
   <block id="f52ae06380cfd00cae7839562f550e87" category="list-text">導航至集群並點擊新增集群&gt;匯入現有集群。</block>
   <block id="63b7276dd1b569babc28304e786e2041" category="list-text">輸入叢集名稱，點選儲存匯入並產生程式碼。顯示新增現有叢集的命令。</block>
   <block id="be87809a27ab2944f89ccaebd89b7596" category="list-text">按一下“複製命令”，在要新增到中心叢集的叢集上執行該命令。這將啟動叢集上必要代理的安裝，並且此過程完成後，叢集將以「就緒」狀態出現在叢集清單中。</block>
   <block id="9a618414b83afe67c19abcf935be6dbd" category="inline-image-macro">導入現有集群</block>
-  <block id="153d72343e42e12e3684942e2cdee878" category="paragraph"><block ref="153d72343e42e12e3684942e2cdee878" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c812d1382d834648706b3bf1e6848135" category="list-text">建立並匯入多個叢集後，您可以從單一控制台監控和管理它們。</block>
   <block id="86c2cc4630e619e2c08c32f54e844297" category="doc">在多個集群上建立資源</block>
   <block id="bc2397695676d1a63e489d4c80c8cd91" category="paragraph">Kubernetes 的高階叢集管理可讓使用者從控制台同時在一個或多個託管叢集上建立資源。例如，如果您在不同的站點擁有 OpenShift 集群，且這些集群由不同的NetApp ONTAP集群支持，並且想要在兩個站點配置 PVC，則可以單擊頂部欄上的 (+) 號。然後選擇要建立 PVC 的集群，貼上資源 YAML，然後按一下建立。</block>
   <block id="24800112d59462f8ea9ff03f5dd456a7" category="inline-image-macro">創建資源</block>
-  <block id="7e9a9cb44c804889afaca956d868ee57" category="paragraph"><block ref="7e9a9cb44c804889afaca956d868ee57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1630dbfdd4887ce201ea82c71cde3d11" category="doc">為 Kubernetes 部署高階叢集管理</block>
   <block id="fad73d4839dc21dc3d330b3940ed763f" category="paragraph">本節介紹使用NetApp在 Red Hat OpenShift 上對 Kubernetes 進行進階叢集管理。</block>
   <block id="39d08ecbb9add7bd87659df206457a73" category="list-text">用於中心叢集的 Red Hat OpenShift 叢集（高於 4.5 版本）</block>
   <block id="f41043c73a62a435944d8abfb45094cb" category="list-text">用於託管叢集的 Red Hat OpenShift 叢集（高於 4.4.3 版本）</block>
   <block id="d60c66eb778a488709534045787b6a26" category="list-text">叢集管理員存取 Red Hat OpenShift 叢集</block>
   <block id="374185e020d06ceed3f020af518a1c14" category="list-text">Red Hat 訂閱 Kubernetes 高階叢集管理</block>
-  <block id="9afcd045ce0197d71ba631e3fbe43095" category="paragraph">高階叢集管理是 OpenShift 叢集的一個附加元件，因此根據中心和管理叢集中使用的功能，對硬體資源有一定的要求和限制。在確定集群大小時需要考慮這些問題。查看文件<block ref="a5d2b81b971715f092f7296621743e22" category="inline-link-rx"></block>了解更多詳情。</block>
-  <block id="65a62318377ddbc5fe3f73548dc3d677" category="paragraph">或者，如果中心叢集具有用於託管基礎架構元件的專用節點，並且您只想在這些節點上安裝高階叢集管理資源，則需要相應地向這些節點新增容忍度和選擇器。更多詳細資訊請參閱文檔<block ref="df4d7b25534e8f26e8ab3acc1c646101" category="inline-link-rx"></block>。</block>
   <block id="7c613b296892d4712b9041d3081282f8" category="summary">使用NetApp在 Red Hat OpenShift 上對 Kubernetes 進行高階叢集管理。</block>
   <block id="78e1aefe2bbb2518f1156636e761e479" category="paragraph">若要在 OpenShift 叢集上安裝 Kubernetes 進階叢集管理，請完成下列步驟：</block>
   <block id="b17056cdbd9ec695d4348e1ad799ace4" category="list-text">選擇一個 OpenShift 集群作為中心集群，並使用集群管理員權限登入。</block>
   <block id="bc2ab7a7550cebeb52a08cf830b5ecf6" category="list-text">導覽至 Operators &gt; Operators Hub 並蒐索 Kubernetes 的高階叢集管理。</block>
   <block id="2e5d3941e033e96d5317cc2bbd1da914" category="inline-image-macro">ACM磁磚</block>
-  <block id="9cba2871ff28eb39207a2645fc9d6f1f" category="paragraph"><block ref="9cba2871ff28eb39207a2645fc9d6f1f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4ab802b80978ba1c5de3922d546bdb7" category="list-text">選擇 Kubernetes 的高階叢集管理，然後按一下安裝。</block>
   <block id="cc5a9dd5971b8369354db684e5dbfe2b" category="inline-image-macro">ACM 磁磚細節</block>
-  <block id="550443e3be425fc14c0daef2e72e9df5" category="paragraph"><block ref="550443e3be425fc14c0daef2e72e9df5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c972585d6241c4f2ed2604bcc8706358" category="list-text">在「安裝操作員」畫面上，提供必要的詳細資訊（NetApp建議保留預設參數）並按一下「安裝」。</block>
   <block id="72b342ddabad6a9ec11df82389c40b88" category="inline-image-macro">安裝 ACM Operator 磁貼</block>
-  <block id="deb0049462c815b6822399ba0a1deddf" category="paragraph"><block ref="deb0049462c815b6822399ba0a1deddf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11458c333e4903e54ca46f822ba6a3b6" category="list-text">等待操作員安裝完成。</block>
   <block id="64524f91c2fdfcd54b4bbcab35392908" category="inline-image-macro">ACM 操作員安裝正在進行中</block>
-  <block id="96c387ac3caa3d3c2803b0d990480051" category="paragraph"><block ref="96c387ac3caa3d3c2803b0d990480051" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7bf3d0678c48be5730f20005e6f88aa1" category="list-text">安裝操作員後，按一下建立 MultiClusterHub。</block>
   <block id="e0d84ec6a5b8f92909a7a3bef11455c1" category="inline-image-macro">ACM 操作員多集群中心</block>
-  <block id="efe77302287c455d079da45b8902e93f" category="paragraph"><block ref="efe77302287c455d079da45b8902e93f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="95f29f27e373a9759cf065e1fde23e28" category="list-text">在建立 MultiClusterHub 畫面上，提供詳細資訊後按一下建立。這將啟動多集群集線器的安裝。</block>
   <block id="344f0cb43d1b2e7a719bea808fe7c5bf" category="inline-image-macro">建立多集群中心螢幕</block>
-  <block id="a3546564dfb5145dcb91fdeefa484d89" category="paragraph"><block ref="a3546564dfb5145dcb91fdeefa484d89" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a50aa5e8249109d6f4902945e968ad7d" category="list-text">當 open-cluster-management 命名空間中的所有 pod 都轉為 Running 狀態，並且操作員轉為 Succeeded 狀態後，Kubernetes 高階叢集管理就安裝完成了。</block>
   <block id="851548d1ad843a23609f325e8b54e72d" category="inline-image-macro">ACM 操作員已安裝</block>
-  <block id="bbf8732a6e771744f256e15b7d613a80" category="paragraph"><block ref="bbf8732a6e771744f256e15b7d613a80" category="inline-image-macro-rx" type="image"></block></block>
   <block id="391dd52c88201d377f1572062e22c43e" category="list-text">完成集線器安裝需要一些時間，完成後，多集群集線器將進入運作狀態。</block>
   <block id="c7aa79f0c31ac15d728ee47c7e6eaee2" category="inline-image-macro">多集群集線器已準備就緒</block>
-  <block id="e3f0a1732a09065231e9bf0a4fa10e6e" category="paragraph"><block ref="e3f0a1732a09065231e9bf0a4fa10e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eef36825efd5d2d40e4f833635cd19da" category="list-text">它在 open-cluster-management 命名空間中建立一條路由。連接到路由中的URL，存取高階叢集管理控制台。</block>
   <block id="f761fad3f1c25e94d5f46ebd9e23a901" category="inline-image-macro">ACM 控制台路由</block>
-  <block id="8be16232c92dad9e0dfd70e175da411a" category="paragraph"><block ref="8be16232c92dad9e0dfd70e175da411a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fc5f6755312b7edeef9542bd55ef639" category="doc">治理與風險</block>
   <block id="9d7264067197bc9ff368288f98750fd6" category="paragraph">此功能可讓您為不同的叢集定義合規策略並確保叢集遵守該策略。您可以設定策略來通知或補救任何偏離或違反規則的行為。</block>
   <block id="87f4e127e0ecf99187b35830ca7e78aa" category="list-text">從側邊欄導覽至「治理和風險」。</block>
   <block id="0ecc505d3375f8bb3bd959aaaf7e710a" category="list-text">若要建立合規性策略，請按一下建立策略，輸入策略標準的詳細信息，然後選擇應遵守此策略的叢集。如果您想自動修正違反此策略的行為，請選取「如果支援則強制執行」複選框，然後按一下「建立」。</block>
   <block id="f6262e5369e2b989638aaa9d4f333d91" category="inline-image-macro">創建合規性策略</block>
-  <block id="563c01ec25937c5d155725b44cb310f8" category="paragraph"><block ref="563c01ec25937c5d155725b44cb310f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0a1575621f2b12d5216e6d1c95eed2e6" category="list-text">配置所有必要的策略後，可以從進階叢集管理中監控和修復任何策略或叢集違規行為。</block>
   <block id="38c080ff2128a92954fb61942ea497c0" category="inline-image-macro">政策監控</block>
-  <block id="e3b35cae2cfe8ce9766339e742dd43de" category="paragraph"><block ref="e3b35cae2cfe8ce9766339e742dd43de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="31fd0c2c8d388a4cd2c6459234743476" category="doc">可觀察性</block>
   <block id="e98511d60f9850de86f096614f447322" category="paragraph">Kubernetes 的高階叢集管理提供了一種監控所有叢集中的節點、pod、應用程式和工作負載的方法。</block>
   <block id="36aff44ed429ca86d182dc7ee3dfdbb1" category="list-text">導覽至觀察環境 &gt; 概覽。</block>
   <block id="7a6ccefec75a946583cffdd0a8a47e09" category="inline-image-macro">可觀察性首頁</block>
-  <block id="e5e0184c6e68858f80111d781d6db759" category="paragraph"><block ref="e5e0184c6e68858f80111d781d6db759" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9904a9276a489fc238c999d2ddd633f" category="list-text">所有叢集中的所有 pod 和工作負載都根據各種過濾器進行監控和排序。點擊Pods即可查看對應數據。</block>
   <block id="4a973ae1a908770e354f949d3c0592f8" category="inline-image-macro">觀察 Pod</block>
-  <block id="42a8f7ef0e3387f7c0f76f365a7736fa" category="paragraph"><block ref="42a8f7ef0e3387f7c0f76f365a7736fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cd1c61051d3647bc47d839e0efee222" category="list-text">基於各種資料點對叢集中的所有節點進行監控和分析。點擊節點可以深入了解相應的詳細資訊。</block>
   <block id="8a373f777de729c082b5be2d80b7eca6" category="inline-image-macro">觀察節點</block>
-  <block id="de2d0b768057392661b178ea76e594d7" category="paragraph"><block ref="de2d0b768057392661b178ea76e594d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e7f54a0ebc5cd69209a17181d477e4c" category="list-text">所有叢集都根據不同的叢集資源和參數進行監控和組織。按一下「集群」可查看集群詳細資訊。</block>
   <block id="2ececa2c251a851a85e976daae558c81" category="inline-image-macro">觀察集群</block>
-  <block id="acb848430f87ae9ce699ef9e3e380d53" category="paragraph"><block ref="acb848430f87ae9ce699ef9e3e380d53" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb5a90af80107b22fd8d5c8ebe2ed939" category="doc">Kubernetes 的高階叢集管理：Red Hat OpenShift 與NetApp - 概述</block>
   <block id="30c15b5a84f4fb26cd25b38dc787b22d" category="paragraph">隨著容器化應用程式從開發過渡到生產，許多組織需要多個 Red Hat OpenShift 叢集來支援該應用程式的測試和部署。同時，組織通常在 OpenShift 叢集上託管多個應用程式或工作負載。因此，每個組織最終都會管理一組集群，而 OpenShift 管理員必須面對額外的挑戰，即管理和維護跨多個本地資料中心和公有雲的一系列環境中的多個集群。為了因應這些挑戰，Red Hat 推出了針對 Kubernetes 的高階叢集管理。</block>
   <block id="1cf7b9db4d7fe091bd1bbb685e5beea8" category="paragraph">Red Hat Advanced Cluster Management for Kubernetes 讓您能夠執行以下任務：</block>
@@ -694,8 +646,6 @@
   <block id="fed6fdd49a1e6adda0ea12a93e74ea2d" category="list-text">監控並強制執行跨多個叢集的安全合規性</block>
   <block id="a7516c278242a08b85090e24cbf67218" category="paragraph">Red Hat Advanced Cluster Management for Kubernetes 作為 Red Hat OpenShift 叢集的附加元件安裝，並使用該叢集作為其所有操作的中央控制器。此集群稱為中心集群，它為使用者公開了一個管理平面以連接到高階集群管理。透過進階叢集管理主控台匯入或建立的所有其他 OpenShift 叢集均由中心叢集管理，並稱為託管叢集。它在託管集群上安裝了一個名為 Klusterlet 的代理，將它們連接到中心集群，並滿足與集群生命週期管理、應用程式生命週期管理、可觀察性和安全合規性相關的不同活動的請求。</block>
   <block id="b1000f23e43dfac19b53c74d7ebe66c8" category="inline-image-macro">ACM 架構</block>
-  <block id="06b9b6e6c32b6f413afbdcf2bedf9701" category="paragraph"><block ref="06b9b6e6c32b6f413afbdcf2bedf9701" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a376445fd812a7fa27714e6b11bc6163" category="paragraph">有關詳細信息，請參閱文檔<block ref="50c0dc50e188cf3a7847d9a813fd829e" category="inline-link-rx"></block>。</block>
   <block id="a003986254b5a6c136733113505348da" category="doc">安裝 F5 BIG-IP 負載平衡器</block>
   <block id="048600e045fd4c5afe58ec9d65aa4b19" category="paragraph">F5 BIG-IP 是一種應用交付控制器 (ADC)，它提供廣泛的高階生產級流量管理和安全服務，如 L4-L7 負載平衡、SSL/TLS 卸載、DNS、防火牆等。這些服務大大提高了應用程式的可用性、安全性和效能。</block>
   <block id="5c47e8322efb7f77c0aa515fec29477e" category="paragraph">F5 BIG-IP 可以以多種方式部署和使用，可以在專用硬體上、在雲端或作為本地虛擬設備。請參閱此處的文檔，根據要求探索和部署 F5 BIG-IP。</block>
@@ -716,20 +666,15 @@
   <block id="088afeececf092d5a406e0f5022a9638" category="cell">F5 AS3</block>
   <block id="425b0ca2d1d9d5c75555116fcd1614bf" category="cell">3.30.0</block>
   <block id="b9a4064fa117596b59fb18df84df74df" category="inline-link">F5 AS3 GitHub 儲存庫</block>
-  <block id="6463cf716c052865ec9f4716ff0b5d3f" category="list-text">安裝 F5 應用服務 3 擴充功能以允許 BIG-IP 系統接受 JSON 中的設定而不是命令。前往<block ref="0d4e47593b830323684cdec40cb60c71" category="inline-link-rx"></block>，並下載最新的RPM檔案。</block>
   <block id="4c0802ebd79a8c6e5ea4aed829f023c9" category="list-text">登入 F5 BIG-IP 系統，導覽至 iApps &gt; Package Management LX 並點選 Import。</block>
   <block id="3536ed517a711f49cfe64071db031cf5" category="list-text">點擊“選擇文件”並選擇下載的 AS3 RPM 文件，按一下“確定”，然後按一下“上傳”。</block>
   <block id="2a90f793207a5a0c028d8ccc45e943fd" category="inline-image-macro">iApps 上傳</block>
-  <block id="a946929c181ae9c31d48220aee8272e1" category="paragraph"><block ref="a946929c181ae9c31d48220aee8272e1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="caedd771b59d267eda8f88d329e8784f" category="list-text">確認 AS3 擴充功能已成功安裝。</block>
   <block id="c434efeb83b6dc500ea7893f1ad4236b" category="inline-image-macro">AS3 安裝驗證</block>
-  <block id="27251de43d24b764fa00a0531d1b9a13" category="paragraph"><block ref="27251de43d24b764fa00a0531d1b9a13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97e9e05bfde432cfa7291b1e55a52ba7" category="list-text">接下來配置OpenShift和BIG-IP系統之間通訊所需的資源。首先透過在 BIG-IP 系統上為 OpenShift SDN 建立 VXLAN 隧道介面來在 OpenShift 和 BIG-IP 伺服器之間建立隧道。導航至網路 &gt; 隧道 &gt; 設定文件，按一下創建，然後將父設定檔設定為 vxlan，將泛洪類型設定為多播。輸入設定檔的名稱並按一下“完成”。</block>
   <block id="faaca798da0468a250bf3c3bffc26681" category="inline-image-macro">建立 VXLAN 設定檔</block>
-  <block id="155a411b699416d0bc09a5b6ec1570ff" category="paragraph"><block ref="155a411b699416d0bc09a5b6ec1570ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="45ae0c96657fdc5a20e83839c2386c1e" category="list-text">導覽至網路 &gt; 隧道 &gt; 隧道列表，按一下創建，然後輸入隧道的名稱和本機 IP 位址。選擇上一個步驟建立的隧道設定文件，然後按一下「完成」。</block>
   <block id="1497a4f92d416d6c80392ec3467ff140" category="inline-image-macro">建立VXLAN隧道</block>
-  <block id="762ab9036c7e149843e77e617cc2a3cd" category="paragraph"><block ref="762ab9036c7e149843e77e617cc2a3cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cc5e5bc480b39177b8cb8c9c3a2266ae" category="list-text">使用叢集管理員權限登入 Red Hat OpenShift 叢集。</block>
   <block id="986e63a308b4bebd3f531e38fa5a06c7" category="list-text">在 OpenShift 上為 F5 BIG-IP 伺服器建立一個 hostsubnet，將子網路從 OpenShift 叢集擴展到 F5 BIG-IP 伺服器。下載主機子網路 YAML 定義。</block>
   <block id="fd4475e12938f5f51ba3f312b42cdd39" category="list-text">編輯主機子網路檔案並為 OpenShift SDN 新增 BIG-IP VTEP（VXLAN 隧道）IP。</block>
@@ -738,34 +683,26 @@
   <block id="7a46b2d02d466dda0cc67b215cb80bff" category="list-text">取得為 F5 BIG-IP 伺服器所建立的主機子網路的叢集 IP 子網路範圍。</block>
   <block id="cba83e8459cc1d6774061a2e425ad8bd" category="list-text">在 OpenShift VXLAN 上建立一個自身 IP，其 IP 位於與 F5 BIG-IP 伺服器對應的 OpenShift 主機子網路範圍內。登入 F5 BIG-IP 系統，導覽至網路 &gt; 自有 IP，然後按一下建立。輸入為 F5 BIG-IP 主機子網路所建立的叢集 IP 子網路中的 IP，選擇 VXLAN 隧道，然後輸入其他詳細資料。然後按一下“完成”。</block>
   <block id="5c241806c0dd5ebb7030904151cb78ef" category="inline-image-macro">為 VXLAN 建立 Self IP</block>
-  <block id="dc9039d125092b54ecbd649e9e830bd8" category="paragraph"><block ref="dc9039d125092b54ecbd649e9e830bd8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d094b7d82871afb601d2f30d416ba8d" category="list-text">在 F5 BIG-IP 系統中建立一個分區，以便與 CIS 一起設定和使用。導覽至系統 &gt; 使用者 &gt; 分區列表，按一下創建，然後輸入詳細資訊。然後按一下“完成”。</block>
   <block id="4d81871723233ec21ed69ab80e638779" category="inline-image-macro">建立 BIG-IP 分區</block>
-  <block id="8f0e9105b8c57961e36f922c2ac3a061" category="paragraph"><block ref="8f0e9105b8c57961e36f922c2ac3a061" category="inline-image-macro-rx" type="image"></block></block>
   <block id="37397397fa66431e2fa681b97126c399" category="admonition">F5 建議不要對 CIS 管理的分區進行手動設定。</block>
   <block id="81e4a49e9dbe0b55256fe5abf1b94fa4" category="list-text">使用來自 OperatorHub 的操作員安裝 F5 BIG-IP CIS。使用 cluster-admin 權限登入 Red Hat OpenShift 集群，並使用 F5 BIG-IP 系統登入憑證建立一個 secret，這是操作員的先決條件。</block>
   <block id="5de4ac005898cabf55523098c40c549b" category="list-text">安裝 F5 CIS CRD。</block>
   <block id="0eddace1b16ed738fe1be181481c71b6" category="list-text">導覽至 Operators &gt; OperatorHub，搜尋關鍵字 F5，然後按一下 F5 Container Ingress Service 磁貼。</block>
   <block id="07543409cb05595e273df71050b9a9c0" category="inline-image-macro">OperatorHub 中的 F5 CIS</block>
-  <block id="ccc06b019f840a5718a8d6bf9cb7f748" category="paragraph"><block ref="ccc06b019f840a5718a8d6bf9cb7f748" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c25b2a3d320d6d02584fde4190d05d91" category="list-text">閱讀操作員資訊並點擊“安裝”。</block>
   <block id="60d3353ed1910ad5c7bd352d0c1bea85" category="inline-image-macro">OperatorHub 中的 F5 CIS 資訊圖塊</block>
-  <block id="e36eb2a64284b730ddd267d710d01cac" category="paragraph"><block ref="e36eb2a64284b730ddd267d710d01cac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="637a1bc658defc200d903b27828aa8fb" category="list-text">在安裝操作員畫面上，保留所有預設參數，然後按一下安裝。</block>
   <block id="ccf254d7c8b666c9c127ec12fe14804b" category="inline-image-macro">安裝 F5 CIS 操作員</block>
-  <block id="cd055069228b323bd015d08bdd31e478" category="paragraph"><block ref="cd055069228b323bd015d08bdd31e478" category="inline-image-macro-rx" type="image"></block></block>
   <block id="636d8318702bc67a1613ceadf7ce9d00" category="list-text">安裝操作員需要一段時間。</block>
   <block id="dffa3077bcff43536afd75bd61b11c0c" category="inline-image-macro">F5 CIS Operator 安裝進度</block>
-  <block id="3319e4fbd94793c3bf10b04526e47f34" category="paragraph"><block ref="3319e4fbd94793c3bf10b04526e47f34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="197a0a4cc4a45ec9a62fe2b7335d8dfc" category="list-text">操作員安裝完成後，將顯示「安裝成功」訊息。</block>
   <block id="5bf83e99bfa132430d0b690181334933" category="list-text">導覽至 Operators &gt; Installed Operators，按一下 F5 Container Ingress Service，然後按一下 F5BigIpCtlr 圖塊下的 Create Instance。</block>
   <block id="a5f584f06c59c2cf4a4a4e8b42d495a2" category="inline-image-macro">建立 F5BigIpCtlr</block>
-  <block id="42d66aa33e3f7ac13ce059611a6ef0a0" category="paragraph"><block ref="42d66aa33e3f7ac13ce059611a6ef0a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5ce9a4ef68c16a3ab5d0dd555305872" category="list-text">點選 YAML View，更新必要的參數後貼上以下內容。</block>
   <block id="2e2beb899f89156ed06287fe6f78e6cf" category="admonition">更新參數<block ref="9117e80b6a6843f23b631387abeed925" prefix=" " category="inline-code"></block>，` openshift_sdn_name`，<block ref="957c32cdfcd5fb9c99f7a4e3311e7768" prefix=" " category="inline-code"></block>和<block ref="1155b6812ea5125b3144173aaaad6205" prefix=" " category="inline-code"></block>在複製內容之前，請先查看以下設定的值。</block>
   <block id="50a17348dc3f981a95001edcc80a428f" category="list-text">貼上此內容後，按一下「建立」。這會在 kube-system 命名空間中安裝 CIS pod。</block>
   <block id="72003ce6faa67d172e943ddd74fab63b" category="inline-image-macro">驗證 F5 CIS pod</block>
-  <block id="566eb0684a6ee134ab0c9a8ac1d77cfd" category="paragraph"><block ref="566eb0684a6ee134ab0c9a8ac1d77cfd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fc8632c05e82ccafb395157ccae4f5c3" category="admonition">預設情況下，Red Hat OpenShift 提供了一種透過路由公開服務以實現 L7 負載平衡的方法。內建的 OpenShift 路由器負責宣傳和處理這些路由的流量。但是，您也可以設定 F5 CIS 以透過外部 F5 BIG-IP 系統支援路由，該系統可以作為輔助路由器運行，也可以作為自架 OpenShift 路由器的替代品運行。 CIS 在 BIG-IP 系統中建立一個虛擬伺服器，充當 OpenShift 路由的路由器，而 BIG-IP 負責處理廣告和流量路由。有關啟用此功能的參數的信息，請參閱此處的文檔。請注意，這些參數是在 apps/v1 API 中為 OpenShift Deployment 資源定義的。因此，當將這些與 F5BigIpCtlr 資源 cis.f5.com/v1 API 一起使用時，請將參數名稱中的連字符 (-) 替換為下劃線 (_)。</block>
   <block id="a6e55fc1fe932b26a294a0f2880478aa" category="list-text">傳遞給 CIS 資源所建立的參數包括<block ref="49dcf57b3a065d02c9969c595e32ea50" prefix=" " category="inline-code"></block>和<block ref="5d0d2663dc7f08b0183abaddf17f8307" prefix=" " category="inline-code"></block>。這些參數是啟用 CIS 與 IPAM 控制器整合所必需的。透過建立 F5 IPAM 資源來驗證 CIS 是否已啟用 IPAM 整合。</block>
   <block id="84ac0b78989fa6595723d5541b8ec470" category="list-text">建立 F5 IPAM 控制器所需的服務帳戶、角色和角色綁定。建立一個 YAML 檔案並貼上以下內容。</block>
@@ -783,14 +720,11 @@
   <block id="5f905cb56a4d1b364cab7fc57f4de4e5" category="list-text">檢查 pod 是否正在運作。</block>
   <block id="51b4d723f0434284233dab97982b185d" category="list-text">檢查BIG-IP系統中是否為OpenShift中LoadBalancer類型的服務建立了對應的虛擬伺服器。導覽至本機流量 &gt; 虛擬伺服器 &gt; 虛擬伺服器清單。</block>
   <block id="91193cea3335c4666b7dc31ca767030c" category="inline-image-macro">驗證對應服務類型 LoadBalancer 的 BIG-IP 虛擬伺服器的創建</block>
-  <block id="4d008c8f3e509bf0a00ad422757c0ea3" category="paragraph"><block ref="4d008c8f3e509bf0a00ad422757c0ea3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="79a2d2fa50d2b47d02c0e9dbdfadc07f" category="doc">安裝 MetalLB 負載平衡器：Red Hat OpenShift 與NetApp</block>
   <block id="0b2da9b5fe81e13e88c9a05981a95a9e" category="paragraph">本頁列出了 MetalLB 負載平衡器的安裝和設定說明。</block>
   <block id="d719c733d0cd8753c048c8c3a025fd51" category="paragraph">MetalLB 是安裝在 OpenShift 叢集上的自架網路負載平衡器，可在不在雲端供應商上執行的叢集中建立類型負載平衡器的 OpenShift 服務。  MetalLB 共同支撐 LoadBalancer 服務的兩個主要功能是地址分配和對外通告。</block>
   <block id="28a4ce0a0514d0f6a6596fc7a9c5e725" category="section-title">MetalLB 配置選項</block>
   <block id="04c22d763ca95631f9c8789eb2c6e68f" category="paragraph">根據 MetalLB 如何宣布分配給 OpenShift 叢集之外的 LoadBalancer 服務的 IP 位址，它以兩種模式運作：</block>
-  <block id="92f98c10e5e0c86bcae2e9cb58b700e3" category="list-text">*第 2 層模式。 *在此模式下，OpenShift 叢集中的一個節點擁有該服務的所有權，並回應該 IP 的 ARP 請求，以使其在 OpenShift 叢集外部可存取。由於只有節點通告 IP，因此有頻寬瓶頸和故障轉移速度慢的限制。有關詳細信息，請參閱文檔<block ref="4a1d14cac7ed68a2326a050e0f1fed80" category="inline-link-macro-rx"></block>。</block>
-  <block id="13f78a1c753a58b3786e5664e7b01344" category="list-text">*BGP 模式。 *在此模式下，OpenShift 叢集中的所有節點都會與路由器建立 BGP 對等會話，並通告路由以將流量轉送至服務 IP。實現此目的的先決條件是將 MetalLB 與該網路中的路由器整合。由於BGP中的哈希機制，當服務的IP到節點映射發生變化時，會受到一定的限制。欲了解更多信息，請參閱文檔<block ref="fed7545a9b4a70bb7835cc8b07492cba" category="inline-link-macro-rx"></block>。</block>
   <block id="5fe238de20fea7c5ec86dde0a98c5841" category="admonition">為了本文檔的目的，我們在第 2 層模式下配置 MetalLB。</block>
   <block id="70bd399edc6825961c98dc29c2a49299" category="list-text">下載 MetalLB 資源。</block>
   <block id="d95ae9e4bae10f240e5577110ccbd7e6" category="list-text">編輯文件<block ref="130d214581bb0aa3e8759729c9fbc133" prefix=" " category="inline-code"></block>並刪除<block ref="635a57f17cd40dc65b36973c9e14f9d1" prefix=" " category="inline-code"></block>來自控制器部署和揚聲器 DaemonSet。</block>
@@ -800,7 +734,6 @@
   <block id="f87be5542b64a7f94a807699fd549479" category="list-text">在配置 MetalLB 揚聲器之前，請授予揚聲器 DaemonSet 提升的權限，以便它可以執行使負載平衡器工作所需的網路配置。</block>
   <block id="53747915d8e79873876b08edb1ce3671" category="list-text">透過建立配置 MetalLB<block ref="a941f8adb5ae079ebc739cb59407fd30" prefix=" " category="inline-code"></block>在<block ref="48f2018beab0b13a2087fae3aff05306" prefix=" " category="inline-code"></block>命名空間。</block>
   <block id="2b1e829362de1a86eeb131cdc4619908" category="list-text">現在，當建立負載平衡器服務時，MetalLB 會為服務指派一個 externalIP，並透過回應 ARP 請求來通告該 IP 位址。</block>
-  <block id="234ce2b9b198f2acf2193cbd06120ff2" category="admonition">如果您希望在 BGP 模式下配置 MetalLB，請跳過上面的步驟 6 並按照 MetalLB 文件中的步驟進行操作<block ref="fed7545a9b4a70bb7835cc8b07492cba" category="inline-link-macro-rx"></block>。</block>
   <block id="8b14fb34f5313442bf2fdc4d80edc389" category="summary">本節專門為想要使用NetApp部署客製化 Red Hat OpenShift 的使用者探索負載平衡器選項。</block>
   <block id="87beaa6eff6159cd7270b2a4e71c10a4" category="doc">探索負載平衡器選項：Red Hat OpenShift 與NetApp</block>
   <block id="a802e9436bb9bcbfa2b88bb549e28503" category="paragraph">大多數情況下，Red Hat OpenShift 透過路由讓應用程式可供外界使用。透過為服務提供外部可存取的主機名稱來公開服務。  OpenShift 路由器可以使用定義的路由及其服務標識的端點來向外部用戶端提供這種命名連線。</block>
@@ -816,18 +749,13 @@
   <block id="730d963d9c66f4a5bdd4979297e1b636" category="paragraph">假設一個組織在 Red Hat OpenShift 叢集上執行兩個工作負載，這是兩個不同團隊正在進行的兩個專案的一部分。這些工作負載的資料駐留在由Trident在NetApp ONTAP NAS 後端動態配置的 PVC 上。該組織需要為這兩個工作負載設計一個多租戶解決方案，並隔離用於這些專案的資源，以確保維護安全性和效能，主要專注於為這些應用程式提供服務的資料。</block>
   <block id="0def896190af33e76b378083e4ded97b" category="paragraph">下圖描述了由NetApp ONTAP支援的具有Trident的 Red Hat OpenShift 叢集上的多租用戶解決方案。</block>
   <block id="743a88dbd6def144e417adba2c0cddbb" category="inline-image-macro">Red Hat OpenShift 叢集上的多租用戶功能，採用由NetApp ONTAP支援的Trident</block>
-  <block id="1ae79d7066f79d8c3637683058374e9a" category="paragraph"><block ref="1ae79d7066f79d8c3637683058374e9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c438be737391744e2fed6f73c418638" category="section-title">技術要求</block>
   <block id="ff94444190436ee7694d15be2dde0f29" category="list-text">NetApp ONTAP儲存叢集</block>
   <block id="b645e117fe786bf56128cde2dec3971a" category="list-text">Red Hat OpenShift 叢集</block>
   <block id="0d46ef98dfe52c8d01c0c5ace93d8165" category="section-title">Red Hat OpenShift – 叢集資源</block>
   <block id="72710b926f57dad99b29203c63f4e3fd" category="paragraph">從 Red Hat OpenShift 叢集的角度來看，首先要啟動的頂層資源是專案。 OpenShift 專案可以看作是一個叢集資源，它將整個 OpenShift 叢集劃分為多個虛擬叢集。因此，專案層級的隔離為配置多租戶提供了基礎。</block>
-  <block id="20e1834bb9396599a6dcf7d743aa1b36" category="paragraph">接下來是在叢集中配置 RBAC。最佳做法是讓所有開發人員在身分識別提供者 (IdP) 中將單一項目或工作負載配置到單一使用者群組。 Red Hat OpenShift 允許 IdP 整合和使用者群組同步，從而允許將來自 IdP 的使用者和群組匯入到叢集中。這有助於叢集管理員將專用於某個專案的叢集資源的存取隔離給從事該專案的使用者群組或群組，從而限制對任何叢集資源的未經授權的存取。要了解有關 IdP 與 Red Hat OpenShift 整合的更多信息，請參閱文檔<block ref="213cff8958909b80a9514e0c8321d8ef" category="inline-link-rx"></block>。</block>
   <block id="6d4e96186b1f4267def393ec42bf2d9e" category="paragraph">隔離作為 Red Hat OpenShift 叢集的持久性儲存提供者的共用儲存非常重要，以確保在每個專案的儲存上建立的磁碟區對於主機來說就像是在單獨的儲存空間上建立的一樣。為此，請在NetApp ONTAP上建立與專案或工作負載數量相同的 SVM（儲存虛擬機器），並將每個 SVM 專用於一個工作負載。</block>
-  <block id="0611f127a7e1e7ef5bbd782030c2e34a" category="paragraph">在NetApp ONTAP上為不同的專案建立不同的 SVM 後，必須將每個 SVM 對應到不同的Trident後端。 Trident上的後端配置驅動持久性儲存到 OpenShift 叢集資源的分配，並且需要對應到 SVM 的詳細資訊。這至少應該是後端的協定驅動程式。或者，它允許您定義如何在儲存上配置卷，並為磁碟區的大小或聚合的使用等設定限制。關於Trident後端定義的詳細資訊可以參見<block ref="47a77763732c6cebe093a4a4d61aaa5b" category="inline-link-rx"></block>。</block>
   <block id="c4ff2177ae2f8ed9c3e5353068cf2195" category="section-title">Red Hat OpenShift – 儲存資源</block>
-  <block id="891c9b8b0ce367c5e377a1ec23199619" category="paragraph">設定Trident後端後，下一步是設定 StorageClasses。配置與後端數量相同的儲存類，為每個儲存類提供僅在一個後端啟動磁碟區的存取權限。我們可以在定義儲存類別時使用 storagePools 參數將 StorageClass 對應到特定的Trident後端。定義儲存類別的詳細資訊可以在這裡找到<block ref="1266deb20a7d7c4814b1225e5e572606" category="inline-link-rx"></block>。因此，從 StorageClass 到Trident後端存在一對一映射，該映射指向一個 SVM。這可確保透過指派給該專案的 StorageClass 提出的所有儲存聲明均由專用於該專案的 SVM 提供服務。</block>
-  <block id="76245f392269db8492c3610e325b1963" category="paragraph">由於儲存類別不是命名空間資源，我們如何確保另一個命名空間或專案中的 pod 對一個專案的儲存類別的儲存聲明被拒絕？答案是使用 ResourceQuotas。 ResourceQuotas 是控制每個專案資源總使用量的物件。它可以限制專案中物件可消耗的資源數量和總量。幾乎所有專案的資源都可以使用 ResourceQuotas 來限制，有效使用 ResourceQuotas 可以幫助組織削減因資源過度配置或過度消耗而導致的成本和中斷。請參閱文檔<block ref="9b2bb9683c8f6144876bed616f252527" category="inline-link-rx"></block>了解更多。</block>
   <block id="5402bb91006fe391aea122e11c3607db" category="paragraph">對於這種用例，我們需要限制特定專案中的 pod 從非專用於其專案的儲存類別中聲明儲存。為此，我們需要透過設定來限制其他儲存類別的持久性卷聲明<block ref="a21be23447e555ea751318f1aded4a38" prefix=" " category="inline-code"></block>為 0。此外，叢集管理員必須確保專案中的開發人員無權修改資源配額。</block>
   <block id="ad8905a47eb465223ebe7acf569732b1" category="doc">配置：叢集管理任務</block>
   <block id="552eab1d1ea09d0d1733b97dee6609a1" category="paragraph">Red Hat OpenShift 叢集管理員執行下列任務：</block>
@@ -885,7 +813,6 @@
   <block id="c8acb1fa89b1ec9d78799a2dd4aa8b59" category="list-text">以儲存管理員身分登入NetApp ONTAP叢集。</block>
   <block id="d0ed0d7b81278233c852e4a0d8aa123b" category="list-text">導航至<block ref="ba7ff8660fabd8daa8e7fbd0c74dd990" prefix=" " category="inline-code"></block>並點擊<block ref="ec211f7c20af43e742bf2570c3cb84f9" prefix=" " category="inline-code"></block>。建立一個專用於 project-3 的新 SVM。也要建立一個 vsadmin 帳戶來管理 SVM 及其資源。</block>
   <block id="5790e2b8b367726e78500054d959d6f7" category="inline-image-macro">建立 SVM 進行縮放</block>
-  <block id="b3f681e948324bfca6c339bd9660347c" category="paragraph"><block ref="b3f681e948324bfca6c339bd9660347c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0c67e9a89c7ece3169ab5849bb0e411" category="list-text">以叢集管理員身分登入 Red Hat OpenShift 叢集。</block>
   <block id="c9e86337c7483c8d45e5e535829d2163" category="list-text">建立新項目。</block>
   <block id="1c01b62cc887329b006a88e9f959b5d4" category="list-text">確保在 IdP 上建立了 project-3 的使用者群組並與 OpenShift 叢集同步。</block>
@@ -904,7 +831,6 @@
   <block id="64244866ddff81ded5e6aaa49055c6aa" category="list-text">以管理員身分登入NetApp ONTAP叢集。</block>
   <block id="85ca996063b5ec233e56a20ba93c5f44" category="list-text">導航到儲存&gt;儲存虛擬機，然後按一下新增。透過提供所需的詳細信息，建立兩個 SVM，一個用於專案 1，另一個用於專案 2。也要建立一個 vsadmin 帳戶來管理 SVM 及其資源。</block>
   <block id="3f8bc17bf8dd138aa2915235f0a9c0d3" category="inline-image-macro">在ONTAP上建立 SVM</block>
-  <block id="0b6bdd5822abd876e9985611641304dc" category="paragraph"><block ref="0b6bdd5822abd876e9985611641304dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b436e7799d01413277e05983e509574a" category="list-text">以儲存管理員身分登入 Red Hat OpenShift 叢集。</block>
   <block id="c9bd46366e9fb78552566f1e7a13633a" category="list-text">為 project-1 建立後端並將其對應到專用於該專案的 SVM。  NetApp建議使用 SVM 的 vsadmin 帳戶將後端連接到 SVM，而不是使用ONTAP叢集管理員。</block>
   <block id="f934b433773b966e5ebe0c7172decda4" category="admonition">我們在此範例中使用 ontap-nas 驅動程式。根據用例建立後端時使用適當的驅動程式。</block>
@@ -938,9 +864,7 @@
   <block id="8921c6e9843ba7487c77f4dce1467111" category="summary">NetApp Element軟體提供模組化、可擴展的效能，每個儲存節點為環境提供保證的容量和吞吐量。  NetApp Element系統可在單一叢集中從 4 個節點擴展到 100 個節點，並提供許多進階儲存管理功能。</block>
   <block id="5d77fe4a6bb4c5e88c5c18510b3c4749" category="doc">NetApp Element：Red Hat OpenShift 與NetApp</block>
   <block id="53c583e55a36ad49234df678a2dbcf45" category="paragraph">NetApp Element軟體提供模組化、可擴展的效能，每個儲存節點為環境提供保證的容量和吞吐量。  NetApp Element系統可在單一叢集中從 4 個節點擴展到 100 個節點，並提供許多進階儲存管理功能。</block>
-  <block id="19c6fa5394ba7047e26a53d94179ebf9" category="paragraph"><block ref="19c6fa5394ba7047e26a53d94179ebf9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27765508a97a89684590658c3465fb70" category="inline-link">NetApp Solidfire 網站</block>
-  <block id="d37eaafbb6dfb29673d63ff988ff4f41" category="paragraph">有關NetApp Element存儲系統的更多信息，請訪問<block ref="0d1d77e6774527457304fa15f73899a1" category="inline-link-rx"></block>。</block>
   <block id="bd4ffcaabbe4a4f83fbfaaa2e34dc8a3" category="section-title">iSCSI 登入重新導向和自我修復功能</block>
   <block id="dbafa7c074ef7efc3c778b69c0ad31b5" category="paragraph">NetApp Element軟體利用 iSCSI 儲存協議，這是在傳統 TCP/IP 網路上封裝 SCSI 命令的標準方法。當 SCSI 標準變更或乙太網路效能提升時，iSCSI 儲存協定將受益，而無需進行任何變更。</block>
   <block id="23e6b910b28346537f5696478fffe779" category="paragraph">儘管所有儲存節點都有一個管理 IP 和一個儲存 IP，但NetApp Element軟體會為叢集中的所有儲存流量公佈一個儲存虛擬 IP 位址（SVIP 位址）。作為 iSCSI 登入程序的一部分，儲存可以回應目標磁碟區已移至不同的位址，因此無法繼續協商流程。然後，主機會向新位址重新發出登入請求，整個過程不需要主機端重新配置。此過程稱為 iSCSI 登入重定向。</block>
@@ -968,11 +892,8 @@
   <block id="da9c9b2b4164632e569069fe1e7c53ee" category="admonition">Element 是為自動化而設計的。所有儲存功能均可透過 API 取得。這些 API 是 UI 用來控制系統的唯一方法。</block>
   <block id="e4762763c905a271ba1e63609f0e0da0" category="paragraph">這兩種系統均由NetApp ONTAP資料管理軟體提供支持，這是業界最先進的資料管理軟體，具有高可用性、雲端整合、簡化的儲存管理功能，可提供您的資料結構所需的企業級速度、效率和安全性。</block>
   <block id="35f7c29efc923e8a7920a0b331095d71" category="section-title">Amazon FSx ONTAP</block>
-  <block id="d744ebba12219aac3b1e9ca744e22939" category="paragraph">Amazon FSx ONTAP透過ONTAP流行的資料存取和管理功能在 AWS 雲端中提供完全託管的共用儲存。有關Amazon FSx ONTAP 的更多信息，請單擊<block ref="7573663d3852e00b0e56a5dac3594a6a" category="inline-link-rx"></block>。</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="section-title">Azure NetApp Files</block>
-  <block id="b2ed084fcecb6db65b12c65588a0a926" category="paragraph">Azure NetApp Files是 Azure 原生的、第一方的、企業級的高效能檔案儲存服務。它提供卷宗服務，您可以為其建立NetApp帳戶、容量池和磁碟區。您還可以選擇服務和效能等級並管理資料保護。您可以使用熟悉且依賴的相同協定和工具來建立和管理高效能、高可用性和可擴展的檔案共用。有關Azure NetApp Files 的更多信息，請單擊<block ref="fc5eaf030008b3907c3925b272228bba" category="inline-link-rx"></block>。</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="section-title">Google Cloud NetApp Volumes</block>
-  <block id="6a529e89f36a18cfaf22ebfd0be19ce9" category="paragraph">Google Cloud NetApp Volumes是一種完全託管的基於雲端的資料儲存服務，可提供進階資料管理功能和高度可擴展的效能。它允許您將基於檔案的應用程式移至 Google Cloud。它內建支援網路檔案系統（NFSv3 和 NFSv4.1）和伺服器訊息區塊（SMB）協議，因此您無需重新建置應用程序，並可以繼續為您的應用程式取得持久儲存。有關 Google Cloud NetApp VolumesP 的更多信息，請點擊<block ref="9ef49dd5917f54781359b5df82c18923" category="inline-link-rx"></block>。</block>
   <block id="0d1d64b47559f0c28c883e7e790b8363" category="summary">本節專門介紹實際使用者在將此解決方案部署到生產時可能需要執行的自訂，例如建立專用映像登錄檔或部署自訂負載平衡器執行個體。</block>
   <block id="becc5334b7f3d2f4f57fc42cd287fd54" category="inline-link-macro">探索負載平衡器選項</block>
   <block id="03915c22e7d8c9b4408637a36d6cf531" category="list-text"><block ref="03915c22e7d8c9b4408637a36d6cf531" category="inline-link-macro-rx"></block></block>
@@ -983,7 +904,6 @@
   <block id="766d8f4095b175049f35406578d94edd" category="paragraph">AWS 上的 Red Hat OpenShift 服務 (ROSA) 是一項託管服務，您可以使用它在 AWS 上透過 Red Hat OpenShift 企業 Kubernetes 平台建置、擴充和部署容器化應用程式。  ROSA 簡化了將本機 Red Hat OpenShift 工作負載遷移到 AWS 的過程，並提供了與其他 AWS 服務的緊密整合。</block>
   <block id="d483e01f45d71ca0669987bbcc52540e" category="inline-link-macro">AWS 上的 Red Hat OpenShift 服務（AWS 文件）</block>
   <block id="bbb05e22e5510003079ee7cd19c0c6d2" category="inline-link-macro">AWS 上的 Red Hat OpenShift 服務（Red Hat 文件）</block>
-  <block id="5ea6f8c087350d475e8efbd9a881ed93" category="paragraph">有關 ROSA 的更多信息，請參閱此處的文檔：<block ref="c87c8cdbb7e33ff8fe1cc4ee73c952c9" category="inline-link-macro-rx"></block> 。<block ref="bcb0e22b6c58858701d793bcb18b8c4b" category="inline-link-macro-rx"></block> 。</block>
   <block id="aa9095c5ba77e3549672e5c4fae1fedc" category="doc">裸機上的 OpenShift</block>
   <block id="a62e902f0d244d960eddf2f14d3afa6f" category="paragraph">OpenShift on Bare Metal 可在商用伺服器上自動部署 OpenShift 容器平台。</block>
   <block id="0e05c6235b67ae8e5b743c9ca77358fa" category="paragraph">OpenShift on Bare Metal 類似於 OpenShift 的虛擬部署，它可以輕鬆部署、快速配置和擴展 OpenShift 集群，同時支援尚未準備好容器化的應用程式的虛擬化工作負載。透過在裸機上部署，您不需要除了 OpenShift 環境之外管理主機虛擬機器管理程式環境所需的額外開銷。透過直接在裸機伺服器上部署，您還可以減少主機和 OpenShift 環境之間共用資源的實體開銷限制。</block>
@@ -999,8 +919,6 @@
   <block id="e6eb5af4aff65961a7f350b2222a4119" category="list-text">*裸機網路* 此網路用於集群部署後面向公眾的通訊。</block>
   <block id="7633522f66aaba6bc4bb2c25d299d287" category="paragraph">為了設定配置節點，客戶建立橋接接口，允許流量在節點本身和為部署目的而配置的 Bootstrap VM 上正確路由。叢集部署完成後，API 和 ingress VIP 位址從 bootstrap 節點遷移到新部署的叢集。</block>
   <block id="963d7d04e1f1692a7fc49ae899123dbd" category="paragraph">下圖描述了 IPI 部署期間和部署完成後的環境。</block>
-  <block id="df03861ebb174b56c9b0df19a6687ad4" category="paragraph"><block ref="df03861ebb174b56c9b0df19a6687ad4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7ac6c6948754bef1f31b658d9ec4e16a" category="paragraph"><block ref="7ac6c6948754bef1f31b658d9ec4e16a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1744781b12c15ad3b748bea44d9582b" category="section-title">VLAN 需求</block>
   <block id="c5a0639a1bbc3695e0ebaf4c3affe363" category="paragraph">Red Hat OpenShift 與NetApp解決方案旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同用途的網路流量。</block>
   <block id="87495e311a3944910e3cc0c7bee3d754" category="cell">VLAN</block>
@@ -1026,7 +944,6 @@
   <block id="588d940c602fa8b127eead0a7b20f748" category="paragraph">有關 OSP 的更多信息，請參閱<block ref="52023575482d8580431ebeb833211aae" category="inline-link-macro-rx"></block>。</block>
   <block id="e2ab8aafc6151adfa655ffd5d2425e7d" category="section-title">OpenStack服務</block>
   <block id="ffd7a6889e6ea6965969472250235082" category="paragraph">OpenStack 平台服務以容器形式部署，從而將服務彼此隔離並實現輕鬆升級。 OpenStack 平台使用一組透過 Kolla 建置和管理的容器。服務的部署是透過從 Red Hat Custom Portal 提取容器映像來執行的。這些服務容器使用 Podman 指令進行管理，並使用 Red Hat OpenStack Director 進行部署、設定和維護。</block>
-  <block id="cd9222eaa638072680ee36bdc3fda64c" category="paragraph"><block ref="cd9222eaa638072680ee36bdc3fda64c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服務</block>
   <block id="7adea0d9c77aabccd8bb67ae0a832d59" category="cell">項目名稱</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">描述</block>
@@ -1111,7 +1028,6 @@
   <block id="78f6af1e137635a3cea4ef964e21c7c6" category="list-text">*高可用性* 為避免主機故障時造成中斷，RHV 允許對虛擬機器進行高可用性配置。高可用性虛擬機器在叢集層級使用彈性策略進行控制。</block>
   <block id="dc4a50395fea041f4ee918e8c015755e" category="list-text">*高可擴展性* 單一 RHV 叢集最多可擁有 200 個虛擬機器管理程式主機，使其能夠支援大量虛擬機器託管資源密集型企業級工作負載的需求。</block>
   <block id="3fe956f564bcb16eb1d25ab6afdf9bf7" category="list-text">*增強的安全性* 從 RHV 繼承而來，RHV 採用安全虛擬化 (sVirt) 和安全增強 Linux (SELinux) 技術來提高主機和虛擬機器的安全性和強化程度。這些功能的主要優勢是虛擬機器及其相關資源的邏輯隔離。</block>
-  <block id="c0a0160ce03d8575db0f84da4706c89b" category="paragraph"><block ref="c0a0160ce03d8575db0f84da4706c89b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd4c83df745cf56330120fb3ac308da2" category="paragraph">NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個額外的管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理。 OCP使用RHV上的虛擬機器邏輯網路進行叢集管理。本節介紹解決方案中使用的每個虛擬網段的安排和用途，並概述部署解決方案的先決條件。</block>
   <block id="2d7e48e226974692ed3f522a2baef6db" category="paragraph">RHV 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同目的的網路流量。此配置可以擴展以滿足客戶需求或為特定網路服務提供進一步的隔離。下表列出了在NetApp驗證解決方案時實施該解決方案所需的 VLAN。</block>
   <block id="3c8c5d8387f173924ffeb2bf88084dba" category="cell">實體節點和IPMI的管理</block>
@@ -1143,7 +1059,6 @@
   <block id="b5833c22ec8627273b0415df731c3ce7" category="list-text">*VMware vSphere vMotion* VMware vCenter 可讓您以無中斷的方式根據請求在叢集中的節點之間熱遷移虛擬機器。</block>
   <block id="634e669a6bf01bf0ef2b676eae7beb33" category="list-text">*vSphere 高可用性* 為避免主機發生故障時造成中斷，VMware vSphere 允許將主機叢集化並配置為高可用性。因主機故障而中斷的虛擬機器將在叢集中的其他主機上短暫重新啟動，從而恢復服務。</block>
   <block id="435136c715673552d02d1fd739606dfc" category="list-text">*分散式資源調度程式 (DRS)* 可以設定 VMware vSphere 叢集以平衡其託管的虛擬機器的資源需求。存在資源爭用的虛擬機器可以熱遷移到叢集中的其他節點，以確保有足夠的資源可用。</block>
-  <block id="a1c41e824fefb9fbdee9f72a9f61643f" category="paragraph"><block ref="a1c41e824fefb9fbdee9f72a9f61643f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5c6371faa8d72dee8337811921707a4b" category="paragraph">NetApp解決方案上的 Red Hat OpenShift 使用兩台資料交換器以 25Gbps 提供主要資料連線。它還使用兩個額外的管理交換機，以 1Gbps 的速度提供儲存節點的帶內管理連接以及 IPMI 功能的帶外管理連接。 OCP 使用 VMware vSphere 上的 VM 邏輯網路進行叢集管理。本節描述了解決方案中使用的每個虛擬網路段的安排和用途，並概述了部署解決方案的先決條件。</block>
   <block id="e75b582a8823d532f6022b43ac209538" category="paragraph">VMware vSphere 上的 Red Hat OpenShift 旨在透過使用虛擬區域網路 (VLAN) 在邏輯上分離用於不同目的的網路流量。此配置可以擴展以滿足客戶需求或為特定網路服務提供進一步的隔離。下表列出了在NetApp驗證解決方案時實施該解決方案所需的 VLAN。</block>
   <block id="c846a1f843522d592b784a66368abed3" category="cell">ONTAP NFS 的儲存網絡</block>
@@ -1175,7 +1090,6 @@
   <block id="3324921ce520b5c2abe0d2521e8b040e" category="list-text">*配置管理* 平台內建配置和敏感資料管理，以確保無論使用哪種技術建立應用程式或部署在哪種環境中，都為應用程式提供一致且與環境無關的應用程式配置。</block>
   <block id="2d11325a996ec8e35070707ab180ca6c" category="list-text">*應用程式日誌和指標。 *快速反饋是應用程式開發的一個重要方面。  OpenShift 整合監控和日誌管理為開發人員提供即時指標，以便他們研究應用程式在變更中的行為，並能夠在應用程式生命週期中儘早解決問題。</block>
   <block id="93507554a1bd5b356e1ecf2a5fb0bd55" category="list-text">*安全性和容器目錄* OpenShift 提供多租用戶功能，並使用安全增強 Linux (SELinux)、CGroups 和安全計算模式 (seccomp) 建立的安全性來隔離和保護容器，從而保護使用者免受有害程式碼執行的侵害。它還透過 TLS 憑證為各個子系統提供加密，並提供對 Red Hat 認證容器（access.redhat.com/containers）的訪問，這些容器經過掃描和分級，特別強調安全性，以便為最終用戶提供經過認證、值得信賴和安全的應用程式容器。</block>
-  <block id="ed30b5cf2bd807c1a940ff2564402dec" category="paragraph"><block ref="ed30b5cf2bd807c1a940ff2564402dec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe8c2f8039053e077a0ca678496b72aa" category="section-title">Red Hat OpenShift 的部署方法</block>
   <block id="9c2dd02f13d452b4422ac6c864933f01" category="paragraph">從 Red Hat OpenShift 4 開始，OpenShift 的部署方法包括使用使用者設定基礎架構 (UPI) 進行高度客製化的部署的手動部署或使用安裝程式設定基礎架構 (IPI) 進行全自動部署。</block>
   <block id="6e45cce163df251494c8f01f0567f19c" category="paragraph">在大多數情況下，IPI 安裝方法是首選方法，因為它允許為開發、測試和生產環境快速部署 OpenShift 叢集。</block>
@@ -1184,11 +1098,8 @@
   <block id="d1befa03c79ca0b84ecc488dea96bc68" category="inline-link-macro">網站</block>
   <block id="e2fb3873f5444b3e2992591c137a7885" category="list-text">造訪 Red Hat OpenShift<block ref="07d9e126d73368020dd109a73fa50f95" category="inline-link-macro-rx"></block>並使用您的 SSO 憑證登入。</block>
   <block id="66f8ff89bd2c9146cb3273d416c60fd2" category="list-text">選擇您想要部署 Red Hat OpenShift 的環境。</block>
-  <block id="16c98b3a2a53266c0fdbf68850eadfbc" category="paragraph"><block ref="16c98b3a2a53266c0fdbf68850eadfbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5806bcee67fc8f13f0255068a186e42" category="list-text">在下一個畫面下載安裝程式、唯一的拉取金鑰和用於管理的 CLI 工具。</block>
-  <block id="1d761031264b6e6deafa834577fad17c" category="paragraph"><block ref="1d761031264b6e6deafa834577fad17c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7586dbf5f3ac1a66383f6c201a17a341" category="inline-link-macro">安裝說明</block>
-  <block id="c7daf823271052cb8912656769e85130" category="list-text">關注<block ref="031f6892cefd9bd35a861ba4dda1d58c" category="inline-link-macro-rx"></block>由 Red Hat 提供，可部署到您選擇的環境。</block>
   <block id="220887aee59c37fa79fc366cba7dad4e" category="section-title">NetApp驗證的 OpenShift 部署</block>
   <block id="d711fd24836980dd490f3c01dd3ee8de" category="paragraph">NetApp已在其實驗室中使用安裝程式設定基礎架構 (IPI) 部署方法在以下每個資料中心環境中測試並驗證了 Red Hat OpenShift 的部署：</block>
   <block id="5e6f3eb001d2c545db70619fea0a2136" category="list-text"><block ref="5e6f3eb001d2c545db70619fea0a2136" category="inline-link-macro-rx"></block></block>
@@ -1199,7 +1110,6 @@
   <block id="8252479af4b1df9b77ceaf67fa8cd07d" category="doc">建立私有鏡像倉庫</block>
   <block id="9c864113b9e4202e111b818a53d4f506" category="inline-link">Quay.io</block>
   <block id="4b4141875f954447d204e6f73d93e2a0" category="inline-link">DockerHub</block>
-  <block id="508888fd9f92f35e5edd97bd8083e289" category="paragraph">對於大多數 Red Hat OpenShift 部署，使用公開註冊表<block ref="b9eeebbe4a68a648d570ea2173e5ef99" category="inline-link-rx"></block>或者<block ref="0252a6b70cc5017fa1445a78532155b6" category="inline-link-rx"></block>滿足大多數客戶的需求。然而，有時客戶可能希望託管他們自己的私人或定製圖像。</block>
   <block id="2bfd28946c23d8294bff3401d6004efd" category="paragraph">此程序記錄如何建立由Trident和NetApp ONTAP提供的持久磁碟區支援的私人映像註冊表。</block>
   <block id="5c6f1bdf00eb6d50d411c8fb4ed03e60" category="admonition">Trident Protect 需要一個登錄機碼來託管Astra容器所需的映像。以下部分介紹在 Red Hat OpenShift 叢集上設定私人註冊表以及推送支援安裝Trident Protect 所需的映像的步驟。</block>
   <block id="3434f6853d017037506e47f83a18c3eb" category="section-title">建立私有鏡像倉庫</block>
@@ -1237,66 +1147,45 @@
   <block id="09be04d446e70cfb6ff2df63024654b6" category="paragraph">**一個。建立 VolumeSnapshotClass 將以下清單保存在名為volume-snapshot-class.yaml的檔案中</block>
   <block id="55594c435fa9e8bb616b0be43befd745" category="paragraph">使用上述清單建立快照。</block>
   <block id="1557cdba542c2fa13ddbfe40a0b129fd" category="inline-image-macro">快照類</block>
-  <block id="0ead74279ea2f2f5dc61018f9a9188fa" category="paragraph"><block ref="0ead74279ea2f2f5dc61018f9a9188fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7f6a196914d4ab31fea78ac5a85e4d19" category="paragraph">**b.接下來，建立一個快照**透過建立 VolumeSnapshot 來建立現有 PVC 的快照，以取得 Postgresql 資料的時間點副本。這會建立一個幾乎不佔用檔案系統後端空間的 FSx 快照。將以下清單保存在名為volume-snapshot.yaml的檔案中：</block>
   <block id="a8491dba42c82c44a171bc46f5404dc8" category="paragraph">**c.建立磁碟區快照並確認已建立**</block>
   <block id="826181e7b216ae6bdc80ce324330edf8" category="paragraph">刪除資料庫模擬資料遺失（資料遺失可能因為多種原因發生，這裡我們只是透過刪除資料庫來模擬）</block>
   <block id="b5eaaa5f694a7f8ec5e907af460647fe" category="inline-image-macro">卷快照</block>
-  <block id="8beba7afed22a52e156ea89f2d825761" category="paragraph"><block ref="8beba7afed22a52e156ea89f2d825761" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e765a5eeba2d96abf46cf9d172acc2da" category="paragraph">**d.刪除資料庫以模擬資料遺失（資料遺失可能由於多種原因而發生，這裡我們只是透過刪除資料庫來模擬）**</block>
   <block id="648f1fe4e83eb8d1e10ceddd054a16af" category="inline-image-macro">資料庫連線</block>
-  <block id="a945297f31767f9fdc7a00038ce5621e" category="paragraph"><block ref="a945297f31767f9fdc7a00038ce5621e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06f050f984168d39dc83dd0579b1c89c" category="inline-image-macro">刪除資料庫</block>
-  <block id="1f21dc6ff624760074d792823a39fa0a" category="paragraph"><block ref="1f21dc6ff624760074d792823a39fa0a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be9e1a30da76a525e62fbb18bdd4178e" category="section-title">從磁碟區快照還原</block>
   <block id="5c0cf9db5c3b84c42974da72d0a24a5f" category="paragraph">**1.從快照還原** 在本節中，我們將展示如何從應用程式磁碟區的 trident 快照還原應用程式。</block>
   <block id="348acf9f787e4f52c23fe741030e7288" category="paragraph">**一個。從快照建立磁碟區克隆**</block>
   <block id="1330e5f73c84b286e0473e750b920f10" category="paragraph">若要將磁碟區還原到先前的狀態，您必須根據所拍攝快照中的資料建立新的 PVC。為此，請將以下清單儲存在名為 pvc-clone.yaml 的檔案中</block>
   <block id="5e69cd248a9e8f98cc6d8afbb30d08e6" category="paragraph">使用上述清單，透過使用快照作為來源建立 PVC 來建立磁碟區的複製。應用清單並確保創建克隆。</block>
   <block id="2c188e0477897d45f212584dfc7fdae0" category="inline-image-macro">從快照複製 postgresql</block>
-  <block id="f605c1e028d7877829279ce8d10c6898" category="paragraph"><block ref="f605c1e028d7877829279ce8d10c6898" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90350dfdb6c3d9487986fa9f99f95e09" category="paragraph">**b.刪除原始 postgresql 安裝**</block>
   <block id="cda89a46d8022e9609d4859cc871eb53" category="inline-image-macro">postgresql應用程式刪除</block>
-  <block id="4e65b97155c35d13bb6eec9d4b8dfdca" category="paragraph"><block ref="4e65b97155c35d13bb6eec9d4b8dfdca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e1124bbe05812664f1bb53318f98adc" category="paragraph">**c.使用新的克隆 PVC 建立新的 postgresql 應用程式**</block>
   <block id="124776275b10a0ba40e3bd6274be7c83" category="inline-image-macro">postgresql全新安裝</block>
-  <block id="f1cbbcfb76d9b0649939d47dc6ac2cf3" category="paragraph"><block ref="f1cbbcfb76d9b0649939d47dc6ac2cf3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4a08c488f3333f3a820df54221df8a6" category="paragraph">**d.驗證應用程式 pod 處於運行狀態**</block>
-  <block id="85973890993d0900631b8b22fa1cf8b5" category="paragraph"><block ref="85973890993d0900631b8b22fa1cf8b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="474252dd1c23c5b69905d58ce770745b" category="paragraph">**e.驗證 Pod 是否使用克隆作為其 PVC**</block>
   <block id="dfc862a6a8f1caa11721f754efafe529" category="inline-image-macro">postgresql新安裝說明</block>
-  <block id="2a404262de3cef6d06024820d286dc72" category="paragraph"><block ref="2a404262de3cef6d06024820d286dc72" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1e80ae72b073cfe7fd0d0405c745398" category="inline-image-macro">新的 pvc 是克隆</block>
-  <block id="37a7b20081bfaed9cdfab54835aded85" category="paragraph"><block ref="37a7b20081bfaed9cdfab54835aded85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43d7503c85f74702bc734d9d432fb0e1" category="paragraph">f) 若要驗證資料庫是否已如預期恢復，請返回容器控制台並顯示現有資料庫</block>
   <block id="2f73f0311fa1d86b40de0c1c739f7abd" category="inline-image-macro">資料庫已恢復</block>
-  <block id="bb1d7cda904f317bdcfd71af4bac0957" category="paragraph"><block ref="bb1d7cda904f317bdcfd71af4bac0957" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5ad64d595144c185c9cf2065162dec3" category="section-title">示範影片</block>
   <block id="26f71a935ef27829e35a6323d94b8bad" category="video-title">使用託管控制平面在 AWS 上將Amazon FSx for NetApp ONTAP與 Red Hat OpenShift 服務結合使用</block>
   <block id="5098c5ca08edf447dfba921ac6c41a25" category="paragraph">可以找到更多關於 Red Hat OpenShift 和 OpenShift 解決方案的視頻<block ref="7006d3b77ce0dcb153b683809f4deece" category="inline-link-macro-rx"></block>。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概況</block>
   <block id="4311d08133833f9e97125dcef97c9fdc" category="paragraph">在本節中，我們將展示如何利用 FSx for ONTAP作為在 ROSA 上運行的應用程式的持久性儲存層。它將展示在 ROSA 叢集上安裝NetApp Trident CSI 驅動程式、為ONTAP檔案系統配置 FSx 以及部署範例有狀態應用程式。它還將顯示備份和恢復應用程式資料的策略。透過此整合解決方案，您可以建立一個可輕鬆跨可用區擴展的共享儲存框架，從而簡化使用Trident CSI 驅動程式擴充、保護和復原資料的流程。</block>
   <block id="c6368ae044df0f7bb26ed60afda5c591" category="inline-link-macro">AWS 帳號</block>
-  <block id="3a2b88b991502efccf922110610f9582" category="list-text"><block ref="27fc574b8ea5cd6312c40c8aa826b8e2" category="inline-link-macro-rx"></block></block>
   <block id="4d5fc243e74307805026926c423823b4" category="inline-link-macro">Red Hat 帳號</block>
-  <block id="ead0695440dd103ed925a9fde225faf7" category="list-text"><block ref="ead0695440dd103ed925a9fde225faf7" category="inline-link-macro-rx"></block></block>
   <block id="5909d6a8cb5fdba182746c8c82b7f87b" category="inline-link-macro">具有適當的權限</block>
-  <block id="82d51bb9563654dafcbc94464af7ffa1" category="list-text">IAM 用戶<block ref="6a9168d69dda19b401934afd113ebc28" category="inline-link-macro-rx"></block>建立並存取ROSA集群</block>
   <block id="7820fdb5d8b3ebe0c69c86cf8bd2d0cf" category="inline-link-macro">AWS CLI</block>
-  <block id="98301d59c6cad91a32be2e4205f6bb39" category="list-text"><block ref="98301d59c6cad91a32be2e4205f6bb39" category="inline-link-macro-rx"></block></block>
   <block id="a419a367cad390ff246057d1781b2530" category="inline-link-macro">ROSA CLI</block>
-  <block id="e08f074ff23721e4a104f551d21fa4c3" category="list-text"><block ref="e08f074ff23721e4a104f551d21fa4c3" category="inline-link-macro-rx"></block></block>
   <block id="3df52b454b23400395f3356b8e39f05d" category="inline-link-macro">OpenShift 命令列介面</block>
-  <block id="ade19ee4fd758bf4bf5ead653037461e" category="list-text"><block ref="f63ae7e9726ce546709ed5687d99d6e3" category="inline-link-macro-rx"></block>（oc）</block>
   <block id="55876228853abf632dec9346a4f372ec" category="inline-link-macro">文件</block>
-  <block id="6169772de4c1376699dd5519ef849a1d" category="list-text">Helm 3<block ref="7422955daa7906b55a49c2790d5040a0" category="inline-link-macro-rx"></block></block>
   <block id="ac0bdc2a13da98cd87cc9846732afede" category="inline-link-macro">HCP ROSA 集群</block>
-  <block id="5b29dcfe92cc64cc5df9701a1011b09d" category="list-text"><block ref="5b29dcfe92cc64cc5df9701a1011b09d" category="inline-link-macro-rx"></block></block>
   <block id="6cfc44b2c2ec15fe190acbc4646b6c22" category="inline-link-macro">造訪 Red Hat OpenShift Web 控制台</block>
-  <block id="336243bc7fb89cbfadf1a2d16a596a78" category="list-text"><block ref="336243bc7fb89cbfadf1a2d16a596a78" category="inline-link-macro-rx"></block></block>
   <block id="ee0c1dfaba7c469f23fd557ebb77995c" category="paragraph">此圖顯示了部署在多個 AZ 中的 ROSA 集群。 ROSA叢集的主節點、基礎設施節點位於Red Hat的VPC中，而工作節點位於客戶帳戶中的VPC。我們將在同一個 VPC 內建立一個 FSx for ONTAP檔案系統，並在 ROSA 叢集中安裝Trident驅動程序，以允許該 VPC 的所有子網路連接到該檔案系統。</block>
   <block id="132ff3554e6f87fc7ae3dce747a6a1d9" category="inline-image-macro">羅莎建築</block>
-  <block id="71d3bb805217b02e81f223639e55e358" category="paragraph"><block ref="71d3bb805217b02e81f223639e55e358" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6641666d7bc2748bab0ac80cdec3a2a3" category="section-title">初始設定</block>
   <block id="c5af70bdc5c6efbd8cd10d6598b895ab" category="paragraph">**1.為NetApp ONTAP配置 FSx**</block>
   <block id="b85c584b61dc3b605081a708aa8705be" category="paragraph">在與 ROSA 叢集相同的 VPC 中為NetApp ONTAP建立多可用區 FSx。有幾種方法可以做到這一點。提供了使用 CloudFormation Stack 建立 FSxN 的詳細信息</block>
@@ -1305,100 +1194,67 @@
   <block id="3a9672194e38cf7334b7055576422bcc" category="paragraph">其中： region-name：與部署 ROSA 群集的區域相同 subnet1_ID：FSxN 的首選子網的 id subnet2_ID：FSxN 的備用子網的 id VPC_ID：部署 ROSA 群集的 VPC 的 id routetable1_ID、routetable2_our:CI 叢集的 VPC 的路由表 編號ONTAP安全群組入口規則允許的 CIDR 範圍，用於控制存取。您可以使用 0.0.0.0/0 或任何適當的 CIDR 來允許所有流量存取 FSx for ONTAP的特定連接埠。定義管理者密碼：登入 FSxN 的密碼 定義 SVM 密碼：登入將要建立的 SVM 的密碼。</block>
   <block id="a6ae7f0ee55faf7b97b2cbc5872a93d0" category="paragraph">使用Amazon FSx控制台驗證您的檔案系統和儲存虛擬機器 (SVM) 是否已創建，如下所示：</block>
   <block id="543716f57f2bf1a62603c1429f89e44c" category="inline-image-macro">FSxN 創建</block>
-  <block id="073b640bb67b9059fbe0d2145d478aa6" category="paragraph"><block ref="073b640bb67b9059fbe0d2145d478aa6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eec1855fb68e23f0287d8f59d5edf663" category="paragraph">**2.為 ROSA 叢集安裝並設定Trident CSI 驅動程式**</block>
   <block id="94da387dbf8e17919540911ea6205752" category="paragraph">**b.安裝Trident**</block>
   <block id="5eb1ead7ec87a4346203b9b8cb12ab3c" category="paragraph">ROSA 叢集工作節點預先配置了 nfs 工具，使您能夠使用 NAS 協定進行儲存配置和存取。</block>
   <block id="f04d046e9cad09d82c9be581d1ae1fe9" category="paragraph">如果您想使用 iSCSI，則需要為 iSCSI 準備工作節點。從Trident 25.02 版本開始，您可以輕鬆準備 ROSA 叢集（或任何 OpenShift 叢集）的工作節點以在 FSxN 儲存體上執行 iSCSI 作業。有兩種簡單的方法可以安裝Trident 25.02（或更高版本），以自動為 iSCSI 準備工作節點。 1. 使用 tridentctl 工具從命令列使用 node-prep-flag。2.使用操作員中心的 Red Hat 認證的Trident操作員並對其進行自訂。  3.使用 Helm。</block>
   <block id="3b061feeaf044b14f22fd4354d79afa7" category="admonition">使用上述任何一種方法而不啟用節點準備將允許您僅使用 NAS 協定在 FSxN 上配置儲存。</block>
   <block id="07fbf7b1273a602b2229671f818216fa" category="paragraph">**方法一：使用 tridentctl 工具**</block>
-  <block id="6d1fdd4584e069726e5ebeb241b77d14" category="inline-link-macro">此處的文檔</block>
-  <block id="69e1842b48b70d86890f9f50dcce7d91" category="paragraph">使用 node-prep 標誌並安裝Trident ，如圖所示。在發出安裝命令之前，您應該已經下載了安裝程式包。請參閱<block ref="5695630188d786784930a38ef71042a1" category="inline-link-macro-rx"></block> 。</block>
   <block id="f3689db8513ce18a4c66c5b31f16e49b" category="paragraph">**方法 2：使用 Red Hat 認證的Trident Operator 並自訂** 從 OperatorHub 找到 Red Hat 認證的Trident Operator 並安裝它。</block>
   <block id="003f48c28a3b357b801ea863343fda51" category="inline-image-macro">操作員中心內的操作員</block>
-  <block id="ac2f9d714248337ab7171f93e7865389" category="paragraph"><block ref="ac2f9d714248337ab7171f93e7865389" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7579c43cc636c72f9a519ec8568803b6" category="inline-image-macro">安裝操作員 1</block>
-  <block id="3fda7053514ef7da788808811c3ff983" category="paragraph"><block ref="3fda7053514ef7da788808811c3ff983" category="inline-image-macro-rx" type="image"></block></block>
   <block id="01d3e74f8acafd86528e465b4e5d2b1f" category="inline-image-macro">安裝操作員 2</block>
-  <block id="492d2082d92d5cd0c3e9e645838ecbc0" category="paragraph"><block ref="492d2082d92d5cd0c3e9e645838ecbc0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff79bc23e404a5a22df45a02dcebd11e" category="inline-image-macro">操作員安裝</block>
-  <block id="af60b006d2159121472e259b5116d152" category="paragraph"><block ref="af60b006d2159121472e259b5116d152" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1fd12f7b251af1d44feb3dd418d94820" category="paragraph">接下來，建立Trident Orchestrator 實例。使用 YAML 視圖設定任何自訂值或在安裝期間啟用 iscsi 節點準備。</block>
   <block id="03a1abdc6d3af346b2afeca49ea90eaa" category="inline-image-macro">協調器創建</block>
-  <block id="1f862bd9a62f6cf05c4007f3a09539ee" category="paragraph"><block ref="1f862bd9a62f6cf05c4007f3a09539ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8978eef87dc8f7572eedff6e2bd5c2a9" category="inline-image-macro">啟用 NodePrep</block>
-  <block id="beaafa13a78bb1454ce9d121a69c597e" category="paragraph"><block ref="beaafa13a78bb1454ce9d121a69c597e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1b18286ecd267568f0113dbef9b4d16" category="inline-image-macro">已安裝 Orchestrator</block>
-  <block id="fa7da0402cd81afbc44e492864f343d3" category="paragraph"><block ref="fa7da0402cd81afbc44e492864f343d3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06188d1b14559c7901e64b986bb75929" category="inline-image-macro">安裝Trident</block>
-  <block id="6d06278c3da710e307cd0f161f4c0594" category="paragraph"><block ref="6d06278c3da710e307cd0f161f4c0594" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1a41ba24dc9429264e7db57e757ee55" category="paragraph">使用上述任何一種方法安裝Trident將透過啟動 iscsid 和 multipathd 服務並在 /etc/multipath.conf 檔案中設定以下內容，為 iSCSI 準備 ROSA 叢集工作節點</block>
   <block id="fc90c887c8728c69121e5e2436cd9f6a" category="inline-image-macro">iscsid 活躍</block>
-  <block id="03fdb4612a8d8373e4dabda87c00d9dc" category="paragraph"><block ref="03fdb4612a8d8373e4dabda87c00d9dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc0ff41f6ffa4ed9b929c0cb67ae52c3" category="inline-image-macro">多路徑激活</block>
-  <block id="54ee16e07ddfba545d8643a9b28744b5" category="paragraph"><block ref="54ee16e07ddfba545d8643a9b28744b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7552381be5e7f0e3a0f82d85e0140723" category="inline-image-macro">multipath.conf 文件</block>
-  <block id="c9706f66eb14af9dd9a7225c9fc62e9a" category="paragraph"><block ref="c9706f66eb14af9dd9a7225c9fc62e9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6645d37e9de7750f4279b2867540007" category="paragraph">**c.驗證所有Trident pod 是否處於運作狀態**</block>
   <block id="79ef2187f1254031122a8446b04ab77f" category="inline-image-macro">Trident吊艙運行</block>
-  <block id="ad93df3ea6ac808e784ae10b0e0a1a81" category="paragraph"><block ref="ad93df3ea6ac808e784ae10b0e0a1a81" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4070068ca9257738c0c1590dd5659b7" category="paragraph">**3.設定Trident CSI 後端以使用 FSx for ONTAP (ONTAP NAS)**</block>
   <block id="412b252fa44d1a73e3e7bf22113f99a2" category="inline-link-macro">ontap-nas驅動程式</block>
-  <block id="5cda38c877ffa8a612ce7b7763e4390d" category="paragraph">Trident後端設定告訴Trident如何與儲存系統（在本例中為 FSx for ONTAP）通訊。為了建立後端，我們將提供要連接的儲存虛擬機器的憑證，以及叢集管理和 NFS 資料介面。我們將使用<block ref="14edcd5c25c37eab7c332a6849f58247" category="inline-link-macro-rx"></block>在 FSx 檔案系統中設定儲存磁碟區。</block>
   <block id="a06d8ea13f77dede2e54121fcba24d5f" category="paragraph">**一個。首先，使用以下 yaml** 為 SVM 憑證建立金鑰</block>
   <block id="368bea625fb1d17f4fb605b1adf6c105" category="admonition">您也可以從 AWS Secrets Manager 檢索為 FSxN 建立的 SVM 密碼，如下所示。</block>
   <block id="56ac301906b14ab3a1d90e48d5bf0099" category="inline-image-macro">AWS 機密管理器</block>
-  <block id="840f406bc33ccaf7112de6db8d42639b" category="paragraph"><block ref="840f406bc33ccaf7112de6db8d42639b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e0201b97b95896114d8c8a530cd34324" category="inline-image-macro">檢索秘密</block>
-  <block id="13624b37c15993f43833f52bf3949e3c" category="paragraph"><block ref="13624b37c15993f43833f52bf3949e3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c77dd8a86a3aa1229d7fb226ed698ff" category="paragraph">**b.接下來，使用以下命令將 SVM 憑證的金鑰新增至 ROSA 叢集**</block>
   <block id="f342ed808a344dca8cd316645b28a269" category="paragraph">您可以使用下列指令驗證該秘密是否已新增至 trident 命名空間中</block>
   <block id="c49bda1320107c50590e5da2e8bcc6b0" category="inline-image-macro">秘密應用</block>
-  <block id="fe7736e2b80c8a5e7921962d7e45e9cd" category="paragraph"><block ref="fe7736e2b80c8a5e7921962d7e45e9cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="de0e33591485aa9503121693ac6d187d" category="paragraph">**c.接下來，建立後端物件**為此，請進入複製的 Git 儲存庫的 **fsx** 目錄。開啟檔案 backend-ontap-nas.yaml。取代以下內容：將 **managementLIF** 替換為管理 DNS 名稱，將 **dataLIF** 替換為Amazon FSx SVM 的 NFS DNS 名稱，將 **svm** 替換為 SVM 名稱。使用以下命令建立後端物件。</block>
   <block id="35919ebc3f38de293f75964141c70d38" category="paragraph">使用以下命令建立後端物件。</block>
   <block id="3061d849e31cb07387a1d37666690092" category="admonition">您可以從Amazon FSx控制台取得管理 DNS 名稱、NFS DNS 名稱和 SVM 名稱，如下面的螢幕截圖所示</block>
   <block id="918673e8fb38fdb35a598c5edcc41c6b" category="inline-image-macro">獲得生活</block>
-  <block id="d3fbd0f4e568d661e7d0bf11c5dd77d5" category="paragraph"><block ref="d3fbd0f4e568d661e7d0bf11c5dd77d5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="617dd2f4c60a9008ec760eb0fddb8e95" category="paragraph">**d.現在，執行以下命令來驗證後端物件是否已創建，並且階段顯示為綁定且狀態為成功**</block>
   <block id="2a88ee6aa0aa6aec1e1996086289d857" category="inline-image-macro">創建後端</block>
-  <block id="e68d001e824ad78e342f3582683814fc" category="paragraph"><block ref="e68d001e824ad78e342f3582683814fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4979a948fa2170accb8d9438300b96a" category="paragraph">**4.建立儲存類別** 現在已經設定了Trident後端，您可以建立一個 Kubernetes 儲存類別來使用該後端。儲存類別是叢集可用的資源物件。它描述並分類了您可以為應用程式請求的儲存類型。</block>
   <block id="1f18852d1e76226d0d4e171d80141cce" category="paragraph">**一個。查看 fsx 資料夾中的檔案 storage-class-csi-nas.yaml。 **</block>
   <block id="84952793b5afdcea8ab63448535d6b8e" category="paragraph">**b.在 ROSA 叢集中建立儲存類別並驗證 trident-csi 儲存類別是否已建立。 **</block>
-  <block id="40d2fe88b435e73e3dbc83b404ff1b0b" category="paragraph"><block ref="40d2fe88b435e73e3dbc83b404ff1b0b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d1b3d4a374bc6e11af0ea040aa8a1a80" category="paragraph">這完成了Trident CSI 驅動程式的安裝及其與 FSx for ONTAP檔案系統的連線。現在，您可以使用 FSx for ONTAP上的檔案磁碟區在 ROSA 上部署範例 Postgresql 有狀態應用程式。</block>
   <block id="0636e7d1057cc2a3e8d988583c421785" category="paragraph">**c.驗證沒有使用 trident-csi 儲存類別建立的 PVC 和 PV。 **</block>
   <block id="3e54fdb1a47731eff210cfcc69714e5c" category="inline-image-macro">不使用Trident 的PVC</block>
-  <block id="0a84b167c70df61cbeed6faf35196bb5" category="paragraph"><block ref="0a84b167c70df61cbeed6faf35196bb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="391518b1a16f4dd644fc4579501565e0" category="paragraph">**d.驗證應用程式是否可以使用Trident CSI 建立 PV。 **</block>
   <block id="830972d7ddeb03c795b08a148225a2d6" category="paragraph">使用 **fsx** 資料夾中提供的 pvc-trident.yaml 檔案建立 PVC。</block>
   <block id="d970fd0b3c991f4bbe44a6587210066b" category="inline-image-macro">使用Trident建立測試 PVC</block>
-  <block id="57e19d8c3fd1957ddaad3a86b16d7064" category="paragraph"><block ref="57e19d8c3fd1957ddaad3a86b16d7064" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41852c6999cb66fc6ee8adc857d41154" category="admonition">要使用 iSCSI，您應該已經在工作節點上啟用了 iSCSI（如前所示），並且需要建立 iSCSI 後端和儲存類別。以下是一些範例 yaml 檔案。</block>
   <block id="7a581ed3c7639c1ada55033248414f22" category="paragraph">**5.部署範例 Postgresql 有狀態應用程式**</block>
   <block id="6f8eddbdd9b105751799f66a50875bc6" category="paragraph">**一個。使用 helm 安裝 postgresql**</block>
   <block id="259fd35b5f9a43731297f8a140d1b21b" category="inline-image-macro">安裝 postgresql</block>
-  <block id="fe93ad99824686a419fd89ad88b85621" category="paragraph"><block ref="fe93ad99824686a419fd89ad88b85621" category="inline-image-macro-rx" type="image"></block></block>
   <block id="31cfab33a14cc72e5a344d295f4549ef" category="paragraph">**b.驗證應用程式 pod 是否正在運行，以及是否為該應用程式建立了 PVC 和 PV。 **</block>
   <block id="39403b6f7280bb5cec1e975702a82cf5" category="inline-image-macro">postgresql pods</block>
-  <block id="1856ebdd54733bcfbf1943dec099798b" category="paragraph"><block ref="1856ebdd54733bcfbf1943dec099798b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f198211ed231d5aa514aba22cafd2f7d" category="inline-image-macro">postgresql pvc</block>
-  <block id="20018dc0db2c6cceb0a271c957fbf7ed" category="paragraph"><block ref="20018dc0db2c6cceb0a271c957fbf7ed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d86849da5990d2b606eb41488c7eab5" category="inline-image-macro">postgresql pv</block>
-  <block id="763e3ab25b2c9db0017f2081965387ae" category="paragraph"><block ref="763e3ab25b2c9db0017f2081965387ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6930e0118fbec85d7f8d0e9d6fcfac15" category="paragraph">**c.部署 Postgresql 客戶端**</block>
   <block id="0dad5f08af561e853cc9dd8bde3951b9" category="paragraph">**使用下列指令取得已安裝的 postgresql 伺服器的密碼。 **</block>
   <block id="37916fdf1075b74251bed74535d3a080" category="paragraph">**使用以下命令運行 postgresql 用戶端並使用密碼連接到伺服器**</block>
   <block id="5804396b7d4ecfdaae8ec2641975adf0" category="inline-image-macro">postgresql客戶端</block>
-  <block id="334413543e8d842918cab1c6dd0f3fbf" category="paragraph"><block ref="334413543e8d842918cab1c6dd0f3fbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f465c438a10c54cb4a533ec5ddad8184" category="paragraph">**d.建立一個資料庫和一個表。為表建立一個模式，並在表中插入 2 行資料。 **</block>
-  <block id="0a91e6d1ca35b9e277506ee61a3d5b02" category="inline-image-macro">postgresql 表、模式、行</block>
-  <block id="4f8a864f9eba2322e44b9cc26e1f92a7" category="paragraph"><block ref="4f8a864f9eba2322e44b9cc26e1f92a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b888e639b3fe90bebf5a60ad61a3222" category="inline-image-macro">postgresql 第1行</block>
-  <block id="92e86bdf8f47fdbbd9a9e904209087f8" category="paragraph"><block ref="92e86bdf8f47fdbbd9a9e904209087f8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d0a4b08f3c42a0e5f1dffde08d089781" category="inline-image-macro">postgresql 行2</block>
-  <block id="745a9c8442f96e8a1041caac1b56044b" category="paragraph"><block ref="745a9c8442f96e8a1041caac1b56044b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b6eb32efa1f9b0356b2aaa4f3387649" category="summary">本參考文件提供了 Red Hat OpenShift 解決方案的部署驗證，該解決方案透過安裝程式設定基礎架構 (IPI) 在多個不同的資料中心環境中部署，並由NetApp進行驗證。它還詳細介紹如何利用Trident儲存編排器管理持久性存儲，從而實現與NetApp儲存系統的儲存整合。最後，我們探索並記錄了大量解決方案驗證和實際用例。</block>
   <block id="a0e01d06503f271c1de7acc0acd01733" category="doc">NVA-1160：Red Hat OpenShift 與NetApp</block>
   <block id="3f4b17e041e63192875c654812122484" category="paragraph">NetApp 的Alan Cowles 和 Nikhil M Kulkarni</block>
@@ -1411,7 +1267,6 @@
   <block id="42c487483a8feee3cc0365881a4cc265" category="paragraph">NetApp的 Red Hat OpenShift 承認這些挑戰，並提出了一種解決方案，透過在客戶選擇的資料中心環境中實施 RedHat OpenShift IPI 的全自動部署來幫助解決每個問題。</block>
   <block id="d3d8eb53a347d6ffc9fb157d9ac8398b" category="paragraph">Red Hat OpenShift 與NetApp解決方案由以下主要元件組成：</block>
   <block id="fd89bb4228981d3b22187eb451421cd6" category="section-title">紅帽 OpenShift 容器平台</block>
-  <block id="70240bc0debcb080aa08dbd9e7b9a525" category="paragraph">欲了解更多信息，請訪問 OpenShift 網站<block ref="35d5a627a33ce17e4bd125258d59fbc4" category="inline-link-rx"></block>。</block>
   <block id="02af9749588c0e25a52f0551041473b1" category="paragraph">Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 Red Hat OpenShift）儲存編排器。</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="cell">儲存</block>
   <block id="8b2b7bab9251640fb5c8caa0b8a8ff98" category="cell">9.8、9.9.1、9.12.1</block>
@@ -1424,9 +1279,7 @@
   <block id="38890f5544003fcf40576b9458f3e3ce" category="cell">7.0、8.0.2</block>
   <block id="472d13eb415cd6107aeef3a1ae6cd705" category="summary">NetApp提供了許多產品來幫助我們的客戶在基於容器的環境中協調和管理持久數據，例如 Red Hat OpenShift。</block>
   <block id="dd99886a26d3b0bfc6c607830f9e7019" category="doc">了解NetApp Trident與 Red Hat OpenShift 的集成</block>
-  <block id="900bda04002ffdec7966ea3d7d98194b" category="paragraph"><block ref="900bda04002ffdec7966ea3d7d98194b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd351007d4a671a321b6881f730d0dc3" category="paragraph">以下頁麵包含有關NetApp產品的更多信息，這些產品已在 Red Hat OpenShift with NetApp解決方案中經過應用程式和持久性儲存管理驗證：</block>
-  <block id="38a66e64d72c4bab859830a3603ac8eb" category="list-text"><block ref="38a66e64d72c4bab859830a3603ac8eb" category="inline-link-macro-rx"></block></block>
   <block id="e38be1dc20a2b358b917b60fe2677b39" category="doc">NetApp Element iSCSI 配置</block>
   <block id="dc5fa659e0452a77d6006f5b72f8b334" category="paragraph">要實現Trident與NetApp Element儲存系統的集成，您必須建立一個後端，以便使用 iSCSI 協定與儲存系統進行通訊。</block>
   <block id="05ca7295321cb9b417a251e75557c6c5" category="list-text">下載的安裝檔案中提供了範例後端文件<block ref="75e4a0ceb294a9d74374c938e4e8ddc8" prefix=" " category="inline-code"></block>資料夾層次結構。對於服務於 iSCSI 的NetApp Element系統，複製<block ref="7989420add0b5baae954e866987ef264" prefix=" " category="inline-code"></block>文件到您的工作目錄並編輯該文件。</block>
@@ -1440,12 +1293,9 @@
   <block id="92637d8d513510f7c1f5bfac6e1cce9b" category="summary">要實現Trident與NetApp ONTAP儲存系統的集成，您必須建立一個能夠與儲存系統通訊的後端。</block>
   <block id="81736240a8dded7baeec2c203b1eb6d5" category="paragraph">Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 Red Hat OpenShift）儲存編排器。  Trident可與整個NetApp儲存產品組合搭配使用，包括NetApp ONTAP和 Element 儲存系統，並且還支援 NFS 和 iSCSI 連線。  Trident允許最終用戶從其NetApp儲存系統配置和管理存儲，而無需儲存管理員的干預，從而加速 DevOps 工作流程。</block>
   <block id="60f45090e62b24e31c59f9c7dc58c655" category="paragraph">Trident的開發週期很快，和 Kubernetes 一樣，每年發布四次。</block>
-  <block id="b2169686f146425f673c85dda25027f8" category="paragraph">已測試過哪個版本的Trident以及可以找到哪個 Kubernetes 發行版的支援矩陣<block ref="34562000b9988739736848a0014e5230" category="inline-link-rx"></block>。</block>
   <block id="38461cd3f4ed507e77fed6009d4cca3e" category="inline-link-macro">Trident產品文檔</block>
-  <block id="8becdc5dafaea9a42a00541b5232c9ec" category="paragraph">請參閱<block ref="c9828f1cebf8b202dc4a588c02a65aac" category="inline-link-macro-rx"></block>有關安裝和配置的詳細資訊。</block>
   <block id="e1c8e443ef4456b5817cd51fd4b2ee21" category="section-title">下載Trident</block>
   <block id="f95d0437e813349fa018b7f0e68e9a7d" category="paragraph">若要在已部署的使用者叢集上安裝Trident並配置持久性卷，請完成下列步驟：</block>
-  <block id="5e2edd55fd0252c36cb87a4ce11d6e74" category="list-text">將安裝檔案下載到管理工作站並提取內容。目前版本的Trident可以下載<block ref="3ee34cf4d0ca59ba61404ff20cc8cec4" category="inline-link-rx"></block>。</block>
   <block id="422269f9bb560b76869cbd586b8370d5" category="list-text">從下載的軟體包中提取Trident安裝。</block>
   <block id="52d012c119e8e080d08f6a1592f8f9ec" category="section-title">使用 Helm 安裝Trident Operator</block>
   <block id="645e283a7a985805ce0d9bb25f595243" category="list-text">首先設定用戶集群的<block ref="deabc6332aa53495b56c51d2e3eca54f" prefix=" " category="inline-code"></block>文件作為環境變量，這樣您就不必引用它，因為Trident沒有選項來傳遞此文件。</block>
@@ -1472,7 +1322,6 @@
   <block id="cccb85b5e6a9a19187087f71254d1fb2" category="paragraph">在 Red Hat OpenShift 中，這是透過在部署叢集後將 MCO（機器配置操作員）應用於叢集來處理的。</block>
   <block id="068d2023b916134a0573aaad841124e4" category="paragraph">若要設定工作節點以執行 iSCSI 服務，請完成下列步驟：</block>
   <block id="c25282bfd8c140d1f79c25362637f744" category="paragraph">不使用多路徑時：</block>
-  <block id="541c76e8762c84e3e0488f91c8062e08" category="paragraph">使用多路徑時：</block>
   <block id="d9f036d3b9f84b626f8a777480066cab" category="list-text">配置建立後，大約需要 20 到 30 分鐘將配置套用到工作節點並重新載入它們。使用以下命令驗證機器配置是否已套用<block ref="1b2628e311828c98f0307b49309b67ee" prefix=" " category="inline-code"></block>並確保工人的機器配置池已更新。您也可以登入工作節點來確認 iscsid 服務正在執行（如果使用多路徑，則 multipathd 服務正在執行）。</block>
   <block id="6e16409ed6038c106c7fa1dfbfb9da0f" category="admonition">也可以透過執行以下命令來確認 MachineConfig 已成功應用且服務已如預期啟動<block ref="5c237bbde25a8cf47cdca465191a6c1d" prefix=" " category="inline-code"></block>帶有適當標誌的命令。</block>
   <block id="b09d268106fd9cbfffd1dc848382a150" category="section-title">建立儲存系統後端</block>
@@ -1492,37 +1341,22 @@
   <block id="9eb8af4dd2c3557a24b914601b6ae465" category="section-title">建立Jenkins部署所需的資源</block>
   <block id="93b3852e5c67975dd33b1769b24a4a85" category="paragraph">若要建立部署 Jenkins 應用程式所需的資源，請完成以下步驟：</block>
   <block id="9fd493573e73cb0e5e55e97306249596" category="list-text">建立一個名為 Jenkins 的新專案。</block>
-  <block id="8007dd5ea548a9597a6fd0d0837cf904" category="paragraph"><block ref="8007dd5ea548a9597a6fd0d0837cf904" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8d256abce3dbdfed83e337956e42f60f" category="list-text">在這個例子中，我們部署了具有持久性儲存的 Jenkins。為了支持 Jenkins 構建，請建立 PVC。導覽至儲存 &gt; 持久性卷聲明，然後按一下建立持久性卷聲明。選擇剛剛建立的儲存類，確保持久性磁碟區聲明名稱為jenkins，選擇適當的大小和存取模式，然後按一下建立。</block>
-  <block id="e5d5518aa4ae9a3e5207fe245d35147b" category="paragraph"><block ref="e5d5518aa4ae9a3e5207fe245d35147b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9272f40a21ca3dad814c4e3886b40776" category="section-title">使用持久性儲存部署 Jenkins</block>
   <block id="939a7b51bfb262627185af768c3c1024" category="paragraph">若要使用持久性儲存部署 Jenkins，請完成下列步驟：</block>
   <block id="d31d340fd6b135cac2cfac7b04a34c10" category="list-text">在左上角，將角色從管理員變更為開發人員。點擊 +新增並選擇來自目錄。在按關鍵字過濾欄中，搜尋 jenkins。選擇具有持久性儲存的 Jenkins 服務。</block>
-  <block id="a1a1bd76420a8c683be6dccdb404f07e" category="paragraph"><block ref="a1a1bd76420a8c683be6dccdb404f07e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6baa4bd25992de2d17278ade0d3090ad" category="list-text">點選<block ref="42dcbbaa226af66223d0680206ea8547" prefix=" " category="inline-code"></block>。</block>
-  <block id="fe6fbabc1e025fca5155c581760a956c" category="paragraph"><block ref="fe6fbabc1e025fca5155c581760a956c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7b4a6da6ab2733552de61d67b38a39e" category="list-text">預設情況下，會填入 Jenkins 應用程式的詳細資訊。根據您的需求，修改參數並點擊“建立”。此過程創建了在 OpenShift 上支援 Jenkins 所需的所有資源。</block>
-  <block id="cfd19feb2a18d2cf0379c59a1d59ee6c" category="paragraph"><block ref="cfd19feb2a18d2cf0379c59a1d59ee6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb86f2dea9912af1bb1677c9cf33e619" category="list-text">Jenkins pod 大約需要 10 到 12 分鐘才能進入就緒狀態。</block>
-  <block id="aca4c194891259971d42b8e40824c60f" category="paragraph"><block ref="aca4c194891259971d42b8e40824c60f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="da33835bff86a0b0c8be6c67dcf677bb" category="list-text">實例化 Pod 後，導覽至「網路」&gt;「路由」。若要開啟 Jenkins 網頁，請點選 jenkins 路由提供的 URL。</block>
-  <block id="8bf5ffa50f8001acbf2c5c8de7fb1a38" category="paragraph"><block ref="8bf5ffa50f8001acbf2c5c8de7fb1a38" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d59d1324dea050a2c0ffc376de411aa0" category="list-text">由於在建立 Jenkins 應用程式時使用了 OpenShift OAuth，因此請按一下使用 OpenShift 登入。</block>
-  <block id="2136aeeb0aeb36fefd84f6ba7b527ed7" category="paragraph"><block ref="2136aeeb0aeb36fefd84f6ba7b527ed7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="70a742210f3e3599821b3a11b682144c" category="list-text">授權 Jenkins 服務帳戶存取 OpenShift 使用者。</block>
-  <block id="5bb584ba03a4447f210abaaa6fc3421d" category="paragraph"><block ref="5bb584ba03a4447f210abaaa6fc3421d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b07934b6023389a7e3e183b45e3b7448" category="list-text">將顯示 Jenkins 歡迎頁面。因為我們使用的是 Maven 構建，所以請先完成 Maven 安裝。導航至“管理 Jenkins”&gt;“全域工具配置”，然後在“Maven”子標題中按一下“新增 Maven”。輸入您選擇的名稱並確保選擇了“自動安裝”選項。按一下「Save（儲存）」。</block>
-  <block id="ba97815cd1398364c5d732df404570f4" category="paragraph"><block ref="ba97815cd1398364c5d732df404570f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8fd32305bf380bf893ef2407eae75f5d" category="list-text">現在您可以建立一個管道來示範 CI/CD 工作流程。在主頁上，按一下左側功能表中的「建立新作業」或「新專案」。</block>
-  <block id="5ec90d2545035ac497202eb7ae3434fc" category="paragraph"><block ref="5ec90d2545035ac497202eb7ae3434fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b6fc174a3fad5c396413febe1d4ba50" category="list-text">在建立專案頁面上，輸入您選擇的名稱，選擇管道，然後按一下確定。</block>
-  <block id="c4dec2852d55117421867d65e456a7ad" category="paragraph"><block ref="c4dec2852d55117421867d65e456a7ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd55d787cacfb25983e0a24b58ba6d48" category="list-text">選擇管道選項卡。從嘗試範例管道下拉選單中，選擇 Github + Maven。程式碼會自動填入。按一下「Save（儲存）」。</block>
-  <block id="86ec92271960dd23f1614721c07bc989" category="paragraph"><block ref="86ec92271960dd23f1614721c07bc989" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0191ad3b841f8db403ec4749d571eb4b" category="list-text">按一下「立即建置」以透過準備、建置和測試階段觸發開發。完成整個建置過程並顯示建置結果可能需要幾分鐘。</block>
-  <block id="d469f4aef2bd2d92449c1ae5dd63a196" category="paragraph"><block ref="d469f4aef2bd2d92449c1ae5dd63a196" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b04b355d9fc6a2e23965649ebdd0aa31" category="list-text">每當程式碼發生任何變化時，都可以重建管道來修補新版本的軟體，從而實現持續整合和持續交付。按一下「最近變更」可追蹤自上一版本以來的變更。</block>
-  <block id="440d5f7885e3509845c5c7594e97c253" category="paragraph"><block ref="440d5f7885e3509845c5c7594e97c253" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eeaa3ef2816f113fd1978b036eefc4a4" category="doc">解決方案驗證與用例：Red Hat OpenShift 與NetApp</block>
   <block id="9e766e668731b912ea84be747f0d6b4b" category="paragraph">本頁提供的範例是 Red Hat OpenShift 與NetApp的解決方案驗證和用例。</block>
   <block id="6f60a8e202d6d4f297230695ffa9c1a6" category="inline-link-macro">使用持久性儲存部署 Jenkins CI/CD 管道</block>
@@ -1662,9 +1496,330 @@
   <block id="fce579e2b8eca0cf6765e4d77b07475d" category="paragraph">了解 NetApp Trident Protect，它已通過驗證，可用於 OpenShift Virtualization 解決方案的應用程式和持久性儲存管理。</block>
   <block id="a261c77868f49e84578faa359f5e9e40" category="paragraph">Trident 是一個開源儲存配置器和編排器，由 NetApp 維護，它及其附加元件 NetApp Trident Protect 為在 Red Hat OpenShift 等基於容器的環境中編排和管理持久性資料提供了強大的解決方案。</block>
   <block id="5ec3b68db6f1825ef893a3df02e8cb74" category="inline-link-macro">Trident Protect 說明文件</block>
-  <block id="3a984bfb64105d2cab0a81dc1af80642" category="list-text"><block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block></block>
   <block id="ea885ab6ce71c5c4088d6a223de747a4" category="doc">使用 Trident Protect 為容器應用程式和虛擬機器提供資料保護</block>
   <block id="5fe555334f56eb4ea308eebe2c87feb9" category="video-title">使用 Trident Protect 進行虛擬機器災難復原</block>
   <block id="92b72e1a477bb22316b8809fbb5782d9" category="video-title">使用 Trident Protect 保護虛擬機</block>
   <block id="ddb215f758bdd80460164fabb25da416" category="sidebar">使用 Trident Protect 進行資料保護</block>
+  <block id="71abf7e2c641ea38d39b7a20772eba8e" category="paragraph">如需更多資訊，請造訪 <block ref="2b515b03bf6ebbb1eeaa3feb4fe01f8a" category="inline-link-macro-rx"></block>。</block>
+  <block id="39d3d7c78b9cf3ffaf01456c45fdc5c5" category="inline-link-macro">NetApp 網站</block>
+  <block id="b968fde9db3bb31593953cb035ae2417" category="paragraph">如需更多資訊，請造訪 <block ref="ed97061021c3e7a6d3fb5341335b7354" category="inline-link-macro-rx"></block>。</block>
+  <block id="a15633cf742c52a051a1a5a71db716bb" category="inline-link-macro">NetApp 硬體平台文件</block>
+  <block id="a8e39649e56df62720df4c97c2777cf7" category="paragraph">有關 NetApp AFF/FAS 平台的詳細資訊，請參閱 <block ref="ad9eb91328a96de4d75328eeb32f72b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="7436b418bed093768e360d32105591d2" category="inline-link-macro">ONTAP Select 說明文件</block>
+  <block id="0cc251eacd6e7f8207b7e976124e613b" category="paragraph">如需 ONTAP Select 的詳細資訊，請參閱 <block ref="de720e24be25cff2bb4a7c5edb7b6f7e" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a523ba4ece9125275b92ebb41e3cf23" category="inline-link-macro">Cloud Volumes ONTAP 文檔</block>
+  <block id="a9208dfb6721ab54c37024df46948722" category="paragraph">如需 Cloud Volumes ONTAP 的詳細資訊，請參閱 <block ref="4c5aeceb206f7522b9fe41b2612d4ff3" category="inline-link-macro-rx"></block>。</block>
+  <block id="40ef3fb23e015d9b4b46a16fa50f10d3" category="inline-link-macro">Trident 文件</block>
+  <block id="7e93d6c2814d39ecc312a7cb8f50157b" category="paragraph">NetApp Trident 是一個開源且完全支援的儲存設備協調器，適用於 Container 和 Kubernetes 發行版（例如 {k8s_distribution_name}）。如需更多資訊，請造訪 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>。</block>
+  <block id="c777be7f669397b0a376fe32ca5cd9c3" category="inline-link-macro">支援的前端（協調器）</block>
+  <block id="a82ce4a624ca117f0d4adb906d250a9d" category="paragraph">有關哪些版本的 Trident 已與哪些 Kubernetes 經銷版本進行過測試的支援對照表，請參閱 <block ref="f9d862f4c575cafd99214033fc736cc3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b392bb5c2cb134c898d5c299a952c125" category="inline-link-macro">F5 BIG-IP ADC GKE On-Prem 安裝指南</block>
+  <block id="eb8f5a0d1caa65f55d6d97486bfccf82" category="paragraph">此解決方案利用部署在 VMware vSphere 中的虛擬應用裝置。F5 Big-IP 虛擬應用裝置的網路可根據您的網路環境設定為雙臂或三臂組態。本文件中的部署以雙臂組態為基礎。有關設定虛擬應用裝置以搭配 Anthos 使用的更多詳細資訊，請參閱 <block ref="efa9d286390d662f3b080281b8032176" category="inline-link-macro-rx"></block>。</block>
+  <block id="821f07c2f64ed1364c7b57afe91aa5f6" category="inline-link-macro">F5 下載入口網站</block>
+  <block id="1c752050e212da79c1a69d2d8b674e39" category="list-text">從 <block ref="2c2f88b9dfb4b0d57dd838074c411097" category="inline-link-macro-rx"></block> 下載虛擬應用裝置 Open Virtual Appliance （OVA） 檔案。</block>
+  <block id="bf539c910f3f93afe9436f51cee5e12e" category="paragraph">有關 NetApp AFF 和 FAS 平台的詳細資訊，請參閱<block ref="ad9eb91328a96de4d75328eeb32f72b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="f64322fb972a31f0c1b5ba1fb0ea5c57" category="paragraph">如需更多資訊，請造訪 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>。</block>
+  <block id="a9dfec93685eae191be30de8d240abb2" category="inline-link-macro">Anthos 儲存設備合作夥伴支援對照表</block>
+  <block id="d8c404f27b989b800e82e1d8b19cb4f2" category="paragraph">請查看 <block ref="f9ecf86011bd398d9201d696f2458261" category="inline-link-macro-rx"></block> 以取得已驗證的版本。</block>
+  <block id="200a1c85618c42cd4ea29d4c04649068" category="paragraph">NetApp Trident 是一個開源、完全支援的儲存設備協調器，適用於 Container 和 Kubernetes 經銷版本，包括 Anthos。如需更多資訊，請造訪 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block>。</block>
+  <block id="e03c4a97cbca1020804f3fdb594ca7f4" category="summary">Trident 是一個完全支援的開源儲存設備協調器，適用於 Container 和 Kubernetes 發行版，包括 Anthos。</block>
+  <block id="06a74ec92a4f9aa73abdeb25fb77f912" category="paragraph">請參閱 <block ref="81f3e4134a6f5ebea4459e5f629a42dc" category="inline-link-macro-rx"></block> 以取得最新版本資訊。Trident 版本與 Kubernetes 發行版相容性的支援對照表可在 <block ref="f9d862f4c575cafd99214033fc736cc3" category="inline-link-macro-rx"></block> 中取得。</block>
+  <block id="bbc7e244676ab729a0c73c34dd3b219d" category="inline-link-macro">Trident 安裝詳情</block>
+  <block id="6523fbd303031f5695e8fa1f84177ff6" category="paragraph">如需詳細資訊、請參閱 <block ref="4afff34e2178e9a103c01e8d90cc73b5" category="inline-link-macro-rx"></block>。</block>
+  <block id="aeeb03235358f0f4bf3be628bed08721" category="inline-link-macro">建立後端</block>
+  <block id="9f303a64b5d74c7cd615ed16ba429a22" category="paragraph">完成 Trident Operator 安裝後，您必須為所使用的特定 NetApp 儲存平台設定後端。請點選以下連結繼續完成 Trident 的設定和組態。<block ref="75414e243cfcdfc10305a48deb424d70" category="inline-link-macro-rx"></block></block>
+  <block id="8e67694e9f98815862d0e14986595aa5" category="paragraph">建立後端後，您必須建立儲存設備類別，Kubernetes 使用者在需要 Volume 時會指定該儲存設備類別。Kubernetes 使用者透過持久性 Volume 宣告 （PVC） 來配置 Volume，PVC 透過名稱指定儲存設備類別。請點擊以下連結建立儲存設備類別。<block ref="68a56d94afff00ddd947a7245ac1daa5" category="inline-link-macro-rx"></block></block>
+  <block id="2311d84d26296a70b498e90c57fe7913" category="paragraph">您必須使用儲存設備類別建立 Kubernetes 持久性 Volume 宣告 (PVC) 物件，才能動態資源配置 Volume。請點擊以下連結建立 PVC 物件。<block ref="407688e8bfe1f30b6cf9cd8c18baf221" category="inline-link-macro-rx"></block></block>
+  <block id="e40342711a4929f58e9e26c5b9e4808c" category="paragraph">上述步驟中配置的 Volume 可以透過在 pod 中裝載該 Volume 供應用程式使用。以下連結提供了一個範例。<block ref="3716e358fda09280c3de68ae7d3c324c" category="inline-link-macro-rx"></block></block>
+  <block id="dc11b3a16dedb42e47a2cd4a856a7af0" category="inline-link-macro">iSCSI 協定的範例清單</block>
+  <block id="08135fde220557f89dd87ae307c05bcd" category="paragraph"><block ref="08135fde220557f89dd87ae307c05bcd" category="inline-link-macro-rx"></block></block>
+  <block id="15371ea3f43f4642296547d07beb9744" category="inline-link-macro">NFS 協定的範例清單</block>
+  <block id="a41ac90556cabf9d5a79b2a8f0fcbc1e" category="paragraph"><block ref="a41ac90556cabf9d5a79b2a8f0fcbc1e" category="inline-link-macro-rx"></block></block>
+  <block id="51a585cc52e2081d43085bd3eadb5b1e" category="inline-link-macro">網路組態要求</block>
+  <block id="856d0b65cca71a22a6ef58dba88cfb0b" category="paragraph">高階叢集管理是 OpenShift 叢集的附加元件，因此根據中心叢集和代管叢集所使用的功能，對硬體資源有一些特定的要求和限制。在調整叢集規模時，需要將這些問題納入考量。如需詳細資訊，請參閱 <block ref="4994a110a96f042c4ee5a15d554afdec" category="inline-link-macro-rx"></block>。</block>
+  <block id="86dee54bf59f0cad7dd8041494a76697" category="inline-link-macro">在基礎架構節點上安裝</block>
+  <block id="df7fac800bff7324e551914d6c017272" category="paragraph">如果中心叢集具有用於託管基礎架構元件的專用節點，且您只想在這些節點上安裝 Advanced Cluster Management 資源，則需要相應地為這些節點新增容差和選擇器。如需更多詳細資訊，請參閱 <block ref="3d40b94750002beeff6484650dcf898c" category="inline-link-macro-rx"></block>。</block>
+  <block id="aba2ab05028a0f9f9f134c25255f6894" category="inline-link-macro">Red Hat Advanced Cluster Management 文件</block>
+  <block id="e2f11f127ba38da2f884f51544f23306" category="paragraph">如需更多資訊、請參閱 <block ref="729b3ec44f7585d5a412735c536f17de" category="inline-link-macro-rx"></block> 。</block>
+  <block id="397408eda4939c3af46e6cb49c9e3baf" category="list-text">安裝 F5 Application Services 3 擴充功能，使 BIG-IP 系統能夠接受 JSON 格式的組態，而非命令式命令。前往 <block ref="da504fe052901b2c0931afe65f808943" category="inline-link-macro-rx"></block>，下載最新的 RPM 檔案。</block>
+  <block id="6253fff2c01e377aa7f28361db49f178" category="inline-link-macro">MetalLB Layer 2 模式文件</block>
+  <block id="43a7d9e6fea8347c40b0a2b9ca2b3d56" category="list-text">*第 2 層模式。*在此模式下，OpenShift 叢集中的一個節點將接管服務，並回應針對該 IP 位址的 ARP 請求，從而使該服務可從 OpenShift 叢集外部存取。由於只有該節點會通告 IP 位址，因此存在頻寬瓶頸和故障轉移速度慢的限制。如需更多資訊，請參閱 <block ref="7c750de31f80b347d27528ee41083553" category="inline-link-macro-rx"></block>。</block>
+  <block id="a7591335ebcc3954bd03577b5907a8ff" category="inline-link-macro">MetalLB BGP 模式文件</block>
+  <block id="830b6ef2003ede9c94fc352c1770980d" category="list-text">*BGP 模式。*在此模式下，OpenShift 叢集中的所有節點都會與路由器建立 BGP 對等關係工作階段，並通告路由以將流量轉送至服務 IP。此模式的前提條件是將 MetalLB 與該網路中的路由器整合。由於 BGP 的雜湊機制，當服務的 IP 到節點對映發生變更時，此模式有一定的限制。如需更多資訊，請參閱 <block ref="08f550e3c204bc8b77a5b3df74fbf37f" category="inline-link-macro-rx"></block>。</block>
+  <block id="4fa07379d1e2bf2956c5195e0f9602b9" category="admonition">如果您希望在 BGP 模式下設定 MetalLB，請跳過上面的步驟 6，並按照 <block ref="08f550e3c204bc8b77a5b3df74fbf37f" category="inline-link-macro-rx"></block> 中的程序進行操作。</block>
+  <block id="0bf83d779a041ff1ad7b40d72f72ccec" category="inline-link-macro">了解身分提供者</block>
+  <block id="2c8a14f5089889f4d0c4bec0930e4f49" category="paragraph">接下來是在叢集中設定 RBAC。最佳實務做法是將所有參與單一專案或工作負載的開發人員設定到身分識別提供者 （IdP） 中的單一使用者群組。Red Hat OpenShift 支援 IdP 整合和使用者群組同步，因此可以將 IdP 中的使用者和群組匯入叢集中。這有助於叢集管理員將專用於特定專案的叢集資源存取隔離給參與該專案的使用者群組，從而限制對任何叢集資源的未授權存取。若要深入瞭解 IdP 與 Red Hat OpenShift 的整合，請參閱 <block ref="d7db4c17c89911008f96df931366fc93" category="inline-link-macro-rx"></block>。</block>
+  <block id="87dc0337d3ded2211d9b01c32e22d90d" category="inline-link-macro">配置後端</block>
+  <block id="f3b2ec02c3c2451cccfddf2562b42ee8" category="paragraph">在 NetApp ONTAP 上為不同專案建立不同的 SVM 後，您必須將每個 SVM 對應到不同的 Trident 後端。Trident 上的後端組態決定了持續儲存設備對 OpenShift 叢集資源的分配，因此需要提供要對應的 SVM 詳細資訊。這至少應該是後端的協定驅動程式。此外，您還可以選擇定義如何在儲存設備上配置 Volume，並設定 Volume 大小或 Aggregate 使用量等的限制。有關 Trident 後端定義的詳細資訊，請參閱 <block ref="087dc930e8869b468854b402ca453b03" category="inline-link-macro-rx"></block>。</block>
+  <block id="247640c7ef87d8f7eb46ded23363947f" category="paragraph">設定 Trident 後端之後，下一步是設定 StorageClasses。設定與後端數量相同的儲存類別，讓每個儲存類別僅能在一個後端上存取以增加磁碟 Volume。我們可以在定義儲存類別時，使用 storagePools 參數將 StorageClass 對應到特定的 Trident 後端。定義儲存類別的詳細資訊可在 <block ref="68a56d94afff00ddd947a7245ac1daa5" category="inline-link-macro-rx"></block> 中找到。因此，從 StorageClass 到 Trident 後端存在一對一的對應關係，而該後端會指向回一個 SVM。這可確保透過分配給該專案的 StorageClass 所提出的所有儲存宣告，都僅由專用於該專案的 SVM 提供服務。</block>
+  <block id="4d4612f778c20842e8e3a46905107235" category="inline-link-macro">為每個專案設定資源配額</block>
+  <block id="19dd27c6b4705083185f8f29ea28d8a2" category="paragraph">由於儲存設備類別並非命名空間資源，我們如何確保一個專案中的 Pod 對另一個命名空間或專案中的儲存設備類別的聲明被拒絕？答案是使用 ResourceQuotas。ResourceQuotas 是控制每個專案資源總使用量的物件。它可以限制專案中物件可以使用的資源數量和總量。幾乎所有專案的資源都可以使用 ResourceQuotas 進行限制，有效地使用此功能可以幫助組織降低成本，並減少因過度資源配置或過度消耗資源而導致的停機。如需更多資訊，請參閱 <block ref="1d44314c4f4ecbe41d8a4c1f4c2366dd" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3c7322774e449ffe96ed96316d6d61a" category="paragraph">有關 NetApp Element 儲存系統的詳細資訊，請造訪 <block ref="4d1a8967351a103edce25fab2fa816d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="8da0c7685a8df971e3b02eb5f360c872" category="paragraph">有關 NetApp ONTAP 儲存系統的詳細資訊，請造訪 <block ref="166022d27680b5a55300301747182c1e" category="inline-link-macro-rx"></block>。</block>
+  <block id="295e022a21f83c925dc9c6536568bb8f" category="paragraph">如需 ONTAP 的詳細資訊，請參閱 <block ref="ce7a5b355b31f8ee0c1b6b8b399a329a" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link-macro">Amazon FSx for NetApp ONTAP 文件</block>
+  <block id="f43cf2791ec374e2098c74ca36719036" category="paragraph">Amazon FSx ONTAP 在 AWS 雲端中提供完全代管的共享儲存設備，並具備 ONTAP 廣受歡迎的資料存取和管理功能。如需 Amazon FSx for NetApp ONTAP 的詳細資訊，請參閱 <block ref="c0dfd8f3ce59191ea4655faf40f9256a" category="inline-link-macro-rx"></block>。</block>
+  <block id="6c32a3d0f1a665987b98dde5a0f96d7d" category="inline-link-macro">Azure NetApp Files 文件</block>
+  <block id="8d563436a94bd56d6d9efdf22dc9f62f" category="paragraph">Azure NetApp Files 是一項 Azure 原生、第一方、企業級且高效能的檔案儲存設備服務。它以服務形式提供 Volume，您可以為其建立 NetApp 帳戶、容量池和 Volume。您還可以選擇服務與效能等級，並管理資料保護。您可以使用在內部部署環境中熟悉且信賴的相同協定和工具，來建立和管理高效能、高可用度的且易擴充的檔案共享。如需有關 Azure NetApp Files 的詳細資訊，請參閱 <block ref="2758bae4999bf82fcc07d83de116577d" category="inline-link-macro-rx"></block>。</block>
+  <block id="471bdb0aa2d84f6d114789368ffc1cc1" category="inline-link-macro">Google Cloud NetApp Volumes 說明文件</block>
+  <block id="a1a381ed028e3c5fe1cffdfeefc371b1" category="paragraph">Google Cloud NetApp Volumes 是一項完全代管的雲端型資料儲存設備服務，提供進階資料管理員功能和易擴充的高效能。它可讓您將以檔案為基礎的應用程式移轉至 Google Cloud。它內建支援網路檔案系統 （NFSv3 和 NFSv4.1） 以及伺服器訊息區塊 （SMB） 通訊協定，因此您無需重新設計應用程式架構，即可繼續為應用程式取得持續儲存。如需 Google Cloud NetApp Volumes 的詳細資訊，請參閱 <block ref="f563b714e9b75920cd3f0ed80e45c3bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="f6b511c0d4089ef164916143d9c700eb" category="paragraph">有關 ROSA 的詳細資訊，請參閱此處的文件：<block ref="fd309551a55076cea2541388a5cae604" category="inline-link-macro-rx"></block>。<block ref="2293f3ecacebbbfe06188b0c815da547" category="inline-link-macro-rx"></block>。</block>
+  <block id="60e1a8a4c4d7c6cf35167a47d56dbf48" category="list-text">按照 Red Hat 提供的 <block ref="8a6bf2df743c86904f93bc9d3df72410" category="inline-link-macro-rx"></block> 部署到您選擇的環境。</block>
+  <block id="c7e379852094725f83ee9fa85c310088" category="paragraph">對於大多數 Red Hat OpenShift 的部署而言，使用公共映像檔倉庫（例如 <block ref="77e9d93c41444fa9729e114342cfd1c0" category="inline-link-macro-rx"></block> 或 <block ref="8589f47af4adf070d727d33c650f55b3" category="inline-link-macro-rx"></block>）即可滿足大多數客戶的需求。然而，有時客戶可能希望託管自己的私有或自訂的映像檔。</block>
+  <block id="62c9708f1f2b15010c54038f15202352" category="list-text"><block ref="62c9708f1f2b15010c54038f15202352" category="inline-link-macro-rx"></block></block>
+  <block id="b79d9b1f8e1f4b17d9478a34f7937b25" category="list-text"><block ref="b79d9b1f8e1f4b17d9478a34f7937b25" category="inline-link-macro-rx"></block></block>
+  <block id="080395bf185e1748f069669e55208ff7" category="list-text">使用 IAM 使用者 <block ref="f6224c6650c8e8ac3c9e6f6909fc86a4" category="inline-link-macro-rx"></block> 建立和存取 ROSA 叢集</block>
+  <block id="2a185242aa5decd731e2ab217f071da6" category="list-text"><block ref="2a185242aa5decd731e2ab217f071da6" category="inline-link-macro-rx"></block></block>
+  <block id="a886bb20aa9decc05ec8398ee47aef8e" category="list-text"><block ref="a886bb20aa9decc05ec8398ee47aef8e" category="inline-link-macro-rx"></block></block>
+  <block id="c0de46ea9d276f5c02c30f6ad7f6e92b" category="list-text"><block ref="cd2619fec4f2d43952d8cf01494ebaa4" category="inline-link-macro-rx"></block> (oc)</block>
+  <block id="3538545d445579bf24544913b87f837b" category="list-text">Helm 3 <block ref="01608db4203dbcc6233b8d95e01dd573" category="inline-link-macro-rx"></block></block>
+  <block id="176183928632ed112ca71bf2caccfaf8" category="list-text"><block ref="176183928632ed112ca71bf2caccfaf8" category="inline-link-macro-rx"></block></block>
+  <block id="87488de49f2569f55bf81970bc1da7d6" category="list-text"><block ref="87488de49f2569f55bf81970bc1da7d6" category="inline-link-macro-rx"></block></block>
+  <block id="b3dc88ff9246a994ccb2a892f1ad7486" category="inline-link-macro">下載 Trident 安裝程式套件</block>
+  <block id="6bd050fdb232c9e538d0327448f443b4" category="paragraph">使用 node-prep 標誌並以所示方式安裝 Trident。在執行安裝命令之前，您應該已經下載了安裝套件。請參閱<block ref="4cd099ba60dbb3616b29989df24b7e4b" category="inline-link-macro-rx"></block>。</block>
+  <block id="84dd0c4b446cbc3722e4b2a43cc377e7" category="paragraph">Trident 後端組態告訴 Trident 如何與儲存系統（在本例中為 FSx for ONTAP）通訊。建立後端時，我們將提供要連接的儲存虛擬機器的憑證，以及叢集管理和 NFS 資料介面。我們將使用 <block ref="7be6aa6ef9046841b2f0e4fbf0d4fb0b" category="inline-link-macro-rx"></block> 在 FSx 檔案系統中資源配置儲存設備 Volume。</block>
+  <block id="cb82fc7c1ad4498aab5347da3abbcc7f" category="paragraph">您可以發出以下命令來建立 PVC 並驗證它是否已建立。</block>
+  <block id="ea6d90324d33842994bb98d348853746" category="image-alt">PostgreSQL 表、模式、行</block>
+  <block id="c28af781bc5a08e287cd4dfee6490e18" category="list-text"><block ref="c28af781bc5a08e287cd4dfee6490e18" category="inline-link-macro-rx"></block></block>
+  <block id="bd5ea2eeefa13ea433a457bb3bcaeba5" category="list-text"><block ref="bd5ea2eeefa13ea433a457bb3bcaeba5" category="inline-link-macro-rx"></block></block>
+  <block id="6dddc943b353d9d57c463a2ae535bf35" category="paragraph">請參考 <block ref="ba1fa1b87f6d6819c888872704c73d8f" category="inline-link-macro-rx"></block> 以了解安裝和組態詳情。</block>
+  <block id="83a3e81038e61b27912d39e2f0f115d8" category="inline-link-macro">Trident 發布頁面位於 GitHub</block>
+  <block id="a29dd75d2984ae8b5c28038d47fe9864" category="list-text">將安裝歸檔下載到管理員工作站並擷取內容。目前版本的 Trident 可從 <block ref="2fa72e16d1f9d079fbe329f425323bee" category="inline-link-macro-rx"></block> 下載。</block>
+  <block id="8c684d392aef10a8c99774cb2657f7bb" category="paragraph">+ 使用多路徑時：</block>
+  <block id="8e52b4769088302a4f326e22c74511a1" category="doc">觀看有關 vSphere Kubernetes 服務與 NetApp 的影片</block>
+  <block id="251c1a6e87a770b25350464f2db19c02" category="paragraph">透過一系列展示關鍵功能的影片，探索 vSphere Kubernetes Service 與 NetApp 的整合。</block>
+  <block id="6033eea54b83c4616c246ac18a46eaaf" category="section-title">使用 NetApp 儲存設備部署 vSphere Kubernetes Service 叢集</block>
+  <block id="b80d9389df8e2bb398ad10bc68ff359b" category="section-title">使用 Trident 在 ONTAP 持續儲存上部署工作負載</block>
+  <block id="6e4176de3fe21b3bc58f9932376014f9" category="summary">使用 NetApp ONTAP 持續儲存和 NAS 或 SAN 協定在 VKS 叢集中部署容器化應用程式。</block>
+  <block id="6036729abb74cd9c50bb08033e8c7f27" category="doc">部署具有 NetApp 持續儲存的 Container 應用程式</block>
+  <block id="2169ef59d3a2c480a4648b241b290603" category="paragraph">使用 NetApp ONTAP 持續儲存，在您的 vSphere Kubernetes Service 叢集中部署 Container 應用程式。以下範例說明如何使用 NAS （ontap-nas）或 SAN iSCSI （ontap-san）儲存設備來部署 PostgreSQL 資料庫。</block>
+  <block id="384a5d2278bad5c1778e39d463bad9a3" category="paragraph">以下 YAML 組態直接在清單中設定 POSTGRES_USER / POSTGRES_PASSWORD。在正式作業環境中，建議使用 Kubernetes Secrets 來管理資料庫憑證等敏感資訊。</block>
+  <block id="59f39c40f8c543053e4d480432da0a8e" category="open-title">使用 NAS 儲存設備部署 PostgreSQL（ontap-nas 驅動程式）</block>
+  <block id="90d82abbca4a24a91204152629616300" category="paragraph">您可以部署由 ontap-nas 驅動程式佈建的 NFS 持續性 Volume 支援的 PostgreSQL Container 應用程式。以下範例示範如何為 PostgreSQL 建立 PersistentVolumeClaim （PVC） 和部署。</block>
+  <block id="7cef86e4c9cb0524a0e888e789d831a3" category="open-title">使用 SAN 儲存設備部署 PostgreSQL（ontap-san iSCSI 驅動程式）</block>
+  <block id="ff2a9b5917908a105d3b5c03111fba50" category="paragraph">使用下列 YAML 部署由 ontap-san 驅動程式佈建的 iSCSI 持續性 Volume 所支援的 PostgreSQL Container 應用程式。此<block ref="d5fec5bdb76feb0f725fad5402478fed" prefix=" " category="inline-code"></block>部署策略確保在啟動新 Pod 之前，舊 Pod 已完全終止，這對於 ReadWriteOnce iSCSI Volume 而言是必要的，並可防止 Pod 重新啟動時發生資料毀損。此組態支援 Pod 刪除和重建後的資料持續性，並且與 Trident Volume 快照及備份與恢復作業相容。</block>
+  <block id="60e9a0ec51eec1a76523f392e88a6ced" category="section-title">驗證資料庫部署</block>
+  <block id="a63f0b5784802d6a148a6f71607690f2" category="paragraph">應用程式部署完成後，請驗證 Pod 是否處於運作狀態以及資料庫是否正常運作。使用以下命令檢查 Pod、PVC 和服務的狀態。確保 Pod 正在執行，且 PVC 已繫結至適當的 Volume。</block>
+  <block id="88132e09701c01d6f5bf27a89ca1974d" category="image-alt">工作負載已部署持續儲存</block>
+  <block id="5470b6d1024c0e1c22a2988ddd039285" category="paragraph">根據所用協定的不同，後端儲存設備可以是 Volume、qtree 或 LUN。您可以透過描述 PersistentVolume （PV）來擷取內部 Volume 名稱，然後在 ONTAP CLI 命令中使用該名稱來取得儲存設備詳細資訊，藉此驗證 ONTAP 系統中已佈建的儲存設備。使用以下命令描述 PV 並擷取內部 Volume 名稱：</block>
+  <block id="92ac5fc0212c94ee50e6dc85913caeec" category="image-title">顯示範例</block>
+  <block id="f50743488924b58ad0c79074f8ae5bd5" category="image-alt">NAS Volume 的內部 Volume 名稱</block>
+  <block id="9195322cb50a42f18dbd1aad879addfd" category="image-alt">SAN LUN 的內部 Volume 名稱</block>
+  <block id="4f02e8dc3219f821d9e4d5b5b2dbe1d9" category="paragraph">從輸出複製內部 Volume 名稱，然後執行以下命令，從 ONTAP CLI 取得儲存設備詳細資訊。</block>
+  <block id="06c2e5e29efd9ecab14915e4b35c8689" category="paragraph">對於 NAS Volume：</block>
+  <block id="241b6b9396b874096ee6fbd32d89a61f" category="image-alt">ONTAP CLI 輸出（NAS Volume）</block>
+  <block id="a20a1466bfa6411741b2fbc24141dbb4" category="paragraph">對於 SAN LUN，請執行以下命令從 ONTAP CLI 取得 LUN 詳細資訊：</block>
+  <block id="650e65e105aeceb9559f252c85c96299" category="image-alt">ONTAP CLI 輸出 SAN LUN</block>
+  <block id="0d872c8c5e1b422f4f02b92c05bbb10f" category="paragraph">如果您在 NAS 或 NAS Economy 儲存設備類別中使用了<block ref="bb0fc0de24da5f7976510a315e4b7120" prefix=" " category="inline-code"></block>裝載選項，則可以驗證從工作節點到儲存設備伺服器的作用中 TCP 連線數。</block>
+  <block id="ea15840ecc25f112cd8b0ee7dfe34f19" category="paragraph">首先，列出 Trident 後端組態以尋找後端名稱，然後對其進行描述以擷取 vserver 名稱和資料 LIF：</block>
+  <block id="9b90d5d5b8d50c5c37401aff415362b8" category="paragraph">然後登入 ONTAP 叢集並執行以下命令，將上述輸出中的資料 LIF 替換為對應的 LIF：</block>
+  <block id="2ba3e8f94b32af88ad1ae2ee26ac55de" category="image-alt">ONTAP CLI 作用中連線的輸出</block>
+  <block id="cde912fd988023e09d31e387d412f198" category="paragraph">Pod 處於運作狀態後，連線至資料庫並驗證資料操作。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
+  <block id="4890017e23b2165e908a4a9cf4baa355" category="list-text">將 PostgreSQL 服務連接埠轉送到本機：</block>
+  <block id="9ea3a0e3ac211a59a38aaf7282a2c0eb" category="list-text">在另一個終端機中，使用 psql 連接到資料庫：</block>
+  <block id="a9a2601429366960638f21cae6471089" category="list-text">建立資料庫和資料表，然後將資料填入該資料表：</block>
+  <block id="7b6772f9e7651cff3cd39897f2167dc4" category="paragraph">切換到新資料庫（psql 元命令）：</block>
+  <block id="024023ea17b867362aa4045c54f0edab" category="paragraph">建立表格、插入一列資料，並查詢結果：</block>
+  <block id="7ff787f5ff2b584a4721b56195e91926" category="section-title">影片示範</block>
+  <block id="e3bd4f9746da42a8efc4c8250c507cdd" category="paragraph">以下影片示範如何在 vSphere Kubernetes 叢集上安裝 Trident，以及如何使用 Trident 部署具有持續儲存的 PostgreSQL 資料庫。</block>
+  <block id="f94de63913176f650a9ae29073c62663" category="summary">在您的 VCF 環境中安裝具有適當工作節點組態的 vSphere Kubernetes Service 叢集。</block>
+  <block id="63f6a4d19a399977a3d9d88ae41c18e8" category="doc">安裝 vSphere Kubernetes Service 叢集</block>
+  <block id="ef6a24f737da56ea9beda5ca40fef06a" category="paragraph">在 VCF 9.1 環境中安裝 vSphere Kubernetes Service (VKS) 叢集，並為工作負載設定具有適當儲存設備公用程式的工作節點。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於此任務</block>
+  <block id="e22eeec449ca587caba4c7d1c6d9b865" category="paragraph">您建立的叢集的工作節點會自動安裝 NFS 工具。如果您希望建立安裝了 iSCSI 或 NVMe 工具的工作節點，則必須建立自訂 OVA 映像並將其用於工作節點。可以使用 Docker 建立自訂映像，然後使用<block ref="184744767c2457c4889b493b2f9f4bee" prefix=" " category="inline-code"></block>命令列工具從該映像建立 OVA 檔案。此 OVA 檔案可以上傳到 vSphere 的內容庫。建立 VKS 叢集時，可以從內容庫中選擇此映像用於節點池。</block>
+  <block id="46318c8058013272bd6188630794b553" category="list-text">建立 VKS 叢集：</block>
+  <block id="2d5ee3f27f071c9a66c016948828e729" category="paragraph">您可以使用預設工作節點映像或自訂映像建立 VKS 叢集。預設工作節點映像預先安裝了 NFS 工具，而自訂映像可以包含 iSCSI 和 NVMe 工具。以下選項可供使用：</block>
+  <block id="44d1625dadb7cb46c4eb7bea6d30e8ca" category="list-text">*僅限 NAS（預設）：* 使用預設工作節點映像建立 VKS 叢集，該映像包含預先安裝的 NFS 公用程式。</block>
+  <block id="87064b9036fec3cf6350227d0b792c45" category="list-text">*啟用 SAN（自訂映像）：* 建立一個包含 iSCSI 和 NVMe 公用程式的自訂 Docker 映像，使用<block ref="184744767c2457c4889b493b2f9f4bee" prefix=" " category="inline-code"></block>命令列工具產生 OVA 檔案，將 OVA 上傳到 vSphere 內容庫，然後建立 VKS 叢集，為節點資源池選擇該自訂映像。</block>
+  <block id="b414b96d0d70a8e58cddedfce84f0965" category="example-title">顯示使用預設工作節點映像建立僅包含 NAS 的 vSphere Kubernetes Service 叢集的說明</block>
+  <block id="919a1e7f3911283c5840b43ca928a745" category="paragraph">使用預設工作節點映像建立 VKS 叢集。依照提示指定叢集名稱、節點資源池組態和其他設定。</block>
+  <block id="7c5b32f76d21703e7b90378ca5c6a621" category="paragraph">在 vSphere Client 中，前往要建立 vSphere Kubernetes 叢集的命名空間。在該命名空間的 *Resources* 索引標籤上，按一下 Kubernetes 區段中的 *Create Cluster*，或按一下 *Go to Service*，然後按一下 *Create Cluster*。</block>
+  <block id="ba0472053fbaf45270cbd4b1e03d945a" category="paragraph">請填寫表格，提供集群詳細資料：</block>
+  <block id="e63b9bea0d2359afb84ecaba05a25c3a" category="list-text">在第 1 節「組態類型」中，選取「自訂」。</block>
+  <block id="39307e4c24ca44e428c78f95b5a35e37" category="list-text">在第 2 部分「一般設定」中，為叢集提供名稱，並將所有其他設定保留為預設值。</block>
+  <block id="d48effa6d7bc7cb6b935f8ac1a66d347" category="list-text">第 3 部分的所有設定均接受預設值。</block>
+  <block id="8e4dc3e1de5bade2746c8d4d936c8127" category="list-text">在第 4 部分「節點資源池」中，按一下節點資源池旁的省略號（……），然後按一下「編輯」。將副本數增加到 3，並選擇最新的 Ubuntu 作業系統映像版本。按一下「下一步」，然後按一下「檢視並確認」。</block>
+  <block id="0ceeb789dd80ae7efdb858aa809a259b" category="paragraph">查看叢集詳細資訊後，按一下 *Finish*。vSphere Kubernetes 叢集將在幾分鐘內建立完成。</block>
+  <block id="549649f93cf0e425527e1acbc5cba797" category="image-alt">命名空間在 vCenter</block>
+  <block id="4777cd638e6edee671242a5ed34efa63" category="image-alt">建立叢集組態類型</block>
+  <block id="7b639d4a678c2a18c2af1fc443496d86" category="image-alt">建立叢集一般設定</block>
+  <block id="37247a7f7b81bdde032172f62340c4cb" category="image-alt">建立叢集控制平面</block>
+  <block id="6d3b1b8dae20e6ea624dd415a26d33ca" category="image-alt">建立叢集節點資源池</block>
+  <block id="0a1cf89e22be0f45d1fabb7f9edb0ea6" category="image-alt">建立叢集完成</block>
+  <block id="d68c6727eb4e0d3b0644e00082f37f19" category="image-alt">叢集建立完成</block>
+  <block id="0f68d27c35234c5fb8d65594648e3c66" category="example-title">顯示為啟用 SAN 的工作節點建立自訂 OVA 映像的說明</block>
+  <block id="71f96e2434faf051b1a85b1b49535e2c" category="paragraph">建立已安裝所需工具的 Docker 映像。以下範例示範如何建立基於 Ubuntu 24.04 並安裝了 iSCSI 和多路徑工具的 Docker 映像。</block>
+  <block id="b38a57ae6b83a1f1b3b930a2defe920e" category="paragraph">使用以下命令建置 Docker 映像：</block>
+  <block id="10d29495962c82d4577e8b28abe1a77e" category="paragraph">如果 Docker 映像倉庫不可用，請執行下列命令啟動本機映像倉庫並將映像推送到該倉庫：</block>
+  <block id="995513ba1fbffb52339abce90cecf082" category="paragraph">為映像添加標籤並推送。</block>
+  <block id="b435fb69db3f78bb54a3ddfd596d5cf0" category="paragraph">建立映像組態檔案（另存為<block ref="fe652193ee04cd390796f9490b0a488b" prefix=" " category="inline-code"></block>），並引用該映像：</block>
+  <block id="1a80bfb50a40a56f2da158d99bc513ea" category="admonition">中繼資料名稱必須來自預先核准的清單。否則，嘗試建立 OVA 檔案時會收到如下所示的錯誤。預先核准的清單可在 VCF CLI 說明的<block ref="4962d36e1b28eb6d09e5e0f0cd46e523" prefix=" " category="inline-code"></block>命令中找到。</block>
+  <block id="5ae2f3ee81c375672dcfaa116d48cc6f" category="image-alt">中繼資料名稱不在預先核准的清單中時出錯</block>
+  <block id="e85ac16287a8d228db130f2da2b4f0e2" category="paragraph">使用 VCF CLI 建立 OVA 檔案：</block>
+  <block id="2155a67e1f60ec1ce9b5a6ac5ccdad55" category="paragraph">使用 SCP 將 OVA 檔案傳輸到可以將其上傳至 vSphere 內容庫的機器。</block>
+  <block id="765b4f233802c0a3cfbac35987895e0f" category="list-text">叢集安裝完成後，在 vCenter 中找到它並下載 kubeconfig 檔案。</block>
+  <block id="6888ad979500ef6e254c3ad0eb1eaeca" category="list-text">從主選單中點選 *Supervisor Management*，然後選擇建立叢集的命名空間。</block>
+  <block id="9a34e990f3309fd8594ba18858630d2a" category="list-text">選取 *Compute* 索引標籤，然後選取 *Kubernetes Clusters*。命名空間中的所有叢集都會顯示。</block>
+  <block id="ed5f1939e6e4b0f894c6baec8f8213f5" category="list-text">前往「資源」索引標籤，選取所需的 Kubernetes 叢集，並下載其 kubeconfig 檔案。</block>
+  <block id="85df140442ac712044e170844ec9f491" category="image-alt">vCenter 中的 Supervisor Management 選單</block>
+  <block id="2976da1f56745fc48cd81fa82c385059" category="image-alt">Kubernetes 叢集列表（位於 vCenter）</block>
+  <block id="88f7ed21b50500b85f974050c40a2345" category="image-alt">資源索引標籤</block>
+  <block id="14ba18a0c1dee23f7e3d0c37b42a6d5a" category="image-alt">為叢集下載 kubeconfig</block>
+  <block id="9ad559cd98301f095c607e96052295ac" category="list-text">從堡壘主機，使用 kubeconfig 檔案連線至叢集，以便透過 CLI 進行管理。</block>
+  <block id="1c49d9ad6281e19280e709dc38f2e301" category="image-alt">使用 kubeconfig 透過 CLI 連線至 VKS 叢集</block>
+  <block id="c1f681f02da4b1b37fc01754dbb52eba" category="paragraph">以下影片示範如何建立 vSphere Kubernetes 叢集。</block>
+  <block id="7366abbe5ba6570244ca56fd4a3e8628" category="video-title">在 Supervisor 叢集上建立 vSphere Kubernetes 叢集</block>
+  <block id="37e6bc625ff4f9ffcd5ccdec7e054601" category="summary">在 vSphere Kubernetes Service 叢集中安裝 NetApp Trident，以啟用動態儲存資源配置。</block>
+  <block id="d2d7f4fa852208916ca48681d906e1ac" category="doc">在 VKS 叢集中安裝 NetApp Trident</block>
+  <block id="0264d8f9ac7431d1879e9e1e0256fd82" category="paragraph">在您的 vSphere Kubernetes Service 叢集中安裝 NetApp Trident 作為動態儲存資源配置程式，以將 NetApp ONTAP 儲存設備與您的 Kubernetes 工作負載整合。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
+  <block id="fa872b457ff87039bd853084fc6fb83d" category="list-text">請確保您的 ONTAP 叢集已設定並連線至您的 VMware Kubernetes 環境。</block>
+  <block id="d94c0dffcc079567d165593d4de9fefe" category="list-text">如果您的工作負載將使用這些協定進行儲存設備，請確保您的 VKS 叢集已安裝 iSCSI 或 NVMe 工具。</block>
+  <block id="7c48197f800b2caff903906a05fb5a5d" category="list-text">請確保已在可以使用 kubeconfig 檔案連接到 VKS 叢集的機器上安裝了<block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block>。</block>
+  <block id="dd2fac6074d2aea70a1d4b050e981fd9" category="image-alt">從「資源」標籤下載 kubeconfig 檔案</block>
+  <block id="a8ebcd8fd5d2e80027446a4f719f5bbb" category="list-text">依照 Trident 文件中的說明，使用 Helm chart 安裝 Trident Operator：</block>
+  <block id="5a067f1218e773f44f6d11042fac9de2" category="inline-link-macro"><block ref="5a067f1218e773f44f6d11042fac9de2" category="inline-link-rx"></block></block>
+  <block id="de8c30bad1a59e905b9e9106fb89b13a" category="paragraph"><block ref="de8c30bad1a59e905b9e9106fb89b13a" category="inline-link-macro-rx"></block></block>
+  <block id="6015ee0c3c4dbc37f534783a65239e72" category="example-title">顯示範例</block>
+  <block id="61456867be0b3649aadf34527e6e3ba1" category="paragraph">若要啟用除錯記錄，請新增<block ref="1fa36c5f4a2211cb35788611e3f351a9" prefix=" " category="inline-code"></block>：</block>
+  <block id="7c9ecfb8dfa70dea44031127f8e97561" category="inline-link-macro">手動部署 Trident Operator</block>
+  <block id="b8cb0bb6ffb813f94fe2cb0fc4af8f49" category="admonition">您也可以使用 Trident Operator 手動安裝 Trident。請參閱 Trident 文件中的步驟：<block ref="aaad7fc2d82777df183b3e26183088fc" category="inline-link-macro-rx"></block></block>
+  <block id="9d7759b7820f505203830ffef3f6c946" category="list-text">確認叢集中所有 Trident Pod 都正在運作。</block>
+  <block id="6db69c2c82fe1cf04666445c27535882" category="admonition">此時 Trident Pod 可能無法建立。如果您描述該 ReplicaSet 物件，可能會看到違反 PodSecurity 的錯誤，如下所示。出現此錯誤的原因是<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>安裝期間建立的命名空間強制執行了 Kubernetes 受限的 Pod 安全標準 （PSS）。Trident Operator 需要提升的系統權限才能管理主機儲存設備，因此無法在受限設定檔的嚴格約束下運作。若要解決此問題，請為<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>命名空間授予特權設定檔，以便 ReplicaSet 控制器能夠成功啟動 Pod。</block>
+  <block id="267d98dda9fe9b1fa03f4e0a5e9eccdb" category="paragraph">將內建的 Kubernetes Pod Security Admission 標籤套用至<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>命名空間，使其不受受限設定檔約束：</block>
+  <block id="77d7de0c181e7cde545dd80af7cd55fd" category="section-title">為您的環境準備儲存設備後端和 StorageClass 組態檔案</block>
+  <block id="dafd5f06af6dd74148a6a1d1f4a2009f" category="list-text">透過定義必要的連線詳細資訊和儲存設備參數，為 ONTAP 設定 Trident 後端。</block>
+  <block id="eda474c8d55e227080e095471db3fed4" category="list-text">在 Kubernetes 中定義對應至 NetApp 儲存設備後端的儲存設備類別。這些類別指定效能特性和複寫原則等參數。</block>
+  <block id="6be16447e9d4304a0449e42fb2f898aa" category="paragraph">根據工作負載的要求，為下列協定定義 Trident 後端和儲存設備類別：</block>
+  <block id="53add45918d9a9b054d8bb3be3f1cb9f" category="list-text">NAS（ontap-nas 驅動程式）</block>
+  <block id="08f9255a3d69a2c8bf50b6d407dada87" category="list-text">NAS Economy（ontap-nas-economy 驅動程式）</block>
+  <block id="6fea3af1cb28d1b22151c2e1fa305e02" category="list-text">SAN（ontap-san 驅動程式）支援 iSCSI、FC 或 NVMe 協議</block>
+  <block id="cfe60bcbf4d8df06a3e3fea6764ea2c8" category="list-text">SAN Economy（ontap-san-economy 驅動程式）適用於 iSCSI</block>
+  <block id="2c568adc5195a4d85cdf4d59ffce58bb" category="paragraph">為 ONTAP NAS 建立 TridentBackendConfig 和 StorageClass，以啟用基於 NFS 的持久性儲存配置。後端組態包含儲存在 Kubernetes Secret 中的認證，並參照您的 ONTAP SVM 和管理 LIF。</block>
+  <block id="9f35d8633d127f4a7bb4b3cdda52238e" category="paragraph">使用使用者名稱和密碼認證的後端金鑰和後端設定檔案範例（另存為<block ref="9d65a5d97819dedebcef81a9ba5516ec" prefix=" " category="inline-code"></block>）：</block>
+  <block id="e67f742a2f68780d389b481d1a5b3a2a" category="paragraph">使用用戶端憑證認證的後端金鑰和後端設定檔案範例（另存為<block ref="9d65a5d97819dedebcef81a9ba5516ec" prefix=" " category="inline-code"></block>）：</block>
+  <block id="e2c8626d7ee949e6b81cdecce03999d8" category="paragraph">StorageClass 定義（另存為 <block ref="4f57c59c0ac5ff4e6699e0838271f085" prefix=" " category="inline-code"></block>）：</block>
+  <block id="fbff3d8f1306267296fe5ed408add757" category="paragraph"><block ref="e1d3d66c5926aa7fbc3186da8f9b476b" prefix="" category="inline-code"></block> 是一個可選參數，用於指定 NFS Volume 的附加裝載選項。此 <block ref="bb0fc0de24da5f7976510a315e4b7120" prefix=" " category="inline-code"></block> 選項允許為單一 NFS 裝載建立多個並行 TCP 連線，從而提升高吞吐量工作負載的效能。預設值為 1，但可以增加至 ONTAP 系統允許的最大值。</block>
+  <block id="12727eb60dcb1de39ccaf9167b26843f" category="paragraph">ONTAP 支援在支援 nconnect 的用戶端上，單一 NFS 裝載最多可建立 16 個連線。Trident 會將裝載選項直接傳遞給 Kubernetes 工作節點，因此請選擇工作節點 NFS 用戶端和 ONTAP 都支援的值；以下範例使用四個連線。</block>
+  <block id="23f2e3ade0edfc023f7d72081840bebb" category="open-title">NAS Economy</block>
+  <block id="342a9c1d828f353f409ce83393d8052e" category="paragraph">為 ONTAP NAS Economy 驅動程式建立 TridentBackendConfig 和 StorageClass，以使用 qtree 啟用基於 NFS 的持續儲存資源配置。後端組態包含儲存在 Kubernetes Secret 中的憑證，並參照您的 ONTAP SVM 和管理 LIF。</block>
+  <block id="c8a17f4e3ca6716789600bccc1d19b5b" category="paragraph">使用使用者名稱和密碼認證的後端金鑰和後端設定檔案範例（另存為<block ref="4209e262889dcc16019c5e036387410f" prefix=" " category="inline-code"></block>）：</block>
+  <block id="4defe485af738455b5f3576991528802" category="paragraph">StorageClass 定義（另存為 <block ref="c4c356892b47240b6d3b5c9d0145861d" prefix=" " category="inline-code"></block>）：</block>
+  <block id="d119ad8305b9187a1b6c282928c6cc79" category="open-title">iSCSI SAN</block>
+  <block id="3e745d89603669a895929d435538aa59" category="paragraph">建立適用於 ONTAP SAN 與 iSCSI 的 TridentBackendConfig 和 StorageClass，以啟用基於 iSCSI 的區塊儲存資源配置。後端組態使用 ontap-san 驅動程式，並包含儲存在 Kubernetes Secret 中的憑證。若省略 <block ref="5b08b7c4c720db1d75c8c76a920fd99a" prefix=" " category="inline-code"></block> 參數，則預設使用 iSCSI 通訊協定。</block>
+  <block id="e85d22aedf555ad1e8a9903812042cfc" category="paragraph">使用使用者名稱和密碼驗證的後端金鑰和後端組態檔案（另存為<block ref="5c59c4795168e3359ec88086b84ae37d" prefix=" " category="inline-code"></block>）：</block>
+  <block id="53c9f9a3fb5d5668b1a85ee9cd6d0d74" category="paragraph">使用用戶端憑證認證的後端金鑰和後端設定檔案（另存為<block ref="5c59c4795168e3359ec88086b84ae37d" prefix=" " category="inline-code"></block>）：</block>
+  <block id="785b719c87759bd8b21cb9fbf35ffc67" category="paragraph">StorageClass 定義（另存為 <block ref="f091cd084faa9dfe2abdf5b6029b9697" prefix=" " category="inline-code"></block>）：</block>
+  <block id="8b9437a044e1817a9924eefc80f33db8" category="open-title">NVMe SAN</block>
+  <block id="1f302ac655d04946a0f43c8a8c0feae6" category="paragraph">為 ONTAP SAN 搭配 NVMe 建立 TridentBackendConfig 和 StorageClass，以啟用基於 NVMe 的區塊儲存資源配置。後端組態使用 ontap-san 驅動程式，並包含儲存在 Kubernetes Secret 中的憑證。<block ref="5b08b7c4c720db1d75c8c76a920fd99a" prefix=" " category="inline-code"></block>參數必須設定為<block ref="eac89e2640666fd1076a776e4b748fae" prefix=" " category="inline-code"></block>。</block>
+  <block id="4ffae29fcd5736f44f72a0ec6dc65f5d" category="paragraph">使用使用者名稱和密碼驗證的後端金鑰和後端組態檔案（另存為<block ref="4a18f0898bbae244ac9211686c34e11f" prefix=" " category="inline-code"></block>）：</block>
+  <block id="2e80feda407fd89d7ac99031d883fe04" category="paragraph">使用用戶端憑證認證的後端金鑰和後端設定檔案（另存為<block ref="4a18f0898bbae244ac9211686c34e11f" prefix=" " category="inline-code"></block>）：</block>
+  <block id="fece5ab5f4bcac93cf419657de20d688" category="paragraph">StorageClass 定義（另存為 <block ref="d9fdbb97e3fc35a178409db49d8f7a9e" prefix=" " category="inline-code"></block>）：</block>
+  <block id="c6f78d550bcee4461fc0d84859a6c365" category="paragraph">請參閱 Trident 文件，以取得更多 YAML 檔案範例，以及 SAN 驅動程式和 NAS 驅動程式支援的存取模式和 Volume 模式的相關資訊。</block>
+  <block id="184098f63ce0e3f177c6546b873b2772" category="inline-link-macro">使用 NAS 驅動程式的範例</block>
+  <block id="e4d375afe36f83d581fe84d6f540c570" category="list-text"><block ref="e4d375afe36f83d581fe84d6f540c570" category="inline-link-macro-rx"></block></block>
+  <block id="496d23ccc6c20d7a95d695265a083673" category="inline-link-macro">使用 SAN 驅動程式的範例</block>
+  <block id="567a9ef31db818df66d1128cd212c4ec" category="list-text"><block ref="567a9ef31db818df66d1128cd212c4ec" category="inline-link-macro-rx"></block></block>
+  <block id="52d6fc98f5f92b9a2cd8ebab63db17ae" category="section-title">建立 VolumeSnapshotClass 組態檔案</block>
+  <block id="1cb1994d041d38c80bec7899dfc989f4" category="paragraph">建立 VolumeSnapshotClass 定義。此組態可為持續性 Volume 啟用快照型作業。</block>
+  <block id="495a4549848b0f63fa110edf587aacc6" category="paragraph">VolumeSnapshotClass 定義（另存為 <block ref="3438c97e431dbcae49b7b56154974e02" prefix=" " category="inline-code"></block>）：</block>
+  <block id="8a2c0da9ada9ae353c7169abada92e74" category="section-title">將組態檔套用至叢集</block>
+  <block id="7a5c128bc3318fe7506f0e0531d4c622" category="paragraph">使用<block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block>將您在前面步驟中建立的組態檔套用至 vSphere Kubernetes 服務叢集。這將在您的叢集中建立必要的機密、後端組態、儲存設備類別和快照類別。</block>
+  <block id="4fc324fbf4cc5f6d18f047c2ad752854" category="list-text">為您配置的每個協定套用 TridentBackendConfig 和 StorageClass 檔案。</block>
+  <block id="dc912a84a0350308555bd45e75bd8eff" category="list-text">確認資源已成功建立。</block>
+  <block id="cf9b96a6ec27b184dafaf41c9b4a5561" category="paragraph">檢查 TridentBackendConfig 物件：</block>
+  <block id="cf262d139d6a367df74e2fcf9f31dc75" category="paragraph">檢查 StorageClass 物件：</block>
+  <block id="48c08f151329d895f2478a4e91ff105b" category="paragraph">檢查 VolumeSnapshotClass：</block>
+  <block id="136664d3e2d18bb4ab7fb1562163dbc0" category="section-title">設定預設的 Trident 儲存設備和快照類別</block>
+  <block id="cafd6f2453897a7fb94881b8d82698a5" category="paragraph">將 Trident StorageClass 和 VolumeSnapshotClass 設為 vSphere Kubernetes Service 叢集中的預設值。</block>
+  <block id="6898d4d38f453903c82b548a70adce2b" category="list-text">設定預設的 Trident StorageClass。</block>
+  <block id="2b083faa8828eb74d98754d6edbf3fe0" category="paragraph">將 Trident 支援的 StorageClass 設定為叢集預設值，以便在未指定儲存類別時，PersistentVolumeClaims 自動使用它。</block>
+  <block id="173c53b04820898f94f869dc823c6f40" category="paragraph">確保只將一個 StorageClass 設定為預設值。如果另一個 StorageClass 已設定為預設值，請將其註解設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
+  <block id="f02c73ab3a19cea27c6c461f9e18a5e1" category="paragraph">從 CLI：</block>
+  <block id="f7e80f1783a43b249090b162d24eea2c" category="list-text">設定預設的 Trident VolumeSnapshotClass。</block>
+  <block id="fc6f2a338d00deaa07bc776f261b664d" category="paragraph">將 Trident 支援的 VolumeSnapshotClass 設定為叢集預設值，以啟用持續性 Volume 的快照型作業。這可確保 VolumeSnapshots 在未指定快照類別時，自動使用 Trident CSI 驅動程式。</block>
+  <block id="c009fcca63b46933ff78678ccb66e832" category="paragraph">確保只將一個 VolumeSnapshotClass 設定為預設值。如果另一個 VolumeSnapshotClass 已設定為預設值，請將其註解設為<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>。</block>
+  <block id="38543dc5b98da4f74313f35ac44dc31b" category="section-title">使用 Kubernetes Persistent Volume Claims 為工作負載請求儲存設備</block>
+  <block id="fa53d1f0f3245159126a83a00703729d" category="inline-link-macro">使用持續儲存部署工作負載</block>
+  <block id="e0e07874f7c0da48e4f100dc4a9615ea" category="paragraph">Trident 會自動從後端 NetApp 儲存設備配置必要的 Volume。有關在 VKS 叢集中使用 PVC 部署工作負載的範例，請參閱 <block ref="7e700779a3f9b29d6f6c28db9c063dbd" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2c138779b75ba500f800556e33695f5" category="summary">了解將 NetApp ONTAP 儲存設備與 vSphere Kubernetes 服務工作負載結合使用的主要效益。</block>
+  <block id="390bf3615abf0c0cd760fb1c62e71216" category="doc">瞭解適用於 vSphere Kubernetes 服務的 NetApp 儲存設備</block>
+  <block id="16d5213cc3575eda2096700ee82ae022" category="paragraph">使用 NetApp 作為 vSphere Kubernetes Service （VKS） 的儲存設備，是一種強大的組合，能夠運用 NetApp 強大的儲存設備解決方案，提升 Kubernetes 工作負載的效能、擴充性和可靠性。NetApp Trident 是一款開源的 Kubernetes 動態儲存設備配置器，用於將儲存設備與 vSphere Kubernetes Service 上的工作負載整合。</block>
+  <block id="0f781b3510d97c720799566a55310c34" category="section-title">搭配 VKS 使用 NetApp 儲存設備的主要效益</block>
+  <block id="491370904f9054b462ca2755eb8b19d4" category="list-text">*動態儲存配置：* NetApp Trident 允許動態配置儲存設備 Volume，使 Kubernetes Pod 能夠根據自身需求即時請求儲存設備。</block>
+  <block id="8bbf9e083e395a38eb56fb7d8fa9e917" category="list-text">*持久性儲存：* NetApp 解決方案提供持續儲存功能，確保在 pod 重新啟動和故障期間資料的持久性和可用度。</block>
+  <block id="05dcfe1ec99cf460cf60e9b295181dd9" category="list-text">*高效能：* NetApp 的儲存設備解決方案，例如 ONTAP，提供低延遲的高效能儲存設備，非常適合在 Kubernetes 上執行的 I/O 密集型應用程式。</block>
+  <block id="7ed12196d8928dd22376da6b3bdd7a28" category="list-text">*擴充性：* NetApp 儲存設備系統可擴充以滿足不斷成長的 Kubernetes 工作負載需求，支援大規模部署。</block>
+  <block id="6e43931a236c6d4ff3b63b31b6cf4ebc" category="list-text">*資料管理：* NetApp 提供進階資料管理員功能，包括 Snapshot 快照技術、複製和資料複寫，這對於備份、災難恢復和開發工作流程都很有幫助。</block>
+  <block id="fa5e0f9bd9e7974d98a4dd26c82fce54" category="list-text">*多雲和混合雲支援：* NetApp 的儲存設備解決方案可部署於本地、公有雲和混合雲環境中，在儲存管理方面提供靈活度與一致性。</block>
+  <block id="5a5efa47bc756e7c919ed48a294e736f" category="section-title">NetApp ONTAP 整合總覽</block>
+  <block id="1b70c75c8be27844a7cad43c2dd31eee" category="paragraph">NetApp ONTAP 提供企業級儲存設備，具備資料去重、壓縮和加密等功能。您可以使用 NetApp Trident 將 NetApp 儲存設備與 Kubernetes 整合。NetApp Trident 支援多種 NetApp 儲存設備平台，包括本地部署的 ONTAP、AWS 中的 FSx for NetApp ONTAP、Azure 中的 Azure NetApp Files，以及 Google Cloud 中的 Google Cloud NetApp Volumes。</block>
+  <block id="cf420a748fbd489c62a7ba0c6f600773" category="paragraph">您可以使用 Trident Protect 來管理 Kubernetes 工作負載的資料保護和災難恢復。Trident Protect 可讓您建立 Snapshot 快照技術、複製及跨不同儲存設備後端複寫資料，確保您的資料安全無虞，並在發生故障時可以恢復。</block>
+  <block id="90bcd3e8149ece0dade1b82c7a819488" category="section-title">Trident 的主要功能</block>
+  <block id="b9f9ff8c8eb63291d38be2803977197f" category="paragraph">**CSI 合規性** 確保與最新的 Kubernetes 儲存設備功能和標準相容。**聲明式設定** 允許使用者在 YAML 檔案中定義儲存設備需求，Trident 將自動管理這些需求。**驅動程式** Trident 支援 ONTAP 所支援的 NFS、CIFS/SMB、iSCSI、FC 和 NVMe/TCP 協定的驅動程式。**混合雲和多雲支援** Trident 支援 ONTAP 本機儲存設備以及超大規模雲端服務商中代管儲存設備服務的驅動程式，包括 AWS 中的 FSx for NetApp ONTAP、Azure 中的 Azure NetApp Files，以及 Google Cloud 中的 Google Cloud NetApp Volumes。**進階資料管理** 運用 ONTAP 的 Snapshot 快照技術和複製功能，實現高效的資料保護並快速部署測試與開發環境。</block>
+  <block id="fb3bff43d96a14da745ae5eafff58ed0" category="paragraph">如需 Trident 的完整詳細資訊，請參閱 <block ref="5e2589d48dd0a3251685c365b8cdb35e" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b6a034e6854c5f27feb3ac185829f8d" category="section-title">Trident Protect</block>
+  <block id="a36c33156a01492f882621b3d9439e19" category="inline-link-macro">Trident Protect 要求</block>
+  <block id="871edac497c7018c02b946133efb7714" category="paragraph">Trident Protect 與 Trident 是分開安裝的。部署前，請驗證您的 Kubernetes 平台、儲存設備後端、Snapshot 快照技術元件和物件儲存是否符合<block ref="5cb74f4f6056f45da2a6e57ea9f4d4f9" category="inline-link-macro-rx"></block>。</block>
+  <block id="22e8d5dffa56b3d788b7cad983632245" category="section-title">Trident Protect 的主要功能</block>
+  <block id="c361b606336ab8bf433f75c062374974" category="paragraph">**自動備份** Trident Protect 可實現 Kubernetes 應用程式的自動、原則驅動型備份，確保定期備份而無需手動介入。</block>
+  <block id="a07d4ac9ae9d023ab2666cfd3bbb5eab" category="paragraph">**Snapshot 快照技術管理** 它運用 ONTAP 的 Snapshot 快照技術功能，為 Container 應用程式和虛擬機器建立頻繁的時間點副本，提供可靠的恢復機制。</block>
+  <block id="373da377365cd6a589d31c81736be319" category="paragraph">**備份儲存庫加密** Trident Protect 支援對 Restic 和 Kopia 備份儲存庫進行密碼型加密。可在儲存設備層和網路層分別設定持續性 Volume 加密和傳輸中加密。</block>
+  <block id="1772d045ac6084e8616a073ae3aa13a2" category="paragraph">**合規與審計** 提供工具和功能，幫助組織滿足合規要求並定期稽核其資料保護實務。</block>
+  <block id="04961098dd1c9db5b3eb5179135f1cf1" category="paragraph">**災難復原** 與 ONTAP 的複寫功能整合，提供強大的災難復原解決方案，即使面對災難性事件也能確保業務連續性。</block>
+  <block id="61677c38cc797e07566aca59e5d6c4c6" category="paragraph">有關 Trident Protect 的完整詳細資訊，請參閱<block ref="bd5ea2eeefa13ea433a457bb3bcaeba5" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d512a8f7c23a13612ce51c23d96a967" category="section-title">NetApp ONTAP 支援的硬體型號與通訊協定</block>
+  <block id="78e3871b51a9a03feeb507b46a55c050" category="paragraph">NetApp ONTAP 軟體可在多種硬體型號上運行，每種型號都旨在滿足不同的效能和容量需求。Trident 擴展了其強大的功能，以支援各種 NetApp ONTAP 系統，包括全快閃 FAS （AFF）、全 SAN 陣列 （ASA） 和 ASA R2 系統。這種支援確保企業能夠在容器化環境中充分發揮其高效能儲存解決方案的潛力。</block>
+  <block id="b8935f18ffe32272a10bdd62b7db4777" category="paragraph">**全快閃 FAS （AFF）系統** AFF 系統具有卓越的效能和低延遲，使其成為高需求應用程式的理想選擇。</block>
+  <block id="4393a8e49a1de4f5361d9bdd0fad982c" category="paragraph">**All SAN Array (ASA) 系統** ASA 系統專為專用 SAN 環境而設計，提供強大的效能和可靠性。</block>
+  <block id="6e2dd8dfcfca0792c36dd5ae66a865aa" category="paragraph">**ASA R2 Systems** ASA R2 系統為 SAN 環境提供增強的功能和效能。</block>
+  <block id="c160a7c3fe76f26a1eb3a7ae8e68161b" category="paragraph">**AFX** NetApp AFX 是一種專為企業級 AI 工作負載而設計的解耦式全快閃儲存架構。它提供高效能 NAS，支援運算能力和容量的獨立擴充。NetApp AFX 儲存系統與其他基於 ONTAP 的系統（ASA、AFF 和 FAS）在儲存層的實作上有所不同。AFX 使用分散式檔案系統，從而實現高效能和可擴充性，而其他基於 ONTAP 的系統則採用傳統的儲存架構。</block>
+  <block id="e7672ad0deaa706df754c867d11571ac" category="list-text">AFF 支援的協定：NFS、CIFS/SMB、iSCSI、FC、NVMe/TCP</block>
+  <block id="edfd90336d93ec40b5ed8bca8679b9aa" category="list-text">ASA 支援的協定：iSCSI、FC、NVMe/TCP</block>
+  <block id="483886e70fa508c09b938eb1394c50f6" category="list-text">ASA R2 支援的協定：iSCSI、FC、NVMe/TCP</block>
+  <block id="1e22e1f992f7e96e5e55bf2d61e4bf47" category="list-text">AFX 支援的協定：從 Trident 25.10 開始，僅支援 NFS 協定；不支援 SMB 協定。</block>
+  <block id="0dd6128d6f2eb1e95bb7e4597e1d9e01" category="section-title">用於 ONTAP 儲存的 Trident 驅動程式</block>
+  <block id="996f779dc91eca393404d0f443b65d89" category="paragraph">Trident 包含以下 CSI 驅動程式，每個驅動程式都能夠在後端儲存設備中佈建 Volume。</block>
+  <block id="985be8f460623f562d2ea84ef63651c6" category="section-title">對於受支援硬體型號上的 NAS 通訊協定</block>
+  <block id="0361829b5858fe1a41004ef90e4ec369" category="list-text">ontap-nas：一個 PVC 對應至一個 PV，即一個專用 FlexVol Volume。</block>
+  <block id="f3099c87ca1d6a6a242e4a94c4cac399" category="list-text">ontap-nas-economy：每個配置的 PV 都是一個 qtree，每個 FlexVol Volume 的 qtree 數量可配置（預設值為 200，可在 50 到 300 之間配置）。</block>
+  <block id="3b7e016ae2213d38ba6e514c39964aa5" category="paragraph">一個 PVC 映射到一個 PV，即共享的 FlexVol Volume 上的一個 qtree。</block>
+  <block id="5e37c03ac99431dbc77190a856c73f88" category="admonition">您可以將所有虛擬機器的磁碟作為 qtree 放置在單一 Volume 中。但是，請注意，Trident 不支援 Snapshot 快照技術、Clone 及複寫功能。當這些功能由儲存管理員管理時，它們並非針對單一 PV 進行細粒度控制。</block>
+  <block id="ad10c066f0a61cd907eb4fc280ac4780" category="list-text">ontap-nas-flexgroup：每個配置的 PV 都是一個完整的 ONTAP FlexGroup，並且會使用分配給 SVM 的所有集合體。</block>
+  <block id="03d78dff6642af51896e39c5f5f7c5f7" category="section-title">對於受支援硬體型號上的 SAN 通訊協定</block>
+  <block id="51e0a90580ca99a1310b84bee0fecc2c" category="list-text">ontap-san：一個 PVC 對應到一個 PV，即專用 FlexVol Volume 上的一個 LUN。</block>
+  <block id="7d3a49a0c6ea1a9bf1c92ff637688d41" category="list-text">ontap-san-economy：一個 PVC 對應到一個 PV，PV 是共享的 FlexVol Volume 上的一個 LUN。共享的 FlexVol Volume 中可以有多個 LUN（預設值為 100，每個 FlexVol Volume 可配置為 50 到 200 個 LUN/PV）。</block>
+  <block id="72bbb7305fb35928cd5f95d243e27abe" category="admonition">您可以將所有虛擬機器的磁碟作為 LUN 放置在單一 Volume 中。但是，此驅動程式支援 Snapshot 快照技術和 Clone，但不支援 Replication。當 Replication 由儲存管理員管理時，它不是針對 PV 層級的。</block>
+  <block id="30393868fe2f0c5cd734de325f12f765" category="image-alt">用於 ONTAP 儲存的 Trident 驅動程式</block>
+  <block id="a57628924f909d4edd5cb81ee4f10896" category="inline-link-macro">ONTAP 後端驅動程式</block>
+  <block id="5825088df64b4cc2be5348fb85fd6718" category="paragraph">有關透過 Trident 驅動程式公開的功能以及必須由儲存管理員套用的功能的完整清單，請參閱 Trident 文件中的 <block ref="08d1d30daced52ce88602b85f7d3ff2e" category="inline-link-macro-rx"></block> 章節。</block>
+  <block id="57da9a46ec632f3fb46d591a640c2c41" category="summary">了解 vSphere Kubernetes Service 及其如何與 NetApp ONTAP 整合以支援 Container 化工作負載。</block>
+  <block id="1d71ef3ed1e3feae082a2e494bc9406f" category="doc">瞭解搭配 NetApp ONTAP 的 vSphere Kubernetes Service</block>
+  <block id="bfd86f1482fc3eb86aa5a3fcfd77a763" category="paragraph">vSphere Kubernetes Service (VKS) 是 VMware 的代管 Kubernetes 產品，讓企業能夠使用 Kubernetes 部署、管理和擴充容器化應用程式。與 NetApp ONTAP 儲存設備結合，VKS 可為雲端原生工作負載提供企業級持久性、效能和資料管理。</block>
+  <block id="174feb6f3884222ea88d6a75bf2a5f76" category="paragraph">vSphere Kubernetes Service 通常整合到 VMware 更廣泛的生態系統中，例如 VMware Tanzu，它提供了一套完整的工具套件，用於 Kubernetes 管理、應用程式現代化和 DevOps 開發維運實踐。</block>
+  <block id="06a6f231196210e712f69d3b272ebc0f" category="section-title">vSphere Kubernetes Service 的主要特性</block>
+  <block id="8b4f9041a8a08b903a8e0120427502ca" category="list-text">*代管 Kubernetes 叢集：* vSphere Kubernetes Service 簡化了 Kubernetes 叢集的部署和管理。它可自動執行叢集建立、升級、擴充和監控等任務。</block>
+  <block id="52593656aada48266dc5769977f0b859" category="list-text">*與 VMware 基礎架構整合：* VKS 可與 VMware vSphere、NSX-T 及其他 VMware 解決方案無縫地整合，使組織能夠運用其現有的 VMware 基礎架構來執行 Kubernetes 工作負載。</block>
+  <block id="f13abfdaa69398b67c413b50e1d62ccf" category="list-text">*多雲和混合雲支援：* vSphere Kubernetes 服務支援在私有雲、公有雲（例如 AWS、Azure、Google Cloud）和混合雲環境中部署，讓組織在管理其應用程式時擁有更大的靈活度。</block>
+  <block id="008d7108292fe17209a6efcba0c43094" category="list-text">*內建安全功能：* VKS 包含角色型存取控制 （RBAC）、原則執行以及與 VMware NSX 整合以實現網路安全性等安全功能。</block>
+  <block id="98b675eeeee2a3ecf9c858f3a080e273" category="list-text">*對開發者友善的工具：* vSphere Kubernetes Service 與 Tanzu Application Platform 等開發者工具整合，以簡化容器化應用程式的開發與部署。</block>
+  <block id="78a3a089395f569fdade56f46f5ce8c6" category="list-text">*擴充性與高可用度：* VKS 提供自動擴充和容錯能力等功能，確保應用程式保持高可用度的且高效能。</block>
+  <block id="1199c2f33267e617b2ce200b205820c2" category="list-text">*可觀測性和監控：* vSphere Kubernetes Service 與 VMware Tanzu Observability（前身為 Wavefront）及其他監控工具整合，提供叢集和應用程式效能的即時洞察。</block>
+  <block id="bed1840fde5dc1d7ac62d7454fb019ef" category="list-text">*支援 Kubernetes 生態系統：* VKS 完全相容於上游 Kubernetes，這意味著它支援 Kubernetes API，並可與 Helm、Istio 和 Prometheus 等 Kubernetes 原生工具搭配使用。</block>
+  <block id="5cb61decad5370ecfc90f2684356314e" category="section-title">vSphere Kubernetes Service 的使用案例</block>
+  <block id="76384304fed658c0c9d951db342b1096" category="list-text">*應用程式現代化：* 組織可以透過將傳統應用程式容器化，並將其部署到由 VKS 代管的 Kubernetes 叢集上，實現應用程式現代化。</block>
+  <block id="39da3482f8f31ec94a409c26cb76b4fa" category="list-text">*DevOps 開發維運賦能：* VKS 透過提供自動化、CI/CD 整合和對開發者友善的工具來支援 DevOps 開發維運工作流程。</block>
+  <block id="d26dfc4f50fc5c3039f92b4899f2647a" category="list-text">*混合雲部署：*企業可以使用 VKS 在本地和雲端環境中部署 Kubernetes 叢集，實現一致的操作。</block>
+  <block id="3b42607ee29831cc08020ac1cf7978f3" category="list-text">*微服務架構：* VKS 支援基於微服務的應用程式開發，使團隊能夠建置和擴充分散式系統。</block>
+  <block id="f6a34a8ce3a72392261e0a2cf1fed748" category="sidebar">vSphere Kubernetes Service 搭配 NetApp 儲存設備</block>
+  <block id="87705002e02ac3ef7cc167c9ef3f3aa3" category="sidebar">部署搭配 NetApp 儲存設備的 vSphere Kubernetes Service</block>
+  <block id="1e2b6e7c19b5f5ea5f1bf9d0119d936a" category="sidebar">使用 NetApp 儲存設備部署 vSphere Kubernetes Service 工作負載</block>
+  <block id="e45707f837d78db62a01dac958975b7b" category="sidebar">vSphere Kubernetes 服務</block>
+  <block id="c42f3e22cdf25a5c2578e69c7bf282af" category="sidebar">vSphere Kubernetes Service 與 NetApp 儲存設備總覽</block>
+  <block id="d0265d8cc7422d2276bc6344bbe3ab5d" category="sidebar">儲存設備與 vSphere Kubernetes 服務入門</block>
+  <block id="1d1f7326d745c802b7e22b1457f2fdb9" category="sidebar">部署 vSphere Kubernetes 服務</block>
+  <block id="b4a44c1b3b107cf4ea8dcf1fa2ad902e" category="sidebar">NetApp 儲存設備為 vSphere Kubernetes 服務工作負載帶來的效益</block>
+  <block id="3800f0390c50b78c269894513b3c4822" category="sidebar">NetApp VKS 工作負載的儲存設備佈建</block>
+  <block id="7113197dc1bcc2b68be0d788aa700d1a" category="sidebar">使用 NetApp 儲存設備部署 VKS 工作負載</block>
 </blocks>

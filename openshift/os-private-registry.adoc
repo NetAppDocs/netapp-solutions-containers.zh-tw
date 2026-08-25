@@ -14,7 +14,7 @@ summary: 本節致力於建立和配置由Trident提供的持久性儲存支援�
 
 
 [role="lead"]
-對於大多數 Red Hat OpenShift 部署，使用公開註冊表 https://quay.io["Quay.io"]或者 https://hub.docker.com["DockerHub"]滿足大多數客戶的需求。然而，有時客戶可能希望託管他們自己的私人或定製圖像。
+對於大多數 Red Hat OpenShift 的部署而言，使用公共映像檔倉庫（例如 link:https://quay.io["Quay.io"^] 或 link:https://hub.docker.com["DockerHub"^]）即可滿足大多數客戶的需求。然而，有時客戶可能希望託管自己的私有或自訂的映像檔。
 
 此程序記錄如何建立由Trident和NetApp ONTAP提供的持久磁碟區支援的私人映像註冊表。
 
