@@ -1489,7 +1489,6 @@
   <block id="70dec797486e96f0b66f5b6f6232e97e" category="inline-link">vSphere 9.0 文件：使用 DRS 關聯性規則</block>
   <block id="75aced0054edcf64f0ce28e9417b9ecc" category="paragraph">在這種情況下，您可以執行精靈並執行任務，而無需立即部署叢集；它會建立一個設定文件，稍後可以從中部署叢集。如果您需要更改任何 IPI 預設值，或者如果您想在環境中部署多個相同的叢集以用於多租戶等其他用途，這將非常有用。有關建立 OpenShift 自訂安裝配置的更多信息，請參閱 <block ref="d119246d08531f99b62e09f0007159a5" category="inline-link-macro-rx"></block>。</block>
   <block id="7eec9c349f16a2215195b8598e8dea11" category="paragraph">若要配置親緣組，請參閱 <block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block>。</block>
-  <block id="b9aaad555d183234dc95454f14ebcc62" category="sidebar">探索 NetApp 全面的影片庫，了解 Anthos 和 OpenShift 平台上的容器解決方案。每個系列都專注於特定的使用案例和整合場景。</block>
   <block id="bfe724d354657c9ac5cef22bd231f66f" category="inline-link">vSphere 7.0 文件：使用 DRS 親和性規則</block>
   <block id="cf8e958cf9893349b91e0cb26eb4a70a" category="list-text"><block ref="cf8e958cf9893349b91e0cb26eb4a70a" category="inline-link-macro-rx"></block></block>
   <block id="a70e200902c4988462676505e131f70c" category="list-text"><block ref="a70e200902c4988462676505e131f70c" category="inline-link-macro-rx"></block></block>
@@ -1588,8 +1587,6 @@
   <block id="8c684d392aef10a8c99774cb2657f7bb" category="paragraph">+ 使用多路徑時：</block>
   <block id="8e52b4769088302a4f326e22c74511a1" category="doc">觀看有關 vSphere Kubernetes 服務與 NetApp 的影片</block>
   <block id="251c1a6e87a770b25350464f2db19c02" category="paragraph">透過一系列展示關鍵功能的影片，探索 vSphere Kubernetes Service 與 NetApp 的整合。</block>
-  <block id="6033eea54b83c4616c246ac18a46eaaf" category="section-title">使用 NetApp 儲存設備部署 vSphere Kubernetes Service 叢集</block>
-  <block id="b80d9389df8e2bb398ad10bc68ff359b" category="section-title">使用 Trident 在 ONTAP 持續儲存上部署工作負載</block>
   <block id="6e4176de3fe21b3bc58f9932376014f9" category="summary">使用 NetApp ONTAP 持續儲存和 NAS 或 SAN 協定在 VKS 叢集中部署容器化應用程式。</block>
   <block id="6036729abb74cd9c50bb08033e8c7f27" category="doc">部署具有 NetApp 持續儲存的 Container 應用程式</block>
   <block id="2169ef59d3a2c480a4648b241b290603" category="paragraph">使用 NetApp ONTAP 持續儲存，在您的 vSphere Kubernetes Service 叢集中部署 Container 應用程式。以下範例說明如何使用 NAS （ontap-nas）或 SAN iSCSI （ontap-san）儲存設備來部署 PostgreSQL 資料庫。</block>
@@ -1668,8 +1665,6 @@
   <block id="14ba18a0c1dee23f7e3d0c37b42a6d5a" category="image-alt">為叢集下載 kubeconfig</block>
   <block id="9ad559cd98301f095c607e96052295ac" category="list-text">從堡壘主機，使用 kubeconfig 檔案連線至叢集，以便透過 CLI 進行管理。</block>
   <block id="1c49d9ad6281e19280e709dc38f2e301" category="image-alt">使用 kubeconfig 透過 CLI 連線至 VKS 叢集</block>
-  <block id="c1f681f02da4b1b37fc01754dbb52eba" category="paragraph">以下影片示範如何建立 vSphere Kubernetes 叢集。</block>
-  <block id="7366abbe5ba6570244ca56fd4a3e8628" category="video-title">在 Supervisor 叢集上建立 vSphere Kubernetes 叢集</block>
   <block id="37e6bc625ff4f9ffcd5ccdec7e054601" category="summary">在 vSphere Kubernetes Service 叢集中安裝 NetApp Trident，以啟用動態儲存資源配置。</block>
   <block id="d2d7f4fa852208916ca48681d906e1ac" category="doc">在 VKS 叢集中安裝 NetApp Trident</block>
   <block id="0264d8f9ac7431d1879e9e1e0256fd82" category="paragraph">在您的 vSphere Kubernetes Service 叢集中安裝 NetApp Trident 作為動態儲存資源配置程式，以將 NetApp ONTAP 儲存設備與您的 Kubernetes 工作負載整合。</block>
@@ -1686,8 +1681,6 @@
   <block id="7c9ecfb8dfa70dea44031127f8e97561" category="inline-link-macro">手動部署 Trident Operator</block>
   <block id="b8cb0bb6ffb813f94fe2cb0fc4af8f49" category="admonition">您也可以使用 Trident Operator 手動安裝 Trident。請參閱 Trident 文件中的步驟：<block ref="aaad7fc2d82777df183b3e26183088fc" category="inline-link-macro-rx"></block></block>
   <block id="9d7759b7820f505203830ffef3f6c946" category="list-text">確認叢集中所有 Trident Pod 都正在運作。</block>
-  <block id="6db69c2c82fe1cf04666445c27535882" category="admonition">此時 Trident Pod 可能無法建立。如果您描述該 ReplicaSet 物件，可能會看到違反 PodSecurity 的錯誤，如下所示。出現此錯誤的原因是<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>安裝期間建立的命名空間強制執行了 Kubernetes 受限的 Pod 安全標準 （PSS）。Trident Operator 需要提升的系統權限才能管理主機儲存設備，因此無法在受限設定檔的嚴格約束下運作。若要解決此問題，請為<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>命名空間授予特權設定檔，以便 ReplicaSet 控制器能夠成功啟動 Pod。</block>
-  <block id="267d98dda9fe9b1fa03f4e0a5e9eccdb" category="paragraph">將內建的 Kubernetes Pod Security Admission 標籤套用至<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>命名空間，使其不受受限設定檔約束：</block>
   <block id="77d7de0c181e7cde545dd80af7cd55fd" category="section-title">為您的環境準備儲存設備後端和 StorageClass 組態檔案</block>
   <block id="dafd5f06af6dd74148a6a1d1f4a2009f" category="list-text">透過定義必要的連線詳細資訊和儲存設備參數，為 ONTAP 設定 Trident 後端。</block>
   <block id="eda474c8d55e227080e095471db3fed4" category="list-text">在 Kubernetes 中定義對應至 NetApp 儲存設備後端的儲存設備類別。這些類別指定效能特性和複寫原則等參數。</block>
@@ -1795,26 +1788,18 @@
   <block id="a57628924f909d4edd5cb81ee4f10896" category="inline-link-macro">ONTAP 後端驅動程式</block>
   <block id="5825088df64b4cc2be5348fb85fd6718" category="paragraph">有關透過 Trident 驅動程式公開的功能以及必須由儲存管理員套用的功能的完整清單，請參閱 Trident 文件中的 <block ref="08d1d30daced52ce88602b85f7d3ff2e" category="inline-link-macro-rx"></block> 章節。</block>
   <block id="57da9a46ec632f3fb46d591a640c2c41" category="summary">了解 vSphere Kubernetes Service 及其如何與 NetApp ONTAP 整合以支援 Container 化工作負載。</block>
-  <block id="1d71ef3ed1e3feae082a2e494bc9406f" category="doc">瞭解搭配 NetApp ONTAP 的 vSphere Kubernetes Service</block>
-  <block id="bfd86f1482fc3eb86aa5a3fcfd77a763" category="paragraph">vSphere Kubernetes Service (VKS) 是 VMware 的代管 Kubernetes 產品，讓企業能夠使用 Kubernetes 部署、管理和擴充容器化應用程式。與 NetApp ONTAP 儲存設備結合，VKS 可為雲端原生工作負載提供企業級持久性、效能和資料管理。</block>
-  <block id="174feb6f3884222ea88d6a75bf2a5f76" category="paragraph">vSphere Kubernetes Service 通常整合到 VMware 更廣泛的生態系統中，例如 VMware Tanzu，它提供了一套完整的工具套件，用於 Kubernetes 管理、應用程式現代化和 DevOps 開發維運實踐。</block>
   <block id="06a6f231196210e712f69d3b272ebc0f" category="section-title">vSphere Kubernetes Service 的主要特性</block>
   <block id="8b4f9041a8a08b903a8e0120427502ca" category="list-text">*代管 Kubernetes 叢集：* vSphere Kubernetes Service 簡化了 Kubernetes 叢集的部署和管理。它可自動執行叢集建立、升級、擴充和監控等任務。</block>
   <block id="52593656aada48266dc5769977f0b859" category="list-text">*與 VMware 基礎架構整合：* VKS 可與 VMware vSphere、NSX-T 及其他 VMware 解決方案無縫地整合，使組織能夠運用其現有的 VMware 基礎架構來執行 Kubernetes 工作負載。</block>
   <block id="f13abfdaa69398b67c413b50e1d62ccf" category="list-text">*多雲和混合雲支援：* vSphere Kubernetes 服務支援在私有雲、公有雲（例如 AWS、Azure、Google Cloud）和混合雲環境中部署，讓組織在管理其應用程式時擁有更大的靈活度。</block>
   <block id="008d7108292fe17209a6efcba0c43094" category="list-text">*內建安全功能：* VKS 包含角色型存取控制 （RBAC）、原則執行以及與 VMware NSX 整合以實現網路安全性等安全功能。</block>
-  <block id="98b675eeeee2a3ecf9c858f3a080e273" category="list-text">*對開發者友善的工具：* vSphere Kubernetes Service 與 Tanzu Application Platform 等開發者工具整合，以簡化容器化應用程式的開發與部署。</block>
   <block id="78a3a089395f569fdade56f46f5ce8c6" category="list-text">*擴充性與高可用度：* VKS 提供自動擴充和容錯能力等功能，確保應用程式保持高可用度的且高效能。</block>
-  <block id="1199c2f33267e617b2ce200b205820c2" category="list-text">*可觀測性和監控：* vSphere Kubernetes Service 與 VMware Tanzu Observability（前身為 Wavefront）及其他監控工具整合，提供叢集和應用程式效能的即時洞察。</block>
-  <block id="bed1840fde5dc1d7ac62d7454fb019ef" category="list-text">*支援 Kubernetes 生態系統：* VKS 完全相容於上游 Kubernetes，這意味著它支援 Kubernetes API，並可與 Helm、Istio 和 Prometheus 等 Kubernetes 原生工具搭配使用。</block>
   <block id="5cb61decad5370ecfc90f2684356314e" category="section-title">vSphere Kubernetes Service 的使用案例</block>
   <block id="76384304fed658c0c9d951db342b1096" category="list-text">*應用程式現代化：* 組織可以透過將傳統應用程式容器化，並將其部署到由 VKS 代管的 Kubernetes 叢集上，實現應用程式現代化。</block>
   <block id="39da3482f8f31ec94a409c26cb76b4fa" category="list-text">*DevOps 開發維運賦能：* VKS 透過提供自動化、CI/CD 整合和對開發者友善的工具來支援 DevOps 開發維運工作流程。</block>
   <block id="d26dfc4f50fc5c3039f92b4899f2647a" category="list-text">*混合雲部署：*企業可以使用 VKS 在本地和雲端環境中部署 Kubernetes 叢集，實現一致的操作。</block>
   <block id="3b42607ee29831cc08020ac1cf7978f3" category="list-text">*微服務架構：* VKS 支援基於微服務的應用程式開發，使團隊能夠建置和擴充分散式系統。</block>
   <block id="f6a34a8ce3a72392261e0a2cf1fed748" category="sidebar">vSphere Kubernetes Service 搭配 NetApp 儲存設備</block>
-  <block id="87705002e02ac3ef7cc167c9ef3f3aa3" category="sidebar">部署搭配 NetApp 儲存設備的 vSphere Kubernetes Service</block>
-  <block id="1e2b6e7c19b5f5ea5f1bf9d0119d936a" category="sidebar">使用 NetApp 儲存設備部署 vSphere Kubernetes Service 工作負載</block>
   <block id="e45707f837d78db62a01dac958975b7b" category="sidebar">vSphere Kubernetes 服務</block>
   <block id="c42f3e22cdf25a5c2578e69c7bf282af" category="sidebar">vSphere Kubernetes Service 與 NetApp 儲存設備總覽</block>
   <block id="d0265d8cc7422d2276bc6344bbe3ab5d" category="sidebar">儲存設備與 vSphere Kubernetes 服務入門</block>
@@ -1822,4 +1807,192 @@
   <block id="b4a44c1b3b107cf4ea8dcf1fa2ad902e" category="sidebar">NetApp 儲存設備為 vSphere Kubernetes 服務工作負載帶來的效益</block>
   <block id="3800f0390c50b78c269894513b3c4822" category="sidebar">NetApp VKS 工作負載的儲存設備佈建</block>
   <block id="7113197dc1bcc2b68be0d788aa700d1a" category="sidebar">使用 NetApp 儲存設備部署 VKS 工作負載</block>
+  <block id="4863bb56458653f9402b7131b30a9030" category="section-title">在 Supervisor 叢集上建立 vSphere Kubernetes 叢集</block>
+  <block id="c1a5751ff9e21e0838bce4e08f1f26d5" category="section-title">使用 VCF Automation 建立 vSphere Kubernetes 叢集</block>
+  <block id="20e6db82522219c070cf96d902fe4884" category="section-title">使用 Trident 在由 ONTAP 持續儲存支援的 VKS 叢集上部署工作負載</block>
+  <block id="21a48e811421ae5fb58df2d372cd8998" category="summary">使用 NetApp Console 上的 NetApp Backup and Recovery Service，在 VKS 叢集中備份和還原 Container 應用程式。</block>
+  <block id="34eed44a7b600defcba59a8fdd6e860f" category="doc">使用 NetApp Console 備份與恢復 vSphere Kubernetes Service 叢集中的 Container 應用程式</block>
+  <block id="232601422fa5bd76dc6af5b21f82e33f" category="paragraph">使用 NetApp Console 備份與恢復 vSphere Kubernetes Service (VKS) 叢集中的 Container 應用程式。本程序涵蓋透過 NetApp Console 的 Backup and Recovery 服務建立與管理備份與恢復作業，並使用 ONTAP S3 物件儲存作為備份目標。</block>
+  <block id="3e4963527730ef6f33d6ebc197fafc0b" category="inline-link-macro">console.netapp.com</block>
+  <block id="454bb1110d6093b9ef29fd01d063b03f" category="inline-link-macro">NetApp Console 文件</block>
+  <block id="2016c21dd1e5e2a15af83cdc13f75c3d" category="paragraph">NetApp Console 提供對本地和雲端環境中儲存設備和資料服務的集中管理。它提供統一的控制、簡易的操作和安全的管理。使用者可以透過使用者介面存取多種資料服務和管理功能，網址為 <block ref="57d9a76eb3ea9a991b2c0d0149aa4e43" category="inline-link-macro-rx"></block>。有關 NetApp Console 的完整詳細資訊，請參閱 <block ref="bbbdb0a6353fba3ffbca16f93165f81c" category="inline-link-macro-rx"></block>。</block>
+  <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link-macro">NetApp Backup and Recovery 文件</block>
+  <block id="a597b0b1aab2f5b9b0aaad5086979bca" category="paragraph">本節重點介紹 NetApp Backup and Recovery 針對 Kubernetes 工作負載的資料服務，特別是 vSphere Kubernetes Service 叢集上的 Container 應用程式。NetApp Backup and Recovery Service 可讓您透過單一介面探索、管理、建立保護原則，並將其與 Kubernetes 應用程式建立關聯。如需完整指南，請參閱 <block ref="2352cdf0425b05cbedea7c5bb22d8b7e" category="inline-link-macro-rx"></block>。</block>
+  <block id="2121e1c4047d73ac044da238dfcb8c7c" category="section-title">備份與恢復工作流程</block>
+  <block id="6f2651b176b54af6f1faba14fd50d743" category="list-text">*請確保您已安裝 Console 代理程式*</block>
+  <block id="fa442739b617c9579e06786426c2a01d" category="inline-link-macro">NetApp Console Setup 文件</block>
+  <block id="d75cdce083074ff9bfb43752a8635548" category="paragraph">請確保在 VKS 叢集執行的環境中已部署 Console 代理程式。有關安裝 Console 代理程式的詳細資訊，請參閱 <block ref="c29eea9dd2098c2f916189b9f0f0c394" category="inline-link-macro-rx"></block>。</block>
+  <block id="a1a3cb4e76ae76dc6b99d33bcb31ad88" category="paragraph">在 NetApp Console 中，按一下快照所示的「Deploy Agent」，並將代理程式部署到 VKS 叢集執行的環境中。</block>
+  <block id="ae0e84f99bc384e593fbc3f3b721a51e" category="paragraph">在本例中，選擇「On-Premises &gt; With OVA」，複製 OVA URL，並在 vCenter 中使用該 URL 部署 Console 代理程式。</block>
+  <block id="c9f604da5ba951fbc0657b27f46decd4" category="inline-link-macro">文件</block>
+  <block id="7a1fb8eab659be867f9aa7eeb45a2d5e" category="paragraph">使用代理程式的 IP 位址在 URL 中進行註冊。如需詳細指示，請參閱 <block ref="e71416951a24fa701af997a8078305e1" category="inline-link-macro-rx"></block>。代理程式註冊完成後，您可以在 NetApp Console 中看到它，如下快照所示。</block>
+  <block id="d307fa19298283159d09f887c0952b89" category="image-alt">控制台代理程式安裝</block>
+  <block id="0e5dd3dc1046e3313f97def07538bec5" category="image-alt">使用代理程式安裝程式 URL</block>
+  <block id="e223bd6f3553c049bd7ac3cdb02abf6c" category="list-text">*將 ONTAP 叢集新增至 NetApp Console 並啟用 Backup and Recovery*</block>
+  <block id="6099932afd86a07365ad31865d3eb27c" category="inline-link-macro">設定 NetApp Backup and Recovery</block>
+  <block id="71c24c86ee7f9efef3f901f7a6ee9107" category="paragraph">必須先將主要 ONTAP 叢集新增至 NetApp Console，並在其上啟用 Backup and Recovery 服務，才能保護工作負載。如需相關指示，請參閱 <block ref="829ffd32b24c3ad024570837e8b80557" category="inline-link-macro-rx"></block>。</block>
+  <block id="da60fae3b061dc4b92da7c6b80ead128" category="list-text">*在 NetApp Console 中，探索 vSphere Kubernetes 叢集*</block>
+  <block id="ce48455e41e8b6ab54471d21bce67c76" category="paragraph">此步驟需要 vSphere Kubernetes 叢集正在執行，且 Console 代理程式已部署在相同的環境中。請遵循以下步驟，在 NetApp Console 中探索 vSphere Kubernetes 叢集。</block>
+  <block id="175a1add72b5b3837f416912786faf94" category="list-text">在 NetApp Console 中，選取 *Inventory &gt; Kubernetes*，並提供 vSphere Kubernetes 叢集的詳細資訊。</block>
+  <block id="e1c49923268af6f2e2f532c8337efc14" category="list-text">選擇部署在與 vSphere Kubernetes 叢集相同環境中的代理程式。</block>
+  <block id="93fe94a05c759d5076ada28408399292" category="list-text">複製提供的命令來安裝 Trident Protect，並從連接到 vSphere Kubernetes 叢集的機器上執行這些命令。</block>
+  <block id="7c9622d4f482feedcaae54fd93a00302" category="list-text">Trident Protect 安裝成功後，按一下 *Discover*。NetApp Console 透過代理程式探索 vSphere Kubernetes 叢集及其所有資源，並在使用者介面中填入這些資源。</block>
+  <block id="c3d6e4c0e56aab0c8ce971295e84d5be" category="image-alt">探索 vSphere Kubernetes 叢集</block>
+  <block id="b00b01ec925a5b145c3f9830d49aee3e" category="image-alt">安裝 Trident Protect，然後按一下「探索」。</block>
+  <block id="3646f4803d1292d3db242e14ccb8758a" category="image-alt">Trident Protect 安裝完成</block>
+  <block id="47dffbb1a3da5eca52bf5e7fba5eb769" category="image-alt">在 NetApp Console 中探索到的 vSphere Kubernetes 叢集</block>
+  <block id="1e9b7bcc2bad27bd136f2622dd69ea44" category="list-text">*將 ONTAP S3 設定為備份目標*</block>
+  <block id="d22cb698bc88c8e298eb6b589b94b9d6" category="paragraph">在本範例中，我們使用 ONTAP S3 物件儲存作為備份目標。您也可以使用 AWS S3、Azure Blob、Google Cloud Storage 或 StorageGRID 作為備份目標。</block>
+  <block id="e65ff2f26bec9a86892ccc267c743916" category="paragraph">如需更多詳細資訊，請審查 <block ref="01d5df3496ee1ccad0deaaf29f960871" category="inline-link-macro-rx"></block>。</block>
+  <block id="83ded782d791948e2c7cbd896b7b90b0" category="paragraph">若要在 NetApp Console 中新增 ONTAP S3 作為備份目標，您需要從 ONTAP 叢集取得下列資訊。</block>
+  <block id="0c869ea43172797ba7dcef0e8bc06c31" category="paragraph">若要取得這些值，請在 ONTAP 叢集中使用 System Manager 執行下列操作。</block>
+  <block id="afe878290734ee3d6d66ca868c147733" category="list-text">在 ONTAP 叢集中建立一個啟用 S3 的 SVM 來儲存備份資料。記下此 SVM 的 S3 端點 URL。</block>
+  <block id="2499dcb89ba012cb46ac629895c356b3" category="list-text">在 SVM 的 S3 設定中，建立使用者並指派所需的存取權限。記下此使用者的存取金鑰和私密金鑰。</block>
+  <block id="3419daddf1059715ea07b1b3e6abd5cd" category="inline-link-macro">Trident Protect AppVault 文件</block>
+  <block id="b25d75091e5cda2c64e8a5514341e3ca" category="admonition">Trident Protect 要求 S3 使用者至少擁有<block ref="056095ab13056370a45a87bef347987f" prefix=" " category="inline-code"></block>、<block ref="cbb0d44479c329cd4be1bc88506f8910" prefix=" " category="inline-code"></block>、<block ref="5efefdaf7d252b6782e94b6147b8cadc" prefix=" " category="inline-code"></block> 和<block ref="5dd67d171e3a2d8c0e5a7e24a1240e63" prefix=" " category="inline-code"></block> 權限。如果沒有這些權限，AppVault 備份與恢復作業將失敗並出現存取被拒絕的錯誤。如需詳細資訊，請參閱<block ref="f75884a96ce902306710d40739cf537e" category="inline-link-macro-rx"></block>。</block>
+  <block id="773dbb9b078ea51d2b0751bbf2435d64" category="list-text">建立 S3 使用者並下載存取金鑰和私密金鑰</block>
+  <block id="3eea6bd0f64c82add4f71773f9f8b243" category="image-alt">建立 S3 使用者並下載存取金鑰和私鑰</block>
+  <block id="b51ca27cec1eba9590e028602526c95e" category="list-text">在啟用 S3 的 SVM 中建立一個儲存桶。記下儲存桶名稱，以便在 NetApp Console 中將 ONTAP S3 物件儲存新增為備份目標時使用。</block>
+  <block id="e9f81ee46c507b84e0e3226124adb3fd" category="image-alt">儲存帳戶</block>
+  <block id="1db230a0f2b07c74bbdbf4db9ff2e254" category="paragraph">使用 S3 端點、存取金鑰、私密金鑰和儲存桶名稱，在 NetApp Console 中新增 ONTAP S3 物件儲存作為備份目標。</block>
+  <block id="b9292456fbba15fbc2e476f3b5b16588" category="image-alt">在 NetApp Console 中探索 ONTAP S3 物件存放區作為備份目標</block>
+  <block id="e2788f438cd0e0fdef4eca50bb2382f1" category="image-alt">ONTAP S3 物件儲存詳細資訊，可在 NetApp Console 中探索</block>
+  <block id="4d60c84ca18439da49fb866a742bd4fb" category="list-text">*在 NetApp Console 中，為 Container 工作負載建立應用程式並使用備份加以保護*</block>
+  <block id="2eabef32ad22e8b33df769ad0e37281f" category="admonition">您需要擁有 Backup and Recovery 超級管理員或 Backup and Recovery 備份管理員角色，才能建立和保護 Kubernetes 應用程式。若要還原 Kubernetes 應用程式，您需要擁有 Backup and Recovery 超級管理員或 Backup and Recovery 還原管理員角色。</block>
+  <block id="44cacf6d110ddc7970160044631b9d83" category="paragraph">在此步驟中，請在 NetApp Console 中為 vSphere Kubernetes 叢集中需要保護的 Container 應用程式建立應用程式。您可以使用命名空間來建立應用程式，以保護 vSphere Kubernetes 叢集中某個命名空間內的所有 Container 應用程式。</block>
+  <block id="13966409eadc621ce3bfcf2f249e4792" category="paragraph">您還需要一個與應用程式關聯的保護原則。您可以建立新的保護原則，也可以使用現有的保護原則。</block>
+  <block id="9cdbc54ba251ff7dba53eb0427d1b206" category="image-alt">建立 Container 應用程式</block>
+  <block id="ee818cfe9a24b4cdc5f3b0f81d1eb22c" category="paragraph">提供應用程式詳細資訊並定義應用程式的適用條件。在本例中，應用程式將會針對 vSphere Kubernetes 叢集中某個命名空間內的所有 Container 應用程式建立。按一下「搜尋」以查看屬於該應用程式的命名空間範圍資源清單。按一下「下一步」繼續。</block>
+  <block id="eb238de8d603b9e2a53ba8df0855161f" category="image-alt">提供應用程式詳情並定義應用程式標準</block>
+  <block id="35dda748f22007e96a586f8a2f4fc75d" category="paragraph">接下來，您需要為應用程式提供保護設定。您可以建立新的保護原則，也可以使用現有的原則。在本範例中，我們將為應用程式建立新的保護原則並將其關聯。展開 *Policy* ，然後按一下 *Create new policy* 。</block>
+  <block id="2def453a204ea819952d71512bdc49da" category="image-alt">建立新的保護原則</block>
+  <block id="df94a19d797c5fb8ddb560b7327d1651" category="paragraph">為原則命名並選擇備份架構。在本例中，選擇磁碟到物件儲存設備。定義本機快照排程，該排程控制在主儲存設備上建立快照的頻率。然後單獨設定物件儲存設備備份設定：選擇備份目標（在本例中為 ONTAP S3），設定傳輸排程（控制快照資料何時複製到物件儲存設備），並指定保留複本的數量。傳輸排程獨立於快照排程，因此資源會根據傳輸排程複製到物件儲存設備，而不是在每次建立快照時立即複製。您也可以根據需要修改最大重試次數和重試間隔。按一下 *Create* 繼續。系統將探索該應用程式，並將保護原則與其建立關聯。</block>
+  <block id="e4d5074770e545fff3da2f80c85a9bcd" category="image-alt">提供保護原則名稱</block>
+  <block id="282676c292385336c12b44e7d6e22b76" category="image-alt">選擇備份架構</block>
+  <block id="9382b57a7ab97e9a5ace56b1c2cca26b" category="image-alt">本機快照排程</block>
+  <block id="35fe92646099e0c5dde37b278a1be643" category="image-alt">用於備份的物件存放區設定</block>
+  <block id="84dbba70bee310837a0576d203ef39a1" category="image-alt">應用程式已建立，保護已完成</block>
+  <block id="f33de214b67023b3c3e396f21efec693" category="list-text">*從備份還原應用程式*</block>
+  <block id="3a777fbfaa3f5fd03016ef4e69b26f15" category="admonition">您需要 Backup and Recovery 超級管理員或 Backup and Recovery 還原管理員角色才能還原 Kubernetes 應用程式。</block>
+  <block id="663bd83060169d09fa60cb1afa500d9b" category="list-text">您可以選擇任何可用的還原點（本機快照、物件儲存備份或來自次要目標的備份）來還原應用程式。</block>
+  <block id="3d6e71d91fec2dd71feb2f817ee2af60" category="list-text">您可以將應用程式還原到其原始命名空間或不同的命名空間。</block>
+  <block id="bd6e0ac38fc8024f4efa317c0cc62408" category="list-text">您可以選擇要包含在還原中的資源。</block>
+  <block id="5d4d19247e2cd74f11ae3e13f86e7d50" category="list-text">您可以選擇用於還原應用程式資源的儲存設備類別。</block>
+  <block id="6d24f227e10bf5d7c363f509e238f393" category="image-alt">從備份還原應用程式</block>
+  <block id="05772a2a0e4aadfb89be48bbbc4d2366" category="image-alt">選擇還原點</block>
+  <block id="2f4c5ec58829e539fec512473cd833d4" category="image-alt">選擇還原選項</block>
+  <block id="1701743fe1609fce51fbd2c193492997" category="image-alt">選擇全部或部分資源進行還原</block>
+  <block id="d5fe4917b66194f15d37b21aae4e7a78" category="image-alt">選擇已恢復資源的儲存設備類別</block>
+  <block id="6131333929d32098af4ba9df7c81c387" category="paragraph">您可以在 NetApp Console 的「監控」部分查看還原作業的進度。還原作業完成後，您可以在 vSphere Kubernetes 叢集中看到已還原的資源。</block>
+  <block id="9ff0764de4ce57386bdd7a3c15fb8cfe" category="image-alt">監控還原作業進度</block>
+  <block id="c0010867e3de5ae3367bb4b28f2e8c3e" category="image-alt">還原作業已完成</block>
+  <block id="f50021bdc46dd82f9f9361cbc0d97cd6" category="image-alt">已還原應用程式</block>
+  <block id="ae0466ec058c7b41c94b5fa83378b2af" category="summary">使用 Trident Protect 快照和備份以及 ONTAP S3 物件儲存，在 VKS 叢集中備份和還原 Container 應用程式。</block>
+  <block id="051ad2976c93f1b8ab64275baa7da784" category="doc">使用 Trident Protect 在 vSphere Kubernetes Service 叢集中備份及還原 Container 應用程式</block>
+  <block id="6f120eabf116781e236a8132737fef74" category="paragraph">使用 Trident Protect 快照和備份功能，在 vSphere Kubernetes Service （VKS） 叢集中備份和還原 Container 應用程式。此程序包括使用 ONTAP S3 物件儲存建立 AppVault、設定 Trident Protect 以擷取應用程式資料（包括 Kubernetes 資源物件和持續儲存 Volume），以及在必要時還原資料。</block>
+  <block id="b43b841ea10667d73c8c7d57ba9ec4ef" category="paragraph">在 VKS 叢集中執行的 Container 應用程式會作為 Kubernetes 工作負載在工作節點命名空間中進行代管。保護應用程式中繼資料和持續儲存 Volume 至關重要，以便在遺失或損毀時能夠加以恢復。</block>
+  <block id="4f2e2fd0041732a5bfeffd80536904be" category="inline-link-macro">Trident CSI</block>
+  <block id="5135460097dea9f68717b23cb573c272" category="paragraph">VKS 應用程式的持續性 Volume 可由與 VKS 叢集整合的 ONTAP 儲存設備提供支援，使用 <block ref="d66058559be29002c97cec8314567a26" category="inline-link-macro-rx"></block>。此程序使用 <block ref="e549df9ba6f12288cca9d79527f10372" category="inline-link-macro-rx"></block> 建立應用程式快照和備份。應用程式快照的中繼資料儲存在 ONTAP 物件儲存中，而 Volume 快照資料則保留在儲存設備後端；備份資料則複製到 ONTAP 物件儲存。您可以在需要時從快照或備份還原。</block>
+  <block id="5ed3d9061409614d789d1ef3d94cabaa" category="paragraph">Trident Protect 支援對 Kubernetes 叢集上的應用程式進行快照、備份、還原和災難恢復。Trident Protect 可保護的資料包括與應用程式及其持續性 Volume 相關聯的 Kubernetes 資源物件。</block>
+  <block id="f8bf8c539f7a197b29d982d4e3bd1690" category="paragraph">*以下是本節範例中使用的各種元件版本*</block>
+  <block id="5cb74ad707aad3e01b412865d2b40295" category="list-text">VMware Cloud Foundation (VCF) 9.1 與 vSphere Kubernetes 服務</block>
+  <block id="334a133ff08c4dadb2af36f2b1c9f1c6" category="inline-link-macro">Trident 26.06</block>
+  <block id="6357906a751a7593b886ac445b9e260a" category="list-text"><block ref="6357906a751a7593b886ac445b9e260a" category="inline-link-macro-rx"></block></block>
+  <block id="dcb951044d957b8a0c7c98212f9d865c" category="inline-link-macro">Trident Protect 26.06</block>
+  <block id="9e109384d0c61daf0036c13685a9c6cc" category="list-text"><block ref="9e109384d0c61daf0036c13685a9c6cc" category="inline-link-macro-rx"></block></block>
+  <block id="8c1ba5eb61420c0029961110f20d7829" category="inline-link-macro">ONTAP 9.16</block>
+  <block id="a13c7db7d74afd839261d6b5eef45b76" category="list-text"><block ref="a13c7db7d74afd839261d6b5eef45b76" category="inline-link-macro-rx"></block></block>
+  <block id="ab19e2a480e6fd178819ae409afe0ab3" category="section-title">在 vSphere Kubernetes 叢集上安裝 Trident Protect</block>
+  <block id="9a660681c53f773fd48d7ad58cd48d53" category="example-title">安裝 Trident Protect</block>
+  <block id="d0f322a68d8614a49557f2400228f68c" category="inline-link-macro">Trident Protect CLI 文件</block>
+  <block id="45d72fc466011c2d9341d9e927244028" category="paragraph">使用 Helm 在 vSphere Kubernetes Service 叢集上安裝 Trident Protect。本節中的範例使用<block ref="d4845d5856667a10aee97f3404a35627" prefix=" " category="inline-code"></block>，即 Trident Protect CLI。請依照<block ref="ef3bd9becea6d7855240d1d89fa556bc" category="inline-link-macro-rx"></block>中的說明進行安裝。其他 Trident Protect 安裝方法已記錄於<block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block>中。</block>
+  <block id="00a36fe25fa607c5b3aa92540637fd8c" category="paragraph">首先，建立並標記<block ref="9a82c7a4099124e5bfaa83e7c5997bd4" prefix=" " category="inline-code"></block>命名空間。<block ref="78a20501c09df6254883cb37faba4efe" prefix=" " category="inline-code"></block>標籤為必要項目，因為 Trident Protect 執行特權工作負載。若無此標籤，Kubernetes Pod 安全性許可控制器將封鎖 Trident Protect Pod 的啟動。</block>
+  <block id="eb1a45530d58b882c9242fb38681f409" category="paragraph">然後新增 Helm 儲存庫並將 Trident Protect 安裝到命名空間。</block>
+  <block id="0ebc3eeae647f24d9110ed5fb65af02e" category="admonition">如果 Trident Protect Pod 啟動失敗並出現<block ref="233d453c9defa6b6b09a4490018ae129" prefix=" " category="inline-code"></block>許可錯誤，則可能是安裝前未將 Pod 安全性標籤套用到<block ref="9a82c7a4099124e5bfaa83e7c5997bd4" prefix=" " category="inline-code"></block>命名空間。請使用<block ref="cb084d2cf80d770c25726350b6118f22" prefix=" " category="inline-code"></block>重新套用這些標籤，然後驗證 Pod 是否啟動。</block>
+  <block id="12ee7c4706e44c364df65e2a6444161c" category="image-alt">Trident Protect pods 正在運行</block>
+  <block id="9e2fd9553f3b1f1f9aa36beca4f46a7f" category="section-title">建立用於物件儲存的 App Vault</block>
+  <block id="e17a719a6366dd11d450cd1e2c5967de" category="example-title">建立 AppVault</block>
+  <block id="143051a3557b86430e791a69daa9190f" category="paragraph">在為應用程式建立快照和備份之前，必須先在 Trident Protect 中設定物件儲存設備。這可以透過建立 AppVault CR 來完成。只有管理員才能建立和設定 AppVault CR。</block>
+  <block id="c916480663caf552957857deb45b61db" category="paragraph">AppVault 物件是儲存設備貯體的 Kubernetes 自訂資源表示。AppVault CR 包含儲存設備貯體在保護作業（例如備份、快照、還原作業和 SnapMirror 複寫）中使用所需的組態。</block>
+  <block id="43ef2f1dad2b36df26e08411ec6c85e0" category="paragraph">以下步驟建立針對 ONTAP S3 設定的 AppVault CR：.在 ONTAP 叢集的 SVM 中建立 S3 物件存放區伺服器。.在物件存放區伺服器中建立儲存桶。.在 SVM 中建立 S3 使用者。請將存取金鑰和私密金鑰保存在安全的位置。</block>
+  <block id="7e5e022f4990acb12e9222273538040f" category="paragraph">+ 注意：Trident Protect 要求 S3 使用者至少擁有<block ref="056095ab13056370a45a87bef347987f" prefix=" " category="inline-code"></block>、<block ref="cbb0d44479c329cd4be1bc88506f8910" prefix=" " category="inline-code"></block>、<block ref="5efefdaf7d252b6782e94b6147b8cadc" prefix=" " category="inline-code"></block> 和<block ref="5dd67d171e3a2d8c0e5a7e24a1240e63" prefix=" " category="inline-code"></block> 權限。如果沒有這些權限，AppVault 備份與恢復作業將會失敗並出現存取被拒絕的錯誤。如需詳細資訊，請參閱<block ref="f75884a96ce902306710d40739cf537e" category="inline-link-macro-rx"></block>。。在 VKS 叢集中，建立一個金鑰來儲存 ONTAP S3 憑證。。為 ONTAP S3 建立 AppVault 物件。</block>
+  <block id="b257a34cb8d6b5ae256e22fd53de3f64" category="paragraph">*為 ONTAP S3 設定 Trident Protect AppVault*</block>
+  <block id="579bdcf92668af842a1c8b05946023ad" category="admonition">以下清單使用啟用了憑證驗證的 HTTPS，這是生產環境的必要條件。如果您的 ONTAP S3 端點使用叢集已信任的公共 CA 所簽署的憑證，則無需進行額外的憑證組態。如果使用自簽名或內部 CA 憑證，請使用<block ref="f2579016cb23696b84d467b135d4f9ca" prefix=" " category="inline-code"></block>欄位提供自訂根目錄 CA 憑證，如清單所示。如果您需要用於隔離的非生產環境測試的 HTTP 組態，請參閱本節末尾的實驗室專用版本。</block>
+  <block id="eefec0918fd646a311958a75daab0ef7" category="paragraph">*僅限實驗室環境（HTTP，無憑證驗證）*</block>
+  <block id="f385b582ed82743db22b38b647b1996c" category="paragraph">以下<block ref="c0828e0381730befd1f7a025057c74fb" prefix=" " category="inline-code"></block>設定僅可在不含敏感資料的隔離實驗室環境中使用。請勿在生產環境中使用這些設定。</block>
+  <block id="46139a993c98bb820b525a6d47a29a6b" category="image-alt">ONTAP S3 AppVault 已建立</block>
+  <block id="199c88a2fb7b49ac4dc0658a6dba3255" category="section-title">建立 Trident Protect 應用程式</block>
+  <block id="d563b396f103548a57bd7fe28a9e412d" category="paragraph">本範例涵蓋了安裝在 postgres 命名空間中的範例 postgres 應用程式的資料保護。如需安裝的詳細資訊，請參閱 <block ref="6748c0d67e456bdb43c5ccf6b5f73620" category="inline-link-macro-rx"></block>。</block>
+  <block id="6aa5938c3da40d15847b9b66edb244f6" category="admonition">範例 PostgreSQL PVC 請求 RWO 存取模式。存取模式必須在 PVC 清單中明確指定；Trident 不會根據儲存傳輸協定自動選擇存取模式。NAS 支援的 PVC 支援 RWX 存取模式，SAN 支援的 PVC 可透過額外組態支援 RWX 存取模式。如需詳細資訊，請參閱 <block ref="3a984bfb64105d2cab0a81dc1af80642" category="inline-link-macro-rx"></block>。</block>
+  <block id="f16eaddd3ea29694e59e93166ca7db9c" category="paragraph">在本例中，postgres 命名空間有一個應用程式，在建立 Trident Protect 應用程式時會包含該命名空間的所有資源。</block>
+  <block id="8d809e39ec5fbafb1ea1db781e917c1e" category="image-alt">Trident Protect 應用程式已建立</block>
+  <block id="eb24a14eb30ab2003b56933052e232da" category="section-title">建立備份以保護應用程式</block>
+  <block id="8647698e13d9f41e74fe02e836957aff" category="example-title">建立備份</block>
+  <block id="b038d69a4652b940296030de65c1fad8" category="paragraph">*建立隨需備份*</block>
+  <block id="47155a5f9d76a76deff851ae12804ee8" category="paragraph">為先前建立的 postgres-app 建立備份，備份內容應包含 postgres 命名空間中的所有資源。請提供用於儲存備份的 appvault 名稱。</block>
+  <block id="2658d93d047c0970d29e40c3a0067c9d" category="image-alt">隨需備份已建立</block>
+  <block id="964d80285b1ebb044f8c2cdfc07c2c13" category="image-alt">應用程式保護狀態為部分保護</block>
+  <block id="3c7d9aabb09940150dcdbc2156c2ba6b" category="paragraph">*按排程建立備份*</block>
+  <block id="cf06e7d2e1d86fa081b7fdb4be05412d" category="paragraph">制定備份計劃，指定精細度和要保留的備份數量。</block>
+  <block id="3735ee194ea620a4ac7c62401c616adc" category="image-alt">已建立備份排程</block>
+  <block id="6cffbd716866d6f73e9ce7962119e4f4" category="image-alt">備份排程</block>
+  <block id="bb3ada07ffc1e55222a2bc4f1f73b9ce" category="section-title">從備份還原</block>
+  <block id="99cfd4c65592001192bff6f757a72e23" category="example-title">從備份還原</block>
+  <block id="6a22c2b2d76ce101ea52c0535d69f0d8" category="paragraph">*將應用程式還原到相同的命名空間*</block>
+  <block id="5768aeb7376533984e2e86691d6a0818" category="paragraph">在這個範例中，備份 postgres-backup-on-demand 包含 postgres-app 的備份。</block>
+  <block id="93ab73773342ed6bbe59849d04430a00" category="paragraph">刪除應用程式之前，請確認您計劃從中還原的備份處於<block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block>狀態。進行中或失敗的備份無法用於還原應用程式。</block>
+  <block id="5f470503b2ac5cb0571f91413075543b" category="paragraph">確認備份狀態為<block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block>後，刪除 postgres 應用程式，並確保從命名空間「postgres」中刪除 PVC 和 pod 物件。</block>
+  <block id="71fcd5bb6954e7bb4881609b73b5885f" category="image-alt">Postgres 應用程式物件</block>
+  <block id="17071c78467fbc503329ee38de019cc0" category="image-alt">Postgres 應用程式物件已刪除</block>
+  <block id="bc73f6a63dcedda6fc251b2af9a42fad" category="paragraph">現在，建立一個備份原地還原物件。</block>
+  <block id="401193a3c85240f97e0a56f2abdc470a" category="image-alt">已建立備份原地還原</block>
+  <block id="96d1ea2bbcf32e79fb97db8532dfc512" category="paragraph">驗證 postgres 應用程式部署、服務、pod 和 PVC 是否已還原。</block>
+  <block id="4a9f357305cc69f09a95c8f0b46d3576" category="image-alt">應用程式已還原</block>
+  <block id="bea5e91371f23a1bcd64fcc44673639e" category="paragraph">將應用程式還原到不同的命名空間</block>
+  <block id="11772301d0aaf9f38d5c47cd50b0ad9a" category="paragraph">首先，建立一個新的命名空間，以便將應用程式還原至其中，本範例中為 postgres2。此時，postgres-app 已可使用依排程建立的每小時備份。使用此備份將應用程式還原至新的命名空間 postgres2。</block>
+  <block id="89e2c518728991ec63ab64162fdbcd15" category="image-alt">每小時備份可用</block>
+  <block id="b696e1a6fff47f2011d6aca8f9ebed6c" category="admonition">若要取得備份的路徑，請使用命令<block ref="5b7526f620b35a0e1e9c1f0d8c2a65fc" prefix=" " category="inline-code"></block>。</block>
+  <block id="3b4762f1055eedff28ff31949b848956" category="image-alt">每小時備份路徑</block>
+  <block id="d0699088462af01b864fa99603472db6" category="image-alt">備份還原已建立</block>
+  <block id="ceeb0e0b33fb3a7eecfa0889854817b3" category="paragraph">驗證 postgres 應用程式物件和 PVC 是否已在新命名空間 postgres2 中建立。</block>
+  <block id="04ebe70d6abbb260d997df687cca701d" category="image-alt">Postgres 應用程式已在新命名空間中還原</block>
+  <block id="97f0842e41c3ba38b3e214d6626030e0" category="section-title">使用 Snapshot 快照技術保護應用程式</block>
+  <block id="147675010df47ead5c59950b19d345c2" category="example-title">建立 Snapshot 快照技術</block>
+  <block id="66a7b9c088c581d685c7db99329ed890" category="paragraph">*建立隨選 Snapshot 快照技術* 為應用程式建立 Snapshot 快照技術，並指定 AppVault 以存放 Snapshot 快照技術中繼資料。Volume Snapshot 快照技術資料本身不會複製到物件儲存設備，而是保留在儲存設備後端。</block>
+  <block id="9a07e23a4594ebf2f36aa8fda59ac284" category="image-alt">隨需 Snapshot 快照技術</block>
+  <block id="d54f5186962379a7c55510ee1ab545f7" category="paragraph">*建立 Snapshot 快照技術計劃* 建立 Snapshot 快照技術計劃。指定 Snapshot 快照技術的精細度以及要保留的 Snapshot 快照技術數量。</block>
+  <block id="e86ee6d4e5b0328800b5805950a77de3" category="image-alt">排程及依排程建立的 Snapshot 快照技術</block>
+  <block id="6ad692970258ebf7f307557fd97d2632" category="section-title">從 Snapshot 快照技術還原</block>
+  <block id="af2119ce67e757837897479937051b7b" category="paragraph">*將應用程式從 Snapshot 快照技術還原至相同命名空間*</block>
+  <block id="d1924585340e28fd585ca595409a9039" category="paragraph">刪除應用程式之前，請確認您計劃從中還原的 Snapshot 快照技術處於<block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block>狀態。進行中或失敗的 Snapshot 快照技術無法用於還原應用程式。</block>
+  <block id="211f8f934021d273efcd75e9844823b3" category="paragraph">確認 Snapshot 快照技術狀態為<block ref="07ca5050e697392c9ed47e6453f1453f" prefix=" " category="inline-code"></block>後，從 postgres 命名空間中刪除 postgres 的應用程式物件和 PVC。</block>
+  <block id="38362d4d177cf390f102931a4760401f" category="image-alt">應用程式物件已刪除</block>
+  <block id="cbaf95afb437065389bf3dce9e3f1efc" category="paragraph">從 Snapshot 快照技術建立原地還原物件。</block>
+  <block id="c98f0d6793689cd59bdb98425d6343a6" category="paragraph">確認應用程式的物件和 PVC 是否在 postgres 命名空間中建立。</block>
+  <block id="04ce63c6dd3ec1216b51ffad1beff441" category="image-alt">從 Snapshot 快照技術還原的 Postgres 應用程式</block>
+  <block id="45bfd189d8efd0216d0bb1449feacc15" category="paragraph">*將應用程式從 Snapshot 快照技術還原至不同的命名空間*</block>
+  <block id="e90d250253124ffccd4e2b583d7cfa32" category="paragraph">刪除先前從備份還原的 postgres2 命名空間中的應用程式。</block>
+  <block id="e8693884f66911cd4c972fde74183528" category="image-alt">刪除應用程式物件和 PVC</block>
+  <block id="b6b1932fea3de2b10921d7e7aacadfde" category="paragraph">從 Snapshot 快照技術建立 Snapshot 快照技術還原物件，並提供命名空間映射。</block>
+  <block id="ab5e677a955564d1a124f663f638388e" category="image-alt">已建立 Snapshot 快照技術還原</block>
+  <block id="e0db28bbe23ed3d772d679e570f0ef48" category="paragraph">驗證應用程式的物件和 PVC 是否已在 postgres2 命名空間中還原。</block>
+  <block id="d0d8fedde8b21fc0ba93ef7aaba3a319" category="image-alt">應用程式已在不同的命名空間中還原</block>
+  <block id="20e5bd86db3dd7fbf1181537e8c779d8" category="video-title">使用 Trident 在由 ONTAP 持續儲存支援的 vSphere Kubernetes Service 叢集上部署工作負載</block>
+  <block id="97ae127add2a94bab96f06fac9860fdb" category="paragraph">以下影片示範了建立 vSphere Kubernetes 叢集的兩種方法。</block>
+  <block id="bc9e4428422fe5b84cc27a0fa136fb60" category="video-title">在 Supervisor 叢集上建立 vSphere Kubernetes 叢集</block>
+  <block id="ced2b6aa5a4bf2dab6a8ce1737b31b3d" category="video-title">使用 VCF 自動化建立 vSphere Kubernetes 集群</block>
+  <block id="2dd1f97feb041be44e1f3d5fabec4b39" category="paragraph">在執行 Helm 安裝之前，請建立並標記 <block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block> 命名空間。此 <block ref="78a20501c09df6254883cb37faba4efe" prefix=" " category="inline-code"></block> 標籤是必要的，因為 Trident 執行的是特權工作負載。如果沒有此標籤，Kubernetes Pod 安全性許可控制器將封鎖 Trident Pod 啟動。</block>
+  <block id="f9649373c12bd808a23df78a40aa7471" category="paragraph">在手動安裝 Trident 之前，請確保已使用所需的 pod 安全性標籤來標記<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>命名空間。</block>
+  <block id="35c0800d2cd6d949b287d303c1c1c74d" category="admonition">如果 Trident Pod 啟動失敗並出現<block ref="233d453c9defa6b6b09a4490018ae129" prefix=" " category="inline-code"></block>存取錯誤，則可能是安裝前未將 Pod 安全性標籤套用到<block ref="47cb44be55a0dffa15dfc900a4c687be" prefix=" " category="inline-code"></block>命名空間。請使用<block ref="cb084d2cf80d770c25726350b6118f22" prefix=" " category="inline-code"></block>重新套用這些標籤，然後驗證 Pod 是否啟動。</block>
+  <block id="1d68b70d225e40a24e2e9aa6f71bec78" category="doc">了解 VMware vSphere Kubernetes Service with NetApp ONTAP</block>
+  <block id="ae6db182fbeef947934c84a097f2e037" category="paragraph">VMware vSphere Kubernetes Service （VKS） 是 VMware 的代管 Kubernetes 產品，使企業能夠使用 Kubernetes 部署、管理和擴充容器化應用程式。與 NetApp ONTAP 儲存設備結合，VKS 可為雲端原生工作負載提供企業級持續性、效能和資料管理。</block>
+  <block id="7756266a2392dc651aee93576b0a2a9d" category="paragraph">VKS 嵌入在 VMware Cloud Foundation (VCF) 中，並符合上游 CNCF Kubernetes 標準，確保與更廣泛的 Kubernetes 生態系統和工具相容。</block>
+  <block id="01f67c18ad451dc74e3fa7dff3b1734d" category="list-text">*對 Kubernetes 生態系統的支援：* VKS 支援完整的上游 Kubernetes API，確保跨環境的可移植性，並與更廣泛的 Kubernetes 生態系統相容，包括用於服務網格的 Istio、用於監控的 Prometheus 以及其他 CNCF 認證的工具。組織可以直接將標準的 Kubernetes 技能和整合應用於 VKS 叢集。</block>
+  <block id="aa2e85f6afdc912a76e56a97f382112b" category="list-text">*對開發者友善的工具：* VKS 支援標準的 Kubernetes 開發者工作流程，包括 CI/CD 管線、GitOps 實踐以及 kubectl 和 Helm 等工具，使開發團隊能夠建置和部署容器化應用程式，而無需學習專屬介面。</block>
+  <block id="a9b9871513389acff14994099df07bb2" category="list-text">*可觀測性和監控：* VKS 與標準的 Kubernetes 相容監控工具整合，以提供有關叢集和應用程式效能的即時深入解析。</block>
+  <block id="7bb52d31e9186f327f9249cadd1f56e1" category="sidebar">探索 NetApp 內容豐富的影片程式庫，展示 Anthos、OpenShift 和 vSphere Kubernetes Service 平台上的 Container 解決方案。每個集合著重於特定的使用案例和整合場景。</block>
+  <block id="76897528dc593d66db3384c1c473c893" category="sidebar">使用 Trident 搭配 ONTAP 持續儲存設備部署工作負載</block>
+  <block id="21a1e68164f738b8be1dae11d5a694b3" category="sidebar">資料保護</block>
+  <block id="397fa1b379b09fcba8b17f74350634c0" category="sidebar">使用 NetApp Console 進行備份與還原</block>
+  <block id="f68d199847b51cd8a36b6dc46fdf0aac" category="sidebar">使用 Trident Protect 進行備份和還原</block>
 </blocks>

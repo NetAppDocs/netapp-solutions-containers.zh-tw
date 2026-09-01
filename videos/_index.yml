@@ -2,7 +2,8 @@
 indexpage:
   title: 觀看有關使用NetApp 的容器的影片和演示
   summary: 一系列影片和示範討論了 NetApp 眾多容器解決方案的功能
-  lead: 探索 NetApp 全面的影片庫，了解 Anthos 和 OpenShift 平台上的容器解決方案。每個系列都專注於特定的使用案例和整合場景。
+  lead: 探索 NetApp 內容豐富的影片程式庫，展示 Anthos、OpenShift 和 vSphere Kubernetes Service 平台上的
+    Container 解決方案。每個集合著重於特定的使用案例和整合場景。
   tiles:
   - title: Anthos 與NetApp合作
     links:
@@ -24,7 +25,9 @@ indexpage:
       url: openshift-videos.html#cloud-and-hybrid-integrations
   - title: vSphere Kubernetes Service 搭配 NetApp 儲存設備
     links:
-    - title: 部署搭配 NetApp 儲存設備的 vSphere Kubernetes Service
-      url: vks-videos.html#deploying-a-vsphere-kubernetes-service-cluster-with-netapp-storage
-    - title: 使用 NetApp 儲存設備部署 vSphere Kubernetes Service 工作負載
-      url: vks-videos.html#deploying-workloads-with-ontap-persistent-storage-using-trident
+    - title: 在 Supervisor 叢集上建立 vSphere Kubernetes 叢集
+      url: vks-videos.html#create-a-vsphere-kubernetes-cluster-on-a-supervisor-cluster
+    - title: 使用 VCF Automation 建立 vSphere Kubernetes 叢集
+      url: vks-videos.html#create-a-vsphere-kubernetes-cluster-with-vcf-automation
+    - title: 使用 Trident 搭配 ONTAP 持續儲存設備部署工作負載
+      url: vks-videos.html#deploying-workloads-on-a-vks-cluster-backed-by-ontap-persistent-storage-using-trident

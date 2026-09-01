@@ -4,7 +4,7 @@ permalink: vsphere-kubernetes-service/vks-overview.html
 keywords: vks, vSphere Kubernetes Service, ONTAP, kubernetes, overview 
 summary: 了解 vSphere Kubernetes Service 及其如何與 NetApp ONTAP 整合以支援 Container 化工作負載。 
 ---
-= 瞭解搭配 NetApp ONTAP 的 vSphere Kubernetes Service
+= 了解 VMware vSphere Kubernetes Service with NetApp ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 了解 vSphere Kubernetes Service 及其如何與 NetApp ONTAP 整合�
 
 
 [role="lead"]
-vSphere Kubernetes Service (VKS) 是 VMware 的代管 Kubernetes 產品，讓企業能夠使用 Kubernetes 部署、管理和擴充容器化應用程式。與 NetApp ONTAP 儲存設備結合，VKS 可為雲端原生工作負載提供企業級持久性、效能和資料管理。
+VMware vSphere Kubernetes Service （VKS） 是 VMware 的代管 Kubernetes 產品，使企業能夠使用 Kubernetes 部署、管理和擴充容器化應用程式。與 NetApp ONTAP 儲存設備結合，VKS 可為雲端原生工作負載提供企業級持續性、效能和資料管理。
 
-vSphere Kubernetes Service 通常整合到 VMware 更廣泛的生態系統中，例如 VMware Tanzu，它提供了一套完整的工具套件，用於 Kubernetes 管理、應用程式現代化和 DevOps 開發維運實踐。
+VKS 嵌入在 VMware Cloud Foundation (VCF) 中，並符合上游 CNCF Kubernetes 標準，確保與更廣泛的 Kubernetes 生態系統和工具相容。
 
 
 
@@ -27,10 +27,10 @@ vSphere Kubernetes Service 通常整合到 VMware 更廣泛的生態系統中，
 . *與 VMware 基礎架構整合：* VKS 可與 VMware vSphere、NSX-T 及其他 VMware 解決方案無縫地整合，使組織能夠運用其現有的 VMware 基礎架構來執行 Kubernetes 工作負載。
 . *多雲和混合雲支援：* vSphere Kubernetes 服務支援在私有雲、公有雲（例如 AWS、Azure、Google Cloud）和混合雲環境中部署，讓組織在管理其應用程式時擁有更大的靈活度。
 . *內建安全功能：* VKS 包含角色型存取控制 （RBAC）、原則執行以及與 VMware NSX 整合以實現網路安全性等安全功能。
-. *對開發者友善的工具：* vSphere Kubernetes Service 與 Tanzu Application Platform 等開發者工具整合，以簡化容器化應用程式的開發與部署。
+. *對 Kubernetes 生態系統的支援：* VKS 支援完整的上游 Kubernetes API，確保跨環境的可移植性，並與更廣泛的 Kubernetes 生態系統相容，包括用於服務網格的 Istio、用於監控的 Prometheus 以及其他 CNCF 認證的工具。組織可以直接將標準的 Kubernetes 技能和整合應用於 VKS 叢集。
+. *對開發者友善的工具：* VKS 支援標準的 Kubernetes 開發者工作流程，包括 CI/CD 管線、GitOps 實踐以及 kubectl 和 Helm 等工具，使開發團隊能夠建置和部署容器化應用程式，而無需學習專屬介面。
 . *擴充性與高可用度：* VKS 提供自動擴充和容錯能力等功能，確保應用程式保持高可用度的且高效能。
-. *可觀測性和監控：* vSphere Kubernetes Service 與 VMware Tanzu Observability（前身為 Wavefront）及其他監控工具整合，提供叢集和應用程式效能的即時洞察。
-. *支援 Kubernetes 生態系統：* VKS 完全相容於上游 Kubernetes，這意味著它支援 Kubernetes API，並可與 Helm、Istio 和 Prometheus 等 Kubernetes 原生工具搭配使用。
+. *可觀測性和監控：* VKS 與標準的 Kubernetes 相容監控工具整合，以提供有關叢集和應用程式效能的即時深入解析。
 
 
 

@@ -210,7 +210,9 @@ image::vks-005.png[使用 kubeconfig 透過 CLI 連線至 VKS 叢集]
 [[video-demonstration]]
 == 影片示範
 
-以下影片示範如何建立 vSphere Kubernetes 叢集。
+以下影片示範了建立 vSphere Kubernetes 叢集的兩種方法。
 
 .在 Supervisor 叢集上建立 vSphere Kubernetes 叢集
 video::4ef64b3c-7a68-41d5-bacf-b4a8012b49f8[panopto,width=360]
+.使用 VCF 自動化建立 vSphere Kubernetes 集群
+video::571ced1a-58e8-4bf4-9c24-b4b10118bc22[panopto,width=360]

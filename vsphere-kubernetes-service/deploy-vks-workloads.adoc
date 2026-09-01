@@ -319,5 +319,5 @@ SELECT * FROM employees;
 
 以下影片示範如何在 vSphere Kubernetes 叢集上安裝 Trident，以及如何使用 Trident 部署具有持續儲存的 PostgreSQL 資料庫。
 
-.使用 Trident 在 ONTAP 持續儲存上部署工作負載
+.使用 Trident 在由 ONTAP 持續儲存支援的 vSphere Kubernetes Service 叢集上部署工作負載
 video::eb8bd0c0-a1fe-4288-a575-b4ac00e004a9[panopto,width=360]
