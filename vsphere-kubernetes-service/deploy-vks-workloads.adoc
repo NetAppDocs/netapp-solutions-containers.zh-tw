@@ -211,8 +211,12 @@ spec:
 kubectl get all -n <namespace>
 kubectl get pvc -n <namespace>
 ----
+.顯示範例
+[%collapsible]
+====
 image::vks-workload-001.png[工作負載已部署持續儲存]
 
+====
 根據所用協定的不同，後端儲存設備可以是 Volume、qtree 或 LUN。您可以透過描述 PersistentVolume （PV）來擷取內部 Volume 名稱，然後在 ONTAP CLI 命令中使用該名稱來取得儲存設備詳細資訊，藉此驗證 ONTAP 系統中已佈建的儲存設備。使用以下命令描述 PV 並擷取內部 Volume 名稱：
 
 [source, bash]
@@ -220,6 +224,8 @@ image::vks-workload-001.png[工作負載已部署持續儲存]
 kubectl describe pv/<pv-name>
 ----
 .顯示範例
+[%collapsible]
+====
 image::vks-workload-002.png[NAS Volume 的內部 Volume 名稱]
 
 image::vks-workload-003.png[SAN LUN 的內部 Volume 名稱]
@@ -242,10 +248,14 @@ lun show -vserver <vserver> -volume <internal-volume-name>
 ----
 image::vks-workload-005.png[ONTAP CLI 輸出 SAN LUN]
 
+====
 如果您在 NAS 或 NAS Economy 儲存設備類別中使用了 `nconnect`裝載選項，則可以驗證從工作節點到儲存設備伺服器的作用中 TCP 連線數。
 
 首先，列出 Trident 後端組態以尋找後端名稱，然後對其進行描述以擷取 vserver 名稱和資料 LIF：
 
+.顯示範例
+[%collapsible]
+====
 [source, bash]
 ----
 kubectl get tbc -n trident
@@ -257,11 +267,14 @@ kubectl describe tbc <backend-name> -n trident
 ----
 network connections active show -local-address <data-lif> -local-port 2049
 ----
-.顯示範例
 image::vks-workload-006.png[ONTAP CLI 作用中連線的輸出]
 
+====
 Pod 處於運作狀態後，連線至資料庫並驗證資料操作。
 
+.顯示範例
+[%collapsible]
+====
 .步驟
 . 將 PostgreSQL 服務連接埠轉送到本機：
 +
@@ -312,6 +325,7 @@ SELECT * FROM employees;
 ----
 
 
+====
 
 
 [[video-demonstration]]
@@ -319,5 +333,5 @@ SELECT * FROM employees;
 
 以下影片示範如何在 vSphere Kubernetes 叢集上安裝 Trident，以及如何使用 Trident 部署具有持續儲存的 PostgreSQL 資料庫。
 
-.使用 Trident 在由 ONTAP 持續儲存支援的 vSphere Kubernetes Service 叢集上部署工作負載
-video::eb8bd0c0-a1fe-4288-a575-b4ac00e004a9[panopto,width=360]
+.使用 Trident 在由 ONTAP 持續儲存支援的 VKS 叢集上部署工作負載
+video::ea2cd302-d556-4450-bd68-b4c0012a9b49[panopto,width=360]

@@ -172,7 +172,7 @@ image::vks-tp-001.png[ONTAP S3 AppVault 已建立]
 .建立 Trident Protect 應用程式
 [%collapsible]
 ====
-本範例涵蓋了安裝在 postgres 命名空間中的範例 postgres 應用程式的資料保護。如需安裝的詳細資訊，請參閱 link:/vsphere-kubernetes-service/deploy-vks-workloads.html["使用 NetApp 儲存設備部署 VKS 工作負載"]。
+本範例涵蓋範例 PostgreSQL 應用程式的資料保護，該應用程式安裝在 `postgres`命名空間中。如需安裝的詳細資訊，請參閱link:deploy-vks-workloads.html["使用 NetApp 儲存設備部署 VKS 工作負載"]。
 
 
 NOTE: 範例 PostgreSQL PVC 請求 RWO 存取模式。存取模式必須在 PVC 清單中明確指定；Trident 不會根據儲存傳輸協定自動選擇存取模式。NAS 支援的 PVC 支援 RWX 存取模式，SAN 支援的 PVC 可透過額外組態支援 RWX 存取模式。如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/trident/trident-protect/learn-about-trident-protect.html["Trident Protect 說明文件"]。
