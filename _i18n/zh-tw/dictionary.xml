@@ -2018,4 +2018,10 @@
   <block id="089b40cea675d4e9ce25bad5ebb3b652" category="paragraph">以下影片示範如何使用 NetApp Console 將 VKS 叢集上的工作負載備份到 ONTAP S3 物件儲存，並將其還原到 vSphere Kubernetes 叢集。</block>
   <block id="4476e254c8f5abaf8b630ceda9d4a0b9" category="paragraph">以下影片顯示 NetApp Console Local 功能的總覽。</block>
   <block id="07a543f5080cf583128d23fd6f478822" category="paragraph">本範例涵蓋範例 PostgreSQL 應用程式的資料保護，該應用程式安裝在<block ref="e8a48653851e28c69d0506508fb27fc5" prefix=" " category="inline-code"></block>命名空間中。如需安裝的詳細資訊，請參閱<block ref="d5a8c06422b41e848d51e76dd84c3ef1" category="inline-link-macro-rx"></block>。</block>
+  <block id="6aa44f095b485d103684660cbb7f9328" category="section-title">2026 年 9 月 21 日</block>
+  <block id="e0d0e8ae0af3a4ee574586d2d9e6da59" category="inline-link-macro">vSphere Kubernetes 服務解決方案</block>
+  <block id="8f96584025cae51d2c0118261a3be8e7" category="paragraph">將 VMware vSphere Kubernetes Service 與 NetApp ONTAP 解決方案新增至 NetApp Container 解決方案：<block ref="f8cc2605c7c10f20f97e696844c3cb9b" category="inline-link-macro-rx"></block>。</block>
+  <block id="2a7082b3041267482d987446d5d04d6a" category="sidebar">vSphere Kubernetes 服務搭配 NetApp</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="sidebar">資料保護</block>
+  <block id="07c4740cbbae657ab5643e7f4cd45995" category="sidebar">vSphere Kubernetes 服務網站</block>
 </blocks>

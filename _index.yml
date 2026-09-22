@@ -14,18 +14,14 @@ indexpage:
       url: "/blogs.html"
     - title: 影片和演示
       url: "/videos/index.html"
-  - title: Anthos 與NetApp合作
+  - title: vSphere Kubernetes 服務搭配 NetApp
     links:
     - title: 解決方案概述
-      url: "/anthos/anthos-solution-overview.html"
-    - title: VMware 上的 Anthos 集群
-      url: "/anthos/anthos-vmw.html"
-    - title: 裸機上的 Anthos
-      url: "/anthos/anthos-bm.html"
+      url: "/vsphere-kubernetes-service/vks-overview.html"
     - title: NetApp儲存集成
-      url: "/anthos/anthos-storint-overview.html"
-    - title: 用例
-      url: "/anthos/anthos-deploy-app-cloud-console.html"
+      url: "/vsphere-kubernetes-service/netapp-storage-vks.html"
+    - title: 資料保護
+      url: "/vsphere-kubernetes-service/backup-restore-console.html"
   - title: Red Hat OpenShift 與NetApp
     links:
     - title: 解決方案概述
@@ -38,12 +34,26 @@ indexpage:
       url: "/openshift/os-storint-overview.html"
     - title: 用例
       url: "/openshift/os-use-cases.html"
+  - title: Anthos 與NetApp合作
+    links:
+    - title: 解決方案概述
+      url: "/anthos/anthos-solution-overview.html"
+    - title: VMware 上的 Anthos 集群
+      url: "/anthos/anthos-vmw.html"
+    - title: 裸機上的 Anthos
+      url: "/anthos/anthos-bm.html"
+    - title: NetApp儲存集成
+      url: "/anthos/anthos-storint-overview.html"
+    - title: 用例
+      url: "/anthos/anthos-deploy-app-cloud-console.html"
   - title: 合作夥伴解決方案
     links:
-    - title: Anthos 網站
-      url: https://cloud.google.com/anthos
+    - title: vSphere Kubernetes 服務網站
+      url: https://www.vmware.com/products/cloud-infrastructure/vsphere-kubernetes-service
     - title: Red Hat OpenShift 網站
       url: https://www.redhat.com/en/technologies/cloud-computing/openshift
+    - title: Anthos 網站
+      url: https://cloud.google.com/anthos
   - title: 解決方案請求和回饋
     links:
     - title: 請求自動化

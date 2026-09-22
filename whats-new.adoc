@@ -15,6 +15,13 @@ summary: NetApp容器解決方案附件的最新變更日誌。
 
 
 
+[[21-september-2026]]
+== 2026 年 9 月 21 日
+
+將 VMware vSphere Kubernetes Service 與 NetApp ONTAP 解決方案新增至 NetApp Container 解決方案：link:https://docs.netapp.com/us-en/netapp-solutions-containers/vsphere-kubernetes-service/vks-overview.html["vSphere Kubernetes 服務解決方案"^]。
+
+
+
 [[18-august-2025]]
 == 2025年8月18日
 
