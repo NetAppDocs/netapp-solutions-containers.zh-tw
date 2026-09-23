@@ -94,6 +94,8 @@ Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 
 [[current-support-matrix-for-validated-releases]]
 == 已驗證版本的目前支援矩陣
 
+此對照表中所列的版本是本文件發佈時，用來驗證此解決方案的版本。
+
 |===
 
 
@@ -114,3 +116,4 @@ Trident是一個開源且完全支援的容器和 Kubernetes 發行版（包括 
 
 | VMware vSphere | 資料中心虛擬化 | 7.0、8.0.2 
 |===
+其他功能會持續使用最新版本的 ONTAP、NetApp Trident 以及 Trident 支援的 Red Hat OpenShift 進行測試。如需 Trident 支援的最新 OpenShift 版本，請造訪 link:https://docs.netapp.com/us-en/trident/trident-get-started/requirements.html#supported-frontends-orchestrators["Trident 文件"^]。

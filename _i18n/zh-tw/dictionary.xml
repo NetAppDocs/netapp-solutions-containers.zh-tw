@@ -2024,4 +2024,6 @@
   <block id="2a7082b3041267482d987446d5d04d6a" category="sidebar">vSphere Kubernetes 服務搭配 NetApp</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="sidebar">資料保護</block>
   <block id="07c4740cbbae657ab5643e7f4cd45995" category="sidebar">vSphere Kubernetes 服務網站</block>
+  <block id="afafad34831fd7bf5a2da8e40c7a486a" category="paragraph">此對照表中所列的版本是本文件發佈時，用來驗證此解決方案的版本。</block>
+  <block id="c36ad65c3abcd6fccd80322445b32436" category="paragraph">其他功能會持續使用最新版本的 ONTAP、NetApp Trident 以及 Trident 支援的 Red Hat OpenShift 進行測試。如需 Trident 支援的最新 OpenShift 版本，請造訪 <block ref="c63c485b5af8afb2964e185bd11227c5" category="inline-link-macro-rx"></block>。</block>
 </blocks>
